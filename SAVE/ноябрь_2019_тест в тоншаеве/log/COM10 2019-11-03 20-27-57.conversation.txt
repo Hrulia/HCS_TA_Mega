@@ -1,0 +1,129 @@
+2019-11-03 20:27:57	Message	Opening port
+Port open
+2019-11-03 20:27:58	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+
+Knopka nazhata
+0
+2019-11-03 20:28:00	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+
+Knopka nazhata
+0
+2019-11-03 20:28:01	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+
+Knopka nazhata
+0
+2019-11-03 20:28:02	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+
+Knopka nazhata
+0
+2019-11-03 20:28:04	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+
+Knopka nazhata
+0
+2019-11-03 20:28:05	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+
+Knopka nazhata
+0
+2019-11-03 20:28:06	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+
+Knopka nazhata
+0
+2019-11-03 20:28:07	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+
+Knopka nazhata
+0
+2019-11-03 20:28:09	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+
+Knopka nazhata
+0
+2019-11-03 20:28:10	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+
+Knopka nazhata
+0
+2019-11-03 20:28:11	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+
+Knopka nazhata
+0
+2019-11-03 20:28:12	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+
+Knopka nazhata
+0
+2019-11-03 20:28:14	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00

@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name HCS_TA-rescue)(type Legacy)(uri ${KIPRJMOD}/HCS_TA-rescue.lib)(options "")(descr ""))
+)

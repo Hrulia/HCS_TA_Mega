@@ -1,0 +1,373 @@
+2019-11-02 23:51:06	Message	Opening port
+Port open
+2019-11-02 23:51:12	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-02 23:51:17	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-02 23:51:22	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-02 23:51:27	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-02 23:51:32	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-02 23:51:37	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-02 23:51:42	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-02 23:51:47	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-02 23:51:52	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-02 23:51:57	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-02 23:52:03	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-02 23:52:08	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-02 23:52:13	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-02 23:52:18	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-02 23:52:23	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-02 23:52:28	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-02 23:52:33	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-02 23:52:38	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-02 23:52:43	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-02 23:52:48	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-02 23:52:53	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-02 23:52:58	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-02 23:53:03	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-02 23:53:09	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-02 23:53:14	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-02 23:53:19	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-02 23:53:24	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-02 23:53:29	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-02 23:53:34	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-02 23:53:39	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-02 23:53:44	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-02 23:53:49	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-02 23:53:54	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-02 23:53:59	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-02 23:54:04	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-02 23:54:09	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-02 23:54:14	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-02 23:54:20	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-02 23:54:25	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-02 23:54:30	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-02 23:54:35	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-02 23:54:40	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-02 23:54:45	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-02 23:54:50	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-02 23:54:55	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-02 23:55:00	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-02 23:55:05	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-02 23:55:10	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-02 23:55:15	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-02 23:55:20	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-02 23:55:25	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-02 23:55:30	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-02 23:55:36	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00

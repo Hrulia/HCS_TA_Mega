@@ -1,0 +1,1374 @@
+EESchema Schematic File Version 4
+LIBS:1_1-cache
+EELAYER 30 0
+EELAYER END
+$Descr A1 33110 23386
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L arduino:Arduino_Mega2560_Shield XA?
+U 1 1 5DAA3132
+P 7500 5600
+F 0 "XA?" H 7500 3219 60  0000 C CNN
+F 1 "Arduino_Mega2560_Shield" H 7500 3113 60  0000 C CNN
+F 2 "" H 8200 8350 60  0001 C CNN
+F 3 "https://store.arduino.cc/arduino-mega-2560-rev3" H 8200 8350 60  0001 C CNN
+	1    7500 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1000 7600 700  7600
+Wire Wire Line
+	700  7600 700  7350
+Wire Wire Line
+	700  8850 700  9550
+Wire Wire Line
+	700  7600 700  8200
+Wire Wire Line
+	700  8200 700  8850
+Wire Wire Line
+	700  9550 1000 9550
+Wire Wire Line
+	1000 8850 700  8850
+Wire Wire Line
+	1000 8200 700  8200
+Connection ~ 700  7600
+Connection ~ 700  8850
+Connection ~ 700  8200
+Wire Wire Line
+	19050 3050 19050 3000
+Wire Wire Line
+	19050 4650 19050 3050
+Wire Wire Line
+	18250 6150 18250 6050
+Wire Wire Line
+	18250 6050 18250 3050
+Wire Wire Line
+	18250 3050 19050 3050
+Wire Wire Line
+	16800 6050 18250 6050
+Connection ~ 19050 3050
+Connection ~ 18250 6050
+Text Label 19050 3050 0    10   ~ 0
+Net_1
+Text Label 2000 6200 0    10   ~ 0
+Net_5
+Wire Wire Line
+	21600 7600 21600 7550
+Wire Wire Line
+	21850 7600 21850 7650
+Wire Wire Line
+	21600 7600 21850 7600
+Wire Wire Line
+	21600 8050 21600 7600
+Connection ~ 21600 7600
+Text Label 21600 7600 0    10   ~ 0
+Net_5
+Wire Wire Line
+	22450 6050 22300 6050
+Wire Wire Line
+	22300 6050 22300 5450
+Wire Wire Line
+	22300 5450 22750 5450
+Wire Wire Line
+	22750 5450 22750 5600
+Text Label 22450 6050 0    10   ~ 0
+Net_5
+Wire Wire Line
+	21700 11300 21700 11250
+Wire Wire Line
+	21950 11300 21950 11350
+Wire Wire Line
+	21700 11300 21950 11300
+Wire Wire Line
+	21700 11750 21700 11300
+Connection ~ 21700 11300
+Text Label 21700 11300 0    10   ~ 0
+Net_5
+Wire Wire Line
+	22550 9750 22400 9750
+Wire Wire Line
+	22400 9750 22400 9150
+Wire Wire Line
+	22400 9150 22850 9150
+Wire Wire Line
+	22850 9150 22850 9300
+Text Label 22550 9750 0    10   ~ 0
+Net_5
+Wire Wire Line
+	17800 6900 17750 6900
+Wire Wire Line
+	17800 6900 17800 7050
+Text Label 17800 6900 0    10   ~ 0
+Net_5
+Wire Wire Line
+	21600 8500 21600 8450
+Wire Wire Line
+	21600 8500 22000 8500
+Wire Wire Line
+	22000 8500 22000 7100
+Wire Wire Line
+	21850 7100 21850 7050
+Wire Wire Line
+	22000 7100 21850 7100
+Wire Wire Line
+	21600 7100 21600 7150
+Wire Wire Line
+	21600 7100 21850 7100
+Connection ~ 21850 7100
+Text Label 21600 8500 0    10   ~ 0
+Net_17
+Wire Wire Line
+	21000 8050 21000 7900
+Wire Wire Line
+	21000 7900 21000 7554
+Wire Wire Line
+	21300 7900 21300 7850
+Wire Wire Line
+	21300 7900 21000 7900
+Connection ~ 21000 7900
+Text Label 21000 8050 0    10   ~ 0
+Net_17
+Wire Wire Line
+	21700 12200 21700 12150
+Wire Wire Line
+	21700 12200 22100 12200
+Wire Wire Line
+	22100 12200 22100 10800
+Wire Wire Line
+	21950 10800 21950 10750
+Wire Wire Line
+	22100 10800 21950 10800
+Wire Wire Line
+	21700 10800 21700 10850
+Wire Wire Line
+	21700 10800 21950 10800
+Connection ~ 21950 10800
+Text Label 21700 12200 0    10   ~ 0
+Net_17
+Wire Wire Line
+	21100 11750 21100 11600
+Wire Wire Line
+	21100 11600 21100 11254
+Wire Wire Line
+	21400 11600 21400 11550
+Wire Wire Line
+	21400 11600 21100 11600
+Connection ~ 21100 11600
+Text Label 21100 11750 0    10   ~ 0
+Net_17
+Wire Wire Line
+	21250 7350 21300 7350
+Wire Wire Line
+	21250 7350 21250 6700
+Wire Wire Line
+	21250 6700 22400 6700
+Wire Wire Line
+	22400 7550 22450 7550
+Wire Wire Line
+	22400 6700 22400 7550
+Wire Wire Line
+	22400 7850 22450 7850
+Wire Wire Line
+	22400 7850 22400 8750
+Wire Wire Line
+	22400 8750 21250 8750
+Wire Wire Line
+	21250 8250 21300 8250
+Wire Wire Line
+	21250 8750 21250 8250
+Wire Wire Line
+	19950 5650 19950 7100
+Wire Wire Line
+	19950 7100 20450 7100
+Wire Wire Line
+	20450 8500 19850 8500
+Wire Wire Line
+	19850 8500 19850 5650
+Wire Wire Line
+	20850 6300 20150 6300
+Wire Wire Line
+	20150 6300 20150 5650
+Wire Wire Line
+	20050 5650 20050 6550
+Wire Wire Line
+	20050 6550 20350 6550
+Wire Wire Line
+	21350 6300 22450 6300
+Wire Wire Line
+	20850 6550 22450 6550
+Wire Wire Line
+	19750 5650 19750 10000
+Wire Wire Line
+	19750 10000 20950 10000
+Wire Wire Line
+	20450 10250 19650 10250
+Wire Wire Line
+	19650 10250 19650 5650
+Wire Wire Line
+	21350 11050 21400 11050
+Wire Wire Line
+	21350 11050 21350 10400
+Wire Wire Line
+	21350 10400 22500 10400
+Wire Wire Line
+	22500 11250 22550 11250
+Wire Wire Line
+	22500 10400 22500 11250
+Wire Wire Line
+	22500 11550 22550 11550
+Wire Wire Line
+	22500 11550 22500 12450
+Wire Wire Line
+	22500 12450 21350 12450
+Wire Wire Line
+	21350 11950 21400 11950
+Wire Wire Line
+	21350 12450 21350 11950
+Wire Wire Line
+	21450 10000 22550 10000
+Wire Wire Line
+	20950 10250 22550 10250
+Wire Wire Line
+	20550 10800 19550 10800
+Wire Wire Line
+	19550 10800 19550 5650
+Wire Wire Line
+	20550 12200 19450 12200
+Wire Wire Line
+	19450 12200 19450 5650
+Wire Wire Line
+	18250 6700 18250 6650
+Wire Wire Line
+	18250 6700 17750 6700
+Wire Wire Line
+	18250 6700 19150 6700
+Wire Wire Line
+	19150 6700 19150 5650
+Connection ~ 18250 6700
+Wire Wire Line
+	19850 4650 19850 2850
+Wire Wire Line
+	19850 2850 20050 2850
+Wire Wire Line
+	19750 4650 19750 2750
+Wire Wire Line
+	19750 2750 20050 2750
+Wire Wire Line
+	19750 2750 19750 2050
+Wire Wire Line
+	19750 2050 20050 2050
+Connection ~ 19750 2750
+Wire Wire Line
+	19650 4650 19650 2150
+Wire Wire Line
+	19650 2150 20050 2150
+Wire Wire Line
+	18600 7300 18650 7300
+Wire Wire Line
+	18600 7300 18600 6850
+Wire Wire Line
+	18600 6850 19250 6850
+Wire Wire Line
+	19250 6850 19250 5650
+Text Label 18600 7300 0    10   ~ 0
+Net_38
+Wire Wire Line
+	18700 8200 18550 8200
+Wire Wire Line
+	18550 8200 18550 7700
+Wire Wire Line
+	18550 7700 19350 7700
+Wire Wire Line
+	19350 7700 19350 5650
+Text Label 18700 8200 0    10   ~ 0
+Net_38
+Wire Wire Line
+	21500 2150 21250 2150
+Wire Wire Line
+	21250 2150 21250 1550
+Wire Wire Line
+	21250 1550 19550 1550
+Wire Wire Line
+	19550 1550 19550 4650
+$Comp
+L 1-eagle-import:ARDUINO_NANO ARD?
+U 1 1 DB560C93
+P 19450 5150
+AR Path="/DB560C93" Ref="ARD?"  Part="1" 
+AR Path="/5DA7853D/DB560C93" Ref="ARD?"  Part="1" 
+F 0 "ARD?" H 19351 6049 50  0001 L TNN
+F 1 "ARDUINO_NANO" H 19450 5150 50  0001 C CNN
+F 2 "1:ARDINO_NANO" H 19450 5150 50  0001 C CNN
+F 3 "" H 19450 5150 50  0001 C CNN
+	1    19450 5150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L 1-eagle-import:CON_MALE #J?
+U 1 1 CDA13370
+P 23450 6550
+AR Path="/CDA13370" Ref="#J?"  Part="1" 
+AR Path="/5DA7853D/CDA13370" Ref="#J?"  Part="1" 
+F 0 "#J?" H 23192 6707 50  0001 L TNN
+F 1 "open_signal" H 23450 6550 50  0001 C CNN
+F 2 "" H 23450 6550 50  0001 C CNN
+F 3 "" H 23450 6550 50  0001 C CNN
+	1    23450 6550
+	1    0    0    -1  
+$EndComp
+$Comp
+L 1-eagle-import:G5L K?
+U 1 1 FD237801
+P 21000 7352
+AR Path="/FD237801" Ref="K?"  Part="1" 
+AR Path="/5DA7853D/FD237801" Ref="K?"  Part="1" 
+F 0 "K?" V 21249 7417 50  0001 R BNN
+F 1 "G5L" H 21000 7352 50  0001 C CNN
+F 2 "1:G5LE" H 21000 7352 50  0001 C CNN
+F 3 "" H 21000 7352 50  0001 C CNN
+	1    21000 7352
+	-1   0    0    1   
+$EndComp
+$Comp
+L 1-eagle-import:G5L K?
+U 2 1 FD23780D
+P 21506 7350
+AR Path="/FD23780D" Ref="K?"  Part="2" 
+AR Path="/5DA7853D/FD23780D" Ref="K?"  Part="2" 
+F 0 "K?" H 21585 7469 50  0001 R BNN
+F 1 "G5L" H 21506 7350 50  0001 C CNN
+F 2 "1:G5LE" H 21506 7350 50  0001 C CNN
+F 3 "" H 21506 7350 50  0001 C CNN
+	2    21506 7350
+	0    1    1    0   
+$EndComp
+$Comp
+L 1-eagle-import:G5L_5 K?
+U 1 1 4C99C424
+P 21000 8252
+AR Path="/4C99C424" Ref="K?"  Part="1" 
+AR Path="/5DA7853D/4C99C424" Ref="K?"  Part="1" 
+F 0 "K?" V 21249 8330 50  0001 R BNN
+F 1 "G5L_5" H 21000 8252 50  0001 C CNN
+F 2 "1:G5LE" H 21000 8252 50  0001 C CNN
+F 3 "" H 21000 8252 50  0001 C CNN
+	1    21000 8252
+	-1   0    0    1   
+$EndComp
+$Comp
+L 1-eagle-import:G5L_5 K?
+U 2 1 4C99C428
+P 21506 8250
+AR Path="/4C99C428" Ref="K?"  Part="2" 
+AR Path="/5DA7853D/4C99C428" Ref="K?"  Part="2" 
+F 0 "K?" H 21597 8369 50  0001 R BNN
+F 1 "G5L_5" H 21506 8250 50  0001 C CNN
+F 2 "1:G5LE" H 21506 8250 50  0001 C CNN
+F 3 "" H 21506 8250 50  0001 C CNN
+	2    21506 8250
+	0    1    1    0   
+$EndComp
+$Comp
+L 1-eagle-import:GND #NetPort0101
+U 1 1 412B6AC6
+P 950 7990
+AR Path="/412B6AC6" Ref="#NetPort0101"  Part="1" 
+AR Path="/5DA7853D/412B6AC6" Ref="#NetPort?"  Part="1" 
+F 0 "#NetPort0101" V 777 7909 50  0001 L TNN
+F 1 "GND" H 950 7990 50  0001 C CNN
+F 2 "" H 950 7990 50  0001 C CNN
+F 3 "" H 950 7990 50  0001 C CNN
+	1    950  7990
+	1    0    0    -1  
+$EndComp
+$Comp
+L 1-eagle-import:GND #NetPort0102
+U 1 1 3FB24A17
+P 950 8590
+AR Path="/3FB24A17" Ref="#NetPort0102"  Part="1" 
+AR Path="/5DA7853D/3FB24A17" Ref="#NetPort?"  Part="1" 
+F 0 "#NetPort0102" V 777 8509 50  0001 L TNN
+F 1 "GND" H 950 8590 50  0001 C CNN
+F 2 "" H 950 8590 50  0001 C CNN
+F 3 "" H 950 8590 50  0001 C CNN
+	1    950  8590
+	1    0    0    -1  
+$EndComp
+$Comp
+L 1-eagle-import:GND #NetPort0103
+U 1 1 967DD85E
+P 950 9240
+AR Path="/967DD85E" Ref="#NetPort0103"  Part="1" 
+AR Path="/5DA7853D/967DD85E" Ref="#NetPort?"  Part="1" 
+F 0 "#NetPort0103" V 777 9159 50  0001 L TNN
+F 1 "GND" H 950 9240 50  0001 C CNN
+F 2 "" H 950 9240 50  0001 C CNN
+F 3 "" H 950 9240 50  0001 C CNN
+	1    950  9240
+	1    0    0    -1  
+$EndComp
+$Comp
+L 1-eagle-import:GND #NetPort0104
+U 1 1 115FBE32
+P 950 9940
+AR Path="/115FBE32" Ref="#NetPort0104"  Part="1" 
+AR Path="/5DA7853D/115FBE32" Ref="#NetPort?"  Part="1" 
+F 0 "#NetPort0104" V 777 9859 50  0001 L TNN
+F 1 "GND" H 950 9940 50  0001 C CNN
+F 2 "" H 950 9940 50  0001 C CNN
+F 3 "" H 950 9940 50  0001 C CNN
+	1    950  9940
+	1    0    0    -1  
+$EndComp
+$Comp
+L 1-eagle-import:GND #NetPort0105
+U 1 1 D2A813C5
+P 1050 10040
+AR Path="/D2A813C5" Ref="#NetPort0105"  Part="1" 
+AR Path="/5DA7853D/D2A813C5" Ref="#NetPort?"  Part="1" 
+F 0 "#NetPort0105" V 877 9959 50  0001 L TNN
+F 1 "GND" H 1050 10040 50  0001 C CNN
+F 2 "" H 1050 10040 50  0001 C CNN
+F 3 "" H 1050 10040 50  0001 C CNN
+	1    1050 10040
+	1    0    0    -1  
+$EndComp
+$Comp
+L 1-eagle-import:+12V #NetPort0106
+U 1 1 C8BA3C00
+P 21850 6950
+AR Path="/C8BA3C00" Ref="#NetPort0106"  Part="1" 
+AR Path="/5DA7853D/C8BA3C00" Ref="#NetPort?"  Part="1" 
+F 0 "#NetPort0106" H 21746 7107 50  0001 L TNN
+F 1 "+12V" H 21850 6950 50  0001 C CNN
+F 2 "" H 21850 6950 50  0001 C CNN
+F 3 "" H 21850 6950 50  0001 C CNN
+	1    21850 6950
+	1    0    0    -1  
+$EndComp
+$Comp
+L 1-eagle-import:GND #NetPort0107
+U 1 1 FD54C515
+P 21850 7790
+AR Path="/FD54C515" Ref="#NetPort0107"  Part="1" 
+AR Path="/5DA7853D/FD54C515" Ref="#NetPort?"  Part="1" 
+F 0 "#NetPort0107" V 21676 7709 50  0001 L TNN
+F 1 "GND" H 21850 7790 50  0001 C CNN
+F 2 "" H 21850 7790 50  0001 C CNN
+F 3 "" H 21850 7790 50  0001 C CNN
+	1    21850 7790
+	1    0    0    -1  
+$EndComp
+$Comp
+L 1-eagle-import:DS1820 U?
+U 1 1 E3998434
+P 1450 8300
+AR Path="/E3998434" Ref="U?"  Part="1" 
+AR Path="/5DA7853D/E3998434" Ref="U?"  Part="1" 
+F 0 "U?" H 1401 8598 50  0001 L TNN
+F 1 "DS1820" H 1297 8100 50  0001 L TNN
+F 2 "1:TO-92" H 1450 8300 50  0001 C CNN
+F 3 "" H 1450 8300 50  0001 C CNN
+	1    1450 8300
+	1    0    0    -1  
+$EndComp
+$Comp
+L 1-eagle-import:DS1820 U?
+U 1 1 0551BDC9
+P 1450 8950
+AR Path="/0551BDC9" Ref="U?"  Part="1" 
+AR Path="/5DA7853D/0551BDC9" Ref="U?"  Part="1" 
+F 0 "U?" H 1403 9248 50  0001 L TNN
+F 1 "DS1820" H 1297 8750 50  0001 L TNN
+F 2 "1:TO-92" H 1450 8950 50  0001 C CNN
+F 3 "" H 1450 8950 50  0001 C CNN
+	1    1450 8950
+	1    0    0    -1  
+$EndComp
+$Comp
+L 1-eagle-import:DS1820 U?
+U 1 1 3F614461
+P 1450 9650
+AR Path="/3F614461" Ref="U?"  Part="1" 
+AR Path="/5DA7853D/3F614461" Ref="U?"  Part="1" 
+F 0 "U?" H 1401 9948 50  0001 L TNN
+F 1 "DS1820" H 1297 9450 50  0001 L TNN
+F 2 "1:TO-92" H 1450 9650 50  0001 C CNN
+F 3 "" H 1450 9650 50  0001 C CNN
+	1    1450 9650
+	1    0    0    -1  
+$EndComp
+$Comp
+L 1-eagle-import:DS1820 U?
+U 1 1 CE704963
+P 1450 7700
+AR Path="/CE704963" Ref="U?"  Part="1" 
+AR Path="/5DA7853D/CE704963" Ref="U?"  Part="1" 
+F 0 "U?" H 1401 7998 50  0001 L TNN
+F 1 "DS1820" H 1297 7500 50  0001 L TNN
+F 2 "1:TO-92" H 1450 7700 50  0001 C CNN
+F 3 "" H 1450 7700 50  0001 C CNN
+	1    1450 7700
+	1    0    0    -1  
+$EndComp
+$Comp
+L 1-eagle-import:CON_FEMALE #J?
+U 1 1 7AF8FC0E
+P 23450 7850
+AR Path="/7AF8FC0E" Ref="#J?"  Part="1" 
+AR Path="/5DA7853D/7AF8FC0E" Ref="#J?"  Part="1" 
+F 0 "#J?" H 23210 8007 50  0001 L TNN
+F 1 "M_open(+)" H 23450 7850 50  0001 C CNN
+F 2 "" H 23450 7850 50  0001 C CNN
+F 3 "" H 23450 7850 50  0001 C CNN
+	1    23450 7850
+	1    0    0    -1  
+$EndComp
+$Comp
+L 1-eagle-import:CON_MALE #J?
+U 1 1 8A6B3AAD
+P 22750 7550
+AR Path="/8A6B3AAD" Ref="#J?"  Part="1" 
+AR Path="/5DA7853D/8A6B3AAD" Ref="#J?"  Part="1" 
+F 0 "#J?" H 23008 7393 50  0001 R BNN
+F 1 "m_close(+)" H 22750 7550 50  0001 C CNN
+F 2 "" H 22750 7550 50  0001 C CNN
+F 3 "" H 22750 7550 50  0001 C CNN
+	1    22750 7550
+	-1   0    0    1   
+$EndComp
+$Comp
+L 1-eagle-import:CON_FEMALE #J?
+U 1 1 D03EF425
+P 23450 7550
+AR Path="/D03EF425" Ref="#J?"  Part="1" 
+AR Path="/5DA7853D/D03EF425" Ref="#J?"  Part="1" 
+F 0 "#J?" H 23201 7707 50  0001 L TNN
+F 1 "M_close(+)" H 23450 7550 50  0001 C CNN
+F 2 "" H 23450 7550 50  0001 C CNN
+F 3 "" H 23450 7550 50  0001 C CNN
+	1    23450 7550
+	1    0    0    -1  
+$EndComp
+$Comp
+L 1-eagle-import:CON_MALE #J?
+U 1 1 BBC75279
+P 23450 6300
+AR Path="/BBC75279" Ref="#J?"  Part="1" 
+AR Path="/5DA7853D/BBC75279" Ref="#J?"  Part="1" 
+F 0 "#J?" H 23183 6457 50  0001 L TNN
+F 1 "close_signal" H 23450 6300 50  0001 C CNN
+F 2 "" H 23450 6300 50  0001 C CNN
+F 3 "" H 23450 6300 50  0001 C CNN
+	1    23450 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L 1-eagle-import:CON_MALE #J?
+U 1 1 30B6D683
+P 23450 6050
+AR Path="/30B6D683" Ref="#J?"  Part="1" 
+AR Path="/5DA7853D/30B6D683" Ref="#J?"  Part="1" 
+F 0 "#J?" H 23147 6207 50  0001 L TNN
+F 1 "graund_signal" H 23450 6050 50  0001 C CNN
+F 2 "" H 23450 6050 50  0001 C CNN
+F 3 "" H 23450 6050 50  0001 C CNN
+	1    23450 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L 1-eagle-import:CON_MALE #J?
+U 1 1 A8F5A06A
+P 22750 7850
+AR Path="/A8F5A06A" Ref="#J?"  Part="1" 
+AR Path="/5DA7853D/A8F5A06A" Ref="#J?"  Part="1" 
+F 0 "#J?" H 22998 7693 50  0001 R BNN
+F 1 "m_open(+)" H 22750 7850 50  0001 C CNN
+F 2 "" H 22750 7850 50  0001 C CNN
+F 3 "" H 22750 7850 50  0001 C CNN
+	1    22750 7850
+	-1   0    0    1   
+$EndComp
+$Comp
+L 1-eagle-import:+12V #NetPort0108
+U 1 1 F3D8A49D
+P 21300 7750
+AR Path="/F3D8A49D" Ref="#NetPort0108"  Part="1" 
+AR Path="/5DA7853D/F3D8A49D" Ref="#NetPort?"  Part="1" 
+F 0 "#NetPort0108" H 21196 7907 50  0001 L TNN
+F 1 "+12V" H 21300 7750 50  0001 C CNN
+F 2 "" H 21300 7750 50  0001 C CNN
+F 3 "" H 21300 7750 50  0001 C CNN
+	1    21300 7750
+	1    0    0    -1  
+$EndComp
+$Comp
+L 1-eagle-import:RES #R?
+U 1 1 12AB12F6
+P 20700 7100
+AR Path="/12AB12F6" Ref="#R?"  Part="1" 
+AR Path="/5DA7853D/12AB12F6" Ref="#R?"  Part="1" 
+F 0 "#R?" H 20650 7257 50  0001 L TNN
+F 1 "100" H 20634 7040 50  0001 L TNN
+F 2 "" H 20700 7100 50  0001 C CNN
+F 3 "" H 20700 7100 50  0001 C CNN
+	1    20700 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L 1-eagle-import:RES #R?
+U 1 1 083F992A
+P 20700 8500
+AR Path="/083F992A" Ref="#R?"  Part="1" 
+AR Path="/5DA7853D/083F992A" Ref="#R?"  Part="1" 
+F 0 "#R?" H 20649 8657 50  0001 L TNN
+F 1 "100" H 20634 8440 50  0001 L TNN
+F 2 "" H 20700 8500 50  0001 C CNN
+F 3 "" H 20700 8500 50  0001 C CNN
+	1    20700 8500
+	1    0    0    -1  
+$EndComp
+$Comp
+L 1-eagle-import:CON_FEMALE_8 #J?
+U 1 1 B2074E2A
+P 22750 6550
+AR Path="/B2074E2A" Ref="#J?"  Part="1" 
+AR Path="/5DA7853D/B2074E2A" Ref="#J?"  Part="1" 
+F 0 "#J?" H 22492 6707 50  0001 L TNN
+F 1 "open_signal" H 22750 6550 50  0001 C CNN
+F 2 "" H 22750 6550 50  0001 C CNN
+F 3 "" H 22750 6550 50  0001 C CNN
+	1    22750 6550
+	1    0    0    -1  
+$EndComp
+$Comp
+L 1-eagle-import:CON_FEMALE_8 #J?
+U 1 1 42144B26
+P 22750 6300
+AR Path="/42144B26" Ref="#J?"  Part="1" 
+AR Path="/5DA7853D/42144B26" Ref="#J?"  Part="1" 
+F 0 "#J?" H 22483 6457 50  0001 L TNN
+F 1 "close_signal" H 22750 6300 50  0001 C CNN
+F 2 "" H 22750 6300 50  0001 C CNN
+F 3 "" H 22750 6300 50  0001 C CNN
+	1    22750 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L 1-eagle-import:CON_FEMALE_8 #J?
+U 1 1 260405AD
+P 22750 6050
+AR Path="/260405AD" Ref="#J?"  Part="1" 
+AR Path="/5DA7853D/260405AD" Ref="#J?"  Part="1" 
+F 0 "#J?" H 22447 6207 50  0001 L TNN
+F 1 "graund_signal" H 22750 6050 50  0001 C CNN
+F 2 "" H 22750 6050 50  0001 C CNN
+F 3 "" H 22750 6050 50  0001 C CNN
+	1    22750 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L 1-eagle-import:GND #NetPort0109
+U 1 1 9DF9C0CC
+P 22750 5740
+AR Path="/9DF9C0CC" Ref="#NetPort0109"  Part="1" 
+AR Path="/5DA7853D/9DF9C0CC" Ref="#NetPort?"  Part="1" 
+F 0 "#NetPort0109" V 22576 5659 50  0001 L TNN
+F 1 "GND" H 22750 5740 50  0001 C CNN
+F 2 "" H 22750 5740 50  0001 C CNN
+F 3 "" H 22750 5740 50  0001 C CNN
+	1    22750 5740
+	1    0    0    -1  
+$EndComp
+$Comp
+L 1-eagle-import:RES #R?
+U 1 1 78444BE7
+P 21100 6300
+AR Path="/78444BE7" Ref="#R?"  Part="1" 
+AR Path="/5DA7853D/78444BE7" Ref="#R?"  Part="1" 
+F 0 "#R?" H 21050 6457 50  0001 L TNN
+F 1 "100" H 21034 6240 50  0001 L TNN
+F 2 "" H 21100 6300 50  0001 C CNN
+F 3 "" H 21100 6300 50  0001 C CNN
+	1    21100 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L 1-eagle-import:RES #R?
+U 1 1 A94723DD
+P 20600 6550
+AR Path="/A94723DD" Ref="#R?"  Part="1" 
+AR Path="/5DA7853D/A94723DD" Ref="#R?"  Part="1" 
+F 0 "#R?" H 20552 6707 50  0001 L TNN
+F 1 "100" H 20534 6490 50  0001 L TNN
+F 2 "" H 20600 6550 50  0001 C CNN
+F 3 "" H 20600 6550 50  0001 C CNN
+	1    20600 6550
+	1    0    0    -1  
+$EndComp
+$Comp
+L 1-eagle-import:CON_MALE #J?
+U 1 1 5AFB4E0A
+P 23550 10250
+AR Path="/5AFB4E0A" Ref="#J?"  Part="1" 
+AR Path="/5DA7853D/5AFB4E0A" Ref="#J?"  Part="1" 
+F 0 "#J?" H 23292 10407 50  0001 L TNN
+F 1 "open_signal" H 23550 10250 50  0001 C CNN
+F 2 "" H 23550 10250 50  0001 C CNN
+F 3 "" H 23550 10250 50  0001 C CNN
+	1    23550 10250
+	1    0    0    -1  
+$EndComp
+$Comp
+L 1-eagle-import:G5L K?
+U 1 1 27E031B9
+P 21100 11052
+AR Path="/27E031B9" Ref="K?"  Part="1" 
+AR Path="/5DA7853D/27E031B9" Ref="K?"  Part="1" 
+F 0 "K?" V 21349 11130 50  0001 R BNN
+F 1 "G5L" H 21100 11052 50  0001 C CNN
+F 2 "1:G5LE" H 21100 11052 50  0001 C CNN
+F 3 "" H 21100 11052 50  0001 C CNN
+	1    21100 11052
+	-1   0    0    1   
+$EndComp
+$Comp
+L 1-eagle-import:G5L K?
+U 2 1 27E031B5
+P 21606 11050
+AR Path="/27E031B5" Ref="K?"  Part="2" 
+AR Path="/5DA7853D/27E031B5" Ref="K?"  Part="2" 
+F 0 "K?" H 21697 11169 50  0001 R BNN
+F 1 "G5L" H 21606 11050 50  0001 C CNN
+F 2 "1:G5LE" H 21606 11050 50  0001 C CNN
+F 3 "" H 21606 11050 50  0001 C CNN
+	2    21606 11050
+	0    1    1    0   
+$EndComp
+$Comp
+L 1-eagle-import:G5L_5 K?
+U 1 1 DCB17BD7
+P 21100 11952
+AR Path="/DCB17BD7" Ref="K?"  Part="1" 
+AR Path="/5DA7853D/DCB17BD7" Ref="K?"  Part="1" 
+F 0 "K?" V 21349 12031 50  0001 R BNN
+F 1 "G5L_5" H 21100 11952 50  0001 C CNN
+F 2 "1:G5LE" H 21100 11952 50  0001 C CNN
+F 3 "" H 21100 11952 50  0001 C CNN
+	1    21100 11952
+	-1   0    0    1   
+$EndComp
+$Comp
+L 1-eagle-import:G5L_5 K?
+U 2 1 DCB17BDB
+P 21606 11950
+AR Path="/DCB17BDB" Ref="K?"  Part="2" 
+AR Path="/5DA7853D/DCB17BDB" Ref="K?"  Part="2" 
+F 0 "K?" H 21699 12069 50  0001 R BNN
+F 1 "G5L_5" H 21606 11950 50  0001 C CNN
+F 2 "1:G5LE" H 21606 11950 50  0001 C CNN
+F 3 "" H 21606 11950 50  0001 C CNN
+	2    21606 11950
+	0    1    1    0   
+$EndComp
+$Comp
+L 1-eagle-import:+12V #NetPort0110
+U 1 1 59359E55
+P 21950 10650
+AR Path="/59359E55" Ref="#NetPort0110"  Part="1" 
+AR Path="/5DA7853D/59359E55" Ref="#NetPort?"  Part="1" 
+F 0 "#NetPort0110" H 21846 10807 50  0001 L TNN
+F 1 "+12V" H 21950 10650 50  0001 C CNN
+F 2 "" H 21950 10650 50  0001 C CNN
+F 3 "" H 21950 10650 50  0001 C CNN
+	1    21950 10650
+	1    0    0    -1  
+$EndComp
+$Comp
+L 1-eagle-import:GND #NetPort0111
+U 1 1 93BE0699
+P 21950 11490
+AR Path="/93BE0699" Ref="#NetPort0111"  Part="1" 
+AR Path="/5DA7853D/93BE0699" Ref="#NetPort?"  Part="1" 
+F 0 "#NetPort0111" V 21776 11409 50  0001 L TNN
+F 1 "GND" H 21950 11490 50  0001 C CNN
+F 2 "" H 21950 11490 50  0001 C CNN
+F 3 "" H 21950 11490 50  0001 C CNN
+	1    21950 11490
+	1    0    0    -1  
+$EndComp
+$Comp
+L 1-eagle-import:CON_FEMALE #J?
+U 1 1 CB761069
+P 23550 11550
+AR Path="/CB761069" Ref="#J?"  Part="1" 
+AR Path="/5DA7853D/CB761069" Ref="#J?"  Part="1" 
+F 0 "#J?" H 23310 11707 50  0001 L TNN
+F 1 "M_open(+)" H 23550 11550 50  0001 C CNN
+F 2 "" H 23550 11550 50  0001 C CNN
+F 3 "" H 23550 11550 50  0001 C CNN
+	1    23550 11550
+	1    0    0    -1  
+$EndComp
+$Comp
+L 1-eagle-import:CON_MALE #J?
+U 1 1 00B464A8
+P 22850 11250
+AR Path="/00B464A8" Ref="#J?"  Part="1" 
+AR Path="/5DA7853D/00B464A8" Ref="#J?"  Part="1" 
+F 0 "#J?" H 23108 11093 50  0001 R BNN
+F 1 "m_close(+)" H 22850 11250 50  0001 C CNN
+F 2 "" H 22850 11250 50  0001 C CNN
+F 3 "" H 22850 11250 50  0001 C CNN
+	1    22850 11250
+	-1   0    0    1   
+$EndComp
+$Comp
+L 1-eagle-import:CON_FEMALE #J?
+U 1 1 73B813DC
+P 23550 11250
+AR Path="/73B813DC" Ref="#J?"  Part="1" 
+AR Path="/5DA7853D/73B813DC" Ref="#J?"  Part="1" 
+F 0 "#J?" H 23301 11407 50  0001 L TNN
+F 1 "M_close(+)" H 23550 11250 50  0001 C CNN
+F 2 "" H 23550 11250 50  0001 C CNN
+F 3 "" H 23550 11250 50  0001 C CNN
+	1    23550 11250
+	1    0    0    -1  
+$EndComp
+$Comp
+L 1-eagle-import:CON_MALE #J?
+U 1 1 7FF876EA
+P 23550 10000
+AR Path="/7FF876EA" Ref="#J?"  Part="1" 
+AR Path="/5DA7853D/7FF876EA" Ref="#J?"  Part="1" 
+F 0 "#J?" H 23283 10157 50  0001 L TNN
+F 1 "close_signal" H 23550 10000 50  0001 C CNN
+F 2 "" H 23550 10000 50  0001 C CNN
+F 3 "" H 23550 10000 50  0001 C CNN
+	1    23550 10000
+	1    0    0    -1  
+$EndComp
+$Comp
+L 1-eagle-import:CON_MALE #J?
+U 1 1 2BC86813
+P 23550 9750
+AR Path="/2BC86813" Ref="#J?"  Part="1" 
+AR Path="/5DA7853D/2BC86813" Ref="#J?"  Part="1" 
+F 0 "#J?" H 23247 9907 50  0001 L TNN
+F 1 "graund_signal" H 23550 9750 50  0001 C CNN
+F 2 "" H 23550 9750 50  0001 C CNN
+F 3 "" H 23550 9750 50  0001 C CNN
+	1    23550 9750
+	1    0    0    -1  
+$EndComp
+$Comp
+L 1-eagle-import:CON_MALE #J?
+U 1 1 D162B512
+P 22850 11550
+AR Path="/D162B512" Ref="#J?"  Part="1" 
+AR Path="/5DA7853D/D162B512" Ref="#J?"  Part="1" 
+F 0 "#J?" H 23098 11393 50  0001 R BNN
+F 1 "m_open(+)" H 22850 11550 50  0001 C CNN
+F 2 "" H 22850 11550 50  0001 C CNN
+F 3 "" H 22850 11550 50  0001 C CNN
+	1    22850 11550
+	-1   0    0    1   
+$EndComp
+$Comp
+L 1-eagle-import:+12V #NetPort0112
+U 1 1 649FD114
+P 21400 11450
+AR Path="/649FD114" Ref="#NetPort0112"  Part="1" 
+AR Path="/5DA7853D/649FD114" Ref="#NetPort?"  Part="1" 
+F 0 "#NetPort0112" H 21296 11607 50  0001 L TNN
+F 1 "+12V" H 21400 11450 50  0001 C CNN
+F 2 "" H 21400 11450 50  0001 C CNN
+F 3 "" H 21400 11450 50  0001 C CNN
+	1    21400 11450
+	1    0    0    -1  
+$EndComp
+$Comp
+L 1-eagle-import:RES #R?
+U 1 1 54DAD5C3
+P 20800 10800
+AR Path="/54DAD5C3" Ref="#R?"  Part="1" 
+AR Path="/5DA7853D/54DAD5C3" Ref="#R?"  Part="1" 
+F 0 "#R?" H 20750 10957 50  0001 L TNN
+F 1 "100" H 20734 10740 50  0001 L TNN
+F 2 "" H 20800 10800 50  0001 C CNN
+F 3 "" H 20800 10800 50  0001 C CNN
+	1    20800 10800
+	1    0    0    -1  
+$EndComp
+$Comp
+L 1-eagle-import:RES #R?
+U 1 1 8997169A
+P 20800 12200
+AR Path="/8997169A" Ref="#R?"  Part="1" 
+AR Path="/5DA7853D/8997169A" Ref="#R?"  Part="1" 
+F 0 "#R?" H 20750 12357 50  0001 L TNN
+F 1 "100" H 20734 12140 50  0001 L TNN
+F 2 "" H 20800 12200 50  0001 C CNN
+F 3 "" H 20800 12200 50  0001 C CNN
+	1    20800 12200
+	1    0    0    -1  
+$EndComp
+$Comp
+L 1-eagle-import:CON_FEMALE_8 #J?
+U 1 1 C386058D
+P 22850 10250
+AR Path="/C386058D" Ref="#J?"  Part="1" 
+AR Path="/5DA7853D/C386058D" Ref="#J?"  Part="1" 
+F 0 "#J?" H 22592 10407 50  0001 L TNN
+F 1 "open_signal" H 22850 10250 50  0001 C CNN
+F 2 "" H 22850 10250 50  0001 C CNN
+F 3 "" H 22850 10250 50  0001 C CNN
+	1    22850 10250
+	1    0    0    -1  
+$EndComp
+$Comp
+L 1-eagle-import:CON_FEMALE_8 #J?
+U 1 1 28CBA410
+P 22850 10000
+AR Path="/28CBA410" Ref="#J?"  Part="1" 
+AR Path="/5DA7853D/28CBA410" Ref="#J?"  Part="1" 
+F 0 "#J?" H 22583 10157 50  0001 L TNN
+F 1 "close_signal" H 22850 10000 50  0001 C CNN
+F 2 "" H 22850 10000 50  0001 C CNN
+F 3 "" H 22850 10000 50  0001 C CNN
+	1    22850 10000
+	1    0    0    -1  
+$EndComp
+$Comp
+L 1-eagle-import:CON_FEMALE_8 #J?
+U 1 1 2D8D3F2C
+P 22850 9750
+AR Path="/2D8D3F2C" Ref="#J?"  Part="1" 
+AR Path="/5DA7853D/2D8D3F2C" Ref="#J?"  Part="1" 
+F 0 "#J?" H 22547 9907 50  0001 L TNN
+F 1 "graund_signal" H 22850 9750 50  0001 C CNN
+F 2 "" H 22850 9750 50  0001 C CNN
+F 3 "" H 22850 9750 50  0001 C CNN
+	1    22850 9750
+	1    0    0    -1  
+$EndComp
+$Comp
+L 1-eagle-import:GND #NetPort0113
+U 1 1 6BCF79B9
+P 22850 9440
+AR Path="/6BCF79B9" Ref="#NetPort0113"  Part="1" 
+AR Path="/5DA7853D/6BCF79B9" Ref="#NetPort?"  Part="1" 
+F 0 "#NetPort0113" V 22676 9359 50  0001 L TNN
+F 1 "GND" H 22850 9440 50  0001 C CNN
+F 2 "" H 22850 9440 50  0001 C CNN
+F 3 "" H 22850 9440 50  0001 C CNN
+	1    22850 9440
+	1    0    0    -1  
+$EndComp
+$Comp
+L 1-eagle-import:RES #R?
+U 1 1 9BFFCD4D
+P 21200 10000
+AR Path="/9BFFCD4D" Ref="#R?"  Part="1" 
+AR Path="/5DA7853D/9BFFCD4D" Ref="#R?"  Part="1" 
+F 0 "#R?" H 21151 10157 50  0001 L TNN
+F 1 "100" H 21134 9940 50  0001 L TNN
+F 2 "" H 21200 10000 50  0001 C CNN
+F 3 "" H 21200 10000 50  0001 C CNN
+	1    21200 10000
+	1    0    0    -1  
+$EndComp
+$Comp
+L 1-eagle-import:RES #R?
+U 1 1 79B2D2A6
+P 20700 10250
+AR Path="/79B2D2A6" Ref="#R?"  Part="1" 
+AR Path="/5DA7853D/79B2D2A6" Ref="#R?"  Part="1" 
+F 0 "#R?" H 20634 10407 50  0001 L TNN
+F 1 "100" H 20634 10190 50  0001 L TNN
+F 2 "" H 20700 10250 50  0001 C CNN
+F 3 "" H 20700 10250 50  0001 C CNN
+	1    20700 10250
+	1    0    0    -1  
+$EndComp
+$Comp
+L 1-eagle-import:GND #NetPort0114
+U 1 1 1315D645
+P 17800 7190
+AR Path="/1315D645" Ref="#NetPort0114"  Part="1" 
+AR Path="/5DA7853D/1315D645" Ref="#NetPort?"  Part="1" 
+F 0 "#NetPort0114" V 17626 7109 50  0001 L TNN
+F 1 "GND" H 17800 7190 50  0001 C CNN
+F 2 "" H 17800 7190 50  0001 C CNN
+F 3 "" H 17800 7190 50  0001 C CNN
+	1    17800 7190
+	1    0    0    -1  
+$EndComp
+$Comp
+L 1-eagle-import:RES #R?
+U 1 1 9E0C26CB
+P 18250 6400
+AR Path="/9E0C26CB" Ref="#R?"  Part="1" 
+AR Path="/5DA7853D/9E0C26CB" Ref="#R?"  Part="1" 
+F 0 "#R?" H 18196 6558 50  0001 L TNN
+F 1 "4,7k" H 18161 6341 50  0001 L TNN
+F 2 "" H 18250 6400 50  0001 C CNN
+F 3 "" H 18250 6400 50  0001 C CNN
+	1    18250 6400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L 1-eagle-import:DS1820_22 U?
+U 1 1 6D2AEAA6
+P 17300 6800
+AR Path="/6D2AEAA6" Ref="U?"  Part="1" 
+AR Path="/5DA7853D/6D2AEAA6" Ref="U?"  Part="1" 
+F 0 "U?" H 17234 7098 50  0001 L TNN
+F 1 "DS1820_22" H 17146 6600 50  0001 L TNN
+F 2 "1:TO-92" H 17300 6800 50  0001 C CNN
+F 3 "" H 17300 6800 50  0001 C CNN
+	1    17300 6800
+	1    0    0    -1  
+$EndComp
+$Comp
+L 1-eagle-import:+5V #NetPort0115
+U 1 1 B0B500C2
+P 19050 2900
+AR Path="/B0B500C2" Ref="#NetPort0115"  Part="1" 
+AR Path="/5DA7853D/B0B500C2" Ref="#NetPort?"  Part="1" 
+F 0 "#NetPort0115" H 18962 3057 50  0001 L TNN
+F 1 "+5V" H 19050 2900 50  0001 C CNN
+F 2 "" H 19050 2900 50  0001 C CNN
+F 3 "" H 19050 2900 50  0001 C CNN
+	1    19050 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L 1-eagle-import:ТМ1637 #U?
+U 1 1 D56F332C
+P 21987 2900
+AR Path="/D56F332C" Ref="#U?"  Part="1" 
+AR Path="/5DA7853D/D56F332C" Ref="#U?"  Part="1" 
+F 0 "#U?" H 21939 3298 50  0001 L TNN
+F 1 "ТМ1637" H 21987 2900 50  0001 C CNN
+F 2 "" H 21987 2900 50  0001 C CNN
+F 3 "" H 21987 2900 50  0001 C CNN
+	1    21987 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L 1-eagle-import:ТМ1637 #U?
+U 1 1 44D3FC8D
+P 20537 2200
+AR Path="/44D3FC8D" Ref="#U?"  Part="1" 
+AR Path="/5DA7853D/44D3FC8D" Ref="#U?"  Part="1" 
+F 0 "#U?" H 20471 2598 50  0001 L TNN
+F 1 "ТМ1637" H 20537 2200 50  0001 C CNN
+F 2 "" H 20537 2200 50  0001 C CNN
+F 3 "" H 20537 2200 50  0001 C CNN
+	1    20537 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L 1-eagle-import:ТМ1637 #U?
+U 1 1 6BED38E3
+P 21987 2200
+AR Path="/6BED38E3" Ref="#U?"  Part="1" 
+AR Path="/5DA7853D/6BED38E3" Ref="#U?"  Part="1" 
+F 0 "#U?" H 21934 2598 50  0001 L TNN
+F 1 "ТМ1637" H 21987 2200 50  0001 C CNN
+F 2 "" H 21987 2200 50  0001 C CNN
+F 3 "" H 21987 2200 50  0001 C CNN
+	1    21987 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L 1-eagle-import:ТМ1637 #U?
+U 1 1 B7180DA0
+P 20537 2900
+AR Path="/B7180DA0" Ref="#U?"  Part="1" 
+AR Path="/5DA7853D/B7180DA0" Ref="#U?"  Part="1" 
+F 0 "#U?" H 20471 3298 50  0001 L TNN
+F 1 "ТМ1637" H 20537 2900 50  0001 C CNN
+F 2 "" H 20537 2900 50  0001 C CNN
+F 3 "" H 20537 2900 50  0001 C CNN
+	1    20537 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L 1-eagle-import:ТМ1637 #U?
+U 1 1 F6F52858
+P 23437 2900
+AR Path="/F6F52858" Ref="#U?"  Part="1" 
+AR Path="/5DA7853D/F6F52858" Ref="#U?"  Part="1" 
+F 0 "#U?" H 23370 3298 50  0001 L TNN
+F 1 "ТМ1637" H 23437 2900 50  0001 C CNN
+F 2 "" H 23437 2900 50  0001 C CNN
+F 3 "" H 23437 2900 50  0001 C CNN
+	1    23437 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L 1-eagle-import:ТМ1637 #U?
+U 1 1 836AD4BB
+P 23437 2200
+AR Path="/836AD4BB" Ref="#U?"  Part="1" 
+AR Path="/5DA7853D/836AD4BB" Ref="#U?"  Part="1" 
+F 0 "#U?" H 23371 2598 50  0001 L TNN
+F 1 "ТМ1637" H 23437 2200 50  0001 C CNN
+F 2 "" H 23437 2200 50  0001 C CNN
+F 3 "" H 23437 2200 50  0001 C CNN
+	1    23437 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L 1-eagle-import:PORT #NetPort0116
+U 1 1 502BBCB4
+P 18800 7300
+AR Path="/502BBCB4" Ref="#NetPort0116"  Part="1" 
+AR Path="/5DA7853D/502BBCB4" Ref="#NetPort?"  Part="1" 
+F 0 "#NetPort0116" H 18710 7457 50  0001 L TNN
+F 1 "PORT" H 18800 7300 50  0001 C CNN
+F 2 "" H 18800 7300 50  0001 C CNN
+F 3 "" H 18800 7300 50  0001 C CNN
+	1    18800 7300
+	1    0    0    -1  
+$EndComp
+$Comp
+L 1-eagle-import:PORT #NetPort0117
+U 1 1 FDC02701
+P 18850 8200
+AR Path="/FDC02701" Ref="#NetPort0117"  Part="1" 
+AR Path="/5DA7853D/FDC02701" Ref="#NetPort?"  Part="1" 
+F 0 "#NetPort0117" H 18760 8357 50  0001 L TNN
+F 1 "PORT" H 18850 8200 50  0001 C CNN
+F 2 "" H 18850 8200 50  0001 C CNN
+F 3 "" H 18850 8200 50  0001 C CNN
+	1    18850 8200
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	23100 5650 23900 5650
+Wire Notes Line
+	23900 5650 23900 8050
+Wire Notes Line
+	23900 8050 23100 8050
+Wire Notes Line
+	23100 8050 23100 5650
+Text Notes 23150 5650 0    97   ~ 0
+valveТТК
+Text Notes 23450 6900 0    155  ~ 0
+M
+Wire Notes Line
+	23200 9350 24000 9350
+Wire Notes Line
+	24000 9350 24000 11750
+Wire Notes Line
+	24000 11750 23200 11750
+Wire Notes Line
+	23200 11750 23200 9350
+Text Notes 23250 9350 0    97   ~ 0
+valveSYS
+Text Notes 23550 10600 0    155  ~ 0
+M
+Text Notes 20450 1600 0    97   ~ 0
+ТТК
+Text Notes 21700 1600 0    97   ~ 0
+Система
+Text Notes 23350 1600 0    97   ~ 0
+ТА
+Text Notes 18950 7200 0    155  ~ 0
+M
+Text Notes 18950 8050 0    155  ~ 0
+M
+Text Notes 18900 6950 0    97   ~ 0
+TTK
+Text Notes 18950 7850 0    97   ~ 0
+SYS
+Text GLabel 1000 8400 0    10   BiDi ~ 0
+GND
+Text GLabel 1000 9050 0    10   BiDi ~ 0
+GND
+Text GLabel 1000 9750 0    10   BiDi ~ 0
+GND
+Text GLabel 1000 7800 0    10   BiDi ~ 0
+GND
+Wire Wire Line
+	20950 7100 21000 7100
+Wire Wire Line
+	21000 7100 21000 7150
+Wire Wire Line
+	21000 7150 21050 7150
+$Comp
+L MCU_Module:Arduino_Nano_v3.x A?
+U 1 1 5DADA3BD
+P 20350 -200
+F 0 "A?" H 20350 -1289 50  0000 C CNN
+F 1 "Arduino_Nano_v3.x" H 20350 -1380 50  0000 C CNN
+F 2 "Module:Arduino_Nano" H 20500 -1150 50  0001 L CNN
+F 3 "http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf" H 20350 -1200 50  0001 C CNN
+	1    20350 -200
+	1    0    0    -1  
+$EndComp
+Text Notes 13700 1350 0    50   ~ 0
+4 Relay Module
+Text GLabel 13250 1600 0    50   Input ~ 0
++5V
+Text GLabel 13250 1750 0    50   Input ~ 0
++5VExt
+Wire Wire Line
+	13800 2350 13400 2350
+$Comp
+L Connector:Screw_Terminal_01x02 J?
+U 1 1 5DC1CC65
+P 13350 1350
+F 0 "J?" V 13268 1162 50  0000 R CNN
+F 1 "Screw_Terminal_01x02" V 13223 1162 50  0001 R CNN
+F 2 "" H 13350 1350 50  0001 C CNN
+F 3 "~" H 13350 1350 50  0001 C CNN
+F 4 "J" H 13350 1350 50  0001 C CNN "Spice_Primitive"
+F 5 "Screw_Terminal_01x02" H 13350 1350 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 13350 1350 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    13350 1350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	13550 2000 13850 2000
+$Comp
+L Relay:DIPxx-1Cxx-51x K?
+U 1 1 5DB35038
+P 14050 1700
+F 0 "K?" H 14480 1700 50  0000 L CNN
+F 1 "DIPxx-1Cxx-51x" H 14480 1655 50  0001 L CNN
+F 2 "Relay_THT:Relay_StandexMeder_DIP_LowProfile" H 14500 1650 50  0001 L CNN
+F 3 "https://standexelectronics.com/wp-content/uploads/datasheet_reed_relay_DIP.pdf" H 14050 1700 50  0001 C CNN
+	1    14050 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13850 1400 13600 1400
+Wire Wire Line
+	13600 1400 13600 1950
+Wire Wire Line
+	13600 1950 13350 1950
+Wire Wire Line
+	13250 1600 13350 1600
+Wire Wire Line
+	13350 1600 13350 1550
+Wire Notes Line
+	14600 1250 13250 1250
+Wire Wire Line
+	13250 1750 13450 1750
+Wire Wire Line
+	13450 1750 13450 1550
+Wire Notes Line
+	13250 1250 13250 4850
+Wire Wire Line
+	13250 4750 13550 4750
+Wire Wire Line
+	13250 4500 13500 4500
+Wire Wire Line
+	13250 4350 13450 4350
+Wire Wire Line
+	13350 1950 13350 4050
+Connection ~ 13550 2950
+Wire Wire Line
+	13550 2950 13550 2000
+$Comp
+L Connector:Mini-DIN-3 J?
+U 1 1 5DC19CA3
+P 15550 3000
+F 0 "J?" H 15550 2725 50  0000 C CNN
+F 1 "Mini-DIN-3" H 15550 2634 50  0000 C CNN
+F 2 "" H 15550 3000 50  0001 C CNN
+F 3 "http://www.assmann-wsw.com/fileadmin/catalogue/10_MiniDIN_rev4-0.pdf" H 15550 3000 50  0001 C CNN
+	1    15550 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13250 4050 13350 4050
+Wire Wire Line
+	13400 4200 13250 4200
+Wire Wire Line
+	13400 2350 13400 4200
+$Comp
+L Relay:DIPxx-1Cxx-51x K?
+U 1 1 5DB3A596
+P 14000 4350
+F 0 "K?" H 14430 4350 50  0000 L CNN
+F 1 "DIPxx-1Cxx-51x" H 14430 4305 50  0001 L CNN
+F 2 "Relay_THT:Relay_StandexMeder_DIP_LowProfile" H 14450 4300 50  0001 L CNN
+F 3 "https://standexelectronics.com/wp-content/uploads/datasheet_reed_relay_DIP.pdf" H 14000 4350 50  0001 C CNN
+	1    14000 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13800 4650 13550 4650
+Connection ~ 13550 4650
+Wire Wire Line
+	13550 4650 13550 4750
+Wire Wire Line
+	13550 3800 13550 4650
+Wire Wire Line
+	13450 3200 13800 3200
+Wire Wire Line
+	13450 4350 13450 3200
+Wire Wire Line
+	13500 4500 13500 4050
+Wire Wire Line
+	13500 4050 13800 4050
+Text GLabel 13250 4050 0    50   Input ~ 0
+IN4
+Text GLabel 13250 4200 0    50   Input ~ 0
+IN3
+Text GLabel 13250 4350 0    50   Input ~ 0
+IN2
+Text GLabel 13250 4500 0    50   Input ~ 0
+IN1
+Wire Wire Line
+	13550 2950 13550 3800
+Wire Wire Line
+	13800 2950 13550 2950
+Connection ~ 13550 3800
+Wire Wire Line
+	13800 3800 13550 3800
+Wire Notes Line
+	13250 4850 14500 4850
+Text GLabel 13250 4750 0    50   Input ~ 0
+GND
+Wire Notes Line
+	14600 4850 14600 1250
+$Comp
+L Relay:DIPxx-1Cxx-51x K?
+U 1 1 5DB36AD7
+P 14000 2650
+F 0 "K?" H 14430 2650 50  0000 L CNN
+F 1 "DIPxx-1Cxx-51x" H 14430 2605 50  0001 L CNN
+F 2 "Relay_THT:Relay_StandexMeder_DIP_LowProfile" H 14450 2600 50  0001 L CNN
+F 3 "https://standexelectronics.com/wp-content/uploads/datasheet_reed_relay_DIP.pdf" H 14000 2650 50  0001 C CNN
+	1    14000 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Relay:DIPxx-1Cxx-51x K?
+U 1 1 5DB386D3
+P 14000 3500
+F 0 "K?" H 14430 3500 50  0000 L CNN
+F 1 "DIPxx-1Cxx-51x" H 14430 3455 50  0001 L CNN
+F 2 "Relay_THT:Relay_StandexMeder_DIP_LowProfile" H 14450 3450 50  0001 L CNN
+F 3 "https://standexelectronics.com/wp-content/uploads/datasheet_reed_relay_DIP.pdf" H 14000 3500 50  0001 C CNN
+	1    14000 3500
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

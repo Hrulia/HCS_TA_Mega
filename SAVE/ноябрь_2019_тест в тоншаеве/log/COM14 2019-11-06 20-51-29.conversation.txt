@@ -1,0 +1,4 @@
+2019-11-06 20:51:35	Message	Opening port
+Debug off
+Port failed to open
+To try connecting again untick and then tick the 'Connect' button or switch on communications 'Auto Reconnect' in the options

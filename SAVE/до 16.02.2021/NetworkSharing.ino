@@ -1,0 +1,209 @@
+#include "NetworkSharing.h"	
+
+
+#define DEBUG_NSH
+
+//син.кор.сер.
+// esp partner
+#define ESP_OFF 0
+#define ESP_ON  1
+byte esp = ESP_OFF;
+
+
+//Инициализация порта UART №3 для сетевого обмена
+int initRxTxForNetSharing(unsigned long speedUart)
+{
+	Serial3.begin(speedUart);
+	#ifdef DEBUG_NSH
+		Serial.println(F("Modul NetworkSharing started at Serial3"));
+	#endif
+	return 0;
+}
+
+bool sFlag = true;
+unsigned long espTimer = millis();
+
+#define MAX_SERIAL_REQ  50 //32
+String serialReq = "";  
+
+//проверяем поступили-ли данные в порт Serial3
+void checkSerial() {
+	#ifdef DEBUG_NSH 
+		//Serial.println(F("start NetworkSharing.checkSerial"));
+	#endif
+
+	while (Serial3.available() > 0) {
+		//Serial.println(F("Serial availeble"));
+		if (sFlag) {
+			serialReq = "";
+			sFlag = false;
+		}
+		char c = Serial3.read();
+		//Serial.println(F("10-char"));
+		if (c == 10) {
+			sFlag = true;
+			parseSerialStr();
+		}
+		else if (c == 13) {
+			//Serial.println(F("13-char"));
+			// skip
+		}
+		else {
+			if (serialReq.length() < MAX_SERIAL_REQ) {
+		
+				serialReq += c;
+				//Serial.println("serialReq: "+String(serialReq));
+			}
+		}
+	} // while (Serial3.available() > 0)
+	
+	////// перезапуск таймера вызова функции обработки входящих запросов по сети.
+	////cycleNetworkSharing.clear();
+	////cycleNetworkSharing.reStart();
+} // checkSerial()
+//Разбор строки, поступившей в Serial3, поиск символа начала команды
+	void parseSerialStr() {
+		if (serialReq[0] == '?') {
+			parseSerialCmd();
+		}
+		else {
+			#ifdef DEBUG_NSH 
+				Serial.print("[");
+				Serial.print(serialReq);
+				Serial.println("]");
+			#endif
+		}
+	}
+
+//Разбор строки команды, поступившей в Serial3, обработка команд
+	void parseSerialCmd() {
+		String command, parameter;
+		if (serialReq.indexOf(F("?")) >= 0) {
+			int pBegin = serialReq.indexOf(F("?")) + 1;
+			if (serialReq.indexOf(F("=")) >= 0) {
+				int pParam = serialReq.indexOf(F("="));
+				command = serialReq.substring(pBegin, pParam);
+				parameter = serialReq.substring(pParam + 1);
+			}
+			else {
+				command = serialReq.substring(pBegin);
+				parameter = "";
+			}
+			#ifdef DEBUG_NSH 
+				Serial.print(F("com/param: "));
+				Serial.print(command);
+				Serial.print(F("/"));
+				Serial.println(parameter);
+			#endif
+			//Разбор поступивших команд
+			if (command == F("esp")) {																//?esp
+				if (parameter == F("1")) {
+					esp = ESP_ON;
+					espTimer = millis();
+					#ifdef DEBUG_NSH 
+						Serial.println(F("ESP - working!"));
+					#endif
+				}
+			}
+			// ?reqesttemp
+			else if (command == F("reqesttemp")) {												// ?reqesttemp
+				if (parameter == F("A")) {
+					//temperature[0] = 0.11;
+					//temperature[1] = 1.11;
+					//temperature[2] = 2.11;
+					//temperature[3] = 3.11;
+					//temperature[4] = 4.11;
+					//temperature[5] = 5.11;
+					//temperature[6] = 6.11;
+					//temperature[7] = 7.11;
+					//temperature[8] = 8.11;
+					//temperature[9] = 9.11;
+					//temperature[10] = 10.11;
+					//temperature[11] = 11.11;
+					//temperature[12] = 12.11;
+					//temperature[13] = 13.11;
+					//temperature[14] = 14.11;
+					//temperature[15] = 15.11;
+					//g_t_flueGases = 597;
+					Serial3.print(F("?sendtemp0=")); Serial3.println(temperature[0]);
+					Serial3.print(F("?sendtemp1=")); Serial3.println(temperature[1]);
+					Serial3.print(F("?sendtemp2=")); Serial3.println(temperature[2]);
+					Serial3.print(F("?sendtemp3=")); Serial3.println(temperature[3]);
+					Serial3.print(F("?sendtemp4=")); Serial3.println(temperature[4]);
+					Serial3.print(F("?sendtemp5=")); Serial3.println(temperature[5]);
+					Serial3.print(F("?sendtemp6=")); Serial3.println(temperature[6]);
+					Serial3.print(F("?sendtemp7=")); Serial3.println(temperature[7]);
+					Serial3.print(F("?sendtemp8=")); Serial3.println(temperature[8]);
+					Serial3.print(F("?sendtemp9=")); Serial3.println(temperature[9]);
+					Serial3.print(F("?sendtemp10=")); Serial3.println(temperature[10]);
+					Serial3.print(F("?sendtemp11=")); Serial3.println(temperature[11]);
+					Serial3.print(F("?sendtemp12=")); Serial3.println(temperature[12]);
+					Serial3.print(F("?sendtemp13=")); Serial3.println(temperature[13]);
+					Serial3.print(F("?sendtemp14=")); Serial3.println(temperature[14]);
+					Serial3.print(F("?sendtemp15=")); Serial3.println(temperature[15]);
+					Serial3.print(F("?sendtemp16=")); Serial3.println(g_t_flueGases);
+					Serial3.print(F("?sendtemp17=")); Serial3.println(g_RoomSetpointCurrent);
+					//Serial3.print(temperature[0]); Serial3.print(";");
+
+				}
+				else {
+					int iparam = parameter.toInt(); 
+					if (iparam < NUMBER_OF_DS18B20) {
+						Serial3.print(F("?sendtemp")); Serial3.print(iparam); Serial3.print(F("=")); Serial3.println(temperature[iparam], 2);
+					}
+					else {
+						#ifdef DEBUG_NSH 
+							Serial.println(F("Wrong number of the requested temperature sensor!"));
+						#endif
+					}
+				}
+			}
+			// ?esplog 
+			/*Этот case пора удалять, все служебные данные полученные через uart выводятся в [] скобках. */
+			else if (command == F("esplog")) {														// ?esplog
+						Serial.println("espLog: " + parameter);
+				}
+			// ?sendrssi
+			else if (command == F("sendrssi")) {													// ?sendrssi
+				Serial.println("espRSSI: " + parameter+"dBm");
+			}
+
+		} // if (request.indexOf(F("?")) >= 0)
+	} // parseSerialCmd()
+
+
+void checkMegaAndESP() {
+	//checkSerial();
+		//Serial.println(F("?mega=1"));
+		//Отправка модулю esp информации о своем присутствии 
+		Serial3.println(F("?mega=1"));
+
+		//для теста. потом удали.
+		Serial3.println(F("?reqestrssi"));
+
+		if (millis() - espTimer > 300000) {
+			//Попадаем сюда, если модуль esp более хх секунд не присылал информации о своем присутствии.
+			esp = ESP_OFF; 
+			espTimer = millis();
+			//reset ESP
+			//....
+		}
+}	// cheсkMegaAndESP() 
+
+
+
+
+	////calculating Control Sum
+	//byte calcCS(byte* array1, int n)
+	//{
+	//	//Serial.println("Calculating CRC");
+	//	byte i = 0;
+	//	byte tempCS = 0x5E;
+	//	while (i < n)
+	//	{
+	//		tempCS ^= array1[i];
+	//		i++;
+	//	}
+	//	//Serial.print("CRC "); Serial.println((char)tempCS);
+	//	return tempCS;
+	//}

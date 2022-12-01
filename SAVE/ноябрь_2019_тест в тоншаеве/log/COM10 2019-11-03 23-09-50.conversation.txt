@@ -1,0 +1,24 @@
+2019-11-03 23:09:50	Message	Opening port
+Port open
+2019-11-03 23:10:51	Message	Podacha TTK36.31
+Obratka TTK34.69
+Verh TA38.25
+Niz TA35.94
+Podacha SYS37.44
+Obratka SYS33.44
+Pomeschenie21.75
+
+*******************celevaia temperatura 21.99
+Jarko. open bokovoi (temperature[12] > (tRoomSetpoint+0,6))    21.75
+6
+1
+2019-11-03 23:11:51	Message	Podacha TTK36.88
+Obratka TTK34.38
+Verh TA38.25
+Niz TA36.00
+Podacha SYS37.44
+Obratka SYS33.31
+Pomeschenie-99.00
+
+*******************celevaia temperatura 21.99
+Xolodno greiu (temperature[12] < (tRoomSetpoint-0,6)   1

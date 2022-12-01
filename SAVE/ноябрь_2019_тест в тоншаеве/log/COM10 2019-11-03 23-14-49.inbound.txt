@@ -1,0 +1,26 @@
+Podacha TTK36.69
+Obratka TTK34.38
+Verh TA38.13
+Niz TA35.94
+Podacha SYS37.44
+Obratka SYS33.38
+Pomeschenie21.81
+
+*******************celevaia temperatura 21.99
+Jarko. open bokovoi (temperature[12] > (tRoomSetpoint+0,6))    21.81
+21.99
+22.59
+0
+Podacha TTK36.50
+Obratka TTK34.63
+Verh TA38.00
+Niz TA35.94
+Podacha SYS37.38
+Obratka SYS33.31
+Pomeschenie21.81
+
+*******************celevaia temperatura 21.99
+Jarko. open bokovoi (temperature[12] > (tRoomSetpoint+0,6))    21.81
+21.99
+22.59
+0

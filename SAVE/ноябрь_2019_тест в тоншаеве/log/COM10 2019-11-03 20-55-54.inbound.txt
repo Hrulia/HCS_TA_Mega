@@ -1,0 +1,1226 @@
+Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+
+Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+
+Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+
+Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+
+Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+
+Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+
+Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+
+Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+
+Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+
+Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+
+Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+
+Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+
+Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+
+ostatok =0
+0
+27.00
+ostatok =0
+2
+27.00
+ostatok =0
+4
+27.00
+ostatok =0
+6
+27.00
+ostatok =0
+8
+27.00
+ostatok =0
+10
+27.00
+Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+
+Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+
+Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+
+Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+
+Podacha TTK42.31
+Obratka TTK35.31
+Verh TA41.00
+Niz TA36.19
+Podacha SYS37.75
+Obratka SYS32.56
+Pomeschenie21.75
+
+Podacha TTK42.31
+Obratka TTK35.31
+Verh TA41.00
+Niz TA36.19
+Podacha SYS37.75
+Obratka SYS32.56
+Pomeschenie21.75
+
+Podacha TTK42.31
+Obratka TTK35.31
+Verh TA41.00
+Niz TA36.19
+Podacha SYS37.75
+Obratka SYS32.56
+Pomeschenie21.75
+
+Podacha TTK42.31
+Obratka TTK35.31
+Verh TA41.00
+Niz TA36.19
+Podacha SYS37.75
+Obratka SYS32.56
+Pomeschenie21.75
+
+Podacha TTK42.31
+Obratka TTK35.31
+Verh TA41.00
+Niz TA36.19
+Podacha SYS37.75
+Obratka SYS32.56
+Pomeschenie21.75
+
+Podacha TTK42.31
+Obratka TTK35.31
+Verh TA41.00
+Niz TA36.19
+Podacha SYS37.75
+Obratka SYS32.56
+Pomeschenie21.75
+
+Podacha TTK42.31
+Obratka TTK35.31
+Verh TA41.00
+Niz TA36.19
+Podacha SYS37.75
+Obratka SYS32.56
+Pomeschenie21.75
+
+Podacha TTK42.31
+Obratka TTK35.31
+Verh TA41.00
+Niz TA36.19
+Podacha SYS37.75
+Obratka SYS32.56
+Pomeschenie21.75
+
+Podacha TTK42.31
+Obratka TTK35.31
+Verh TA41.00
+Niz TA36.19
+Podacha SYS37.75
+Obratka SYS32.56
+Pomeschenie21.75
+
+Podacha TTK42.31
+Obratka TTK35.31
+Verh TA41.00
+Niz TA36.19
+Podacha SYS37.75
+Obratka SYS32.56
+Pomeschenie21.75
+
+Podacha TTK42.31
+Obratka TTK35.31
+Verh TA41.00
+Niz TA36.19
+Podacha SYS37.75
+Obratka SYS32.56
+Pomeschenie21.75
+
+Podacha TTK42.31
+Obratka TTK35.31
+Verh TA41.00
+Niz TA36.19
+Podacha SYS37.75
+Obratka SYS32.56
+Pomeschenie21.75
+
+Podacha TTK42.31
+Obratka TTK35.31
+Verh TA41.00
+Niz TA36.19
+Podacha SYS37.75
+Obratka SYS32.56
+Pomeschenie21.75
+
+Podacha TTK42.31
+Obratka TTK35.31
+Verh TA41.00
+Niz TA36.19
+Podacha SYS37.75
+Obratka SYS32.56
+Pomeschenie21.75
+
+Podacha TTK42.31
+Obratka TTK35.31
+Verh TA41.00
+Niz TA36.19
+Podacha SYS37.75
+Obratka SYS32.56
+Pomeschenie21.75
+
+Podacha TTK42.31
+Obratka TTK35.31
+Verh TA41.00
+Niz TA36.19
+Podacha SYS37.75
+Obratka SYS32.56
+Pomeschenie21.75
+
+Podacha TTK42.31
+Obratka TTK35.31
+Verh TA41.00
+Niz TA36.19
+Podacha SYS37.75
+Obratka SYS32.56
+Pomeschenie21.75
+
+Podacha TTK42.31
+Obratka TTK35.31
+Verh TA41.00
+Niz TA36.19
+Podacha SYS37.75
+Obratka SYS32.56
+Pomeschenie21.75
+
+Podacha TTK42.31
+Obratka TTK35.31
+Verh TA41.00
+Niz TA36.19
+Podacha SYS37.75
+Obratka SYS32.56
+Pomeschenie21.75
+
+Podacha TTK42.31
+Obratka TTK35.31
+Verh TA41.00
+Niz TA36.19
+Podacha SYS37.75
+Obratka SYS32.56
+Pomeschenie21.75
+
+Podacha TTK42.31
+Obratka TTK35.31
+Verh TA41.00
+Niz TA36.19
+Podacha SYS37.75
+Obratka SYS32.56
+Pomeschenie21.75
+
+Podacha TTK42.31
+Obratka TTK35.31
+Verh TA41.00
+Niz TA36.19
+Podacha SYS37.75
+Obratka SYS32.56
+Pomeschenie21.75
+
+Podacha TTK42.31
+Obratka TTK35.31
+Verh TA41.00
+Niz TA36.19
+Podacha SYS37.75
+Obratka SYS32.56
+Pomeschenie21.75
+
+Podacha TTK42.31
+Obratka TTK35.31
+Verh TA41.00
+Niz TA36.19
+Podacha SYS37.75
+Obratka SYS32.56
+Pomeschenie21.75
+
+Podacha TTK42.31
+Obratka TTK35.31
+Verh TA41.00
+Niz TA36.19
+Podacha SYS37.75
+Obratka SYS32.56
+Pomeschenie21.75
+
+Podacha TTK42.31
+Obratka TTK35.31
+Verh TA41.00
+Niz TA36.19
+Podacha SYS37.75
+Obratka SYS32.56
+Pomeschenie21.75
+
+Podacha TTK42.31
+Obratka TTK35.31
+Verh TA41.00
+Niz TA36.19
+Podacha SYS37.75
+Obratka SYS32.56
+Pomeschenie21.75
+
+Podacha TTK42.31
+Obratka TTK35.31
+Verh TA41.00
+Niz TA36.19
+Podacha SYS37.75
+Obratka SYS32.56
+Pomeschenie21.75
+
+Podacha TTK42.31
+Obratka TTK35.31
+Verh TA41.00
+Niz TA36.19
+Podacha SYS37.75
+Obratka SYS32.56
+Pomeschenie21.75
+
+Podacha TTK42.31
+Obratka TTK35.31
+Verh TA41.00
+Niz TA36.19
+Podacha SYS37.75
+Obratka SYS32.56
+Pomeschenie21.75
+
+Podacha TTK42.31
+Obratka TTK35.31
+Verh TA41.00
+Niz TA36.19
+Podacha SYS37.75
+Obratka SYS32.56
+Pomeschenie21.75
+
+Podacha TTK42.31
+Obratka TTK35.31
+Verh TA41.00
+Niz TA36.19
+Podacha SYS37.75
+Obratka SYS32.56
+Pomeschenie21.75
+
+Podacha TTK42.31
+Obratka TTK35.31
+Verh TA41.00
+Niz TA36.19
+Podacha SYS37.75
+Obratka SYS32.56
+Pomeschenie21.75
+
+Podacha TTK42.31
+Obratka TTK35.31
+Verh TA41.00
+Niz TA36.19
+Podacha SYS37.75
+Obratka SYS32.56
+Pomeschenie21.75
+
+Podacha TTK42.31
+Obratka TTK35.31
+Verh TA41.00
+Niz TA36.19
+Podacha SYS37.75
+Obratka SYS32.56
+Pomeschenie21.75
+
+Podacha TTK42.31
+Obratka TTK35.31
+Verh TA41.00
+Niz TA36.19
+Podacha SYS37.75
+Obratka SYS32.56
+Pomeschenie21.75
+
+Podacha TTK42.31
+Obratka TTK35.31
+Verh TA41.00
+Niz TA36.19
+Podacha SYS37.75
+Obratka SYS32.56
+Pomeschenie21.75
+
+Podacha TTK42.31
+Obratka TTK35.31
+Verh TA41.00
+Niz TA36.19
+Podacha SYS37.75
+Obratka SYS32.56
+Pomeschenie21.75
+
+Podacha TTK42.31
+Obratka TTK35.31
+Verh TA41.00
+Niz TA36.19
+Podacha SYS37.75
+Obratka SYS32.56
+Pomeschenie21.75
+
+Podacha TTK42.31
+Obratka TTK35.31
+Verh TA41.00
+Niz TA36.19
+Podacha SYS37.75
+Obratka SYS32.56
+Pomeschenie21.75
+
+Podacha TTK42.31
+Obratka TTK35.31
+Verh TA41.00
+Niz TA36.19
+Podacha SYS37.75
+Obratka SYS32.56
+Pomeschenie21.75
+
+Podacha TTK42.31
+Obratka TTK35.31
+Verh TA41.00
+Niz TA36.19
+Podacha SYS37.75
+Obratka SYS32.56
+Pomeschenie21.75
+
+Podacha TTK42.31
+Obratka TTK35.31
+Verh TA41.00
+Niz TA36.19
+Podacha SYS37.75
+Obratka SYS32.56
+Pomeschenie21.75
+
+Podacha TTK42.31
+Obratka TTK35.31
+Verh TA41.00
+Niz TA36.19
+Podacha SYS37.75
+Obratka SYS32.56
+Pomeschenie21.75
+
+Podacha TTK42.31
+Obratka TTK35.31
+Verh TA41.00
+Niz TA36.19
+Podacha SYS37.75
+Obratka SYS32.56
+Pomeschenie21.75
+
+Podacha TTK42.31
+Obratka TTK35.31
+Verh TA41.00
+Niz TA36.19
+Podacha SYS37.75
+Obratka SYS32.56
+Pomeschenie21.75
+
+Podacha TTK42.31
+Obratka TTK35.31
+Verh TA41.00
+Niz TA36.19
+Podacha SYS37.75
+Obratka SYS32.56
+Pomeschenie21.75
+
+Podacha TTK42.31
+Obratka TTK35.31
+Verh TA41.00
+Niz TA36.19
+Podacha SYS37.75
+Obratka SYS32.56
+Pomeschenie21.75
+
+Podacha TTK42.31
+Obratka TTK35.31
+Verh TA41.00
+Niz TA36.19
+Podacha SYS37.75
+Obratka SYS32.56
+Pomeschenie21.75
+
+Podacha TTK42.31
+Obratka TTK35.31
+Verh TA41.00
+Niz TA36.19
+Podacha SYS37.75
+Obratka SYS32.56
+Pomeschenie21.75
+
+Podacha TTK42.31
+Obratka TTK35.31
+Verh TA41.00
+Niz TA36.19
+Podacha SYS37.75
+Obratka SYS32.56
+Pomeschenie21.75
+
+Podacha TTK42.31
+Obratka TTK35.31
+Verh TA41.00
+Niz TA36.19
+Podacha SYS37.75
+Obratka SYS32.56
+Pomeschenie21.75
+
+Podacha TTK42.31
+Obratka TTK35.31
+Verh TA41.00
+Niz TA36.19
+Podacha SYS37.75
+Obratka SYS32.56
+Pomeschenie21.75
+
+Podacha TTK42.31
+Obratka TTK35.31
+Verh TA41.00
+Niz TA36.19
+Podacha SYS37.75
+Obratka SYS32.56
+Pomeschenie21.75
+
+Podacha TTK42.31
+Obratka TTK35.31
+Verh TA41.00
+Niz TA36.19
+Podacha SYS37.75
+Obratka SYS32.56
+Pomeschenie21.75
+
+Podacha TTK42.31
+Obratka TTK35.31
+Verh TA41.00
+Niz TA36.19
+Podacha SYS37.75
+Obratka SYS32.56
+Pomeschenie21.75
+
+Podacha TTK42.31
+Obratka TTK35.31
+Verh TA41.00
+Niz TA36.19
+Podacha SYS37.75
+Obratka SYS32.56
+Pomeschenie21.75
+
+Podacha TTK42.31
+Obratka TTK35.31
+Verh TA41.00
+Niz TA36.19
+Podacha SYS37.75
+Obratka SYS32.56
+Pomeschenie21.75
+
+Podacha TTK42.31
+Obratka TTK35.31
+Verh TA41.00
+Niz TA36.19
+Podacha SYS37.75
+Obratka SYS32.56
+Pomeschenie21.75
+
+Podacha TTK42.31
+Obratka TTK35.31
+Verh TA41.00
+Niz TA36.19
+Podacha SYS37.75
+Obratka SYS32.56
+Pomeschenie21.75
+
+Podacha TTK42.31
+Obratka TTK35.31
+Verh TA41.00
+Niz TA36.19
+Podacha SYS37.75
+Obratka SYS32.56
+Pomeschenie21.75
+
+Podacha TTK42.31
+Obratka TTK35.31
+Verh TA41.00
+Niz TA36.19
+Podacha SYS37.75
+Obratka SYS32.56
+Pomeschenie21.75
+
+Podacha TTK42.31
+Obratka TTK35.31
+Verh TA41.00
+Niz TA36.19
+Podacha SYS37.75
+Obratka SYS32.56
+Pomeschenie21.75
+
+Podacha TTK42.31
+Obratka TTK35.31
+Verh TA41.00
+Niz TA36.19
+Podacha SYS37.75
+Obratka SYS32.56
+Pomeschenie21.75
+
+Podacha TTK42.31
+Obratka TTK35.31
+Verh TA41.00
+Niz TA36.19
+Podacha SYS37.75
+Obratka SYS32.56
+Pomeschenie21.75
+
+Podacha TTK42.31
+Obratka TTK35.31
+Verh TA41.00
+Niz TA36.19
+Podacha SYS37.75
+Obratka SYS32.56
+Pomeschenie21.75
+
+Podacha TTK42.31
+Obratka TTK35.31
+Verh TA41.00
+Niz TA36.19
+Podacha SYS37.75
+Obratka SYS32.56
+Pomeschenie21.75
+
+Podacha TTK42.31
+Obratka TTK35.31
+Verh TA41.00
+Niz TA36.19
+Podacha SYS37.75
+Obratka SYS32.56
+Pomeschenie21.75
+
+Podacha TTK42.31
+Obratka TTK35.31
+Verh TA41.00
+Niz TA36.19
+Podacha SYS37.75
+Obratka SYS32.56
+Pomeschenie21.75
+
+Podacha TTK42.31
+Obratka TTK35.31
+Verh TA41.00
+Niz TA36.19
+Podacha SYS37.75
+Obratka SYS32.56
+Pomeschenie21.75
+
+Podacha TTK44.13
+Obratka TTK35.19
+Verh TA41.06
+Niz TA36.13
+Podacha SYS37.75
+Obratka SYS32.63
+Pomeschenie21.75
+
+Podacha TTK44.13
+Obratka TTK35.19
+Verh TA41.06
+Niz TA36.13
+Podacha SYS37.75
+Obratka SYS32.63
+Pomeschenie21.75
+
+Podacha TTK44.13
+Obratka TTK35.19
+Verh TA41.06
+Niz TA36.13
+Podacha SYS37.75
+Obratka SYS32.63
+Pomeschenie21.75
+
+Podacha TTK44.13
+Obratka TTK35.19
+Verh TA41.06
+Niz TA36.13
+Podacha SYS37.75
+Obratka SYS32.63
+Pomeschenie21.75
+
+Podacha TTK44.13
+Obratka TTK35.19
+Verh TA41.06
+Niz TA36.13
+Podacha SYS37.75
+Obratka SYS32.63
+Pomeschenie21.75
+
+Podacha TTK44.13
+Obratka TTK35.19
+Verh TA41.06
+Niz TA36.13
+Podacha SYS37.75
+Obratka SYS32.63
+Pomeschenie21.75
+
+Podacha TTK44.13
+Obratka TTK35.19
+Verh TA41.06
+Niz TA36.13
+Podacha SYS37.75
+Obratka SYS32.63
+Pomeschenie21.75
+
+Podacha TTK44.13
+Obratka TTK35.19
+Verh TA41.06
+Niz TA36.13
+Podacha SYS37.75
+Obratka SYS32.63
+Pomeschenie21.75
+
+Podacha TTK44.13
+Obratka TTK35.19
+Verh TA41.06
+Niz TA36.13
+Podacha SYS37.75
+Obratka SYS32.63
+Pomeschenie21.75
+
+Podacha TTK44.13
+Obratka TTK35.19
+Verh TA41.06
+Niz TA36.13
+Podacha SYS37.75
+Obratka SYS32.63
+Pomeschenie21.75
+
+Podacha TTK44.13
+Obratka TTK35.19
+Verh TA41.06
+Niz TA36.13
+Podacha SYS37.75
+Obratka SYS32.63
+Pomeschenie21.75
+
+Podacha TTK44.13
+Obratka TTK35.19
+Verh TA41.06
+Niz TA36.13
+Podacha SYS37.75
+Obratka SYS32.63
+Pomeschenie21.75
+
+Podacha TTK44.13
+Obratka TTK35.19
+Verh TA41.06
+Niz TA36.13
+Podacha SYS37.75
+Obratka SYS32.63
+Pomeschenie21.75
+
+Podacha TTK44.13
+Obratka TTK35.19
+Verh TA41.06
+Niz TA36.13
+Podacha SYS37.75
+Obratka SYS32.63
+Pomeschenie21.75
+
+Podacha TTK44.13
+Obratka TTK35.19
+Verh TA41.06
+Niz TA36.13
+Podacha SYS37.75
+Obratka SYS32.63
+Pomeschenie21.75
+
+Podacha TTK44.13
+Obratka TTK35.19
+Verh TA41.06
+Niz TA36.13
+Podacha SYS37.75
+Obratka SYS32.63
+Pomeschenie21.75
+
+Podacha TTK44.13
+Obratka TTK35.19
+Verh TA41.06
+Niz TA36.13
+Podacha SYS37.75
+Obratka SYS32.63
+Pomeschenie21.75
+
+Podacha TTK44.13
+Obratka TTK35.19
+Verh TA41.06
+Niz TA36.13
+Podacha SYS37.75
+Obratka SYS32.63
+Pomeschenie21.75
+
+Podacha TTK44.13
+Obratka TTK35.19
+Verh TA41.06
+Niz TA36.13
+Podacha SYS37.75
+Obratka SYS32.63
+Pomeschenie21.75
+
+Podacha TTK44.13
+Obratka TTK35.19
+Verh TA41.06
+Niz TA36.13
+Podacha SYS37.75
+Obratka SYS32.63
+Pomeschenie21.75
+
+Podacha TTK44.13
+Obratka TTK35.19
+Verh TA41.06
+Niz TA36.13
+Podacha SYS37.75
+Obratka SYS32.63
+Pomeschenie21.75
+
+Podacha TTK44.13
+Obratka TTK35.19
+Verh TA41.06
+Niz TA36.13
+Podacha SYS37.75
+Obratka SYS32.63
+Pomeschenie21.75
+
+Podacha TTK44.13
+Obratka TTK35.19
+Verh TA41.06
+Niz TA36.13
+Podacha SYS37.75
+Obratka SYS32.63
+Pomeschenie21.75
+
+Podacha TTK44.13
+Obratka TTK35.19
+Verh TA41.06
+Niz TA36.13
+Podacha SYS37.75
+Obratka SYS32.63
+Pomeschenie21.75
+
+Podacha TTK44.13
+Obratka TTK35.19
+Verh TA41.06
+Niz TA36.13
+Podacha SYS37.75
+Obratka SYS32.63
+Pomeschenie21.75
+
+Podacha TTK44.13
+Obratka TTK35.19
+Verh TA41.06
+Niz TA36.13
+Podacha SYS37.75
+Obratka SYS32.63
+Pomeschenie21.75
+
+Podacha TTK44.13
+Obratka TTK35.19
+Verh TA41.06
+Niz TA36.13
+Podacha SYS37.75
+Obratka SYS32.63
+Pomeschenie21.75
+
+Podacha TTK44.13
+Obratka TTK35.19
+Verh TA41.06
+Niz TA36.13
+Podacha SYS37.75
+Obratka SYS32.63
+Pomeschenie21.75
+
+Podacha TTK44.13
+Obratka TTK35.19
+Verh TA41.06
+Niz TA36.13
+Podacha SYS37.75
+Obratka SYS32.63
+Pomeschenie21.75
+
+Podacha TTK44.13
+Obratka TTK35.19
+Verh TA41.06
+Niz TA36.13
+Podacha SYS37.75
+Obratka SYS32.63
+Pomeschenie21.75
+
+Podacha TTK44.13
+Obratka TTK35.19
+Verh TA41.06
+Niz TA36.13
+Podacha SYS37.75
+Obratka SYS32.63
+Pomeschenie21.75
+
+Podacha TTK44.13
+Obratka TTK35.19
+Verh TA41.06
+Niz TA36.13
+Podacha SYS37.75
+Obratka SYS32.63
+Pomeschenie21.75
+
+Podacha TTK44.13
+Obratka TTK35.19
+Verh TA41.06
+Niz TA36.13
+Podacha SYS37.75
+Obratka SYS32.63
+Pomeschenie21.75
+
+Podacha TTK44.13
+Obratka TTK35.19
+Verh TA41.06
+Niz TA36.13
+Podacha SYS37.75
+Obratka SYS32.63
+Pomeschenie21.75
+
+Podacha TTK44.13
+Obratka TTK35.19
+Verh TA41.06
+Niz TA36.13
+Podacha SYS37.75
+Obratka SYS32.63
+Pomeschenie21.75
+
+Podacha TTK44.13
+Obratka TTK35.19
+Verh TA41.06
+Niz TA36.13
+Podacha SYS37.75
+Obratka SYS32.63
+Pomeschenie21.75
+
+Podacha TTK44.13
+Obratka TTK35.19
+Verh TA41.06
+Niz TA36.13
+Podacha SYS37.75
+Obratka SYS32.63
+Pomeschenie21.75
+
+Podacha TTK44.13
+Obratka TTK35.19
+Verh TA41.06
+Niz TA36.13
+Podacha SYS37.75
+Obratka SYS32.63
+Pomeschenie21.75
+
+Podacha TTK44.13
+Obratka TTK35.19
+Verh TA41.06
+Niz TA36.13
+Podacha SYS37.75
+Obratka SYS32.63
+Pomeschenie21.75
+
+Podacha TTK44.13
+Obratka TTK35.19
+Verh TA41.06
+Niz TA36.13
+Podacha SYS37.75
+Obratka SYS32.63
+Pomeschenie21.75
+
+Podacha TTK44.13
+Obratka TTK35.19
+Verh TA41.06
+Niz TA36.13
+Podacha SYS37.75
+Obratka SYS32.63
+Pomeschenie21.75
+
+Podacha TTK44.13
+Obratka TTK35.19
+Verh TA41.06
+Niz TA36.13
+Podacha SYS37.75
+Obratka SYS32.63
+Pomeschenie21.75
+
+Podacha TTK44.13
+Obratka TTK35.19
+Verh TA41.06
+Niz TA36.13
+Podacha SYS37.75
+Obratka SYS32.63
+Pomeschenie21.75
+
+Podacha TTK44.13
+Obratka TTK35.19
+Verh TA41.06
+Niz TA36.13
+Podacha SYS37.75
+Obratka SYS32.63
+Pomeschenie21.75
+
+Podacha TTK44.13
+Obratka TTK35.19
+Verh TA41.06
+Niz TA36.13
+Podacha SYS37.75
+Obratka SYS32.63
+Pomeschenie21.75
+
+Podacha TTK44.13
+Obratka TTK35.19
+Verh TA41.06
+Niz TA36.13
+Podacha SYS37.75
+Obratka SYS32.63
+Pomeschenie21.75
+
+Podacha TTK44.13
+Obratka TTK35.19
+Verh TA41.06
+Niz TA36.13
+Podacha SYS37.75
+Obratka SYS32.63
+Pomeschenie21.75
+
+Podacha TTK44.13
+Obratka TTK35.19
+Verh TA41.06
+Niz TA36.13
+Podacha SYS37.75
+Obratka SYS32.63
+Pomeschenie21.75
+
+Podacha TTK44.13
+Obratka TTK35.19
+Verh TA41.06
+Niz TA36.13
+Podacha SYS37.75
+Obratka SYS32.63
+Pomeschenie21.75
+
+Podacha TTK44.13
+Obratka TTK35.19
+Verh TA41.06
+Niz TA36.13
+Podacha SYS37.75
+Obratka SYS32.63
+Pomeschenie21.75
+
+Podacha TTK44.13
+Obratka TTK35.19
+Verh TA41.06
+Niz TA36.13
+Podacha SYS37.75
+Obratka SYS32.63
+Pomeschenie21.75
+
+Podacha TTK44.13
+Obratka TTK35.19
+Verh TA41.06
+Niz TA36.13
+Podacha SYS37.75
+Obratka SYS32.63
+Pomeschenie21.75
+
+Podacha TTK44.13
+Obratka TTK35.19
+Verh TA41.06
+Niz TA36.13
+Podacha SYS37.75
+Obratka SYS32.63
+Pomeschenie21.75
+
+Podacha TTK44.13
+Obratka TTK35.19
+Verh TA41.06
+Niz TA36.13
+Podacha SYS37.75
+Obratka SYS32.63
+Pomeschenie21.75
+
+Podacha TTK44.13
+Obratka TTK35.19
+Verh TA41.06
+Niz TA36.13
+Podacha SYS37.75
+Obratka SYS32.63
+Pomeschenie21.75
+
+Podacha TTK44.13
+Obratka TTK35.19
+Verh TA41.06
+Niz TA36.13
+Podacha SYS37.75
+Obratka SYS32.63
+Pomeschenie21.75
+
+Podacha TTK44.13
+Obratka TTK35.19
+Verh TA41.06
+Niz TA36.13
+Podacha SYS37.75
+Obratka SYS32.63
+Pomeschenie21.75
+
+Podacha TTK44.13
+Obratka TTK35.19
+Verh TA41.06
+Niz TA36.13
+Podacha SYS37.75
+Obratka SYS32.63
+Pomeschenie21.75
+
+Podacha TTK44.13
+Obratka TTK35.19
+Verh TA41.06
+Niz TA36.13
+Podacha SYS37.75
+Obratka SYS32.63
+Pomeschenie21.75
+
+Podacha TTK44.13
+Obratka TTK35.19
+Verh TA41.06
+Niz TA36.13
+Podacha SYS37.75
+Obratka SYS32.63
+Pomeschenie21.75
+
+Podacha TTK44.13
+Obratka TTK35.19
+Verh TA41.06
+Niz TA36.13
+Podacha SYS37.75
+Obratka SYS32.63
+Pomeschenie21.75
+
+Podacha TTK44.13
+Obratka TTK35.19
+Verh TA41.06
+Niz TA36.13
+Podacha SYS37.75
+Obratka SYS32.63
+Pomeschenie21.75
+
+Podacha TTK44.13
+Obratka TTK35.19
+Verh TA41.06
+Niz TA36.13
+Podacha SYS37.75
+Obratka SYS32.63
+Pomeschenie21.75
+
+Podacha TTK44.13
+Obratka TTK35.19
+Verh TA41.06
+Niz TA36.13
+Podacha SYS37.75
+Obratka SYS32.63
+Pomeschenie21.75
+

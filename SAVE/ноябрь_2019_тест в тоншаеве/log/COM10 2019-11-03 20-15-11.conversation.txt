@@ -1,0 +1,9 @@
+2019-11-03 20:15:11	Message	Opening port
+Port open
+2019-11-03 20:15:27	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00

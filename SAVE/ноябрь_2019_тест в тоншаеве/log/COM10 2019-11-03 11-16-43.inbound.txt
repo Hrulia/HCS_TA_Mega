@@ -1,0 +1,16895 @@
+
+start (setup)
+
+start (initSystemTime)
+stop (initSystemTime) 
+start (init_TM1637)
+
+stop (init_TM1637)
+
+start (initTemp)
+
+start (findAllconnectDS18B20)
+28  20  F  40  4  0  0  B9     CRC_OK Resolution_set_OK (5F)
+28  4D  F7  BF  4  0  0  43     CRC_OK Resolution_set_OK (5F)
+28  7  BB  3F  4  0  0  E8     CRC_OK Resolution_set_OK (5F)
+28  97  55  C0  4  0  0  CA     CRC_OK Resolution_set_OK (5F)
+28  FF  F6  DD  67  18  1  F5     CRC_OK Resolution_set_OK (5F)
+28  FF  75  61  68  18  1  AC     CRC_OK Resolution_set_OK (5F)
+Total sensors - 6
+stop (findAllconnectDS18B20)
+
+stop (initTemp)
+Start (initValve)
+
+Call testValveTTK
+Start (testValve)
+full opening time = 10002ms, errCod = 1
+full closing time = 10001ms, errCod = 3
+stop (testValve)
+Error in... 3
+g_timeSwitchValveTTK 10002 ms
+
+Call testValveSYS
+Start (testValve)
+full opening time = 259ms, errCod = 0
+full closing time = 10001ms, errCod = 2
+stop (testValve)
+Error in... 2
+g_timeSwitchValveSYS 10001ms
+stop (initTemp)
+stop (setup) 30640 mc
+
+start (loop)
+
+start (indicator_TM1637_Output_time)
+stop (indicator_TM1637_Output_time) 0 0.00
+1 0.00
+2 0.00
+3 0.00
+4 0.00
+5 0.00
+6 0.00
+7 0.00
+8 0.00
+9 0.00
+10 0.00
+11 0.00
+12 0.00
+13 0.00
+14 0.00
+15 0.00
+stop (getTemperaturDS18B20) 4 mc
+
+start (indicator_TM1637_Output_temperature)
+Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+
+stop (indicator_TM1637_Output_temperature) stop (loop) 115 mc
+
+start (loop)
+0 0.00
+1 0.00
+2 0.00
+3 0.00
+4 0.00
+5 0.00
+6 0.00
+7 0.00
+8 0.00
+9 0.00
+10 0.00
+11 0.00
+12 0.00
+13 0.00
+14 0.00
+15 0.00
+stop (getTemperaturDS18B20) 2 mc
+stop (loop) 16 mc
+
+start (loop)
+0 0.00
+1 0.00
+2 0.00
+3 0.00
+4 0.00
+5 0.00
+6 0.00
+7 0.00
+8 0.00
+9 0.00
+10 0.00
+11 0.00
+12 0.00
+13 0.00
+14 0.00
+15 0.00
+stop (getTemperaturDS18B20) 3 mc
+stop (loop) 15 mc
+
+start (loop)
+0 0.00
+1 0.00
+2 0.00
+3 0.00
+4 0.00
+5 0.00
+6 0.00
+7 0.00
+8 0.00
+9 0.00
+10 0.00
+11 0.00
+12 0.00
+13 0.00
+14 0.00
+15 0.00
+stop (getTemperaturDS18B20) 3 mc
+stop (loop) 15 mc
+
+start (loop)
+0 0.00
+1 0.00
+2 0.00
+3 0.00
+4 0.00
+5 0.00
+6 0.00
+7 0.00
+8 0.00
+9 0.00
+10 0.00
+11 0.00
+12 0.00
+13 0.00
+14 0.00
+15 0.00
+stop (getTemperaturDS18B20) 2 mc
+stop (loop) 15 mc
+
+start (loop)
+0 0.00
+1 0.00
+2 0.00
+3 0.00
+4 0.00
+5 0.00
+6 0.00
+7 0.00
+8 0.00
+9 0.00
+10 0.00
+11 0.00
+12 0.00
+13 0.00
+14 0.00
+15 0.00
+stop (getTemperaturDS18B20) 2 mc
+stop (loop) 14 mc
+
+start (loop)
+0 0.00
+1 0.00
+2 0.00
+3 0.00
+4 0.00
+5 0.00
+6 0.00
+7 0.00
+8 0.00
+9 0.00
+10 0.00
+11 0.00
+12 0.00
+13 0.00
+14 0.00
+15 0.00
+stop (getTemperaturDS18B20) 3 mc
+stop (loop) 16 mc
+
+start (loop)
+0 0.00
+1 0.00
+2 0.00
+3 0.00
+4 0.00
+5 0.00
+6 0.00
+7 0.00
+8 0.00
+9 0.00
+10 0.00
+11 0.00
+12 0.00
+13 0.00
+14 0.00
+15 0.00
+stop (getTemperaturDS18B20) 2 mc
+stop (loop) 15 mc
+
+start (loop)
+0 0.00
+1 0.00
+2 0.00
+3 0.00
+4 0.00
+5 0.00
+6 0.00
+7 0.00
+8 0.00
+9 0.00
+10 0.00
+11 0.00
+12 0.00
+13 0.00
+14 0.00
+15 0.00
+stop (getTemperaturDS18B20) 3 mc
+stop (loop) 15 mc
+
+start (loop)
+0 0.00
+1 0.00
+2 0.00
+3 0.00
+4 0.00
+5 0.00
+6 0.00
+7 0.00
+8 0.00
+9 0.00
+10 0.00
+11 0.00
+12 0.00
+13 0.00
+14 0.00
+15 0.00
+stop (getTemperaturDS18B20) 2 mc
+stop (loop) 15 mc
+
+start (loop)
+0 0.00
+1 0.00
+2 0.00
+3 0.00
+4 0.00
+5 0.00
+6 0.00
+7 0.00
+8 0.00
+9 0.00
+10 0.00
+11 0.00
+12 0.00
+13 0.00
+14 0.00
+15 0.00
+stop (getTemperaturDS18B20) 2 mc
+stop (loop) 14 mc
+
+start (loop)
+0 0.00
+1 0.00
+2 0.00
+3 0.00
+4 0.00
+5 0.00
+6 0.00
+7 0.00
+8 0.00
+9 0.00
+10 0.00
+11 0.00
+12 0.00
+13 0.00
+14 0.00
+15 0.00
+stop (getTemperaturDS18B20) 2 mc
+stop (loop) 15 mc
+
+start (loop)
+
+start (indicator_TM1637_Output_time)
+stop (indicator_TM1637_Output_time) 0 0.00
+1 0.00
+2 0.00
+3 0.00
+4 0.00
+5 0.00
+6 0.00
+7 0.00
+8 0.00
+9 0.00
+10 0.00
+11 0.00
+12 0.00
+13 0.00
+14 0.00
+15 0.00
+stop (getTemperaturDS18B20) 2 mc
+stop (loop) 40 mc
+
+start (loop)
+0 0.00
+1 0.00
+2 0.00
+3 0.00
+4 0.00
+5 0.00
+6 0.00
+7 0.00
+8 0.00
+9 0.00
+10 0.00
+11 0.00
+12 0.00
+13 0.00
+14 0.00
+15 0.00
+stop (getTemperaturDS18B20) 3 mc
+stop (loop) 16 mc
+
+start (loop)
+0 0.00
+1 0.00
+2 0.00
+3 0.00
+4 0.00
+5 0.00
+6 0.00
+7 0.00
+8 0.00
+9 0.00
+10 0.00
+11 0.00
+12 0.00
+13 0.00
+14 0.00
+15 0.00
+stop (getTemperaturDS18B20) 3 mc
+stop (loop) 15 mc
+
+start (loop)
+0 0.00
+1 0.00
+2 0.00
+3 0.00
+4 0.00
+5 0.00
+6 0.00
+7 0.00
+8 0.00
+9 0.00
+10 0.00
+11 0.00
+12 0.00
+13 0.00
+14 0.00
+15 0.00
+stop (getTemperaturDS18B20) 2 mc
+stop (loop) 14 mc
+
+start (loop)
+0 0.00
+1 0.00
+2 0.00
+3 0.00
+4 0.00
+5 0.00
+6 0.00
+7 0.00
+8 0.00
+9 0.00
+10 0.00
+11 0.00
+12 0.00
+13 0.00
+14 0.00
+15 0.00
+stop (getTemperaturDS18B20) 2 mc
+stop (loop) 16 mc
+
+start (loop)
+0 0.00
+1 0.00
+2 0.00
+3 0.00
+4 0.00
+5 0.00
+6 0.00
+7 0.00
+8 0.00
+9 0.00
+10 0.00
+11 0.00
+12 0.00
+13 0.00
+14 0.00
+15 0.00
+stop (getTemperaturDS18B20) 2 mc
+stop (loop) 15 mc
+
+start (loop)
+0 0.00
+1 0.00
+2 0.00
+3 0.00
+4 0.00
+5 0.00
+6 0.00
+7 0.00
+8 0.00
+9 0.00
+10 0.00
+11 0.00
+12 0.00
+13 0.00
+14 0.00
+15 0.00
+stop (getTemperaturDS18B20) 3 mc
+stop (loop) 16 mc
+
+start (loop)
+0 0.00
+1 0.00
+2 0.00
+3 0.00
+4 0.00
+5 0.00
+6 0.00
+7 0.00
+8 0.00
+9 0.00
+10 0.00
+11 0.00
+12 0.00
+13 0.00
+14 0.00
+15 0.00
+stop (getTemperaturDS18B20) 3 mc
+stop (loop) 15 mc
+
+start (loop)
+0 0.00
+1 0.00
+2 0.00
+3 0.00
+4 0.00
+5 0.00
+6 0.00
+7 0.00
+8 0.00
+9 0.00
+10 0.00
+11 0.00
+12 0.00
+13 0.00
+14 0.00
+15 0.00
+stop (getTemperaturDS18B20) 2 mc
+stop (loop) 14 mc
+
+start (loop)
+0 0.00
+1 0.00
+2 0.00
+3 0.00
+4 0.00
+5 0.00
+6 0.00
+7 0.00
+8 0.00
+9 0.00
+10 0.00
+11 0.00
+12 0.00
+13 0.00
+14 0.00
+15 0.00
+stop (getTemperaturDS18B20) 2 mc
+stop (loop) 15 mc
+
+start (loop)
+0 0.00
+1 0.00
+2 0.00
+3 0.00
+4 0.00
+5 0.00
+6 0.00
+7 0.00
+8 0.00
+9 0.00
+10 0.00
+11 0.00
+12 0.00
+13 0.00
+14 0.00
+15 0.00
+stop (getTemperaturDS18B20) 2 mc
+stop (loop) 15 mc
+
+start (loop)
+0 0.00
+1 0.00
+2 0.00
+3 0.00
+4 0.00
+5 0.00
+6 0.00
+7 0.00
+8 0.00
+9 0.00
+10 0.00
+11 0.00
+12 0.00
+13 0.00
+14 0.00
+15 0.00
+stop (getTemperaturDS18B20) 2 mc
+stop (loop) 15 mc
+
+start (loop)
+0 0.00
+1 0.00
+2 0.00
+3 0.00
+4 0.00
+5 0.00
+6 0.00
+7 0.00
+8 0.00
+9 0.00
+10 0.00
+11 0.00
+12 0.00
+13 0.00
+14 0.00
+15 0.00
+stop (getTemperaturDS18B20) 3 mc
+stop (loop) 16 mc
+
+start (loop)
+0 0.00
+1 0.00
+2 0.00
+3 0.00
+4 0.00
+5 0.00
+6 0.00
+7 0.00
+8 0.00
+9 0.00
+10 0.00
+11 0.00
+12 0.00
+13 0.00
+14 0.00
+15 0.00
+stop (getTemperaturDS18B20) 2 mc
+stop (loop) 14 mc
+
+start (loop)
+0 0.00
+1 0.00
+2 0.00
+3 0.00
+4 0.00
+5 0.00
+6 0.00
+7 0.00
+8 0.00
+9 0.00
+10 0.00
+11 0.00
+12 0.00
+13 0.00
+14 0.00
+15 0.00
+stop (getTemperaturDS18B20) 2 mc
+stop (loop) 14 mc
+
+start (loop)
+0 0.00
+1 0.00
+2 0.00
+3 0.00
+4 0.00
+5 0.00
+6 0.00
+7 0.00
+8 0.00
+9 0.00
+10 0.00
+11 0.00
+12 0.00
+13 0.00
+14 0.00
+15 0.00
+stop (getTemperaturDS18B20) 2 mc
+stop (loop) 16 mc
+
+start (loop)
+0 0.00
+1 0.00
+2 0.00
+3 0.00
+4 0.00
+5 0.00
+6 0.00
+7 0.00
+8 0.00
+9 0.00
+10 0.00
+11 0.00
+12 0.00
+13 0.00
+14 0.00
+15 0.00
+stop (getTemperaturDS18B20) 2 mc
+stop (loop) 15 mc
+
+start (loop)
+
+start (indicator_TM1637_Output_time)
+stop (indicator_TM1637_Output_time) 0 0.00
+1 0.00
+2 0.00
+3 0.00
+4 0.00
+5 0.00
+6 0.00
+7 0.00
+8 0.00
+9 0.00
+10 0.00
+11 0.00
+12 0.00
+13 0.00
+14 0.00
+15 0.00
+stop (getTemperaturDS18B20) 3 mc
+stop (loop) 39 mc
+
+start (loop)
+0 0.00
+1 0.00
+2 0.00
+3 0.00
+4 0.00
+5 0.00
+6 0.00
+7 0.00
+8 0.00
+9 0.00
+10 0.00
+11 0.00
+12 0.00
+13 0.00
+14 0.00
+15 0.00
+stop (getTemperaturDS18B20) 3 mc
+stop (loop) 15 mc
+
+start (loop)
+0 0.00
+1 0.00
+2 0.00
+3 0.00
+4 0.00
+5 0.00
+6 0.00
+7 0.00
+8 0.00
+9 0.00
+10 0.00
+11 0.00
+12 0.00
+13 0.00
+14 0.00
+15 0.00
+stop (getTemperaturDS18B20) 2 mc
+stop (loop) 15 mc
+
+start (loop)
+0 0.00
+1 0.00
+2 0.00
+3 0.00
+4 0.00
+5 0.00
+6 0.00
+7 0.00
+8 0.00
+9 0.00
+10 0.00
+11 0.00
+12 0.00
+13 0.00
+14 0.00
+15 0.00
+stop (getTemperaturDS18B20) 2 mc
+stop (loop) 15 mc
+
+start (loop)
+0 0.00
+1 0.00
+2 0.00
+3 0.00
+4 0.00
+5 0.00
+6 0.00
+7 0.00
+8 0.00
+9 0.00
+10 0.00
+11 0.00
+12 0.00
+13 0.00
+14 0.00
+15 0.00
+stop (getTemperaturDS18B20) 2 mc
+stop (loop) 16 mc
+
+start (loop)
+0 0.00
+1 0.00
+2 0.00
+3 0.00
+4 0.00
+5 0.00
+6 0.00
+7 0.00
+8 0.00
+9 0.00
+10 0.00
+11 0.00
+12 0.00
+13 0.00
+14 0.00
+15 0.00
+stop (getTemperaturDS18B20) 2 mc
+stop (loop) 15 mc
+
+start (loop)
+0 0.00
+1 0.00
+2 0.00
+3 0.00
+4 0.00
+5 0.00
+6 0.00
+7 0.00
+8 0.00
+9 0.00
+10 0.00
+11 0.00
+12 0.00
+13 0.00
+14 0.00
+15 0.00
+stop (getTemperaturDS18B20) 3 mc
+stop (loop) 15 mc
+
+start (loop)
+0 0.00
+1 0.00
+2 0.00
+3 0.00
+4 0.00
+5 0.00
+6 0.00
+7 0.00
+8 0.00
+9 0.00
+10 0.00
+11 0.00
+12 0.00
+13 0.00
+14 0.00
+15 0.00
+stop (getTemperaturDS18B20) 2 mc
+stop (loop) 15 mc
+
+start (loop)
+0 0.00
+1 0.00
+2 0.00
+3 0.00
+4 0.00
+5 0.00
+6 0.00
+7 0.00
+8 0.00
+9 0.00
+10 0.00
+11 0.00
+12 0.00
+13 0.00
+14 0.00
+15 0.00
+stop (getTemperaturDS18B20) 2 mc
+stop (loop) 14 mc
+
+start (loop)
+0 0.00
+1 0.00
+2 0.00
+3 0.00
+4 0.00
+5 0.00
+6 0.00
+7 0.00
+8 0.00
+9 0.00
+10 0.00
+11 0.00
+12 0.00
+13 0.00
+14 0.00
+15 0.00
+stop (getTemperaturDS18B20) 2 mc
+stop (loop) 15 mc
+
+start (loop)
+0 0.00
+1 0.00
+2 0.00
+3 0.00
+4 0.00
+5 0.00
+6 0.00
+7 0.00
+8 0.00
+9 0.00
+10 0.00
+11 0.00
+12 0.00
+13 0.00
+14 0.00
+15 0.00
+stop (getTemperaturDS18B20) 2 mc
+stop (loop) 16 mc
+
+start (loop)
+0 0.00
+1 0.00
+2 0.00
+3 0.00
+4 0.00
+5 0.00
+6 0.00
+7 0.00
+8 0.00
+9 0.00
+10 0.00
+11 0.00
+12 0.00
+13 0.00
+14 0.00
+15 0.00
+stop (getTemperaturDS18B20) 3 mc
+stop (loop) 15 mc
+
+start (loop)
+0 0.00
+1 0.00
+2 0.00
+3 0.00
+4 0.00
+5 0.00
+6 0.00
+7 0.00
+8 0.00
+9 0.00
+10 0.00
+11 0.00
+12 0.00
+13 0.00
+14 0.00
+15 0.00
+stop (getTemperaturDS18B20) 184 mc
+Error in getTemperaturDS18B20 1111001111100101
+stop (loop) 196 mc
+
+start (loop)
+
+start (indicator_TM1637_Output_time)
+stop (indicator_TM1637_Output_time) stop (loop) 27 mc
+
+start (loop)
+stop (loop) 1 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 4 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+
+start (indicator_TM1637_Output_time)
+stop (indicator_TM1637_Output_time) stop (loop) 28 mc
+
+start (loop)
+stop (loop) 1 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 4 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+
+start (indicator_TM1637_Output_time)
+stop (indicator_TM1637_Output_time) stop (loop) 27 mc
+
+start (loop)
+stop (loop) 1 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 4 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 4 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+
+start (indicator_TM1637_Output_time)
+stop (indicator_TM1637_Output_time) stop (loop) 28 mc
+
+start (loop)
+stop (loop) 1 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+
+start (indicator_TM1637_Output_time)
+stop (indicator_TM1637_Output_time) stop (loop) 27 mc
+
+start (loop)
+stop (loop) 1 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+
+start (indicator_TM1637_Output_time)
+stop (indicator_TM1637_Output_time) stop (loop) 28 mc
+
+start (loop)
+stop (loop) 1 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 4 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+
+start (indicator_TM1637_Output_time)
+stop (indicator_TM1637_Output_time) stop (loop) 27 mc
+
+start (loop)
+stop (loop) 1 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+
+start (indicator_TM1637_Output_time)
+stop (indicator_TM1637_Output_time) stop (loop) 28 mc
+
+start (loop)
+stop (loop) 1 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 4 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+
+start (indicator_TM1637_Output_time)
+stop (indicator_TM1637_Output_time) stop (loop) 27 mc
+
+start (loop)
+stop (loop) 1 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+
+start (indicator_TM1637_Output_time)
+stop (indicator_TM1637_Output_time) stop (loop) 28 mc
+
+start (loop)
+stop (loop) 1 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 4 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 4 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+
+start (indicator_TM1637_Output_time)
+stop (indicator_TM1637_Output_time) stop (loop) 27 mc
+
+start (loop)
+stop (loop) 1 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 4 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+
+start (indicator_TM1637_Output_time)
+stop (indicator_TM1637_Output_time) stop (loop) 28 mc
+
+start (loop)
+stop (loop) 1 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 4 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+
+start (indicator_TM1637_Output_time)
+stop (indicator_TM1637_Output_time) stop (loop) 28 mc
+
+start (loop)
+stop (loop) 1 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 4 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 4 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+
+start (indicator_TM1637_Output_time)
+stop (indicator_TM1637_Output_time) stop (loop) 28 mc
+
+start (loop)
+stop (loop) 1 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 4 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+
+start (indicator_TM1637_Output_time)
+stop (indicator_TM1637_Output_time) stop (loop) 28 mc
+
+start (loop)
+stop (loop) 1 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 4 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 4 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+
+start (indicator_TM1637_Output_time)
+stop (indicator_TM1637_Output_time) stop (loop) 28 mc
+
+start (loop)
+stop (loop) 1 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 4 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 4 mc
+
+start (loop)
+stop (loop) 1 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+
+start (indicator_TM1637_Output_time)
+stop (indicator_TM1637_Output_time) stop (loop) 28 mc
+
+start (loop)
+stop (loop) 1 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 4 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+
+start (indicator_TM1637_Output_time)
+stop (indicator_TM1637_Output_time) stop (loop) 28 mc
+
+start (loop)
+stop (loop) 1 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 4 mc
+
+start (loop)
+0 -99.00
+1 31.12
+2 -99.00
+3 43.50
+4 34.75
+5 -99.00
+6 -99.00
+7 -99.00
+8 -99.00
+9 -99.00
+10 47.50
+11 35.75
+12 -99.00
+13 -99.00
+14 -99.00
+15 -99.00
+stop (getTemperaturDS18B20) 3 mc
+stop (loop) 17 mc
+
+start (loop)
+0 -99.00
+1 31.12
+2 -99.00
+3 43.50
+4 34.75
+5 -99.00
+6 -99.00
+7 -99.00
+8 -99.00
+9 -99.00
+10 47.50
+11 35.75
+12 -99.00
+13 -99.00
+14 -99.00
+15 -99.00
+stop (getTemperaturDS18B20) 2 mc
+stop (loop) 17 mc
+
+start (loop)
+0 -99.00
+1 31.12
+2 -99.00
+3 43.50
+4 34.75
+5 -99.00
+6 -99.00
+7 -99.00
+8 -99.00
+9 -99.00
+10 47.50
+11 35.75
+12 -99.00
+13 -99.00
+14 -99.00
+15 -99.00
+stop (getTemperaturDS18B20) 2 mc
+stop (loop) 18 mc
+
+start (loop)
+0 -99.00
+1 31.12
+2 -99.00
+3 43.50
+4 34.75
+5 -99.00
+6 -99.00
+7 -99.00
+8 -99.00
+9 -99.00
+10 47.50
+11 35.75
+12 -99.00
+13 -99.00
+14 -99.00
+15 -99.00
+stop (getTemperaturDS18B20) 3 mc
+stop (loop) 17 mc
+
+start (loop)
+0 -99.00
+1 31.12
+2 -99.00
+3 43.50
+4 34.75
+5 -99.00
+6 -99.00
+7 -99.00
+8 -99.00
+9 -99.00
+10 47.50
+11 35.75
+12 -99.00
+13 -99.00
+14 -99.00
+15 -99.00
+stop (getTemperaturDS18B20) 2 mc
+stop (loop) 18 mc
+
+start (loop)
+0 -99.00
+1 31.12
+2 -99.00
+3 43.50
+4 34.75
+5 -99.00
+6 -99.00
+7 -99.00
+8 -99.00
+9 -99.00
+10 47.50
+11 35.75
+12 -99.00
+13 -99.00
+14 -99.00
+15 -99.00
+stop (getTemperaturDS18B20) 3 mc
+stop (loop) 17 mc
+
+start (loop)
+0 -99.00
+1 31.12
+2 -99.00
+3 43.50
+4 34.75
+5 -99.00
+6 -99.00
+7 -99.00
+8 -99.00
+9 -99.00
+10 47.50
+11 35.75
+12 -99.00
+13 -99.00
+14 -99.00
+15 -99.00
+stop (getTemperaturDS18B20) 2 mc
+stop (loop) 16 mc
+
+start (loop)
+0 -99.00
+1 31.12
+2 -99.00
+3 43.50
+4 34.75
+5 -99.00
+6 -99.00
+7 -99.00
+8 -99.00
+9 -99.00
+10 47.50
+11 35.75
+12 -99.00
+13 -99.00
+14 -99.00
+15 -99.00
+stop (getTemperaturDS18B20) 2 mc
+stop (loop) 18 mc
+
+start (loop)
+0 -99.00
+1 31.12
+2 -99.00
+3 43.50
+4 34.75
+5 -99.00
+6 -99.00
+7 -99.00
+8 -99.00
+9 -99.00
+10 47.50
+11 35.75
+12 -99.00
+13 -99.00
+14 -99.00
+15 -99.00
+stop (getTemperaturDS18B20) 2 mc
+stop (loop) 17 mc
+
+start (loop)
+0 -99.00
+1 31.12
+2 -99.00
+3 43.50
+4 34.75
+5 -99.00
+6 -99.00
+7 -99.00
+8 -99.00
+9 -99.00
+10 47.50
+11 35.75
+12 -99.00
+13 -99.00
+14 -99.00
+15 -99.00
+stop (getTemperaturDS18B20) 2 mc
+stop (loop) 18 mc
+
+start (loop)
+
+start (indicator_TM1637_Output_time)
+stop (indicator_TM1637_Output_time) 0 -99.00
+1 31.12
+2 -99.00
+3 43.50
+4 34.75
+5 -99.00
+6 -99.00
+7 -99.00
+8 -99.00
+9 -99.00
+10 47.50
+11 35.75
+12 -99.00
+13 -99.00
+14 -99.00
+15 -99.00
+stop (getTemperaturDS18B20) 3 mc
+stop (loop) 41 mc
+
+start (loop)
+0 -99.00
+1 31.12
+2 -99.00
+3 43.50
+4 34.75
+5 -99.00
+6 -99.00
+7 -99.00
+8 -99.00
+9 -99.00
+10 47.50
+11 35.75
+12 -99.00
+13 -99.00
+14 -99.00
+15 -99.00
+stop (getTemperaturDS18B20) 2 mc
+stop (loop) 17 mc
+
+start (loop)
+0 -99.00
+1 31.12
+2 -99.00
+3 43.50
+4 34.75
+5 -99.00
+6 -99.00
+7 -99.00
+8 -99.00
+9 -99.00
+10 47.50
+11 35.75
+12 -99.00
+13 -99.00
+14 -99.00
+15 -99.00
+stop (getTemperaturDS18B20) 3 mc
+stop (loop) 18 mc
+
+start (loop)
+0 -99.00
+1 31.12
+2 -99.00
+3 43.50
+4 34.75
+5 -99.00
+6 -99.00
+7 -99.00
+8 -99.00
+9 -99.00
+10 47.50
+11 35.75
+12 -99.00
+13 -99.00
+14 -99.00
+15 -99.00
+stop (getTemperaturDS18B20) 2 mc
+stop (loop) 17 mc
+
+start (loop)
+0 -99.00
+1 31.12
+2 -99.00
+3 43.50
+4 34.75
+5 -99.00
+6 -99.00
+7 -99.00
+8 -99.00
+9 -99.00
+10 47.50
+11 35.75
+12 -99.00
+13 -99.00
+14 -99.00
+15 -99.00
+stop (getTemperaturDS18B20) 2 mc
+stop (loop) 17 mc
+
+start (loop)
+0 -99.00
+1 31.12
+2 -99.00
+3 43.50
+4 34.75
+5 -99.00
+6 -99.00
+7 -99.00
+8 -99.00
+9 -99.00
+10 47.50
+11 35.75
+12 -99.00
+13 -99.00
+14 -99.00
+15 -99.00
+stop (getTemperaturDS18B20) 2 mc
+stop (loop) 18 mc
+
+start (loop)
+0 -99.00
+1 31.12
+2 -99.00
+3 43.50
+4 34.75
+5 -99.00
+6 -99.00
+7 -99.00
+8 -99.00
+9 -99.00
+10 47.50
+11 35.75
+12 -99.00
+13 -99.00
+14 -99.00
+15 -99.00
+stop (getTemperaturDS18B20) 2 mc
+stop (loop) 17 mc
+
+start (loop)
+0 -99.00
+1 31.12
+2 -99.00
+3 43.50
+4 34.75
+5 -99.00
+6 -99.00
+7 -99.00
+8 -99.00
+9 -99.00
+10 47.50
+11 35.75
+12 -99.00
+13 -99.00
+14 -99.00
+15 -99.00
+stop (getTemperaturDS18B20) 3 mc
+stop (loop) 18 mc
+
+start (loop)
+0 -99.00
+1 31.12
+2 -99.00
+3 43.50
+4 34.75
+5 -99.00
+6 -99.00
+7 -99.00
+8 -99.00
+9 -99.00
+10 47.50
+11 35.75
+12 -99.00
+13 -99.00
+14 -99.00
+15 -99.00
+stop (getTemperaturDS18B20) 2 mc
+stop (loop) 17 mc
+
+start (loop)
+0 -99.00
+1 31.12
+2 -99.00
+3 43.50
+4 34.75
+5 -99.00
+6 -99.00
+7 -99.00
+8 -99.00
+9 -99.00
+10 47.50
+11 35.75
+12 -99.00
+13 -99.00
+14 -99.00
+15 -99.00
+stop (getTemperaturDS18B20) 3 mc
+stop (loop) 17 mc
+
+start (loop)
+0 -99.00
+1 31.12
+2 -99.00
+3 43.50
+4 34.75
+5 -99.00
+6 -99.00
+7 -99.00
+8 -99.00
+9 -99.00
+10 47.50
+11 35.75
+12 -99.00
+13 -99.00
+14 -99.00
+15 -99.00
+stop (getTemperaturDS18B20) 2 mc
+stop (loop) 17 mc
+
+start (loop)
+0 -99.00
+1 31.12
+2 -99.00
+3 43.50
+4 34.75
+5 -99.00
+6 -99.00
+7 -99.00
+8 -99.00
+9 -99.00
+10 47.50
+11 35.75
+12 -99.00
+13 -99.00
+14 -99.00
+15 -99.00
+stop (getTemperaturDS18B20) 2 mc
+stop (loop) 17 mc
+
+start (loop)
+0 -99.00
+1 31.12
+2 -99.00
+3 43.50
+4 34.75
+5 -99.00
+6 -99.00
+7 -99.00
+8 -99.00
+9 -99.00
+10 47.50
+11 35.75
+12 -99.00
+13 -99.00
+14 -99.00
+15 -99.00
+stop (getTemperaturDS18B20) 2 mc
+stop (loop) 18 mc
+
+start (loop)
+0 -99.00
+1 31.12
+2 -99.00
+3 43.50
+4 34.75
+5 -99.00
+6 -99.00
+7 -99.00
+8 -99.00
+9 -99.00
+10 47.50
+11 35.75
+12 -99.00
+13 -99.00
+14 -99.00
+15 -99.00
+stop (getTemperaturDS18B20) 2 mc
+stop (loop) 17 mc
+
+start (loop)
+0 -99.00
+1 31.12
+2 -99.00
+3 43.50
+4 34.75
+5 -99.00
+6 -99.00
+7 -99.00
+8 -99.00
+9 -99.00
+10 47.50
+11 35.75
+12 -99.00
+13 -99.00
+14 -99.00
+15 -99.00
+stop (getTemperaturDS18B20) 4 mc
+stop (loop) 18 mc
+
+start (loop)
+
+start (indicator_TM1637_Output_time)
+stop (indicator_TM1637_Output_time) 0 -99.00
+1 31.12
+2 -99.00
+3 43.50
+4 34.75
+5 -99.00
+6 -99.00
+7 -99.00
+8 -99.00
+9 -99.00
+10 47.50
+11 35.75
+12 -99.00
+13 -99.00
+14 -99.00
+15 -99.00
+stop (getTemperaturDS18B20) 2 mc
+stop (loop) 41 mc
+
+start (loop)
+0 -99.00
+1 31.12
+2 -99.00
+3 43.50
+4 34.75
+5 -99.00
+6 -99.00
+7 -99.00
+8 -99.00
+9 -99.00
+10 47.50
+11 35.75
+12 -99.00
+13 -99.00
+14 -99.00
+15 -99.00
+stop (getTemperaturDS18B20) 3 mc
+stop (loop) 17 mc
+
+start (loop)
+0 -99.00
+1 31.12
+2 -99.00
+3 43.50
+4 34.75
+5 -99.00
+6 -99.00
+7 -99.00
+8 -99.00
+9 -99.00
+10 47.50
+11 35.75
+12 -99.00
+13 -99.00
+14 -99.00
+15 -99.00
+stop (getTemperaturDS18B20) 2 mc
+stop (loop) 17 mc
+
+start (loop)
+0 -99.00
+1 31.12
+2 -99.00
+3 43.50
+4 34.75
+5 -99.00
+6 -99.00
+7 -99.00
+8 -99.00
+9 -99.00
+10 47.50
+11 35.75
+12 -99.00
+13 -99.00
+14 -99.00
+15 -99.00
+stop (getTemperaturDS18B20) 2 mc
+stop (loop) 18 mc
+
+start (loop)
+0 -99.00
+1 31.12
+2 -99.00
+3 43.50
+4 34.75
+5 -99.00
+6 -99.00
+7 -99.00
+8 -99.00
+9 -99.00
+10 47.50
+11 35.75
+12 -99.00
+13 -99.00
+14 -99.00
+15 -99.00
+stop (getTemperaturDS18B20) 2 mc
+stop (loop) 17 mc
+
+start (loop)
+0 -99.00
+1 31.12
+2 -99.00
+3 43.50
+4 34.75
+5 -99.00
+6 -99.00
+7 -99.00
+8 -99.00
+9 -99.00
+10 47.50
+11 35.75
+12 -99.00
+13 -99.00
+14 -99.00
+15 -99.00
+stop (getTemperaturDS18B20) 2 mc
+stop (loop) 18 mc
+
+start (loop)
+0 -99.00
+1 31.12
+2 -99.00
+3 43.50
+4 34.75
+5 -99.00
+6 -99.00
+7 -99.00
+8 -99.00
+9 -99.00
+10 47.50
+11 35.75
+12 -99.00
+13 -99.00
+14 -99.00
+15 -99.00
+stop (getTemperaturDS18B20) 3 mc
+stop (loop) 17 mc
+
+start (loop)
+0 -99.00
+1 31.12
+2 -99.00
+3 43.50
+4 34.75
+5 -99.00
+6 -99.00
+7 -99.00
+8 -99.00
+9 -99.00
+10 47.50
+11 35.75
+12 -99.00
+13 -99.00
+14 -99.00
+15 -99.00
+stop (getTemperaturDS18B20) 2 mc
+stop (loop) 17 mc
+
+start (loop)
+0 -99.00
+1 31.12
+2 -99.00
+3 43.50
+4 34.75
+5 -99.00
+6 -99.00
+7 -99.00
+8 -99.00
+9 -99.00
+10 47.50
+11 35.75
+12 -99.00
+13 -99.00
+14 -99.00
+15 -99.00
+stop (getTemperaturDS18B20) 3 mc
+stop (loop) 18 mc
+
+start (loop)
+0 -99.00
+1 31.12
+2 -99.00
+3 43.50
+4 34.75
+5 -99.00
+6 -99.00
+7 -99.00
+8 -99.00
+9 -99.00
+10 47.50
+11 35.75
+12 -99.00
+13 -99.00
+14 -99.00
+15 -99.00
+stop (getTemperaturDS18B20) 2 mc
+stop (loop) 17 mc
+
+start (loop)
+0 -99.00
+1 31.12
+2 -99.00
+3 43.50
+4 34.75
+5 -99.00
+6 -99.00
+7 -99.00
+8 -99.00
+9 -99.00
+10 47.50
+11 35.75
+12 -99.00
+13 -99.00
+14 -99.00
+15 -99.00
+stop (getTemperaturDS18B20) 2 mc
+stop (loop) 18 mc
+
+start (loop)
+0 -99.00
+1 31.12
+2 -99.00
+3 43.50
+4 34.75
+5 -99.00
+6 -99.00
+7 -99.00
+8 -99.00
+9 -99.00
+10 47.50
+11 35.75
+12 -99.00
+13 -99.00
+14 -99.00
+15 -99.00
+stop (getTemperaturDS18B20) 2 mc
+stop (loop) 17 mc
+
+start (loop)
+0 -99.00
+1 31.12
+2 -99.00
+3 43.50
+4 34.75
+5 -99.00
+6 -99.00
+7 -99.00
+8 -99.00
+9 -99.00
+10 47.50
+11 35.75
+12 -99.00
+13 -99.00
+14 -99.00
+15 -99.00
+stop (getTemperaturDS18B20) 2 mc
+stop (loop) 18 mc
+
+start (loop)
+0 -99.00
+1 31.12
+2 -99.00
+3 43.50
+4 34.75
+5 -99.00
+6 -99.00
+7 -99.00
+8 -99.00
+9 -99.00
+10 47.50
+11 35.75
+12 -99.00
+13 -99.00
+14 -99.00
+15 -99.00
+stop (getTemperaturDS18B20) 3 mc
+stop (loop) 17 mc
+
+start (loop)
+0 -99.00
+1 31.12
+2 -99.00
+3 43.50
+4 34.75
+5 -99.00
+6 -99.00
+7 -99.00
+8 -99.00
+9 -99.00
+10 47.50
+11 35.75
+12 -99.00
+13 -99.00
+14 -99.00
+15 -99.00
+stop (getTemperaturDS18B20) 2 mc
+stop (loop) 17 mc
+
+start (loop)
+
+start (indicator_TM1637_Output_time)
+stop (indicator_TM1637_Output_time) 0 -99.00
+1 31.12
+2 -99.00
+3 43.50
+4 34.75
+5 -99.00
+6 -99.00
+7 -99.00
+8 -99.00
+9 -99.00
+10 47.50
+11 35.75
+12 -99.00
+13 -99.00
+14 -99.00
+15 -99.00
+stop (getTemperaturDS18B20) 184 mc
+Error in getTemperaturDS18B20 1111001111100101
+stop (loop) 223 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+
+start (indicator_TM1637_Output_time)
+stop (indicator_TM1637_Output_time) stop (loop) 27 mc
+
+start (loop)
+stop (loop) 0 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 4 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+
+start (indicator_TM1637_Output_time)
+stop (indicator_TM1637_Output_time) stop (loop) 27 mc
+
+start (loop)
+stop (loop) 0 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 1 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+
+start (indicator_TM1637_Output_time)
+stop (indicator_TM1637_Output_time) stop (loop) 26 mc
+
+start (loop)
+stop (loop) 0 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 4 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 4 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+
+start (indicator_TM1637_Output_time)
+stop (indicator_TM1637_Output_time) stop (loop) 27 mc
+
+start (loop)
+stop (loop) 0 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 4 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+
+start (indicator_TM1637_Output_time)
+stop (indicator_TM1637_Output_time) stop (loop) 27 mc
+
+start (loop)
+stop (loop) 0 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+
+start (indicator_TM1637_Output_time)
+stop (indicator_TM1637_Output_time) stop (loop) 28 mc
+
+start (loop)
+stop (loop) 0 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 4 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 4 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+
+start (indicator_TM1637_Output_time)
+stop (indicator_TM1637_Output_time) stop (loop) 27 mc
+
+start (loop)
+stop (loop) 0 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+
+start (indicator_TM1637_Output_time)
+stop (indicator_TM1637_Output_time) stop (loop) 28 mc
+
+start (loop)
+stop (loop) 1 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 4 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 4 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+
+start (indicator_TM1637_Output_time)
+stop (indicator_TM1637_Output_time) stop (loop) 27 mc
+
+start (loop)
+stop (loop) 1 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+
+start (indicator_TM1637_Output_time)
+stop (indicator_TM1637_Output_time) stop (loop) 28 mc
+
+start (loop)
+stop (loop) 1 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 4 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+
+start (indicator_TM1637_Output_time)
+stop (indicator_TM1637_Output_time) stop (loop) 27 mc
+
+start (loop)
+stop (loop) 1 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 4 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+
+start (indicator_TM1637_Output_time)
+stop (indicator_TM1637_Output_time) stop (loop) 28 mc
+
+start (loop)
+stop (loop) 1 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+
+start (indicator_TM1637_Output_time)
+stop (indicator_TM1637_Output_time) stop (loop) 27 mc
+
+start (loop)
+stop (loop) 1 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 4 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 1 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 4 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+
+start (indicator_TM1637_Output_time)
+stop (indicator_TM1637_Output_time) stop (loop) 28 mc
+
+start (loop)
+stop (loop) 1 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 4 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+
+start (indicator_TM1637_Output_time)
+stop (indicator_TM1637_Output_time) stop (loop) 27 mc
+
+start (loop)
+stop (loop) 1 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 4 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 4 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+
+start (indicator_TM1637_Output_time)
+stop (indicator_TM1637_Output_time) stop (loop) 28 mc
+
+start (loop)
+stop (loop) 1 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 4 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+
+start (indicator_TM1637_Output_time)
+stop (indicator_TM1637_Output_time) stop (loop) 27 mc
+
+start (loop)
+stop (loop) 1 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 4 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+
+start (indicator_TM1637_Output_time)
+stop (indicator_TM1637_Output_time) stop (loop) 28 mc
+
+start (loop)
+stop (loop) 1 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+0 -99.00
+1 31.12
+2 -99.00
+3 43.38
+4 34.75
+5 -99.00
+6 -99.00
+7 -99.00
+8 -99.00
+9 -99.00
+10 47.50
+11 35.75
+12 -99.00
+13 -99.00
+14 -99.00
+15 -99.00
+stop (getTemperaturDS18B20) 2 mc
+stop (loop) 18 mc
+
+start (loop)
+0 -99.00
+1 31.12
+2 -99.00
+3 43.38
+4 34.75
+5 -99.00
+6 -99.00
+7 -99.00
+8 -99.00
+9 -99.00
+10 47.50
+11 35.75
+12 -99.00
+13 -99.00
+14 -99.00
+15 -99.00
+stop (getTemperaturDS18B20) 3 mc
+stop (loop) 17 mc
+
+start (loop)
+0 -99.00
+1 31.12
+2 -99.00
+3 43.38
+4 34.75
+5 -99.00
+6 -99.00
+7 -99.00
+8 -99.00
+9 -99.00
+10 47.50
+11 35.75
+12 -99.00
+13 -99.00
+14 -99.00
+15 -99.00
+stop (getTemperaturDS18B20) 2 mc
+stop (loop) 18 mc
+
+start (loop)
+0 -99.00
+1 31.12
+2 -99.00
+3 43.38
+4 34.75
+5 -99.00
+6 -99.00
+7 -99.00
+8 -99.00
+9 -99.00
+10 47.50
+11 35.75
+12 -99.00
+13 -99.00
+14 -99.00
+15 -99.00
+stop (getTemperaturDS18B20) 2 mc
+stop (loop) 17 mc
+
+start (loop)
+0 -99.00
+1 31.12
+2 -99.00
+3 43.38
+4 34.75
+5 -99.00
+6 -99.00
+7 -99.00
+8 -99.00
+9 -99.00
+10 47.50
+11 35.75
+12 -99.00
+13 -99.00
+14 -99.00
+15 -99.00
+stop (getTemperaturDS18B20) 2 mc
+stop (loop) 17 mc
+
+start (loop)
+0 -99.00
+1 31.12
+2 -99.00
+3 43.38
+4 34.75
+5 -99.00
+6 -99.00
+7 -99.00
+8 -99.00
+9 -99.00
+10 47.50
+11 35.75
+12 -99.00
+13 -99.00
+14 -99.00
+15 -99.00
+stop (getTemperaturDS18B20) 2 mc
+stop (loop) 17 mc
+
+start (loop)
+0 -99.00
+1 31.12
+2 -99.00
+3 43.38
+4 34.75
+5 -99.00
+6 -99.00
+7 -99.00
+8 -99.00
+9 -99.00
+10 47.50
+11 35.75
+12 -99.00
+13 -99.00
+14 -99.00
+15 -99.00
+stop (getTemperaturDS18B20) 3 mc
+stop (loop) 17 mc
+
+start (loop)
+0 -99.00
+1 31.12
+2 -99.00
+3 43.38
+4 34.75
+5 -99.00
+6 -99.00
+7 -99.00
+8 -99.00
+9 -99.00
+10 47.50
+11 35.75
+12 -99.00
+13 -99.00
+14 -99.00
+15 -99.00
+stop (getTemperaturDS18B20) 2 mc
+stop (loop) 18 mc
+
+start (loop)
+0 -99.00
+1 31.12
+2 -99.00
+3 43.38
+4 34.75
+5 -99.00
+6 -99.00
+7 -99.00
+8 -99.00
+9 -99.00
+10 47.50
+11 35.75
+12 -99.00
+13 -99.00
+14 -99.00
+15 -99.00
+stop (getTemperaturDS18B20) 3 mc
+stop (loop) 17 mc
+
+start (loop)
+0 -99.00
+1 31.12
+2 -99.00
+3 43.38
+4 34.75
+5 -99.00
+6 -99.00
+7 -99.00
+8 -99.00
+9 -99.00
+10 47.50
+11 35.75
+12 -99.00
+13 -99.00
+14 -99.00
+15 -99.00
+stop (getTemperaturDS18B20) 2 mc
+stop (loop) 17 mc
+
+start (loop)
+0 -99.00
+1 31.12
+2 -99.00
+3 43.38
+4 34.75
+5 -99.00
+6 -99.00
+7 -99.00
+8 -99.00
+9 -99.00
+10 47.50
+11 35.75
+12 -99.00
+13 -99.00
+14 -99.00
+15 -99.00
+stop (getTemperaturDS18B20) 2 mc
+stop (loop) 17 mc
+
+start (loop)
+0 -99.00
+1 31.12
+2 -99.00
+3 43.38
+4 34.75
+5 -99.00
+6 -99.00
+7 -99.00
+8 -99.00
+9 -99.00
+10 47.50
+11 35.75
+12 -99.00
+13 -99.00
+14 -99.00
+15 -99.00
+stop (getTemperaturDS18B20) 2 mc
+stop (loop) 17 mc
+
+start (loop)
+0 -99.00
+1 31.12
+2 -99.00
+3 43.38
+4 34.75
+5 -99.00
+6 -99.00
+7 -99.00
+8 -99.00
+9 -99.00
+10 47.50
+11 35.75
+12 -99.00
+13 -99.00
+14 -99.00
+15 -99.00
+stop (getTemperaturDS18B20) 2 mc
+stop (loop) 18 mc
+
+start (loop)
+
+start (indicator_TM1637_Output_time)
+stop (indicator_TM1637_Output_time) 0 -99.00
+1 31.12
+2 -99.00
+3 43.38
+4 34.75
+5 -99.00
+6 -99.00
+7 -99.00
+8 -99.00
+9 -99.00
+10 47.50
+11 35.75
+12 -99.00
+13 -99.00
+14 -99.00
+15 -99.00
+stop (getTemperaturDS18B20) 3 mc
+stop (loop) 41 mc
+
+start (loop)
+0 -99.00
+1 31.12
+2 -99.00
+3 43.38
+4 34.75
+5 -99.00
+6 -99.00
+7 -99.00
+8 -99.00
+9 -99.00
+10 47.50
+11 35.75
+12 -99.00
+13 -99.00
+14 -99.00
+15 -99.00
+stop (getTemperaturDS18B20) 2 mc
+stop (loop) 17 mc
+
+start (loop)
+0 -99.00
+1 31.12
+2 -99.00
+3 43.38
+4 34.75
+5 -99.00
+6 -99.00
+7 -99.00
+8 -99.00
+9 -99.00
+10 47.50
+11 35.75
+12 -99.00
+13 -99.00
+14 -99.00
+15 -99.00
+stop (getTemperaturDS18B20) 3 mc
+stop (loop) 18 mc
+
+start (loop)
+0 -99.00
+1 31.12
+2 -99.00
+3 43.38
+4 34.75
+5 -99.00
+6 -99.00
+7 -99.00
+8 -99.00
+9 -99.00
+10 47.50
+11 35.75
+12 -99.00
+13 -99.00
+14 -99.00
+15 -99.00
+stop (getTemperaturDS18B20) 2 mc
+stop (loop) 17 mc
+
+start (loop)
+0 -99.00
+1 31.12
+2 -99.00
+3 43.38
+4 34.75
+5 -99.00
+6 -99.00
+7 -99.00
+8 -99.00
+9 -99.00
+10 47.50
+11 35.75
+12 -99.00
+13 -99.00
+14 -99.00
+15 -99.00
+stop (getTemperaturDS18B20) 2 mc
+stop (loop) 17 mc
+
+start (loop)
+0 -99.00
+1 31.12
+2 -99.00
+3 43.38
+4 34.75
+5 -99.00
+6 -99.00
+7 -99.00
+8 -99.00
+9 -99.00
+10 47.50
+11 35.75
+12 -99.00
+13 -99.00
+14 -99.00
+15 -99.00
+stop (getTemperaturDS18B20) 2 mc
+stop (loop) 18 mc
+
+start (loop)
+0 -99.00
+1 31.12
+2 -99.00
+3 43.38
+4 34.75
+5 -99.00
+6 -99.00
+7 -99.00
+8 -99.00
+9 -99.00
+10 47.50
+11 35.75
+12 -99.00
+13 -99.00
+14 -99.00
+15 -99.00
+stop (getTemperaturDS18B20) 2 mc
+stop (loop) 17 mc
+
+start (loop)
+0 -99.00
+1 31.12
+2 -99.00
+3 43.38
+4 34.75
+5 -99.00
+6 -99.00
+7 -99.00
+8 -99.00
+9 -99.00
+10 47.50
+11 35.75
+12 -99.00
+13 -99.00
+14 -99.00
+15 -99.00
+stop (getTemperaturDS18B20) 3 mc
+stop (loop) 18 mc
+
+start (loop)
+0 -99.00
+1 31.12
+2 -99.00
+3 43.38
+4 34.75
+5 -99.00
+6 -99.00
+7 -99.00
+8 -99.00
+9 -99.00
+10 47.50
+11 35.75
+12 -99.00
+13 -99.00
+14 -99.00
+15 -99.00
+stop (getTemperaturDS18B20) 2 mc
+stop (loop) 17 mc
+
+start (loop)
+0 -99.00
+1 31.12
+2 -99.00
+3 43.38
+4 34.75
+5 -99.00
+6 -99.00
+7 -99.00
+8 -99.00
+9 -99.00
+10 47.50
+11 35.75
+12 -99.00
+13 -99.00
+14 -99.00
+15 -99.00
+stop (getTemperaturDS18B20) 4 mc
+stop (loop) 18 mc
+
+start (loop)
+0 -99.00
+1 31.12
+2 -99.00
+3 43.38
+4 34.75
+5 -99.00
+6 -99.00
+7 -99.00
+8 -99.00
+9 -99.00
+10 47.50
+11 35.75
+12 -99.00
+13 -99.00
+14 -99.00
+15 -99.00
+stop (getTemperaturDS18B20) 2 mc
+stop (loop) 17 mc
+
+start (loop)
+0 -99.00
+1 31.12
+2 -99.00
+3 43.38
+4 34.75
+5 -99.00
+6 -99.00
+7 -99.00
+8 -99.00
+9 -99.00
+10 47.50
+11 35.75
+12 -99.00
+13 -99.00
+14 -99.00
+15 -99.00
+stop (getTemperaturDS18B20) 2 mc
+stop (loop) 17 mc
+
+start (loop)
+0 -99.00
+1 31.12
+2 -99.00
+3 43.38
+4 34.75
+5 -99.00
+6 -99.00
+7 -99.00
+8 -99.00
+9 -99.00
+10 47.50
+11 35.75
+12 -99.00
+13 -99.00
+14 -99.00
+15 -99.00
+stop (getTemperaturDS18B20) 2 mc
+stop (loop) 18 mc
+
+start (loop)
+0 -99.00
+1 31.12
+2 -99.00
+3 43.38
+4 34.75
+5 -99.00
+6 -99.00
+7 -99.00
+8 -99.00
+9 -99.00
+10 47.50
+11 35.75
+12 -99.00
+13 -99.00
+14 -99.00
+15 -99.00
+stop (getTemperaturDS18B20) 2 mc
+stop (loop) 17 mc
+
+start (loop)
+0 -99.00
+1 31.12
+2 -99.00
+3 43.38
+4 34.75
+5 -99.00
+6 -99.00
+7 -99.00
+8 -99.00
+9 -99.00
+10 47.50
+11 35.75
+12 -99.00
+13 -99.00
+14 -99.00
+15 -99.00
+stop (getTemperaturDS18B20) 3 mc
+stop (loop) 18 mc
+
+start (loop)
+
+start (indicator_TM1637_Output_time)
+stop (indicator_TM1637_Output_time) 0 -99.00
+1 31.12
+2 -99.00
+3 43.38
+4 34.75
+5 -99.00
+6 -99.00
+7 -99.00
+8 -99.00
+9 -99.00
+10 47.50
+11 35.75
+12 -99.00
+13 -99.00
+14 -99.00
+15 -99.00
+stop (getTemperaturDS18B20) 2 mc
+stop (loop) 40 mc
+
+start (loop)
+0 -99.00
+1 31.12
+2 -99.00
+3 43.38
+4 34.75
+5 -99.00
+6 -99.00
+7 -99.00
+8 -99.00
+9 -99.00
+10 47.50
+11 35.75
+12 -99.00
+13 -99.00
+14 -99.00
+15 -99.00
+stop (getTemperaturDS18B20) 3 mc
+stop (loop) 17 mc
+
+start (loop)
+0 -99.00
+1 31.12
+2 -99.00
+3 43.38
+4 34.75
+5 -99.00
+6 -99.00
+7 -99.00
+8 -99.00
+9 -99.00
+10 47.50
+11 35.75
+12 -99.00
+13 -99.00
+14 -99.00
+15 -99.00
+stop (getTemperaturDS18B20) 2 mc
+stop (loop) 17 mc
+
+start (loop)
+0 -99.00
+1 31.12
+2 -99.00
+3 43.38
+4 34.75
+5 -99.00
+6 -99.00
+7 -99.00
+8 -99.00
+9 -99.00
+10 47.50
+11 35.75
+12 -99.00
+13 -99.00
+14 -99.00
+15 -99.00
+stop (getTemperaturDS18B20) 2 mc
+stop (loop) 18 mc
+
+start (loop)
+0 -99.00
+1 31.12
+2 -99.00
+3 43.38
+4 34.75
+5 -99.00
+6 -99.00
+7 -99.00
+8 -99.00
+9 -99.00
+10 47.50
+11 35.75
+12 -99.00
+13 -99.00
+14 -99.00
+15 -99.00
+stop (getTemperaturDS18B20) 3 mc
+stop (loop) 17 mc
+
+start (loop)
+0 -99.00
+1 31.12
+2 -99.00
+3 43.38
+4 34.75
+5 -99.00
+6 -99.00
+7 -99.00
+8 -99.00
+9 -99.00
+10 47.50
+11 35.75
+12 -99.00
+13 -99.00
+14 -99.00
+15 -99.00
+stop (getTemperaturDS18B20) 2 mc
+stop (loop) 18 mc
+
+start (loop)
+0 -99.00
+1 31.12
+2 -99.00
+3 43.38
+4 34.75
+5 -99.00
+6 -99.00
+7 -99.00
+8 -99.00
+9 -99.00
+10 47.50
+11 35.75
+12 -99.00
+13 -99.00
+14 -99.00
+15 -99.00
+stop (getTemperaturDS18B20) 3 mc
+stop (loop) 17 mc
+
+start (loop)
+0 -99.00
+1 31.12
+2 -99.00
+3 43.38
+4 34.75
+5 -99.00
+6 -99.00
+7 -99.00
+8 -99.00
+9 -99.00
+10 47.50
+11 35.75
+12 -99.00
+13 -99.00
+14 -99.00
+15 -99.00
+stop (getTemperaturDS18B20) 3 mc
+stop (loop) 18 mc
+
+start (loop)
+0 -99.00
+1 31.12
+2 -99.00
+3 43.38
+4 34.75
+5 -99.00
+6 -99.00
+7 -99.00
+8 -99.00
+9 -99.00
+10 47.50
+11 35.75
+12 -99.00
+13 -99.00
+14 -99.00
+15 -99.00
+stop (getTemperaturDS18B20) 3 mc
+stop (loop) 17 mc
+
+start (loop)
+0 -99.00
+1 31.12
+2 -99.00
+3 43.38
+4 34.75
+5 -99.00
+6 -99.00
+7 -99.00
+8 -99.00
+9 -99.00
+10 47.50
+11 35.75
+12 -99.00
+13 -99.00
+14 -99.00
+15 -99.00
+stop (getTemperaturDS18B20) 2 mc
+stop (loop) 17 mc
+
+start (loop)
+0 -99.00
+1 31.12
+2 -99.00
+3 43.38
+4 34.75
+5 -99.00
+6 -99.00
+7 -99.00
+8 -99.00
+9 -99.00
+10 47.50
+11 35.75
+12 -99.00
+13 -99.00
+14 -99.00
+15 -99.00
+stop (getTemperaturDS18B20) 2 mc
+stop (loop) 18 mc
+
+start (loop)
+0 -99.00
+1 31.12
+2 -99.00
+3 43.38
+4 34.75
+5 -99.00
+6 -99.00
+7 -99.00
+8 -99.00
+9 -99.00
+10 47.50
+11 35.75
+12 -99.00
+13 -99.00
+14 -99.00
+15 -99.00
+stop (getTemperaturDS18B20) 2 mc
+stop (loop) 17 mc
+
+start (loop)
+0 -99.00
+1 31.12
+2 -99.00
+3 43.38
+4 34.75
+5 -99.00
+6 -99.00
+7 -99.00
+8 -99.00
+9 -99.00
+10 47.50
+11 35.75
+12 -99.00
+13 -99.00
+14 -99.00
+15 -99.00
+stop (getTemperaturDS18B20) 182 mc
+Error in getTemperaturDS18B20 1111001111100101
+stop (loop) 199 mc
+
+start (loop)
+
+start (indicator_TM1637_Output_time)
+stop (indicator_TM1637_Output_time) stop (loop) 28 mc
+
+start (loop)
+stop (loop) 1 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 4 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+
+start (indicator_TM1637_Output_time)
+stop (indicator_TM1637_Output_time) stop (loop) 28 mc
+
+start (loop)
+stop (loop) 1 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+
+start (indicator_TM1637_Output_time)
+stop (indicator_TM1637_Output_time) stop (loop) 28 mc
+
+start (loop)
+stop (loop) 1 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 4 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+
+start (indicator_TM1637_Output_time)
+stop (indicator_TM1637_Output_time) stop (loop) 28 mc
+
+start (loop)
+stop (loop) 1 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+
+start (indicator_TM1637_Output_time)
+stop (indicator_TM1637_Output_time) stop (loop) 28 mc
+
+start (loop)
+stop (loop) 1 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 4 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+
+start (indicator_TM1637_Output_time)
+stop (indicator_TM1637_Output_time) stop (loop) 28 mc
+
+start (loop)
+stop (loop) 1 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 4 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+
+start (indicator_TM1637_Output_time)
+stop (indicator_TM1637_Output_time) stop (loop) 28 mc
+
+start (loop)
+stop (loop) 1 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 1 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+
+start (indicator_TM1637_Output_time)
+stop (indicator_TM1637_Output_time) stop (loop) 28 mc
+
+start (loop)
+stop (loop) 1 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 4 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+
+start (indicator_TM1637_Output_time)
+stop (indicator_TM1637_Output_time) stop (loop) 27 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 4 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+
+start (indicator_TM1637_Output_time)
+stop (indicator_TM1637_Output_time) stop (loop) 28 mc
+
+start (loop)
+stop (loop) 1 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+
+start (indicator_TM1637_Output_temperature)
+Podacha TTK43.38
+Obratka TTK34.75
+Verh TA47.50
+Niz TA35.75
+Podacha SYS-99.00
+Obratka SYS31.12
+Pomeschenie-99.00
+
+stop (indicator_TM1637_Output_temperature) stop (loop) 81 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 4 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+
+start (indicator_TM1637_Output_time)
+stop (indicator_TM1637_Output_time) stop (loop) 27 mc
+
+start (loop)
+stop (loop) 1 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+
+start (indicator_TM1637_Output_time)
+stop (indicator_TM1637_Output_time) stop (loop) 28 mc
+
+start (loop)
+stop (loop) 1 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 4 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 4 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+
+start (indicator_TM1637_Output_time)
+stop (indicator_TM1637_Output_time) stop (loop) 26 mc
+
+start (loop)
+stop (loop) 0 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 4 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+
+start (indicator_TM1637_Output_time)
+stop (indicator_TM1637_Output_time) stop (loop) 27 mc
+
+start (loop)
+stop (loop) 0 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 4 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+
+start (indicator_TM1637_Output_time)
+stop (indicator_TM1637_Output_time) stop (loop) 26 mc
+
+start (loop)
+stop (loop) 0 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 4 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 4 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+stop (loop) 3 mc
+
+start (loop)
+stop (loop) 2 mc
+
+start (loop)
+
+start (indicator_TM1637_Output_time)

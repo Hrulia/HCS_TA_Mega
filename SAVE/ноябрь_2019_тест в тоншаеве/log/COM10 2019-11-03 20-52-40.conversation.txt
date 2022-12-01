@@ -1,0 +1,3517 @@
+2019-11-03 20:52:40	Message	Opening port
+Port open
+2019-11-03 20:52:41	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-03 20:52:41	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-03 20:52:41	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-03 20:52:42	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-03 20:52:42	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-03 20:52:42	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-03 20:52:42	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-03 20:52:43	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-03 20:52:43	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-03 20:52:43	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-03 20:52:43	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-03 20:52:43	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-03 20:52:44	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-03 20:52:44	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-03 20:52:44	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-03 20:52:44	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-03 20:52:45	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-03 20:52:45	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-03 20:52:45	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-03 20:52:45	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-03 20:52:45	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-03 20:52:46	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-03 20:52:46	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-03 20:52:46	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-03 20:52:46	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-03 20:52:46	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-03 20:52:47	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-03 20:52:47	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-03 20:52:47	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-03 20:52:47	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-03 20:52:48	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-03 20:52:48	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-03 20:52:48	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-03 20:52:48	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-03 20:52:48	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-03 20:52:49	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-03 20:52:49	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-03 20:52:49	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-03 20:52:49	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-03 20:52:50	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-03 20:52:50	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-03 20:52:50	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-03 20:52:50	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-03 20:52:50	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-03 20:52:51	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-03 20:52:51	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-03 20:52:51	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-03 20:52:51	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-03 20:52:52	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-03 20:52:52	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-03 20:52:52	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-03 20:52:52	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-03 20:52:52	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-03 20:52:53	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-03 20:52:53	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-03 20:52:53	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-03 20:52:53	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-03 20:52:53	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-03 20:52:54	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-03 20:52:54	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-03 20:52:54	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-03 20:52:54	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-03 20:52:55	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-03 20:52:55	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-03 20:52:55	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-03 20:52:55	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-03 20:52:55	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-03 20:52:56	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-03 20:52:56	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-03 20:52:56	Message	Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+2019-11-03 20:52:56	Message	Podacha TTK38.38
+Obratka TTK35.50
+Verh TA41.13
+Niz TA36.44
+Podacha SYS38.00
+Obratka SYS32.44
+Pomeschenie21.75
+2019-11-03 20:52:57	Message	Podacha TTK38.38
+Obratka TTK35.50
+Verh TA41.13
+Niz TA36.44
+Podacha SYS38.00
+Obratka SYS32.44
+Pomeschenie21.75
+2019-11-03 20:52:57	Message	Podacha TTK38.38
+Obratka TTK35.50
+Verh TA41.13
+Niz TA36.44
+Podacha SYS38.00
+Obratka SYS32.44
+Pomeschenie21.75
+2019-11-03 20:52:57	Message	Podacha TTK38.38
+Obratka TTK35.50
+Verh TA41.13
+Niz TA36.44
+Podacha SYS38.00
+Obratka SYS32.44
+Pomeschenie21.75
+2019-11-03 20:52:57	Message	Podacha TTK38.38
+Obratka TTK35.50
+Verh TA41.13
+Niz TA36.44
+Podacha SYS38.00
+Obratka SYS32.44
+Pomeschenie21.75
+2019-11-03 20:52:58	Message	Podacha TTK38.38
+Obratka TTK35.50
+Verh TA41.13
+Niz TA36.44
+Podacha SYS38.00
+Obratka SYS32.44
+Pomeschenie21.75
+2019-11-03 20:52:58	Message	Podacha TTK38.38
+Obratka TTK35.50
+Verh TA41.13
+Niz TA36.44
+Podacha SYS38.00
+Obratka SYS32.44
+Pomeschenie21.75
+2019-11-03 20:52:58	Message	Podacha TTK38.38
+Obratka TTK35.50
+Verh TA41.13
+Niz TA36.44
+Podacha SYS38.00
+Obratka SYS32.44
+Pomeschenie21.75
+2019-11-03 20:52:58	Message	Podacha TTK38.38
+Obratka TTK35.50
+Verh TA41.13
+Niz TA36.44
+Podacha SYS38.00
+Obratka SYS32.44
+Pomeschenie21.75
+2019-11-03 20:52:58	Message	Podacha TTK38.38
+Obratka TTK35.50
+Verh TA41.13
+Niz TA36.44
+Podacha SYS38.00
+Obratka SYS32.44
+Pomeschenie21.75
+2019-11-03 20:52:59	Message	Podacha TTK38.38
+Obratka TTK35.50
+Verh TA41.13
+Niz TA36.44
+Podacha SYS38.00
+Obratka SYS32.44
+Pomeschenie21.75
+2019-11-03 20:52:59	Message	Podacha TTK38.38
+Obratka TTK35.50
+Verh TA41.13
+Niz TA36.44
+Podacha SYS38.00
+Obratka SYS32.44
+Pomeschenie21.75
+2019-11-03 20:52:59	Message	Podacha TTK38.38
+Obratka TTK35.50
+Verh TA41.13
+Niz TA36.44
+Podacha SYS38.00
+Obratka SYS32.44
+Pomeschenie21.75
+2019-11-03 20:52:59	Message	Podacha TTK38.38
+Obratka TTK35.50
+Verh TA41.13
+Niz TA36.44
+Podacha SYS38.00
+Obratka SYS32.44
+Pomeschenie21.75
+2019-11-03 20:52:59	Message	Podacha TTK38.38
+Obratka TTK35.50
+Verh TA41.13
+Niz TA36.44
+Podacha SYS38.00
+Obratka SYS32.44
+Pomeschenie21.75
+2019-11-03 20:53:00	Message	Podacha TTK38.38
+Obratka TTK35.50
+Verh TA41.13
+Niz TA36.44
+Podacha SYS38.00
+Obratka SYS32.44
+Pomeschenie21.75
+2019-11-03 20:53:00	Message	Podacha TTK38.38
+Obratka TTK35.50
+Verh TA41.13
+Niz TA36.44
+Podacha SYS38.00
+Obratka SYS32.44
+Pomeschenie21.75
+2019-11-03 20:53:00	Message	Podacha TTK38.38
+Obratka TTK35.50
+Verh TA41.13
+Niz TA36.44
+Podacha SYS38.00
+Obratka SYS32.44
+Pomeschenie21.75
+2019-11-03 20:53:00	Message	Podacha TTK38.38
+Obratka TTK35.50
+Verh TA41.13
+Niz TA36.44
+Podacha SYS38.00
+Obratka SYS32.44
+Pomeschenie21.75
+2019-11-03 20:53:01	Message	Podacha TTK38.38
+Obratka TTK35.50
+Verh TA41.13
+Niz TA36.44
+Podacha SYS38.00
+Obratka SYS32.44
+Pomeschenie21.75
+2019-11-03 20:53:01	Message	Podacha TTK38.38
+Obratka TTK35.50
+Verh TA41.13
+Niz TA36.44
+Podacha SYS38.00
+Obratka SYS32.44
+Pomeschenie21.75
+2019-11-03 20:53:01	Message	Podacha TTK38.38
+Obratka TTK35.50
+Verh TA41.13
+Niz TA36.44
+Podacha SYS38.00
+Obratka SYS32.44
+Pomeschenie21.75
+2019-11-03 20:53:01	Message	Podacha TTK38.38
+Obratka TTK35.50
+Verh TA41.13
+Niz TA36.44
+Podacha SYS38.00
+Obratka SYS32.44
+Pomeschenie21.75
+2019-11-03 20:53:01	Message	Podacha TTK38.38
+Obratka TTK35.50
+Verh TA41.13
+Niz TA36.44
+Podacha SYS38.00
+Obratka SYS32.44
+Pomeschenie21.75
+2019-11-03 20:53:02	Message	Podacha TTK38.38
+Obratka TTK35.50
+Verh TA41.13
+Niz TA36.44
+Podacha SYS38.00
+Obratka SYS32.44
+Pomeschenie21.75
+2019-11-03 20:53:02	Message	Podacha TTK38.38
+Obratka TTK35.50
+Verh TA41.13
+Niz TA36.44
+Podacha SYS38.00
+Obratka SYS32.44
+Pomeschenie21.75
+2019-11-03 20:53:02	Message	Podacha TTK38.38
+Obratka TTK35.50
+Verh TA41.13
+Niz TA36.44
+Podacha SYS38.00
+Obratka SYS32.44
+Pomeschenie21.75
+2019-11-03 20:53:02	Message	Podacha TTK38.38
+Obratka TTK35.50
+Verh TA41.13
+Niz TA36.44
+Podacha SYS38.00
+Obratka SYS32.44
+Pomeschenie21.75
+2019-11-03 20:53:03	Message	Podacha TTK38.38
+Obratka TTK35.50
+Verh TA41.13
+Niz TA36.44
+Podacha SYS38.00
+Obratka SYS32.44
+Pomeschenie21.75
+2019-11-03 20:53:03	Message	Podacha TTK38.38
+Obratka TTK35.50
+Verh TA41.13
+Niz TA36.44
+Podacha SYS38.00
+Obratka SYS32.44
+Pomeschenie21.75
+2019-11-03 20:53:03	Message	Podacha TTK38.38
+Obratka TTK35.50
+Verh TA41.13
+Niz TA36.44
+Podacha SYS38.00
+Obratka SYS32.44
+Pomeschenie21.75
+2019-11-03 20:53:03	Message	Podacha TTK38.38
+Obratka TTK35.50
+Verh TA41.13
+Niz TA36.44
+Podacha SYS38.00
+Obratka SYS32.44
+Pomeschenie21.75
+2019-11-03 20:53:04	Message	Podacha TTK38.38
+Obratka TTK35.50
+Verh TA41.13
+Niz TA36.44
+Podacha SYS38.00
+Obratka SYS32.44
+Pomeschenie21.75
+2019-11-03 20:53:04	Message	Podacha TTK38.38
+Obratka TTK35.50
+Verh TA41.13
+Niz TA36.44
+Podacha SYS38.00
+Obratka SYS32.44
+Pomeschenie21.75
+2019-11-03 20:53:04	Message	Podacha TTK38.38
+Obratka TTK35.50
+Verh TA41.13
+Niz TA36.44
+Podacha SYS38.00
+Obratka SYS32.44
+Pomeschenie21.75
+2019-11-03 20:53:04	Message	Podacha TTK38.38
+Obratka TTK35.50
+Verh TA41.13
+Niz TA36.44
+Podacha SYS38.00
+Obratka SYS32.44
+Pomeschenie21.75
+2019-11-03 20:53:04	Message	Podacha TTK38.38
+Obratka TTK35.50
+Verh TA41.13
+Niz TA36.44
+Podacha SYS38.00
+Obratka SYS32.44
+Pomeschenie21.75
+2019-11-03 20:53:05	Message	Podacha TTK38.38
+Obratka TTK35.50
+Verh TA41.13
+Niz TA36.44
+Podacha SYS38.00
+Obratka SYS32.44
+Pomeschenie21.75
+2019-11-03 20:53:05	Message	Podacha TTK38.38
+Obratka TTK35.50
+Verh TA41.13
+Niz TA36.44
+Podacha SYS38.00
+Obratka SYS32.44
+Pomeschenie21.75
+2019-11-03 20:53:05	Message	Podacha TTK38.38
+Obratka TTK35.50
+Verh TA41.13
+Niz TA36.44
+Podacha SYS38.00
+Obratka SYS32.44
+Pomeschenie21.75
+2019-11-03 20:53:05	Message	Podacha TTK38.38
+Obratka TTK35.50
+Verh TA41.13
+Niz TA36.44
+Podacha SYS38.00
+Obratka SYS32.44
+Pomeschenie21.75
+2019-11-03 20:53:06	Message	Podacha TTK38.38
+Obratka TTK35.50
+Verh TA41.13
+Niz TA36.44
+Podacha SYS38.00
+Obratka SYS32.44
+Pomeschenie21.75
+2019-11-03 20:53:06	Message	Podacha TTK38.38
+Obratka TTK35.50
+Verh TA41.13
+Niz TA36.44
+Podacha SYS38.00
+Obratka SYS32.44
+Pomeschenie21.75
+2019-11-03 20:53:06	Message	Podacha TTK38.38
+Obratka TTK35.50
+Verh TA41.13
+Niz TA36.44
+Podacha SYS38.00
+Obratka SYS32.44
+Pomeschenie21.75
+2019-11-03 20:53:06	Message	Podacha TTK38.38
+Obratka TTK35.50
+Verh TA41.13
+Niz TA36.44
+Podacha SYS38.00
+Obratka SYS32.44
+Pomeschenie21.75
+2019-11-03 20:53:06	Message	Podacha TTK38.38
+Obratka TTK35.50
+Verh TA41.13
+Niz TA36.44
+Podacha SYS38.00
+Obratka SYS32.44
+Pomeschenie21.75
+2019-11-03 20:53:07	Message	Podacha TTK38.38
+Obratka TTK35.50
+Verh TA41.13
+Niz TA36.44
+Podacha SYS38.00
+Obratka SYS32.44
+Pomeschenie21.75
+2019-11-03 20:53:07	Message	Podacha TTK38.38
+Obratka TTK35.50
+Verh TA41.13
+Niz TA36.44
+Podacha SYS38.00
+Obratka SYS32.44
+Pomeschenie21.75
+2019-11-03 20:53:07	Message	Podacha TTK38.38
+Obratka TTK35.50
+Verh TA41.13
+Niz TA36.44
+Podacha SYS38.00
+Obratka SYS32.44
+Pomeschenie21.75
+2019-11-03 20:53:07	Message	Podacha TTK38.38
+Obratka TTK35.50
+Verh TA41.13
+Niz TA36.44
+Podacha SYS38.00
+Obratka SYS32.44
+Pomeschenie21.75
+2019-11-03 20:53:07	Message	Podacha TTK38.38
+Obratka TTK35.50
+Verh TA41.13
+Niz TA36.44
+Podacha SYS38.00
+Obratka SYS32.44
+Pomeschenie21.75
+2019-11-03 20:53:08	Message	Podacha TTK38.38
+Obratka TTK35.50
+Verh TA41.13
+Niz TA36.44
+Podacha SYS38.00
+Obratka SYS32.44
+Pomeschenie21.75
+2019-11-03 20:53:08	Message	Podacha TTK38.38
+Obratka TTK35.50
+Verh TA41.13
+Niz TA36.44
+Podacha SYS38.00
+Obratka SYS32.44
+Pomeschenie21.75
+2019-11-03 20:53:08	Message	Podacha TTK38.38
+Obratka TTK35.50
+Verh TA41.13
+Niz TA36.44
+Podacha SYS38.00
+Obratka SYS32.44
+Pomeschenie21.75
+2019-11-03 20:53:08	Message	Podacha TTK38.38
+Obratka TTK35.50
+Verh TA41.13
+Niz TA36.44
+Podacha SYS38.00
+Obratka SYS32.44
+Pomeschenie21.75
+2019-11-03 20:53:09	Message	Podacha TTK38.38
+Obratka TTK35.50
+Verh TA41.13
+Niz TA36.44
+Podacha SYS38.00
+Obratka SYS32.44
+Pomeschenie21.75
+2019-11-03 20:53:09	Message	Podacha TTK38.38
+Obratka TTK35.50
+Verh TA41.13
+Niz TA36.44
+Podacha SYS38.00
+Obratka SYS32.44
+Pomeschenie21.75
+2019-11-03 20:53:09	Message	Podacha TTK38.38
+Obratka TTK35.50
+Verh TA41.13
+Niz TA36.44
+Podacha SYS38.00
+Obratka SYS32.44
+Pomeschenie21.75
+2019-11-03 20:53:09	Message	Podacha TTK38.38
+Obratka TTK35.50
+Verh TA41.13
+Niz TA36.44
+Podacha SYS38.00
+Obratka SYS32.44
+Pomeschenie21.75
+2019-11-03 20:53:09	Message	Podacha TTK38.38
+Obratka TTK35.50
+Verh TA41.13
+Niz TA36.44
+Podacha SYS38.00
+Obratka SYS32.44
+Pomeschenie21.75
+2019-11-03 20:53:10	Message	Podacha TTK38.38
+Obratka TTK35.50
+Verh TA41.13
+Niz TA36.44
+Podacha SYS38.00
+Obratka SYS32.44
+Pomeschenie21.75
+2019-11-03 20:53:10	Message	Podacha TTK38.38
+Obratka TTK35.50
+Verh TA41.13
+Niz TA36.44
+Podacha SYS38.00
+Obratka SYS32.44
+Pomeschenie21.75
+2019-11-03 20:53:10	Message	Podacha TTK38.38
+Obratka TTK35.50
+Verh TA41.13
+Niz TA36.44
+Podacha SYS38.00
+Obratka SYS32.44
+Pomeschenie21.75
+2019-11-03 20:53:10	Message	Podacha TTK38.38
+Obratka TTK35.50
+Verh TA41.13
+Niz TA36.44
+Podacha SYS38.00
+Obratka SYS32.44
+Pomeschenie21.75
+2019-11-03 20:53:11	Message	Podacha TTK38.38
+Obratka TTK35.50
+Verh TA41.13
+Niz TA36.44
+Podacha SYS38.00
+Obratka SYS32.44
+Pomeschenie21.75
+2019-11-03 20:53:11	Message	Podacha TTK38.38
+Obratka TTK35.50
+Verh TA41.13
+Niz TA36.44
+Podacha SYS38.00
+Obratka SYS32.44
+Pomeschenie21.75
+2019-11-03 20:53:11	Message	Podacha TTK38.38
+Obratka TTK35.50
+Verh TA41.13
+Niz TA36.44
+Podacha SYS38.00
+Obratka SYS32.44
+Pomeschenie21.75
+2019-11-03 20:53:11	Message	Podacha TTK38.38
+Obratka TTK35.50
+Verh TA41.13
+Niz TA36.44
+Podacha SYS38.00
+Obratka SYS32.44
+Pomeschenie21.75
+2019-11-03 20:53:11	Message	Podacha TTK38.38
+Obratka TTK35.50
+Verh TA41.13
+Niz TA36.44
+Podacha SYS38.00
+Obratka SYS32.44
+Pomeschenie21.75
+2019-11-03 20:53:12	Message	Podacha TTK38.38
+Obratka TTK35.50
+Verh TA41.13
+Niz TA36.44
+Podacha SYS38.00
+Obratka SYS32.44
+Pomeschenie21.75
+2019-11-03 20:53:12	Message	Podacha TTK38.19
+Obratka TTK35.44
+Verh TA41.06
+Niz TA36.31
+Podacha SYS37.94
+Obratka SYS32.50
+Pomeschenie-99.00
+2019-11-03 20:53:12	Message	Podacha TTK38.19
+Obratka TTK35.44
+Verh TA41.06
+Niz TA36.31
+Podacha SYS37.94
+Obratka SYS32.50
+Pomeschenie-99.00
+2019-11-03 20:53:12	Message	Podacha TTK38.19
+Obratka TTK35.44
+Verh TA41.06
+Niz TA36.31
+Podacha SYS37.94
+Obratka SYS32.50
+Pomeschenie-99.00
+2019-11-03 20:53:13	Message	Podacha TTK38.19
+Obratka TTK35.44
+Verh TA41.06
+Niz TA36.31
+Podacha SYS37.94
+Obratka SYS32.50
+Pomeschenie-99.00
+2019-11-03 20:53:13	Message	Podacha TTK38.19
+Obratka TTK35.44
+Verh TA41.06
+Niz TA36.31
+Podacha SYS37.94
+Obratka SYS32.50
+Pomeschenie-99.00
+2019-11-03 20:53:13	Message	Podacha TTK38.19
+Obratka TTK35.44
+Verh TA41.06
+Niz TA36.31
+Podacha SYS37.94
+Obratka SYS32.50
+Pomeschenie-99.00
+2019-11-03 20:53:13	Message	Podacha TTK38.19
+Obratka TTK35.44
+Verh TA41.06
+Niz TA36.31
+Podacha SYS37.94
+Obratka SYS32.50
+Pomeschenie-99.00
+2019-11-03 20:53:13	Message	Podacha TTK38.19
+Obratka TTK35.44
+Verh TA41.06
+Niz TA36.31
+Podacha SYS37.94
+Obratka SYS32.50
+Pomeschenie-99.00
+2019-11-03 20:53:14	Message	Podacha TTK38.19
+Obratka TTK35.44
+Verh TA41.06
+Niz TA36.31
+Podacha SYS37.94
+Obratka SYS32.50
+Pomeschenie-99.00
+2019-11-03 20:53:14	Message	Podacha TTK38.19
+Obratka TTK35.44
+Verh TA41.06
+Niz TA36.31
+Podacha SYS37.94
+Obratka SYS32.50
+Pomeschenie-99.00
+2019-11-03 20:53:14	Message	Podacha TTK38.19
+Obratka TTK35.44
+Verh TA41.06
+Niz TA36.31
+Podacha SYS37.94
+Obratka SYS32.50
+Pomeschenie-99.00
+2019-11-03 20:53:14	Message	Podacha TTK38.19
+Obratka TTK35.44
+Verh TA41.06
+Niz TA36.31
+Podacha SYS37.94
+Obratka SYS32.50
+Pomeschenie-99.00
+2019-11-03 20:53:15	Message	Podacha TTK38.19
+Obratka TTK35.44
+Verh TA41.06
+Niz TA36.31
+Podacha SYS37.94
+Obratka SYS32.50
+Pomeschenie-99.00
+2019-11-03 20:53:15	Message	Podacha TTK38.19
+Obratka TTK35.44
+Verh TA41.06
+Niz TA36.31
+Podacha SYS37.94
+Obratka SYS32.50
+Pomeschenie-99.00
+2019-11-03 20:53:15	Message	Podacha TTK38.19
+Obratka TTK35.44
+Verh TA41.06
+Niz TA36.31
+Podacha SYS37.94
+Obratka SYS32.50
+Pomeschenie-99.00
+2019-11-03 20:53:15	Message	Podacha TTK38.19
+Obratka TTK35.44
+Verh TA41.06
+Niz TA36.31
+Podacha SYS37.94
+Obratka SYS32.50
+Pomeschenie-99.00
+2019-11-03 20:53:15	Message	Podacha TTK38.19
+Obratka TTK35.44
+Verh TA41.06
+Niz TA36.31
+Podacha SYS37.94
+Obratka SYS32.50
+Pomeschenie-99.00
+2019-11-03 20:53:16	Message	Podacha TTK38.19
+Obratka TTK35.44
+Verh TA41.06
+Niz TA36.31
+Podacha SYS37.94
+Obratka SYS32.50
+Pomeschenie-99.00
+2019-11-03 20:53:16	Message	Podacha TTK38.19
+Obratka TTK35.44
+Verh TA41.06
+Niz TA36.31
+Podacha SYS37.94
+Obratka SYS32.50
+Pomeschenie-99.00
+2019-11-03 20:53:16	Message	Podacha TTK38.19
+Obratka TTK35.44
+Verh TA41.06
+Niz TA36.31
+Podacha SYS37.94
+Obratka SYS32.50
+Pomeschenie-99.00
+2019-11-03 20:53:16	Message	Podacha TTK38.19
+Obratka TTK35.44
+Verh TA41.06
+Niz TA36.31
+Podacha SYS37.94
+Obratka SYS32.50
+Pomeschenie-99.00
+2019-11-03 20:53:17	Message	Podacha TTK38.19
+Obratka TTK35.44
+Verh TA41.06
+Niz TA36.31
+Podacha SYS37.94
+Obratka SYS32.50
+Pomeschenie-99.00
+2019-11-03 20:53:17	Message	Podacha TTK38.19
+Obratka TTK35.44
+Verh TA41.06
+Niz TA36.31
+Podacha SYS37.94
+Obratka SYS32.50
+Pomeschenie-99.00
+2019-11-03 20:53:17	Message	Podacha TTK38.19
+Obratka TTK35.44
+Verh TA41.06
+Niz TA36.31
+Podacha SYS37.94
+Obratka SYS32.50
+Pomeschenie-99.00
+2019-11-03 20:53:17	Message	Podacha TTK38.19
+Obratka TTK35.44
+Verh TA41.06
+Niz TA36.31
+Podacha SYS37.94
+Obratka SYS32.50
+Pomeschenie-99.00
+2019-11-03 20:53:17	Message	Podacha TTK38.19
+Obratka TTK35.44
+Verh TA41.06
+Niz TA36.31
+Podacha SYS37.94
+Obratka SYS32.50
+Pomeschenie-99.00
+2019-11-03 20:53:18	Message	Podacha TTK38.19
+Obratka TTK35.44
+Verh TA41.06
+Niz TA36.31
+Podacha SYS37.94
+Obratka SYS32.50
+Pomeschenie-99.00
+2019-11-03 20:53:18	Message	Podacha TTK38.19
+Obratka TTK35.44
+Verh TA41.06
+Niz TA36.31
+Podacha SYS37.94
+Obratka SYS32.50
+Pomeschenie-99.00
+2019-11-03 20:53:18	Message	Podacha TTK38.19
+Obratka TTK35.44
+Verh TA41.06
+Niz TA36.31
+Podacha SYS37.94
+Obratka SYS32.50
+Pomeschenie-99.00
+2019-11-03 20:53:18	Message	Podacha TTK38.19
+Obratka TTK35.44
+Verh TA41.06
+Niz TA36.31
+Podacha SYS37.94
+Obratka SYS32.50
+Pomeschenie-99.00
+2019-11-03 20:53:19	Message	Podacha TTK38.19
+Obratka TTK35.44
+Verh TA41.06
+Niz TA36.31
+Podacha SYS37.94
+Obratka SYS32.50
+Pomeschenie-99.00
+2019-11-03 20:53:19	Message	Podacha TTK38.19
+Obratka TTK35.44
+Verh TA41.06
+Niz TA36.31
+Podacha SYS37.94
+Obratka SYS32.50
+Pomeschenie-99.00
+2019-11-03 20:53:19	Message	Podacha TTK38.19
+Obratka TTK35.44
+Verh TA41.06
+Niz TA36.31
+Podacha SYS37.94
+Obratka SYS32.50
+Pomeschenie-99.00
+2019-11-03 20:53:19	Message	Podacha TTK38.19
+Obratka TTK35.44
+Verh TA41.06
+Niz TA36.31
+Podacha SYS37.94
+Obratka SYS32.50
+Pomeschenie-99.00
+2019-11-03 20:53:19	Message	Podacha TTK38.19
+Obratka TTK35.44
+Verh TA41.06
+Niz TA36.31
+Podacha SYS37.94
+Obratka SYS32.50
+Pomeschenie-99.00
+2019-11-03 20:53:20	Message	Podacha TTK38.19
+Obratka TTK35.44
+Verh TA41.06
+Niz TA36.31
+Podacha SYS37.94
+Obratka SYS32.50
+Pomeschenie-99.00
+2019-11-03 20:53:20	Message	Podacha TTK38.19
+Obratka TTK35.44
+Verh TA41.06
+Niz TA36.31
+Podacha SYS37.94
+Obratka SYS32.50
+Pomeschenie-99.00
+2019-11-03 20:53:20	Message	Podacha TTK38.19
+Obratka TTK35.44
+Verh TA41.06
+Niz TA36.31
+Podacha SYS37.94
+Obratka SYS32.50
+Pomeschenie-99.00
+2019-11-03 20:53:20	Message	Podacha TTK38.19
+Obratka TTK35.44
+Verh TA41.06
+Niz TA36.31
+Podacha SYS37.94
+Obratka SYS32.50
+Pomeschenie-99.00
+2019-11-03 20:53:20	Message	Podacha TTK38.19
+Obratka TTK35.44
+Verh TA41.06
+Niz TA36.31
+Podacha SYS37.94
+Obratka SYS32.50
+Pomeschenie-99.00
+2019-11-03 20:53:21	Message	Podacha TTK38.19
+Obratka TTK35.44
+Verh TA41.06
+Niz TA36.31
+Podacha SYS37.94
+Obratka SYS32.50
+Pomeschenie-99.00
+2019-11-03 20:53:21	Message	Podacha TTK38.19
+Obratka TTK35.44
+Verh TA41.06
+Niz TA36.31
+Podacha SYS37.94
+Obratka SYS32.50
+Pomeschenie-99.00
+2019-11-03 20:53:21	Message	Podacha TTK38.19
+Obratka TTK35.44
+Verh TA41.06
+Niz TA36.31
+Podacha SYS37.94
+Obratka SYS32.50
+Pomeschenie-99.00
+2019-11-03 20:53:21	Message	Podacha TTK38.19
+Obratka TTK35.44
+Verh TA41.06
+Niz TA36.31
+Podacha SYS37.94
+Obratka SYS32.50
+Pomeschenie-99.00
+2019-11-03 20:53:22	Message	Podacha TTK38.19
+Obratka TTK35.44
+Verh TA41.06
+Niz TA36.31
+Podacha SYS37.94
+Obratka SYS32.50
+Pomeschenie-99.00
+2019-11-03 20:53:22	Message	Podacha TTK38.19
+Obratka TTK35.44
+Verh TA41.06
+Niz TA36.31
+Podacha SYS37.94
+Obratka SYS32.50
+Pomeschenie-99.00
+2019-11-03 20:53:22	Message	Podacha TTK38.19
+Obratka TTK35.44
+Verh TA41.06
+Niz TA36.31
+Podacha SYS37.94
+Obratka SYS32.50
+Pomeschenie-99.00
+2019-11-03 20:53:22	Message	Podacha TTK38.19
+Obratka TTK35.44
+Verh TA41.06
+Niz TA36.31
+Podacha SYS37.94
+Obratka SYS32.50
+Pomeschenie-99.00
+2019-11-03 20:53:22	Message	Podacha TTK38.19
+Obratka TTK35.44
+Verh TA41.06
+Niz TA36.31
+Podacha SYS37.94
+Obratka SYS32.50
+Pomeschenie-99.00
+2019-11-03 20:53:23	Message	Podacha TTK38.19
+Obratka TTK35.44
+Verh TA41.06
+Niz TA36.31
+Podacha SYS37.94
+Obratka SYS32.50
+Pomeschenie-99.00
+2019-11-03 20:53:23	Message	Podacha TTK38.19
+Obratka TTK35.44
+Verh TA41.06
+Niz TA36.31
+Podacha SYS37.94
+Obratka SYS32.50
+Pomeschenie-99.00
+2019-11-03 20:53:23	Message	Podacha TTK38.19
+Obratka TTK35.44
+Verh TA41.06
+Niz TA36.31
+Podacha SYS37.94
+Obratka SYS32.50
+Pomeschenie-99.00
+2019-11-03 20:53:23	Message	Podacha TTK38.19
+Obratka TTK35.44
+Verh TA41.06
+Niz TA36.31
+Podacha SYS37.94
+Obratka SYS32.50
+Pomeschenie-99.00
+2019-11-03 20:53:24	Message	Podacha TTK38.19
+Obratka TTK35.44
+Verh TA41.06
+Niz TA36.31
+Podacha SYS37.94
+Obratka SYS32.50
+Pomeschenie-99.00
+2019-11-03 20:53:24	Message	Podacha TTK38.19
+Obratka TTK35.44
+Verh TA41.06
+Niz TA36.31
+Podacha SYS37.94
+Obratka SYS32.50
+Pomeschenie-99.00
+2019-11-03 20:53:24	Message	Podacha TTK38.19
+Obratka TTK35.44
+Verh TA41.06
+Niz TA36.31
+Podacha SYS37.94
+Obratka SYS32.50
+Pomeschenie-99.00
+2019-11-03 20:53:24	Message	Podacha TTK38.19
+Obratka TTK35.44
+Verh TA41.06
+Niz TA36.31
+Podacha SYS37.94
+Obratka SYS32.50
+Pomeschenie-99.00
+2019-11-03 20:53:25	Message	Podacha TTK38.19
+Obratka TTK35.44
+Verh TA41.06
+Niz TA36.31
+Podacha SYS37.94
+Obratka SYS32.50
+Pomeschenie-99.00
+2019-11-03 20:53:25	Message	Podacha TTK38.19
+Obratka TTK35.44
+Verh TA41.06
+Niz TA36.31
+Podacha SYS37.94
+Obratka SYS32.50
+Pomeschenie-99.00
+2019-11-03 20:53:25	Message	Podacha TTK38.19
+Obratka TTK35.44
+Verh TA41.06
+Niz TA36.31
+Podacha SYS37.94
+Obratka SYS32.50
+Pomeschenie-99.00
+2019-11-03 20:53:25	Message	Podacha TTK38.19
+Obratka TTK35.44
+Verh TA41.06
+Niz TA36.31
+Podacha SYS37.94
+Obratka SYS32.50
+Pomeschenie-99.00
+2019-11-03 20:53:25	Message	Podacha TTK38.19
+Obratka TTK35.44
+Verh TA41.06
+Niz TA36.31
+Podacha SYS37.94
+Obratka SYS32.50
+Pomeschenie-99.00
+2019-11-03 20:53:26	Message	Podacha TTK38.19
+Obratka TTK35.44
+Verh TA41.06
+Niz TA36.31
+Podacha SYS37.94
+Obratka SYS32.50
+Pomeschenie-99.00
+2019-11-03 20:53:26	Message	Podacha TTK38.19
+Obratka TTK35.44
+Verh TA41.06
+Niz TA36.31
+Podacha SYS37.94
+Obratka SYS32.50
+Pomeschenie-99.00
+2019-11-03 20:53:26	Message	Podacha TTK38.19
+Obratka TTK35.44
+Verh TA41.06
+Niz TA36.31
+Podacha SYS37.94
+Obratka SYS32.50
+Pomeschenie-99.00
+2019-11-03 20:53:26	Message	Podacha TTK38.19
+Obratka TTK35.44
+Verh TA41.06
+Niz TA36.31
+Podacha SYS37.94
+Obratka SYS32.50
+Pomeschenie-99.00
+2019-11-03 20:53:27	Message	Podacha TTK38.19
+Obratka TTK35.44
+Verh TA41.06
+Niz TA36.31
+Podacha SYS37.94
+Obratka SYS32.50
+Pomeschenie-99.00
+2019-11-03 20:53:27	Message	Podacha TTK38.19
+Obratka TTK35.44
+Verh TA41.06
+Niz TA36.31
+Podacha SYS37.94
+Obratka SYS32.50
+Pomeschenie-99.00
+2019-11-03 20:53:27	Message	Podacha TTK38.19
+Obratka TTK35.44
+Verh TA41.06
+Niz TA36.31
+Podacha SYS37.94
+Obratka SYS32.50
+Pomeschenie-99.00
+2019-11-03 20:53:27	Message	Podacha TTK38.19
+Obratka TTK35.44
+Verh TA41.06
+Niz TA36.31
+Podacha SYS37.94
+Obratka SYS32.50
+Pomeschenie-99.00
+2019-11-03 20:53:27	Message	Podacha TTK38.50
+Obratka TTK35.44
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.88
+Obratka SYS32.50
+Pomeschenie21.81
+2019-11-03 20:53:28	Message	Podacha TTK38.50
+Obratka TTK35.44
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.88
+Obratka SYS32.50
+Pomeschenie21.81
+2019-11-03 20:53:28	Message	Podacha TTK38.50
+Obratka TTK35.44
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.88
+Obratka SYS32.50
+Pomeschenie21.81
+2019-11-03 20:53:28	Message	Podacha TTK38.50
+Obratka TTK35.44
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.88
+Obratka SYS32.50
+Pomeschenie21.81
+2019-11-03 20:53:28	Message	Podacha TTK38.50
+Obratka TTK35.44
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.88
+Obratka SYS32.50
+Pomeschenie21.81
+2019-11-03 20:53:28	Message	Podacha TTK38.50
+Obratka TTK35.44
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.88
+Obratka SYS32.50
+Pomeschenie21.81
+2019-11-03 20:53:29	Message	Podacha TTK38.50
+Obratka TTK35.44
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.88
+Obratka SYS32.50
+Pomeschenie21.81
+2019-11-03 20:53:29	Message	Podacha TTK38.50
+Obratka TTK35.44
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.88
+Obratka SYS32.50
+Pomeschenie21.81
+2019-11-03 20:53:29	Message	Podacha TTK38.50
+Obratka TTK35.44
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.88
+Obratka SYS32.50
+Pomeschenie21.81
+2019-11-03 20:53:29	Message	Podacha TTK38.50
+Obratka TTK35.44
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.88
+Obratka SYS32.50
+Pomeschenie21.81
+2019-11-03 20:53:30	Message	Podacha TTK38.50
+Obratka TTK35.44
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.88
+Obratka SYS32.50
+Pomeschenie21.81
+2019-11-03 20:53:30	Message	Podacha TTK38.50
+Obratka TTK35.44
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.88
+Obratka SYS32.50
+Pomeschenie21.81
+2019-11-03 20:53:30	Message	Podacha TTK38.50
+Obratka TTK35.44
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.88
+Obratka SYS32.50
+Pomeschenie21.81
+2019-11-03 20:53:30	Message	Podacha TTK38.50
+Obratka TTK35.44
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.88
+Obratka SYS32.50
+Pomeschenie21.81
+2019-11-03 20:53:30	Message	Podacha TTK38.50
+Obratka TTK35.44
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.88
+Obratka SYS32.50
+Pomeschenie21.81
+2019-11-03 20:53:31	Message	Podacha TTK38.50
+Obratka TTK35.44
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.88
+Obratka SYS32.50
+Pomeschenie21.81
+2019-11-03 20:53:31	Message	Podacha TTK38.50
+Obratka TTK35.44
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.88
+Obratka SYS32.50
+Pomeschenie21.81
+2019-11-03 20:53:31	Message	Podacha TTK38.50
+Obratka TTK35.44
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.88
+Obratka SYS32.50
+Pomeschenie21.81
+2019-11-03 20:53:31	Message	Podacha TTK38.50
+Obratka TTK35.44
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.88
+Obratka SYS32.50
+Pomeschenie21.81
+2019-11-03 20:53:32	Message	Podacha TTK38.50
+Obratka TTK35.44
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.88
+Obratka SYS32.50
+Pomeschenie21.81
+2019-11-03 20:53:32	Message	Podacha TTK38.50
+Obratka TTK35.44
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.88
+Obratka SYS32.50
+Pomeschenie21.81
+2019-11-03 20:53:32	Message	Podacha TTK38.50
+Obratka TTK35.44
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.88
+Obratka SYS32.50
+Pomeschenie21.81
+2019-11-03 20:53:32	Message	Podacha TTK38.50
+Obratka TTK35.44
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.88
+Obratka SYS32.50
+Pomeschenie21.81
+2019-11-03 20:53:33	Message	Podacha TTK38.50
+Obratka TTK35.44
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.88
+Obratka SYS32.50
+Pomeschenie21.81
+2019-11-03 20:53:33	Message	Podacha TTK38.50
+Obratka TTK35.44
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.88
+Obratka SYS32.50
+Pomeschenie21.81
+2019-11-03 20:53:33	Message	Podacha TTK38.50
+Obratka TTK35.44
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.88
+Obratka SYS32.50
+Pomeschenie21.81
+2019-11-03 20:53:33	Message	Podacha TTK38.50
+Obratka TTK35.44
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.88
+Obratka SYS32.50
+Pomeschenie21.81
+2019-11-03 20:53:33	Message	Podacha TTK38.50
+Obratka TTK35.44
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.88
+Obratka SYS32.50
+Pomeschenie21.81
+2019-11-03 20:53:34	Message	Podacha TTK38.50
+Obratka TTK35.44
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.88
+Obratka SYS32.50
+Pomeschenie21.81
+2019-11-03 20:53:34	Message	Podacha TTK38.50
+Obratka TTK35.44
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.88
+Obratka SYS32.50
+Pomeschenie21.81
+2019-11-03 20:53:34	Message	Podacha TTK38.50
+Obratka TTK35.44
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.88
+Obratka SYS32.50
+Pomeschenie21.81
+2019-11-03 20:53:34	Message	Podacha TTK38.50
+Obratka TTK35.44
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.88
+Obratka SYS32.50
+Pomeschenie21.81
+2019-11-03 20:53:34	Message	Podacha TTK38.50
+Obratka TTK35.44
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.88
+Obratka SYS32.50
+Pomeschenie21.81
+2019-11-03 20:53:35	Message	Podacha TTK38.50
+Obratka TTK35.44
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.88
+Obratka SYS32.50
+Pomeschenie21.81
+2019-11-03 20:53:35	Message	Podacha TTK38.50
+Obratka TTK35.44
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.88
+Obratka SYS32.50
+Pomeschenie21.81
+2019-11-03 20:53:35	Message	Podacha TTK38.50
+Obratka TTK35.44
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.88
+Obratka SYS32.50
+Pomeschenie21.81
+2019-11-03 20:53:35	Message	Podacha TTK38.50
+Obratka TTK35.44
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.88
+Obratka SYS32.50
+Pomeschenie21.81
+2019-11-03 20:53:36	Message	Podacha TTK38.50
+Obratka TTK35.44
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.88
+Obratka SYS32.50
+Pomeschenie21.81
+2019-11-03 20:53:36	Message	Podacha TTK38.50
+Obratka TTK35.44
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.88
+Obratka SYS32.50
+Pomeschenie21.81
+2019-11-03 20:53:36	Message	Podacha TTK38.50
+Obratka TTK35.44
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.88
+Obratka SYS32.50
+Pomeschenie21.81
+2019-11-03 20:53:36	Message	Podacha TTK38.50
+Obratka TTK35.44
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.88
+Obratka SYS32.50
+Pomeschenie21.81
+2019-11-03 20:53:36	Message	Podacha TTK38.50
+Obratka TTK35.44
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.88
+Obratka SYS32.50
+Pomeschenie21.81
+2019-11-03 20:53:37	Message	Podacha TTK38.50
+Obratka TTK35.44
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.88
+Obratka SYS32.50
+Pomeschenie21.81
+2019-11-03 20:53:37	Message	Podacha TTK38.50
+Obratka TTK35.44
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.88
+Obratka SYS32.50
+Pomeschenie21.81
+2019-11-03 20:53:37	Message	Podacha TTK38.50
+Obratka TTK35.44
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.88
+Obratka SYS32.50
+Pomeschenie21.81
+2019-11-03 20:53:37	Message	Podacha TTK38.50
+Obratka TTK35.44
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.88
+Obratka SYS32.50
+Pomeschenie21.81
+2019-11-03 20:53:38	Message	Podacha TTK38.50
+Obratka TTK35.44
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.88
+Obratka SYS32.50
+Pomeschenie21.81
+2019-11-03 20:53:38	Message	Podacha TTK38.50
+Obratka TTK35.44
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.88
+Obratka SYS32.50
+Pomeschenie21.81
+2019-11-03 20:53:38	Message	Podacha TTK38.50
+Obratka TTK35.44
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.88
+Obratka SYS32.50
+Pomeschenie21.81
+2019-11-03 20:53:38	Message	Podacha TTK38.50
+Obratka TTK35.44
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.88
+Obratka SYS32.50
+Pomeschenie21.81
+2019-11-03 20:53:38	Message	Podacha TTK38.50
+Obratka TTK35.44
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.88
+Obratka SYS32.50
+Pomeschenie21.81
+2019-11-03 20:53:39	Message	Podacha TTK38.50
+Obratka TTK35.44
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.88
+Obratka SYS32.50
+Pomeschenie21.81
+2019-11-03 20:53:39	Message	Podacha TTK38.50
+Obratka TTK35.44
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.88
+Obratka SYS32.50
+Pomeschenie21.81
+2019-11-03 20:53:39	Message	Podacha TTK38.50
+Obratka TTK35.44
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.88
+Obratka SYS32.50
+Pomeschenie21.81
+2019-11-03 20:53:39	Message	Podacha TTK38.50
+Obratka TTK35.44
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.88
+Obratka SYS32.50
+Pomeschenie21.81
+2019-11-03 20:53:40	Message	Podacha TTK38.50
+Obratka TTK35.44
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.88
+Obratka SYS32.50
+Pomeschenie21.81
+2019-11-03 20:53:40	Message	Podacha TTK38.50
+Obratka TTK35.44
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.88
+Obratka SYS32.50
+Pomeschenie21.81
+2019-11-03 20:53:40	Message	Podacha TTK38.50
+Obratka TTK35.44
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.88
+Obratka SYS32.50
+Pomeschenie21.81
+2019-11-03 20:53:40	Message	Podacha TTK38.50
+Obratka TTK35.44
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.88
+Obratka SYS32.50
+Pomeschenie21.81
+2019-11-03 20:53:40	Message	Podacha TTK38.50
+Obratka TTK35.44
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.88
+Obratka SYS32.50
+Pomeschenie21.81
+2019-11-03 20:53:41	Message	Podacha TTK38.50
+Obratka TTK35.44
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.88
+Obratka SYS32.50
+Pomeschenie21.81
+2019-11-03 20:53:41	Message	Podacha TTK38.50
+Obratka TTK35.44
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.88
+Obratka SYS32.50
+Pomeschenie21.81
+2019-11-03 20:53:41	Message	Podacha TTK38.50
+Obratka TTK35.44
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.88
+Obratka SYS32.50
+Pomeschenie21.81
+2019-11-03 20:53:41	Message	Podacha TTK38.50
+Obratka TTK35.44
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.88
+Obratka SYS32.50
+Pomeschenie21.81
+2019-11-03 20:53:42	Message	Podacha TTK38.50
+Obratka TTK35.44
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.88
+Obratka SYS32.50
+Pomeschenie21.81
+2019-11-03 20:53:42	Message	Podacha TTK38.50
+Obratka TTK35.44
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.88
+Obratka SYS32.50
+Pomeschenie21.81
+2019-11-03 20:53:42	Message	Podacha TTK38.50
+Obratka TTK35.44
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.88
+Obratka SYS32.50
+Pomeschenie21.81
+2019-11-03 20:53:42	Message	Podacha TTK38.50
+Obratka TTK35.44
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.88
+Obratka SYS32.50
+Pomeschenie21.81
+2019-11-03 20:53:42	Message	Podacha TTK38.50
+Obratka TTK35.44
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.88
+Obratka SYS32.50
+Pomeschenie21.81
+2019-11-03 20:53:43	Message	Podacha TTK38.50
+Obratka TTK35.44
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.88
+Obratka SYS32.50
+Pomeschenie21.81
+2019-11-03 20:53:43	Message	Podacha TTK38.50
+Obratka TTK35.44
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.88
+Obratka SYS32.56
+Pomeschenie21.75
+2019-11-03 20:53:43	Message	Podacha TTK38.50
+Obratka TTK35.44
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.88
+Obratka SYS32.56
+Pomeschenie21.75
+2019-11-03 20:53:43	Message	Podacha TTK38.50
+Obratka TTK35.44
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.88
+Obratka SYS32.56
+Pomeschenie21.75
+2019-11-03 20:53:43	Message	Podacha TTK38.50
+Obratka TTK35.44
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.88
+Obratka SYS32.56
+Pomeschenie21.75
+2019-11-03 20:53:44	Message	Podacha TTK38.50
+Obratka TTK35.44
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.88
+Obratka SYS32.56
+Pomeschenie21.75
+2019-11-03 20:53:44	Message	Podacha TTK38.50
+Obratka TTK35.44
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.88
+Obratka SYS32.56
+Pomeschenie21.75
+2019-11-03 20:53:44	Message	Podacha TTK38.50
+Obratka TTK35.44
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.88
+Obratka SYS32.56
+Pomeschenie21.75
+2019-11-03 20:53:44	Message	Podacha TTK38.50
+Obratka TTK35.44
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.88
+Obratka SYS32.56
+Pomeschenie21.75
+2019-11-03 20:53:45	Message	Podacha TTK38.50
+Obratka TTK35.44
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.88
+Obratka SYS32.56
+Pomeschenie21.75
+
+ostatok =0
+0
+23.00
+2019-11-03 20:53:47	Message	ostatok =0
+2
+24.00
+2019-11-03 20:53:49	Message	ostatok =0
+4
+25.00
+2019-11-03 20:53:51	Message	ostatok =0
+6
+26.00
+2019-11-03 20:53:53	Message	Podacha TTK38.50
+Obratka TTK35.44
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.88
+Obratka SYS32.56
+Pomeschenie21.75
+2019-11-03 20:53:54	Message	Podacha TTK38.50
+Obratka TTK35.44
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.88
+Obratka SYS32.56
+Pomeschenie21.75
+2019-11-03 20:53:54	Message	Podacha TTK38.50
+Obratka TTK35.44
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.88
+Obratka SYS32.56
+Pomeschenie21.75
+2019-11-03 20:53:54	Message	Podacha TTK38.50
+Obratka TTK35.44
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.88
+Obratka SYS32.56
+Pomeschenie21.75
+2019-11-03 20:53:54	Message	Podacha TTK38.50
+Obratka TTK35.44
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.88
+Obratka SYS32.56
+Pomeschenie21.75
+
+ostatok =0
+0
+27.00
+2019-11-03 20:53:56	Message	Podacha TTK38.50
+Obratka TTK35.44
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.88
+Obratka SYS32.56
+Pomeschenie21.75
+2019-11-03 20:53:56	Message	Podacha TTK38.50
+Obratka TTK35.44
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.88
+Obratka SYS32.56
+Pomeschenie21.75
+2019-11-03 20:53:56	Message	Podacha TTK38.50
+Obratka TTK35.44
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.88
+Obratka SYS32.56
+Pomeschenie21.75
+2019-11-03 20:53:56	Message	Podacha TTK38.50
+Obratka TTK35.44
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.88
+Obratka SYS32.56
+Pomeschenie21.75
+2019-11-03 20:53:56	Message	Podacha TTK38.50
+Obratka TTK35.44
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.88
+Obratka SYS32.56
+Pomeschenie21.75
+2019-11-03 20:53:57	Message	Podacha TTK38.50
+Obratka TTK35.44
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.88
+Obratka SYS32.56
+Pomeschenie21.75
+2019-11-03 20:53:57	Message	Podacha TTK38.50
+Obratka TTK35.44
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.88
+Obratka SYS32.56
+Pomeschenie21.75
+2019-11-03 20:53:57	Message	Podacha TTK38.50
+Obratka TTK35.44
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.88
+Obratka SYS32.56
+Pomeschenie21.75
+2019-11-03 20:53:57	Message	Podacha TTK38.50
+Obratka TTK35.44
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.88
+Obratka SYS32.56
+Pomeschenie21.75
+2019-11-03 20:53:58	Message	Podacha TTK38.50
+Obratka TTK35.44
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.88
+Obratka SYS32.56
+Pomeschenie21.75
+2019-11-03 20:53:58	Message	Podacha TTK38.50
+Obratka TTK35.44
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.88
+Obratka SYS32.56
+Pomeschenie21.75
+2019-11-03 20:53:58	Message	Podacha TTK38.50
+Obratka TTK35.44
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.88
+Obratka SYS32.56
+Pomeschenie21.75
+2019-11-03 20:53:58	Message	Podacha TTK38.63
+Obratka TTK35.44
+Verh TA41.06
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.56
+Pomeschenie21.75
+2019-11-03 20:53:58	Message	Podacha TTK38.63
+Obratka TTK35.44
+Verh TA41.06
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.56
+Pomeschenie21.75
+2019-11-03 20:53:59	Message	Podacha TTK38.63
+Obratka TTK35.44
+Verh TA41.06
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.56
+Pomeschenie21.75
+2019-11-03 20:53:59	Message	Podacha TTK38.63
+Obratka TTK35.44
+Verh TA41.06
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.56
+Pomeschenie21.75
+2019-11-03 20:53:59	Message	Podacha TTK38.63
+Obratka TTK35.44
+Verh TA41.06
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.56
+Pomeschenie21.75
+2019-11-03 20:53:59	Message	Podacha TTK38.63
+Obratka TTK35.44
+Verh TA41.06
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.56
+Pomeschenie21.75
+2019-11-03 20:54:00	Message	Podacha TTK38.63
+Obratka TTK35.44
+Verh TA41.06
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.56
+Pomeschenie21.75
+
+ostatok =0
+0
+28.00
+2019-11-03 20:54:02	Message	ostatok =0
+2
+29.00
+2019-11-03 20:54:04	Message	ostatok =0
+4
+30.00
+2019-11-03 20:54:06	Message	ostatok =0
+6
+31.00
+2019-11-03 20:54:08	Message	ostatok =0
+8
+32.00
+2019-11-03 20:54:10	Message	ostatok =0
+10
+33.00
+2019-11-03 20:54:12	Message	ostatok =0
+12
+34.00
+2019-11-03 20:54:14	Message	Podacha TTK38.63
+Obratka TTK35.44
+Verh TA41.06
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.56
+Pomeschenie21.75
+2019-11-03 20:54:14	Message	Podacha TTK38.63
+Obratka TTK35.44
+Verh TA41.06
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.56
+Pomeschenie21.75
+2019-11-03 20:54:14	Message	Podacha TTK38.69
+Obratka TTK35.50
+Verh TA41.06
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.63
+Pomeschenie-99.00
+2019-11-03 20:54:14	Message	Podacha TTK38.69
+Obratka TTK35.50
+Verh TA41.06
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.63
+Pomeschenie-99.00
+2019-11-03 20:54:15	Message	Podacha TTK38.69
+Obratka TTK35.50
+Verh TA41.06
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.63
+Pomeschenie-99.00
+2019-11-03 20:54:15	Message	Podacha TTK38.69
+Obratka TTK35.50
+Verh TA41.06
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.63
+Pomeschenie-99.00
+2019-11-03 20:54:15	Message	Podacha TTK38.69
+Obratka TTK35.50
+Verh TA41.06
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.63
+Pomeschenie-99.00
+2019-11-03 20:54:15	Message	Podacha TTK38.69
+Obratka TTK35.50
+Verh TA41.06
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.63
+Pomeschenie-99.00
+2019-11-03 20:54:15	Message	Podacha TTK38.69
+Obratka TTK35.50
+Verh TA41.06
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.63
+Pomeschenie-99.00
+2019-11-03 20:54:16	Message	Podacha TTK38.69
+Obratka TTK35.50
+Verh TA41.06
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.63
+Pomeschenie-99.00
+2019-11-03 20:54:16	Message	Podacha TTK38.69
+Obratka TTK35.50
+Verh TA41.06
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.63
+Pomeschenie-99.00
+2019-11-03 20:54:16	Message	Podacha TTK38.69
+Obratka TTK35.50
+Verh TA41.06
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.63
+Pomeschenie-99.00
+2019-11-03 20:54:16	Message	Podacha TTK38.69
+Obratka TTK35.50
+Verh TA41.06
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.63
+Pomeschenie-99.00
+2019-11-03 20:54:17	Message	Podacha TTK38.69
+Obratka TTK35.50
+Verh TA41.06
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.63
+Pomeschenie-99.00
+2019-11-03 20:54:17	Message	Podacha TTK38.69
+Obratka TTK35.50
+Verh TA41.06
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.63
+Pomeschenie-99.00
+2019-11-03 20:54:17	Message	Podacha TTK38.69
+Obratka TTK35.50
+Verh TA41.06
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.63
+Pomeschenie-99.00
+2019-11-03 20:54:17	Message	Podacha TTK38.69
+Obratka TTK35.50
+Verh TA41.06
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.63
+Pomeschenie-99.00
+2019-11-03 20:54:18	Message	Podacha TTK38.69
+Obratka TTK35.50
+Verh TA41.06
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.63
+Pomeschenie-99.00
+2019-11-03 20:54:18	Message	Podacha TTK38.69
+Obratka TTK35.50
+Verh TA41.06
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.63
+Pomeschenie-99.00
+2019-11-03 20:54:18	Message	Podacha TTK38.69
+Obratka TTK35.50
+Verh TA41.06
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.63
+Pomeschenie-99.00
+2019-11-03 20:54:18	Message	Podacha TTK38.69
+Obratka TTK35.50
+Verh TA41.06
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.63
+Pomeschenie-99.00
+2019-11-03 20:54:18	Message	Podacha TTK38.69
+Obratka TTK35.50
+Verh TA41.06
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.63
+Pomeschenie-99.00
+2019-11-03 20:54:19	Message	Podacha TTK38.69
+Obratka TTK35.50
+Verh TA41.06
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.63
+Pomeschenie-99.00
+2019-11-03 20:54:19	Message	Podacha TTK38.69
+Obratka TTK35.50
+Verh TA41.06
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.63
+Pomeschenie-99.00
+2019-11-03 20:54:19	Message	Podacha TTK38.69
+Obratka TTK35.50
+Verh TA41.06
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.63
+Pomeschenie-99.00
+2019-11-03 20:54:19	Message	Podacha TTK38.69
+Obratka TTK35.50
+Verh TA41.06
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.63
+Pomeschenie-99.00
+2019-11-03 20:54:19	Message	Podacha TTK38.69
+Obratka TTK35.50
+Verh TA41.06
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.63
+Pomeschenie-99.00
+2019-11-03 20:54:20	Message	Podacha TTK38.69
+Obratka TTK35.50
+Verh TA41.06
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.63
+Pomeschenie-99.00
+2019-11-03 20:54:20	Message	Podacha TTK38.69
+Obratka TTK35.50
+Verh TA41.06
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.63
+Pomeschenie-99.00
+2019-11-03 20:54:20	Message	Podacha TTK38.69
+Obratka TTK35.50
+Verh TA41.06
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.63
+Pomeschenie-99.00
+2019-11-03 20:54:20	Message	Podacha TTK38.69
+Obratka TTK35.50
+Verh TA41.06
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.63
+Pomeschenie-99.00
+2019-11-03 20:54:21	Message	Podacha TTK38.69
+Obratka TTK35.50
+Verh TA41.06
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.63
+Pomeschenie-99.00
+2019-11-03 20:54:21	Message	Podacha TTK38.69
+Obratka TTK35.50
+Verh TA41.06
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.63
+Pomeschenie-99.00
+2019-11-03 20:54:21	Message	Podacha TTK38.69
+Obratka TTK35.50
+Verh TA41.06
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.63
+Pomeschenie-99.00
+2019-11-03 20:54:21	Message	Podacha TTK38.69
+Obratka TTK35.50
+Verh TA41.06
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.63
+Pomeschenie-99.00
+2019-11-03 20:54:21	Message	Podacha TTK38.69
+Obratka TTK35.50
+Verh TA41.06
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.63
+Pomeschenie-99.00
+2019-11-03 20:54:22	Message	Podacha TTK38.69
+Obratka TTK35.50
+Verh TA41.06
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.63
+Pomeschenie-99.00
+2019-11-03 20:54:22	Message	Podacha TTK38.69
+Obratka TTK35.50
+Verh TA41.06
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.63
+Pomeschenie-99.00
+2019-11-03 20:54:22	Message	Podacha TTK38.69
+Obratka TTK35.50
+Verh TA41.06
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.63
+Pomeschenie-99.00
+2019-11-03 20:54:22	Message	Podacha TTK38.69
+Obratka TTK35.50
+Verh TA41.06
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.63
+Pomeschenie-99.00
+2019-11-03 20:54:23	Message	Podacha TTK38.69
+Obratka TTK35.50
+Verh TA41.06
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.63
+Pomeschenie-99.00
+2019-11-03 20:54:23	Message	Podacha TTK38.69
+Obratka TTK35.50
+Verh TA41.06
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.63
+Pomeschenie-99.00
+2019-11-03 20:54:23	Message	Podacha TTK38.69
+Obratka TTK35.50
+Verh TA41.06
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.63
+Pomeschenie-99.00
+2019-11-03 20:54:23	Message	Podacha TTK38.69
+Obratka TTK35.50
+Verh TA41.06
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.63
+Pomeschenie-99.00
+2019-11-03 20:54:23	Message	Podacha TTK38.69
+Obratka TTK35.50
+Verh TA41.06
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.63
+Pomeschenie-99.00
+2019-11-03 20:54:24	Message	Podacha TTK38.69
+Obratka TTK35.50
+Verh TA41.06
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.63
+Pomeschenie-99.00
+2019-11-03 20:54:24	Message	Podacha TTK38.69
+Obratka TTK35.50
+Verh TA41.06
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.63
+Pomeschenie-99.00
+2019-11-03 20:54:24	Message	Podacha TTK38.69
+Obratka TTK35.50
+Verh TA41.06
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.63
+Pomeschenie-99.00
+2019-11-03 20:54:24	Message	Podacha TTK38.69
+Obratka TTK35.50
+Verh TA41.06
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.63
+Pomeschenie-99.00
+2019-11-03 20:54:25	Message	Podacha TTK38.69
+Obratka TTK35.50
+Verh TA41.06
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.63
+Pomeschenie-99.00
+2019-11-03 20:54:25	Message	Podacha TTK38.69
+Obratka TTK35.50
+Verh TA41.06
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.63
+Pomeschenie-99.00
+2019-11-03 20:54:25	Message	Podacha TTK38.69
+Obratka TTK35.50
+Verh TA41.06
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.63
+Pomeschenie-99.00
+2019-11-03 20:54:25	Message	Podacha TTK38.69
+Obratka TTK35.50
+Verh TA41.06
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.63
+Pomeschenie-99.00
+2019-11-03 20:54:25	Message	Podacha TTK38.69
+Obratka TTK35.50
+Verh TA41.06
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.63
+Pomeschenie-99.00
+2019-11-03 20:54:26	Message	Podacha TTK38.69
+Obratka TTK35.50
+Verh TA41.06
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.63
+Pomeschenie-99.00
+2019-11-03 20:54:26	Message	Podacha TTK38.69
+Obratka TTK35.50
+Verh TA41.06
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.63
+Pomeschenie-99.00
+2019-11-03 20:54:26	Message	Podacha TTK38.69
+Obratka TTK35.50
+Verh TA41.06
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.63
+Pomeschenie-99.00
+2019-11-03 20:54:26	Message	Podacha TTK38.69
+Obratka TTK35.50
+Verh TA41.06
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.63
+Pomeschenie-99.00
+2019-11-03 20:54:26	Message	Podacha TTK38.69
+Obratka TTK35.50
+Verh TA41.06
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.63
+Pomeschenie-99.00
+2019-11-03 20:54:27	Message	Podacha TTK38.69
+Obratka TTK35.50
+Verh TA41.06
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.63
+Pomeschenie-99.00
+2019-11-03 20:54:27	Message	Podacha TTK38.69
+Obratka TTK35.50
+Verh TA41.06
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.63
+Pomeschenie-99.00
+2019-11-03 20:54:27	Message	Podacha TTK38.69
+Obratka TTK35.50
+Verh TA41.06
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.63
+Pomeschenie-99.00
+2019-11-03 20:54:27	Message	Podacha TTK38.69
+Obratka TTK35.50
+Verh TA41.06
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.63
+Pomeschenie-99.00
+2019-11-03 20:54:28	Message	Podacha TTK38.69
+Obratka TTK35.50
+Verh TA41.06
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.63
+Pomeschenie-99.00
+2019-11-03 20:54:28	Message	Podacha TTK38.69
+Obratka TTK35.50
+Verh TA41.06
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.63
+Pomeschenie-99.00
+2019-11-03 20:54:28	Message	Podacha TTK38.69
+Obratka TTK35.50
+Verh TA41.06
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.63
+Pomeschenie-99.00
+2019-11-03 20:54:28	Message	Podacha TTK38.69
+Obratka TTK35.50
+Verh TA41.06
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.63
+Pomeschenie-99.00
+2019-11-03 20:54:28	Message	Podacha TTK38.69
+Obratka TTK35.50
+Verh TA41.06
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.63
+Pomeschenie-99.00
+2019-11-03 20:54:29	Message	Podacha TTK38.69
+Obratka TTK35.50
+Verh TA41.06
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.63
+Pomeschenie-99.00
+2019-11-03 20:54:29	Message	Podacha TTK38.69
+Obratka TTK35.50
+Verh TA41.06
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.63
+Pomeschenie-99.00
+2019-11-03 20:54:29	Message	Podacha TTK38.69
+Obratka TTK35.50
+Verh TA41.06
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.63
+Pomeschenie-99.00
+2019-11-03 20:54:29	Message	Podacha TTK38.69
+Obratka TTK35.50
+Verh TA41.06
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.63
+Pomeschenie-99.00
+2019-11-03 20:54:30	Message	Podacha TTK39.19
+Obratka TTK35.56
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.50
+Pomeschenie21.75
+2019-11-03 20:54:30	Message	Podacha TTK39.19
+Obratka TTK35.56
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.50
+Pomeschenie21.75
+2019-11-03 20:54:30	Message	Podacha TTK39.19
+Obratka TTK35.56
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.50
+Pomeschenie21.75
+2019-11-03 20:54:30	Message	Podacha TTK39.19
+Obratka TTK35.56
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.50
+Pomeschenie21.75
+2019-11-03 20:54:31	Message	Podacha TTK39.19
+Obratka TTK35.56
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.50
+Pomeschenie21.75
+2019-11-03 20:54:31	Message	Podacha TTK39.19
+Obratka TTK35.56
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.50
+Pomeschenie21.75
+2019-11-03 20:54:31	Message	Podacha TTK39.19
+Obratka TTK35.56
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.50
+Pomeschenie21.75
+2019-11-03 20:54:31	Message	Podacha TTK39.19
+Obratka TTK35.56
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.50
+Pomeschenie21.75
+2019-11-03 20:54:31	Message	Podacha TTK39.19
+Obratka TTK35.56
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.50
+Pomeschenie21.75
+2019-11-03 20:54:32	Message	Podacha TTK39.19
+Obratka TTK35.56
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.50
+Pomeschenie21.75
+2019-11-03 20:54:32	Message	Podacha TTK39.19
+Obratka TTK35.56
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.50
+Pomeschenie21.75
+2019-11-03 20:54:32	Message	Podacha TTK39.19
+Obratka TTK35.56
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.50
+Pomeschenie21.75
+2019-11-03 20:54:32	Message	Podacha TTK39.19
+Obratka TTK35.56
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.50
+Pomeschenie21.75
+2019-11-03 20:54:33	Message	Podacha TTK39.19
+Obratka TTK35.56
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.50
+Pomeschenie21.75
+2019-11-03 20:54:33	Message	Podacha TTK39.19
+Obratka TTK35.56
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.50
+Pomeschenie21.75
+2019-11-03 20:54:33	Message	Podacha TTK39.19
+Obratka TTK35.56
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.50
+Pomeschenie21.75
+2019-11-03 20:54:33	Message	Podacha TTK39.19
+Obratka TTK35.56
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.50
+Pomeschenie21.75
+2019-11-03 20:54:33	Message	Podacha TTK39.19
+Obratka TTK35.56
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.50
+Pomeschenie21.75
+2019-11-03 20:54:34	Message	Podacha TTK39.19
+Obratka TTK35.56
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.50
+Pomeschenie21.75
+2019-11-03 20:54:34	Message	Podacha TTK39.19
+Obratka TTK35.56
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.50
+Pomeschenie21.75
+2019-11-03 20:54:34	Message	Podacha TTK39.19
+Obratka TTK35.56
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.50
+Pomeschenie21.75
+2019-11-03 20:54:34	Message	Podacha TTK39.19
+Obratka TTK35.56
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.50
+Pomeschenie21.75
+2019-11-03 20:54:34	Message	Podacha TTK39.19
+Obratka TTK35.56
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.50
+Pomeschenie21.75
+2019-11-03 20:54:35	Message	Podacha TTK39.19
+Obratka TTK35.56
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.50
+Pomeschenie21.75
+2019-11-03 20:54:35	Message	Podacha TTK39.19
+Obratka TTK35.56
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.50
+Pomeschenie21.75
+2019-11-03 20:54:35	Message	Podacha TTK39.19
+Obratka TTK35.56
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.50
+Pomeschenie21.75
+2019-11-03 20:54:35	Message	Podacha TTK39.19
+Obratka TTK35.56
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.50
+Pomeschenie21.75
+2019-11-03 20:54:36	Message	Podacha TTK39.19
+Obratka TTK35.56
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.50
+Pomeschenie21.75
+2019-11-03 20:54:36	Message	Podacha TTK39.19
+Obratka TTK35.56
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.50
+Pomeschenie21.75
+2019-11-03 20:54:36	Message	Podacha TTK39.19
+Obratka TTK35.56
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.50
+Pomeschenie21.75
+2019-11-03 20:54:36	Message	Podacha TTK39.19
+Obratka TTK35.56
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.50
+Pomeschenie21.75
+2019-11-03 20:54:36	Message	Podacha TTK39.19
+Obratka TTK35.56
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.50
+Pomeschenie21.75
+2019-11-03 20:54:37	Message	Podacha TTK39.19
+Obratka TTK35.56
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.50
+Pomeschenie21.75
+2019-11-03 20:54:37	Message	Podacha TTK39.19
+Obratka TTK35.56
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.50
+Pomeschenie21.75
+2019-11-03 20:54:37	Message	Podacha TTK39.19
+Obratka TTK35.56
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.50
+Pomeschenie21.75
+2019-11-03 20:54:37	Message	Podacha TTK39.19
+Obratka TTK35.56
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.50
+Pomeschenie21.75
+2019-11-03 20:54:38	Message	Podacha TTK39.19
+Obratka TTK35.56
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.50
+Pomeschenie21.75
+2019-11-03 20:54:38	Message	Podacha TTK39.19
+Obratka TTK35.56
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.50
+Pomeschenie21.75
+2019-11-03 20:54:38	Message	Podacha TTK39.19
+Obratka TTK35.56
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.50
+Pomeschenie21.75
+2019-11-03 20:54:38	Message	Podacha TTK39.19
+Obratka TTK35.56
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.50
+Pomeschenie21.75
+2019-11-03 20:54:38	Message	Podacha TTK39.19
+Obratka TTK35.56
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.50
+Pomeschenie21.75
+2019-11-03 20:54:39	Message	Podacha TTK39.19
+Obratka TTK35.56
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.50
+Pomeschenie21.75
+2019-11-03 20:54:39	Message	Podacha TTK39.19
+Obratka TTK35.56
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.50
+Pomeschenie21.75
+2019-11-03 20:54:39	Message	Podacha TTK39.19
+Obratka TTK35.56
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.50
+Pomeschenie21.75
+2019-11-03 20:54:39	Message	Podacha TTK39.19
+Obratka TTK35.56
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.50
+Pomeschenie21.75
+2019-11-03 20:54:40	Message	Podacha TTK39.19
+Obratka TTK35.56
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.50
+Pomeschenie21.75
+2019-11-03 20:54:40	Message	Podacha TTK39.19
+Obratka TTK35.56
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.50
+Pomeschenie21.75
+2019-11-03 20:54:40	Message	Podacha TTK39.19
+Obratka TTK35.56
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.50
+Pomeschenie21.75
+2019-11-03 20:54:40	Message	Podacha TTK39.19
+Obratka TTK35.56
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.50
+Pomeschenie21.75
+2019-11-03 20:54:40	Message	Podacha TTK39.19
+Obratka TTK35.56
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.50
+Pomeschenie21.75
+2019-11-03 20:54:41	Message	Podacha TTK39.19
+Obratka TTK35.56
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.50
+Pomeschenie21.75
+2019-11-03 20:54:41	Message	Podacha TTK39.19
+Obratka TTK35.56
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.50
+Pomeschenie21.75
+2019-11-03 20:54:41	Message	Podacha TTK39.19
+Obratka TTK35.56
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.50
+Pomeschenie21.75
+2019-11-03 20:54:41	Message	Podacha TTK39.19
+Obratka TTK35.56
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.50
+Pomeschenie21.75
+2019-11-03 20:54:42	Message	Podacha TTK39.19
+Obratka TTK35.56
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.50
+Pomeschenie21.75
+2019-11-03 20:54:42	Message	Podacha TTK39.19
+Obratka TTK35.56
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.50
+Pomeschenie21.75
+2019-11-03 20:54:42	Message	Podacha TTK39.19
+Obratka TTK35.56
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.50
+Pomeschenie21.75
+2019-11-03 20:54:42	Message	Podacha TTK39.19
+Obratka TTK35.56
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.50
+Pomeschenie21.75
+2019-11-03 20:54:42	Message	Podacha TTK39.19
+Obratka TTK35.56
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.50
+Pomeschenie21.75
+2019-11-03 20:54:43	Message	Podacha TTK39.19
+Obratka TTK35.56
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.50
+Pomeschenie21.75
+2019-11-03 20:54:43	Message	Podacha TTK39.19
+Obratka TTK35.56
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.50
+Pomeschenie21.75
+2019-11-03 20:54:43	Message	Podacha TTK39.19
+Obratka TTK35.56
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.50
+Pomeschenie21.75
+2019-11-03 20:54:43	Message	Podacha TTK39.19
+Obratka TTK35.56
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.50
+Pomeschenie21.75
+2019-11-03 20:54:44	Message	Podacha TTK39.19
+Obratka TTK35.56
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.50
+Pomeschenie21.75
+2019-11-03 20:54:44	Message	Podacha TTK39.19
+Obratka TTK35.56
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.50
+Pomeschenie21.75
+2019-11-03 20:54:44	Message	Podacha TTK39.19
+Obratka TTK35.56
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.50
+Pomeschenie21.75
+2019-11-03 20:54:44	Message	Podacha TTK39.19
+Obratka TTK35.56
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.50
+Pomeschenie21.75
+2019-11-03 20:54:44	Message	Podacha TTK39.19
+Obratka TTK35.56
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.50
+Pomeschenie21.75
+2019-11-03 20:54:45	Message	Podacha TTK39.19
+Obratka TTK35.56
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.50
+Pomeschenie21.75
+2019-11-03 20:54:45	Message	Podacha TTK39.19
+Obratka TTK35.56
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.50
+Pomeschenie21.75
+2019-11-03 20:54:45	Message	Podacha TTK39.69
+Obratka TTK35.63
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.44
+Pomeschenie21.75
+2019-11-03 20:54:45	Message	Podacha TTK39.69
+Obratka TTK35.63
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.44
+Pomeschenie21.75
+2019-11-03 20:54:46	Message	Podacha TTK39.69
+Obratka TTK35.63
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.44
+Pomeschenie21.75
+2019-11-03 20:54:46	Message	Podacha TTK39.69
+Obratka TTK35.63
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.44
+Pomeschenie21.75
+2019-11-03 20:54:46	Message	Podacha TTK39.69
+Obratka TTK35.63
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.44
+Pomeschenie21.75
+2019-11-03 20:54:46	Message	Podacha TTK39.69
+Obratka TTK35.63
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.44
+Pomeschenie21.75
+2019-11-03 20:54:46	Message	Podacha TTK39.69
+Obratka TTK35.63
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.44
+Pomeschenie21.75
+2019-11-03 20:54:47	Message	Podacha TTK39.69
+Obratka TTK35.63
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.44
+Pomeschenie21.75
+2019-11-03 20:54:47	Message	Podacha TTK39.69
+Obratka TTK35.63
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.44
+Pomeschenie21.75
+2019-11-03 20:54:47	Message	Podacha TTK39.69
+Obratka TTK35.63
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.44
+Pomeschenie21.75
+2019-11-03 20:54:47	Message	Podacha TTK39.69
+Obratka TTK35.63
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.44
+Pomeschenie21.75
+2019-11-03 20:54:48	Message	Podacha TTK39.69
+Obratka TTK35.63
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.44
+Pomeschenie21.75
+2019-11-03 20:54:48	Message	Podacha TTK39.69
+Obratka TTK35.63
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.44
+Pomeschenie21.75
+2019-11-03 20:54:48	Message	Podacha TTK39.69
+Obratka TTK35.63
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.44
+Pomeschenie21.75
+2019-11-03 20:54:48	Message	Podacha TTK39.69
+Obratka TTK35.63
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.44
+Pomeschenie21.75
+2019-11-03 20:54:48	Message	Podacha TTK39.69
+Obratka TTK35.63
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.44
+Pomeschenie21.75
+2019-11-03 20:54:49	Message	Podacha TTK39.69
+Obratka TTK35.63
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.44
+Pomeschenie21.75
+2019-11-03 20:54:49	Message	Podacha TTK39.69
+Obratka TTK35.63
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.44
+Pomeschenie21.75
+2019-11-03 20:54:49	Message	Podacha TTK39.69
+Obratka TTK35.63
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.44
+Pomeschenie21.75
+2019-11-03 20:54:49	Message	Podacha TTK39.69
+Obratka TTK35.63
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.44
+Pomeschenie21.75
+2019-11-03 20:54:50	Message	Podacha TTK39.69
+Obratka TTK35.63
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.44
+Pomeschenie21.75
+2019-11-03 20:54:50	Message	Podacha TTK39.69
+Obratka TTK35.63
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.44
+Pomeschenie21.75
+2019-11-03 20:54:50	Message	Podacha TTK39.69
+Obratka TTK35.63
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.44
+Pomeschenie21.75
+2019-11-03 20:54:50	Message	Podacha TTK39.69
+Obratka TTK35.63
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.44
+Pomeschenie21.75
+2019-11-03 20:54:50	Message	Podacha TTK39.69
+Obratka TTK35.63
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.44
+Pomeschenie21.75
+2019-11-03 20:54:51	Message	Podacha TTK39.69
+Obratka TTK35.63
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.44
+Pomeschenie21.75
+2019-11-03 20:54:51	Message	Podacha TTK39.69
+Obratka TTK35.63
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.44
+Pomeschenie21.75
+2019-11-03 20:54:51	Message	Podacha TTK39.69
+Obratka TTK35.63
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.44
+Pomeschenie21.75
+2019-11-03 20:54:51	Message	Podacha TTK39.69
+Obratka TTK35.63
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.44
+Pomeschenie21.75
+2019-11-03 20:54:51	Message	Podacha TTK39.69
+Obratka TTK35.63
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.44
+Pomeschenie21.75
+2019-11-03 20:54:52	Message	Podacha TTK39.69
+Obratka TTK35.63
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.44
+Pomeschenie21.75
+2019-11-03 20:54:52	Message	Podacha TTK39.69
+Obratka TTK35.63
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.44
+Pomeschenie21.75
+2019-11-03 20:54:52	Message	Podacha TTK39.69
+Obratka TTK35.63
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.44
+Pomeschenie21.75
+2019-11-03 20:54:53	Message	Podacha TTK39.69
+Obratka TTK35.63
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.44
+Pomeschenie21.75
+2019-11-03 20:54:53	Message	Podacha TTK39.69
+Obratka TTK35.63
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.44
+Pomeschenie21.75
+
+Podacha TTK39.69
+Obratka TTK35.63
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.44
+Pomeschenie21.75
+2019-11-03 20:54:53	Message	Podacha TTK39.69
+Obratka TTK35.63
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.44
+Pomeschenie21.75
+2019-11-03 20:54:54	Message	Podacha TTK39.69
+Obratka TTK35.63
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.44
+Pomeschenie21.75
+
+Podacha TTK39.69
+Obratka TTK35.63
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.44
+Pomeschenie21.75
+
+Podacha TTK39.69
+Obratka TTK35.63
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.44
+Pomeschenie21.75
+
+Podacha TTK39.69
+Obratka TTK35.63
+Verh TA41.00
+Niz TA36.38
+Podacha SYS37.81
+Obratka SYS32.44
+Pomeschenie21.75

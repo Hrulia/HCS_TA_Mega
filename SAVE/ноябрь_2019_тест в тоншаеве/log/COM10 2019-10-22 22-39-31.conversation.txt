@@ -1,0 +1,2 @@
+2019-10-22 22:39:31	Message	Opening port
+Port open

@@ -1,0 +1,39 @@
+// 
+// 
+// 
+
+#include "SystemTime.h"
+
+
+
+//sei();   разрешает прерывани€. например в функции ISR
+
+RTC_DS1307 rtc;
+
+int initSystemTime() {
+	LOG("\nstart (initSystemTime)\n");
+	int errCod = 0;
+	
+	rtc.begin();
+	//если RTC не запущены, то запустим, установим врем€ компил€ции скетча и выход RTC на 1√ц
+	if (!rtc.isrunning()) {
+		LOG("RTC is NOT running!\n");
+		// following line sets the RTC to the date & time this sketch was compiled
+		rtc.adjust(DateTime(__DATE__, __TIME__));	
+		rtc.writeSqwPinMode(DS1307_SquareWave1HZ);
+	}
+
+	pinMode(PIN_RTC_INTERRUPT, INPUT_PULLUP);
+	attachInterrupt(digitalPinToInterrupt(PIN_RTC_INTERRUPT), ISR_UpdateSystemTime, FALLING);//FALLING, CHANGE
+
+	LOG("stop (initSystemTime) "); 
+	return errCod;
+}
+
+void ISR_UpdateSystemTime() {
+	sei();  //разрешает другие прерывани€ в этот момент
+	g_systemDateTime = rtc.now();
+
+	//digitalWrite(13, !(digitalRead(13)));
+}
+

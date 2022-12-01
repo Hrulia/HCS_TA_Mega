@@ -1,0 +1,4 @@
+2019-10-24 19:44:04	Message	Opening port
+Port open
+2019-10-24 19:44:05	Message	
+start (initSystemTime)

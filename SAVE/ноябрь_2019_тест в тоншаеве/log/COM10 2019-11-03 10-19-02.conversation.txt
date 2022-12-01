@@ -1,0 +1,27 @@
+2019-11-03 10:19:02	Message	Opening port
+Port open
+2019-11-03 10:19:03	Message	
+start (setup)
+
+start (initSystemTime)
+stop (initSystemTime) 
+start (init_TM1637)
+2019-11-03 10:19:03	Message	
+stop (init_TM1637)
+
+start (initTemp)
+
+start (findAllconnectDS18B20)
+28  20  F  40  4  0  0  B9     CRC_OK Resolution_set_OK (5F)
+28  18  7  40  4  0  0  CB     CRC_OK Resolution_set_OK (5F)
+28  AA  18  40  4  0  0  B1     CRC_OK Resolution_set_OK (5F)
+2019-11-03 10:19:03	Message	28  B9  25  40  4  0  0  DB     CRC_OK Resolution_set_OK (5F)
+28  4D  F7  BF  4  0  0  43     CRC_OK Resolution_set_OK (5F)
+Total sensors - 5
+stop (findAllconnectDS18B20)
+
+stop (initTemp)
+Start (initValve)
+
+Call testValveTTK
+Start (testValve)

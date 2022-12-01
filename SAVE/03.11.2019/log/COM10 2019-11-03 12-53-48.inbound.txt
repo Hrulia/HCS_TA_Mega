@@ -1,0 +1,40 @@
+Podacha TTK64.62
+Obratka TTK39.88
+Verh TA51.69
+Niz TA44.25
+Podacha SYS-99.00
+Obratka SYS28.37
+Pomeschenie21.31
+
+Podacha TTK64.69
+Obratka TTK39.31
+Verh TA52.13
+Niz TA44.31
+Podacha SYS-99.00
+Obratka SYS28.37
+Pomeschenie21.31
+
+Podacha TTK65.44
+Obratka TTK39.63
+Verh TA52.06
+Niz TA44.31
+Podacha SYS-99.00
+Obratka SYS28.44
+Pomeschenie21.31
+
+Podacha TTK65.87
+Obratka TTK40.19
+Verh TA52.00
+Niz TA44.31
+Podacha SYS-99.00
+Obratka SYS28.44
+Pomeschenie21.31
+
+Podacha TTK66.00
+Obratka TTK40.56
+Verh TA52.00
+Niz TA44.31
+Podacha SYS-99.00
+Obratka SYS28.44
+Pomeschenie21.31
+

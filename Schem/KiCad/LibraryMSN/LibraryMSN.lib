@@ -1,0 +1,19 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# MyMega
+#
+DEF MyMega D 0 40 Y Y 1 F N
+F0 "D" 0 -50 50 H V C CNN
+F1 "MyMega" 0 -150 50 H V C CNN
+F2 "" 0 -50 50 H I C CNN
+F3 "" 0 -50 50 H I C CNN
+DRAW
+A 368 -414 201 -253 1257 0 1 0 N 550 -500 250 -250
+S 250 -250 -400 -400 0 1 0 N
+P 5 0 1 0 250 -400 150 -650 -150 -650 -500 -550 -400 -400 N
+X вход 1 -500 -300 100 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+#End Library

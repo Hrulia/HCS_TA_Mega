@@ -1,0 +1,37 @@
+2019-11-03 12:53:48	Message	Opening port
+Port open
+2019-11-03 12:54:04	Message	Podacha TTK64.62
+Obratka TTK39.88
+Verh TA51.69
+Niz TA44.25
+Podacha SYS-99.00
+Obratka SYS28.37
+Pomeschenie21.31
+2019-11-03 12:54:19	Message	Podacha TTK64.69
+Obratka TTK39.31
+Verh TA52.13
+Niz TA44.31
+Podacha SYS-99.00
+Obratka SYS28.37
+Pomeschenie21.31
+2019-11-03 12:54:34	Message	Podacha TTK65.44
+Obratka TTK39.63
+Verh TA52.06
+Niz TA44.31
+Podacha SYS-99.00
+Obratka SYS28.44
+Pomeschenie21.31
+2019-11-03 12:54:49	Message	Podacha TTK65.87
+Obratka TTK40.19
+Verh TA52.00
+Niz TA44.31
+Podacha SYS-99.00
+Obratka SYS28.44
+Pomeschenie21.31
+2019-11-03 12:55:04	Message	Podacha TTK66.00
+Obratka TTK40.56
+Verh TA52.00
+Niz TA44.31
+Podacha SYS-99.00
+Obratka SYS28.44
+Pomeschenie21.31

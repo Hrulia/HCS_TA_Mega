@@ -1,0 +1,930 @@
+Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+
+Knopka nazhata
+0
+Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+
+Knopka nazhata
+0
+Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+
+Knopka nazhata
+0
+Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+
+Knopka nazhata
+0
+Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+
+Knopka nazhata
+0
+Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+
+Knopka nazhata
+0
+Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+
+Knopka nazhata
+0
+Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+
+Knopka nazhata
+0
+Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+
+Knopka nazhata
+0
+Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+
+Knopka nazhata
+0
+Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+
+Knopka nazhata
+0
+Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+
+Knopka nazhata
+0
+Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+
+Knopka nazhata
+0
+Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+
+Knopka nazhata
+0
+Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+
+Knopka nazhata
+0
+Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+
+Knopka nazhata
+0
+Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+
+Knopka nazhata
+0
+Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+
+Knopka nazhata
+0
+Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+
+Knopka nazhata
+0
+Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+
+Knopka nazhata
+0
+Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+
+Knopka nazhata
+0
+Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+
+Knopka nazhata
+0
+Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+
+Knopka nazhata
+0
+Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+
+Knopka nazhata
+0
+Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+
+Knopka nazhata
+0
+Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+
+Knopka nazhata
+0
+Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+
+Knopka nazhata
+0
+Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+
+Knopka nazhata
+0
+Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+
+Knopka nazhata
+0
+Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+
+Knopka nazhata
+0
+Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+
+Knopka nazhata
+0
+Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+
+Knopka nazhata
+0
+Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+
+Knopka nazhata
+0
+Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+
+Knopka nazhata
+0
+Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+
+Knopka nazhata
+0
+Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+
+Knopka nazhata
+0
+Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+
+Knopka nazhata
+0
+Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+
+Knopka nazhata
+0
+Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+
+Knopka nazhata
+0
+Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+
+Knopka nazhata
+0
+Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+
+Knopka nazhata
+0
+Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+
+Knopka nazhata
+0
+Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+
+Knopka nazhata
+0
+Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+
+Knopka nazhata
+0
+Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+
+Knopka nazhata
+0
+Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+
+Knopka nazhata
+0
+Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+
+Knopka nazhata
+0
+Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+
+Knopka nazhata
+0
+Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+
+Knopka nazhata
+0
+Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+
+Knopka nazhata
+0
+Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+
+Knopka nazhata
+0
+Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+
+Knopka nazhata
+0
+Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+
+Knopka nazhata
+0
+Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+
+Knopka nazhata
+0
+Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+
+Knopka nazhata
+0
+Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+
+Knopka nazhata
+0
+Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+
+Knopka nazhata
+0
+Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+
+Knopka nazhata
+0
+Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+
+Knopka nazhata
+0
+Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+
+Knopka nazhata
+0
+Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+
+Knopka nazhata
+0
+Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+
+Knopka nazhata
+0
+Podacha TTK0.00
+Obratka TTK0.00
+Verh TA0.00
+Niz TA0.00
+Podacha SYS0.00
+Obratka SYS0.00
+Pomeschenie0.00
+
+Knopka nazhata
+0
+Podacha TTK39.63
+Obratka TTK35.88
+Verh TA42.00
+Niz TA-99.00
+Podacha SYS39.06
+Obratka SYS32.88
+Pomeschenie21.87
+
+Knopka nazhata
+0
+Podacha TTK39.63
+Obratka TTK35.88
+Verh TA42.00
+Niz TA-99.00
+Podacha SYS39.06
+Obratka SYS32.88
+Pomeschenie21.87
+
+Knopka nazhata
+0
+Podacha TTK39.63
+Obratka TTK35.88
+Verh TA42.00
+Niz TA-99.00
+Podacha SYS39.06
+Obratka SYS32.88
+Pomeschenie21.87
+
+Knopka nazhata
+0
+Podacha TTK39.63
+Obratka TTK35.88
+Verh TA42.00
+Niz TA-99.00
+Podacha SYS39.06
+Obratka SYS32.88
+Pomeschenie21.87
+
+Knopka nazhata
+0
+Podacha TTK39.63
+Obratka TTK35.88
+Verh TA42.00
+Niz TA-99.00
+Podacha SYS39.06
+Obratka SYS32.88
+Pomeschenie21.87
+
+Knopka nazhata
+0
+Podacha TTK39.63
+Obratka TTK35.88
+Verh TA42.00
+Niz TA-99.00
+Podacha SYS39.06
+Obratka SYS32.88
+Pomeschenie21.87
+
+Knopka nazhata
+0
+Podacha TTK39.63
+Obratka TTK35.88
+Verh TA42.00
+Niz TA-99.00
+Podacha SYS39.06
+Obratka SYS32.88
+Pomeschenie21.87
+
+Knopka nazhata
+0
+Podacha TTK39.63
+Obratka TTK35.88
+Verh TA42.00
+Niz TA-99.00
+Podacha SYS39.06
+Obratka SYS32.88
+Pomeschenie21.87
+
+Knopka nazhata
+0
+Podacha TTK39.63
+Obratka TTK35.88
+Verh TA42.00
+Niz TA-99.00
+Podacha SYS39.06
+Obratka SYS32.88
+Pomeschenie21.87
+
+Knopka nazhata
+0
+Podacha TTK39.63
+Obratka TTK35.88
+Verh TA42.00
+Niz TA-99.00
+Podacha SYS39.06
+Obratka SYS32.88
+Pomeschenie21.87
+
+Knopka nazhata
+0
+Podacha TTK39.63
+Obratka TTK35.88
+Verh TA42.00
+Niz TA-99.00
+Podacha SYS39.06
+Obratka SYS32.88
+Pomeschenie21.87
+
+Knopka nazhata
+0
+Podacha TTK39.63
+Obratka TTK35.88
+Verh TA42.00
+Niz TA-99.00
+Podacha SYS39.06
+Obratka SYS32.88
+Pomeschenie21.87
+
+Knopka nazhata
+0
+Podacha TTK39.63
+Obratka TTK35.88
+Verh TA42.00
+Niz TA-99.00
+Podacha SYS39.06
+Obratka SYS32.88
+Pomeschenie21.87
+
+Knopka nazhata
+0
+Podacha TTK39.63
+Obratka TTK35.88
+Verh TA42.00
+Niz TA-99.00
+Podacha SYS39.06
+Obratka SYS32.88
+Pomeschenie21.87
+
+Knopka nazhata
+0
+Podacha TTK39.63
+Obratka TTK35.88
+Verh TA42.00
+Niz TA-99.00
+Podacha SYS39.06
+Obratka SYS32.88
+Pomeschenie21.87
+
+Knopka nazhata
+0
+Podacha TTK39.63
+Obratka TTK35.88
+Verh TA42.00
+Niz TA-99.00
+Podacha SYS39.06
+Obratka SYS32.88
+Pomeschenie21.87
+
+Knopka nazhata
+0
+Podacha TTK39.63
+Obratka TTK35.88
+Verh TA42.00
+Niz TA-99.00
+Podacha SYS39.06
+Obratka SYS32.88
+Pomeschenie21.87
+
+Knopka nazhata
+0
+Podacha TTK39.63
+Obratka TTK35.88
+Verh TA42.00
+Niz TA-99.00
+Podacha SYS39.06
+Obratka SYS32.88
+Pomeschenie21.87
+
+Knopka nazhata
+0
+Podacha TTK39.63
+Obratka TTK35.88
+Verh TA42.00
+Niz TA-99.00
+Podacha SYS39.06
+Obratka SYS32.88
+Pomeschenie21.87
+
+Knopka nazhata
+0
+Podacha TTK39.63
+Obratka TTK35.88
+Verh TA42.00
+Niz TA-99.00
+Podacha SYS39.06
+Obratka SYS32.88
+Pomeschenie21.87
+
+Knopka nazhata
+0
+Podacha TTK39.63
+Obratka TTK35.88
+Verh TA42.00
+Niz TA-99.00
+Podacha SYS39.06
+Obratka SYS32.88
+Pomeschenie21.87
+
+Knopka nazhata
+0
+Podacha TTK39.63
+Obratka TTK35.88
+Verh TA42.00
+Niz TA-99.00
+Podacha SYS39.06
+Obratka SYS32.88
+Pomeschenie21.87
+
+Knopka nazhata
+0
+Podacha TTK39.63
+Obratka TTK35.88
+Verh TA42.00
+Niz TA-99.00
+Podacha SYS39.06
+Obratka SYS32.88
+Pomeschenie21.87
+
+Knopka nazhata
+0
+Podacha TTK39.63
+Obratka TTK35.88
+Verh TA42.00
+Niz TA-99.00
+Podacha SYS39.06
+Obratka SYS32.88
+Pomeschenie21.87
+
+Knopka nazhata
+0
+Podacha TTK39.63
+Obratka TTK35.88
+Verh TA42.00
+Niz TA-99.00
+Podacha SYS39.06
+Obratka SYS32.88
+Pomeschenie21.87
+
+Knopka nazhata
+0
+Podacha TTK39.63
+Obratka TTK35.88
+Verh TA42.00
+Niz TA-99.00
+Podacha SYS39.06
+Obratka SYS32.88
+Pomeschenie21.87
+
+Knopka nazhata
+0
+Podacha TTK39.63
+Obratka TTK35.88
+Verh TA42.00
+Niz TA-99.00
+Podacha SYS39.06
+Obratka SYS32.88
+Pomeschenie21.87
+
+Knopka nazhata
+0
+Podacha TTK39.63
+Obratka TTK35.88
+Verh TA42.00
+Niz TA-99.00
+Podacha SYS39.06
+Obratka SYS32.88
+Pomeschenie21.87
+
+Knopka nazhata
+0
+Podacha TTK39.63
+Obratka TTK35.88
+Verh TA42.00
+Niz TA-99.00
+Podacha SYS39.06
+Obratka SYS32.88
+Pomeschenie21.87
+
+Knopka nazhata
+0
+Podacha TTK39.63
+Obratka TTK35.88
+Verh TA42.00
+Niz TA-99.00
+Podacha SYS39.06
+Obratka SYS32.88
+Pomeschenie21.87
+
+Knopka nazhata
+1
