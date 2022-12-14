@@ -1,10 +1,7 @@
-﻿// 
-// 
-// 
-
+﻿
 #include "Motorizedvalve.h"
 
-
+/*Принадлежность датчиков температуры*/
 // [0- t1, подача cистемы
 // 1- t2, обратка системы
 // 2- t3, отвод трехходового крана ТТ
@@ -25,6 +22,14 @@
 
 #define PID_TTK 0 //поддержание температуры ТТК по средствам ПИД регулятора
 #define PID_SYS 0 //поддержание температуры SYS по средствам ПИД регулятора
+
+//Перечисления для параметров работы системы
+enum sysParam { SP_ERR, SP_ON, SP_OFF, SP_AUTO, SP_OPEN, SP_CLOSE, SP_MYALG, SP_PID };
+//Параметры работы системы
+int BoilerPumpMode = 3;			//1 - on, 2 - off, 3 - auto
+int SystemPumpMode = 3;			//1 - on, 2 - off, 3 - auto
+int SysTempControlMode = 6;	//6 – мой алгоритм регулирования, 7 - PID регулятор
+int DoorAirMode=3;					//4 - open, 5 - close, 3 - auto
 
 const int tcrashTTK = 80;	//аварийная температура ТТК(90 *С)
 const int tdangerTTK = 70;	//предаварийная температура  ТТК (80 *С)
@@ -74,30 +79,30 @@ MAX6675_Thermocouple thermocouple(PIN_THERMOCOUPLE_CLK, PIN_THERMOCOUPLE_CS, PIN
 
 //Вариант для ребенка
 float dailySheduleOfTemperature[24] ={
-	0.913, //0-1 (21/23)
-	0.913, //1-2 (21/23)
-	0.913, //2-3 (21/23)
-	0.913, //3-4 (21/23)
-	0.935, //4-5 (21,5/23)
-	0.956, //5-6 (22/23)
-	0.978, //6-7 (22,5/23)
-	0.978, //7-8 (22,5/23)
+	0.935, //0-1 (21,5/23)
+	0.935, //1-2 (21,5/23)
+	0.935, //2-3 (21,5/23)
+	0.935, //3-4 (21,5/23)
+	0.969, //4-5 (22,3/23)
+	0.978, //5-6 (22,5/23)
+	0.983, //6-7 (22,6/23)
+	0.995, //7-8 (22,9/23)
 	1.000, //8-9 (23/23)
 	1.000, //9-10 (23/23)
-	1.000, //10-11 (23/23)
-	0.978, //11-12 (22,5/23)
-	0.978, //12-13 (22,5/23)
+	0.995, //10-11 (22,9/23)
+	1.000, //11-12 (23/23)
+	0.995, //12-13 (22,9/23)
 	0.978, //13-14 (22,5/23)
-	0.978, //14-15 (22,5/23)
-	1.000, //15-16 (23/23)
-	1.000, //16-17 (23/23)
-	1.000, //17-18 (23/23)
+	0.987, //14-15 (22,7/23)
+	0.995, //15-16 (22,9/23)
+	0.995, //16-17 (22,9/23)
+	0.995, //17-18 (22,9/23)
 	1.000, //18-19 (23/23)
 	1.000, //19-20 (23/23)
-	1.000, //20-21 (23/23)
-	0.956, //21-22 (22/23)
-	0.935, //22-23 (21,5/23)
-	0.913 };//23-24 (21/23)
+	0.987, //20-21 (22,7/23)
+	0.978, //21-22 (22,5/23)
+	0.935, //22-23 (22,4/23)
+	0.935 };//23-24 (21,5/23)
 
 //Рабочий вариант для родителей
 //float dailySheduleOfTemperature[24] = {
@@ -263,31 +268,46 @@ int testValve(uint8_t open, uint8_t close, uint8_t signalOpen, uint8_t signalClo
 
 //Регулировка и поддержание оптимальной температуры ТТК (защита от холодной обратки)
 int temperatureControlTTK() {
+	
+	int errCod = 0;
+	unsigned long startTime = millis();	
+	extern float temperature[];		
+	extern float g_t_flueGases; //температура дымовых газов ТТК котла ()  
+	extern myCycle cycleTempControlTTK;
+
 	const  bool LOG = false; //выводить логи работы процедуры
 	if (LOG) { Serial.print("\nstart (temperatureControlTTK)\n"); }
 
-	int errCod = 0;
-	unsigned long startTime = millis();	
-	extern float temperature[];			
-	extern int g_t_flueGases; //температура дымовых газов ТТК котла ()  
-	extern myCycle cycleTempControlTTK;
+
 
 	//читаем температуру термопары (температура дымовых газов ТТК)
-	g_t_flueGases = (int)thermocouple.readCelsius();
+	g_t_flueGases = thermocouple.readCelsius();
 	if (LOG) { Serial.print("Дым - "); Serial.println(g_t_flueGases); }
 	
+	//условие запуска насоса при топящемся котле: подача ттк > 55 или дым>350 
+	//условия запуска насоса при не топящемся котле: подача ТТК > (Низ ТА+1,5С)
 
-	/*[3] - подача ттк,	[11]-низ ТА*/ if (LOG) { Serial.print("Подача ТТК "); Serial.print(temperature[3]); Serial.print(" Низ ТА "); Serial.println(temperature[11]); }
-	if (g_failure || (g_t_flueGases > 120) || ((int)temperature[3] > ((int)temperature[11] + 2))) { //авария, или котел топиться, или вода в подаче котла нагрелась более чем на 2 *С выше температуры воды низа ТА
-
-	///*если нет датчика дыма, используем такое условие: */
-	//if (g_failure || (temperature[3] > (temperature[11] + 1))) { //котел топиться или вода в подаче котла нагрелась более чем на 2 *С выше температуры воды низа ТА
-
+	/*  [3] - подача ттк,	[11]-низ ТА*/ 
+	if (LOG) { Serial.print("Подача ТТК "); Serial.print(temperature[3]); Serial.print(" Низ ТА "); Serial.println(temperature[11]); }
+	
+	//контроль запуска насоса ТТК
+	switch (BoilerPumpMode) {
+	case SP_ON:
 		//запуск насоса ТТК
-		digitalWrite(PIN_PUMP_TTK, LOW); //active level - LOW
-	}
-	else{//остановка насоса ТТК
-		digitalWrite(PIN_PUMP_TTK, HIGH); //active level - LOW
+		digitalWrite(PIN_PUMP_TTK, LOW);
+		break;
+	case SP_OFF:
+		if (!g_failure) { digitalWrite(PIN_PUMP_TTK, HIGH); } //выключаем насос ТТК
+	break;
+	case SP_AUTO:
+		if ((g_failure) || (g_t_flueGases > 350) ||(g_t_flueGases<150 && (temperature[3] > (temperature[11] + 1.5))) || (g_t_flueGases>=150 && temperature[3] >55) ) {
+			//запуск насоса ТТК
+			digitalWrite(PIN_PUMP_TTK, LOW); //active level - LOW
+		}
+		else{//остановка насоса ТТК
+			if (!g_failure) { digitalWrite(PIN_PUMP_TTK, HIGH); } //active level - LOW
+		}	
+		break;
 	}
 
 	if ((int)temperature[3] > tdangerTTK ) { //предаварийный перегрев котла
@@ -550,14 +570,14 @@ int temperatureControlSYS() {
 		//t[12] - температура в помещении.	
 		//new:дополнительно контролируем, что бы температура в системе не опускалась ниже определенного уровня, 
 		// что бы в доме не появлялся холод от окон
-		//float mTminSysPodacha = 33; //минимальная температура подачи системы
-		// 13-t14, температура на улице
+		//float mTminSysPodacha - минимальная температура подачи системы
+		// [13]-t14, температура на улице
 		if (temperature[13] < 0) { mTminSysPodacha = 32; } //вариант для зимы)	//33 было жарко в доме
 		if (temperature[13] < 10) { mTminSysPodacha = 33; } //вариант для зимы)	//34 жарковато в доме. 35 в большой спальне было жарко ночью
-		if (temperature[13] < 20) { mTminSysPodacha = 35; } //вариант для зимы) //36 в большой спальне было жарко ночью
-		if (temperature[13] < 25) { mTminSysPodacha = 36; } //вариант для зимы)	//37 в большой спальне было жарко ночью
-		if (temperature[13] < 30) { mTminSysPodacha = 38; } //вариант для зимы)	
-		if (temperature[13] > 0) { mTminSysPodacha = 30; }
+		if (temperature[13] < 20) { mTminSysPodacha = 34; } //вариант для зимы) //36 в большой спальне было жарко ночью
+		if (temperature[13] < 25) { mTminSysPodacha = 35; } //вариант для зимы)	//37 в большой спальне было жарко ночью
+		if (temperature[13] < 30) { mTminSysPodacha = 36; } //вариант для зимы)	
+		if (temperature[13] > 0) { mTminSysPodacha = 29; }
 		if (temperature[13] > 5) { mTminSysPodacha = 27; }
 		if (temperature[13] > 10) { mTminSysPodacha = 23; }	
 		if (temperature[13] > 15) { mTminSysPodacha = 20; }

@@ -34,8 +34,8 @@
 	/*static*/extern unsigned long g_timeSwitchValveTTK; //мс, максимальное полное время переключения моторизованного крана ТТК из одного положения в другое
 	/*static*/extern unsigned long g_timeSwitchValveSYS; //мс, максимальное полное время переключения моторизованного крана Системы из одного положения в другое
 //насосы
-	/*static*/ extern bool  g_pumpTTK; //переменная состояния насоса ТТК
-	/*static*/ extern bool  g_pumpSYS; //переменная состояния насоса системы
+	///*static*/ extern bool  g_pumpTTK; //переменная состояния насоса ТТК
+	///*static*/ extern bool  g_pumpSYS; //переменная состояния насоса системы
 	///*static*/ extern bool  g_pumpЭК = false; //переменная состояния насоса электрического котла ()
 //состояние перегрева ТТК котла					
 	/*static*/ extern bool g_failure; //сигнал наличия состояния аварийного перегрева котла ТТК

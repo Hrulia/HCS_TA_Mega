@@ -121,8 +121,8 @@ int indicator_TM1637_Output_temperature()
 	TM1637_6.showNumberMsn(temperature[1]);
 	//TM1637_7.showNumberMsn(temperature[14]);
 
-	extern int g_t_flueGases;
-	TM1637_7.showNumberMsn(g_t_flueGases,0);//временно выведем дымовые газы на чужой индикатор
+	extern float g_t_flueGases;
+	TM1637_7.showNumberMsn(g_t_flueGases,1);//временно выведем дымовые газы на чужой индикатор
 
 	TM1637_8.showNumberMsn(temperature[15]);
 	TM1637_9.showNumberMsn(g_tRoomSetpoint,1);
