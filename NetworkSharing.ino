@@ -110,8 +110,8 @@ void checkSerial() {
 				}
 			}
 
-			//******
-			// ?reqesttemp
+//******
+// ?reqesttemp
 			else if (command == F("reqesttemp")) {												// ?reqesttemp
 				if (parameter == F("A")) {
 					/* для тестирования */
@@ -181,8 +181,8 @@ void checkSerial() {
 				Serial.println("espRSSI: " + parameter + "dBm");
 			}
 
-			//******			
-			// ?SetGTargetTemp=newT //получение целевой температуры
+//******			
+// ?SetGTargetTemp=newT //получение целевой температуры
 			else if (command == F("SetGTargetTemp")) {
 				Serial.println("Command ESP: ?SetGTargetTemp/param:" + parameter);
 				//переводим строковый параметр в тип float и присваиваем переменной g_tRoomSetpoint
@@ -197,8 +197,8 @@ void checkSerial() {
 				Serial3.print(F("?sendGTargetTemp=")); Serial3.println(g_tRoomSetpoint, 1);
 			}
 
-			//******			
-			// ?getSystemParameters //Запрос от ESP системных параметров
+//******			
+// ?getSystemParameters //Запрос от ESP системных параметров
 			else if (command == F("getSystemParameters")) {
 				Serial.println("Request from ESP: ?getSystemParameters/param:" + parameter);
 				// X – работы насоса котла;
@@ -221,6 +221,23 @@ void checkSerial() {
 				else {
 					Serial.println("Error in command from ESP ?setBoilerPumpMode, param:" + parameter);
 				}
+				//Sending updated system parameters to ESP
+				Serial3.print(F("?sendSystemParameters=")); Serial3.println(String(BoilerPumpMode) + SystemPumpMode + SysTempControlMode + DoorAirMode + "0" + "0");
+			}
+
+	//******			
+	// ?setSystemPumpMode //Команда установки режима работы насоса системы
+			else if (command == F("setSystemPumpMode")) {
+				Serial.println("Request from ESP: ?setSystemPumpMode/param:" + parameter);
+				//[1] - SystemPumpMode				//1 - on, 2 - off, 3 - auto
+				if (parameter.toInt() > 0 && parameter.toInt() < 4) {
+					SystemPumpMode = parameter.toInt();
+				}
+				else {
+					Serial.println("Error in command from ESP ?setSystemPumpMode, param:" + parameter);
+				}
+				//Sending updated system parameters to ESP
+				Serial3.print(F("?sendSystemParameters=")); Serial3.println(String(BoilerPumpMode) + SystemPumpMode + SysTempControlMode + DoorAirMode + "0" + "0");
 			}
 		}
 	}

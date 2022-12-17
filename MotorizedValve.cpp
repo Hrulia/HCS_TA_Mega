@@ -398,7 +398,7 @@ lblExit:
 };
 
 //Регулировка и поддержание оптимальной температуры системы
-int temperatureControlSYS() {
+int temperatureControlSYS() { /*setSystemPumpMode*/
 	//yield()!!!!
 	const  bool LOG = false; //выводить логи работы процедуры
 	if (LOG) { Serial.println(F("\nstart (temperatureControlSYS)\n")); }
@@ -433,19 +433,31 @@ int temperatureControlSYS() {
 	}
 	
 	//Управление насосом системы
-	// 10-t11, верх ТА	// 12-t13, температура в помещении
-	if (g_failure ||(temperature[10] > (temperature[12]))) { 
-		//Температура верха ТА выше температуры в отслеживаемом помещении
+	//контроль режима запуска насоса системы
+	switch (SystemPumpMode) {
+	case SP_ON:
 		//запуск насоса системы
-		if (LOG) { Serial.print(F("zapusk nasosa SYS"));}
-		digitalWrite(PIN_PUMP_SYS, LOW); //active level - LOW
-	}
-	else {
-		//остановка насоса системы
-		digitalWrite(PIN_PUMP_SYS, HIGH); //active level - LOW
-		if (LOG) {Serial.print(F("stop nasos SYS"));}
-		//return errCod;
-		goto lblExit;
+		digitalWrite(PIN_PUMP_SYS, LOW);
+		break;
+	case SP_OFF:
+		if (!g_failure) { digitalWrite(PIN_PUMP_SYS, HIGH); } //выключаем насос системы
+		break;
+	case SP_AUTO:
+			// 10-t11, верх ТА	// 12-t13, температура в помещении
+		if (g_failure || (temperature[10] > temperature[12])) {
+			//Температура верха ТА выше температуры в отслеживаемом помещении
+			//запуск насоса системы
+			if (LOG) { Serial.print(F("SYStem pump start")); }
+			digitalWrite(PIN_PUMP_SYS, LOW); //active level - LOW
+		}
+		else {
+			//остановка насоса системы
+			digitalWrite(PIN_PUMP_SYS, HIGH); //active level - LOW
+			if (LOG) { Serial.print(F("stop nasos SYS")); }
+			//return errCod;
+			goto lblExit;
+		}
+		break;
 	}
 
 	//определяем целевую температуру для регулировки
@@ -572,32 +584,60 @@ int temperatureControlSYS() {
 		// что бы в доме не появлялся холод от окон
 		//float mTminSysPodacha - минимальная температура подачи системы
 		// [13]-t14, температура на улице
-		if (temperature[13] < 0) { mTminSysPodacha = 32; } //вариант для зимы)	//33 было жарко в доме
-		if (temperature[13] < 10) { mTminSysPodacha = 33; } //вариант для зимы)	//34 жарковато в доме. 35 в большой спальне было жарко ночью
-		if (temperature[13] < 20) { mTminSysPodacha = 34; } //вариант для зимы) //36 в большой спальне было жарко ночью
-		if (temperature[13] < 25) { mTminSysPodacha = 35; } //вариант для зимы)	//37 в большой спальне было жарко ночью
-		if (temperature[13] < 30) { mTminSysPodacha = 36; } //вариант для зимы)	
+		if (temperature[13] < 0) { mTminSysPodacha = 34; } //вариант для зимы)	//33было жарко в доме
+		if (temperature[13] < -10) { mTminSysPodacha = 35; } //вариант для зимы)	//34 жарковато в доме. 35 в большой спальне было жарко ночью
+		if (temperature[13] < -20) { mTminSysPodacha = 36; } //вариант для зимы) //36 в большой спальне было жарко ночью
+		if (temperature[13] < -25) { mTminSysPodacha = 37; } //вариант для зимы)	//37 в большой спальне было жарко ночью
+		if (temperature[13] < -30) { mTminSysPodacha = 38; } //вариант для зимы)	
 		if (temperature[13] > 0) { mTminSysPodacha = 29; }
 		if (temperature[13] > 5) { mTminSysPodacha = 27; }
 		if (temperature[13] > 10) { mTminSysPodacha = 23; }	
 		if (temperature[13] > 15) { mTminSysPodacha = 20; }
 
-		if (((temperature[12] < tRoomSetpoint - 0.1)|| (temperature[0] < mTminSysPodacha)) && (digitalRead(PIN_VALVE_SYS_SIGNAL_ClOSE))) {
-			////Serial.print("Xolodno greiu (temperature[12] < (tRoomSetpoint-0,6)   "); Serial.println((temperature[12] < (tRoomSetpoint - 0,6)));
+		Serial.println(String("T[0] ") + temperature[0]); Serial.println(String("mTminSysPodacha ") + mTminSysPodacha);
+
+		//Нижняя граница диапазона минимальной температуры подачи
+		bool TminSysPodachaLowerBound = (temperature[0] < (mTminSysPodacha - 0.5)); 
+		Serial.println(String("TminSysPodachaLowerBound ") + TminSysPodachaLowerBound);
+
+		//Верхняя граница диапазона минимальной температуры подачи
+		bool TminSysPodachaUpperBound = (temperature[0] > (mTminSysPodacha + 1.0));
+		Serial.println(String("TminSysPodachaUpperBound ") + TminSysPodachaUpperBound);
+
+		if (((temperature[12] < tRoomSetpoint - 0.1)|| TminSysPodachaLowerBound) && (digitalRead(PIN_VALVE_SYS_SIGNAL_ClOSE))) {
+			Serial.print(String("Увеличим подачу на "));
 			// температура в контролируемом помещении ниже заданной. Призакрываем кран(боковой отвод) на 1/10 максимального времени переключения крана системы
 			digitalWrite(PIN_VALVE_SYS_ClOSE, LOW);//active level - LOW
 			digitalWrite(PIN_VALVE_SYS_OPEN, HIGH);
+			//если задача поддержать минимальную темературу в системе, то шаги крана сделаем в два раза уже, чем при регулировании для поддержания температуры в помещении
+			if (TminSysPodachaLowerBound) {
+				delay((g_timeSwitchValveSYS) / 11);
+				Serial.println(String("1/11 шаг"));
+			}
+			else {
 			delay((g_timeSwitchValveSYS) / 10);
+			Serial.println(String("1/10 шаг"));
+			}
+
 			digitalWrite(PIN_VALVE_SYS_ClOSE, HIGH);
 			digitalWrite(PIN_VALVE_SYS_OPEN, HIGH);
 		}
 		else {
-			if ((temperature[12] > (tRoomSetpoint /*+ 0.1*/)) && (digitalRead(PIN_VALVE_SYS_SIGNAL_OPEN))) {
-				////Serial.print("Jarko. open bokovoi (temperature[12] > (tRoomSetpoint+0,6))    "); Serial.println(temperature[12]); Serial.println(tRoomSetpoint); Serial.println((tRoomSetpoint + 0.6));  Serial.println((temperature[12] > (tRoomSetpoint + 0.6)));
+			if ((temperature[12] > (tRoomSetpoint /*+ 0.1*/)&&(TminSysPodachaUpperBound)) && (digitalRead(PIN_VALVE_SYS_SIGNAL_OPEN))) {
+				Serial.print(String("Уменьшим подачу на "));
 				// температура в контролируемом помещении выше заданной. Приоткрываем кран(боковой отвод) на 1/25 максимального времени переключения крана системы
 				digitalWrite(PIN_VALVE_SYS_ClOSE, HIGH);//active level - LOW
 				digitalWrite(PIN_VALVE_SYS_OPEN, LOW);
-				delay(g_timeSwitchValveSYS / 10);
+
+				if (temperature[0] > (mTminSysPodacha + 3.0)) {
+
+					delay((g_timeSwitchValveSYS) / 10);
+					Serial.println(String("1/10 шаг (температура подачи выше минимально-допустимой на +3 градуса)"));
+				}
+				else {
+					delay((g_timeSwitchValveSYS) / 11);
+					Serial.println(String("1/11 шаг"));
+				}
 				digitalWrite(PIN_VALVE_SYS_ClOSE, HIGH);
 				digitalWrite(PIN_VALVE_SYS_OPEN, HIGH);
 			}
