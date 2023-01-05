@@ -184,10 +184,10 @@ void checkSerial() {
 //******			
 // ?SetGTargetTemp=newT //получение целевой температуры
 			else if (command == F("SetGTargetTemp")) {
-				Serial.println("Command ESP: ?SetGTargetTemp/param:" + parameter);
+				///Serial.println("Command ESP: ?SetGTargetTemp/param:" + parameter);
 				//переводим строковый параметр в тип float и присваиваем переменной g_tRoomSetpoint
 				g_tRoomSetpoint = parameter.toFloat();
-				Serial.print("Now g_tRoomSetpoint="); Serial.println(g_tRoomSetpoint);
+				///Serial.print("Now g_tRoomSetpoint="); Serial.println(g_tRoomSetpoint);
 				//обновим информацию на индикаторе TM1637
 				extern TM1637Display TM1637_9;
 				TM1637_9.showNumberMsn(g_tRoomSetpoint, 1);
@@ -200,7 +200,7 @@ void checkSerial() {
 //******			
 // ?getSystemParameters //Запрос от ESP системных параметров
 			else if (command == F("getSystemParameters")) {
-				Serial.println("Request from ESP: ?getSystemParameters/param:" + parameter);
+				///Serial.println("Request from ESP: ?getSystemParameters/param:" + parameter);
 				// X – работы насоса котла;
 				// Y – режим работы насоса системы;
 				// Z – алгоритм регулирования температуры системы;
@@ -213,13 +213,13 @@ void checkSerial() {
 			//******			
 			// ?setBoilerPumpMode //Команда установки режима работы насоса ТТК
 			else if (command == F("setBoilerPumpMode")) {
-				Serial.println("Request from ESP: ?setBoilerPumpMode/param:" + parameter);
+				///Serial.println("Request from ESP: ?setBoilerPumpMode/param:" + parameter);
 				//[0] - BoilerPumpMode				//1 - on, 2 - off, 3 - auto
 				if (parameter.toInt() > 0 && parameter.toInt() < 4) {
 					BoilerPumpMode = parameter.toInt();
 				}
 				else {
-					Serial.println("Error in command from ESP ?setBoilerPumpMode, param:" + parameter);
+					///Serial.println(F("Error in command from ESP ?setBoilerPumpMode, param:") + parameter);
 				}
 				//Sending updated system parameters to ESP
 				Serial3.print(F("?sendSystemParameters=")); Serial3.println(String(BoilerPumpMode) + SystemPumpMode + SysTempControlMode + DoorAirMode + "0" + "0");
@@ -228,13 +228,13 @@ void checkSerial() {
 	//******			
 	// ?setSystemPumpMode //Команда установки режима работы насоса системы
 			else if (command == F("setSystemPumpMode")) {
-				Serial.println("Request from ESP: ?setSystemPumpMode/param:" + parameter);
+				///Serial.println("Request from ESP: ?setSystemPumpMode/param:" + parameter);
 				//[1] - SystemPumpMode				//1 - on, 2 - off, 3 - auto
 				if (parameter.toInt() > 0 && parameter.toInt() < 4) {
 					SystemPumpMode = parameter.toInt();
 				}
 				else {
-					Serial.println("Error in command from ESP ?setSystemPumpMode, param:" + parameter);
+					///Serial.println("Error in command from ESP ?setSystemPumpMode, param:" + parameter);
 				}
 				//Sending updated system parameters to ESP
 				Serial3.print(F("?sendSystemParameters=")); Serial3.println(String(BoilerPumpMode) + SystemPumpMode + SysTempControlMode + DoorAirMode + "0" + "0");

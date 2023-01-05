@@ -162,11 +162,10 @@ int initValve() {
 	//}
 	//Serial.print("g_timeSwitchvalveTTK "); Serial.print(g_timeSwitchValveTTK); Serial.print(" ms\n");
 
+
 	//тестируем работу крана регулировки темпратуры системы
 	LOG("\nCall testValveSYS\n");//PIN_VALVE_SYS_OPEN
-	//result = testvalve(PIN_VALVE_SYS_OPEN, PIN_VALVE_SYS_ClOSE, PIN_VALVE_SYS_SIGNAL_OPEN, PIN_VALVE_SYS_SIGNAL_ClOSE, &g_timeSwitchValveSYS);
 	result = testValve(PIN_VALVE_SYS_OPEN, PIN_VALVE_SYS_ClOSE, PIN_VALVE_SYS_SIGNAL_OPEN, PIN_VALVE_SYS_SIGNAL_ClOSE, &g_timeSwitchValveSYS);
-
 
 	if (result) {
 		LOG("Error in... "); LOG(result); ; LOG("\n");  //обработка ошибки
@@ -594,29 +593,29 @@ int temperatureControlSYS() { /*setSystemPumpMode*/
 		if (temperature[13] > 10) { mTminSysPodacha = 23; }	
 		if (temperature[13] > 15) { mTminSysPodacha = 20; }
 
-		Serial.println(String("T[0] ") + temperature[0]); Serial.println(String("mTminSysPodacha ") + mTminSysPodacha);
+		///Serial.println(String("T[0] ") + temperature[0]); Serial.println(String("mTminSysPodacha ") + mTminSysPodacha);
 
 		//Нижняя граница диапазона минимальной температуры подачи
 		bool TminSysPodachaLowerBound = (temperature[0] < (mTminSysPodacha - 0.5)); 
-		Serial.println(String("TminSysPodachaLowerBound ") + TminSysPodachaLowerBound);
+		///Serial.println(String("TminSysPodachaLowerBound ") + TminSysPodachaLowerBound);
 
 		//Верхняя граница диапазона минимальной температуры подачи
 		bool TminSysPodachaUpperBound = (temperature[0] > (mTminSysPodacha + 1.0));
-		Serial.println(String("TminSysPodachaUpperBound ") + TminSysPodachaUpperBound);
+		///Serial.println(String("TminSysPodachaUpperBound ") + TminSysPodachaUpperBound);
 
 		if (((temperature[12] < tRoomSetpoint - 0.1)|| TminSysPodachaLowerBound) && (digitalRead(PIN_VALVE_SYS_SIGNAL_ClOSE))) {
-			Serial.print(String("Увеличим подачу на "));
+			///Serial.print(String("Увеличим подачу на "));
 			// температура в контролируемом помещении ниже заданной. Призакрываем кран(боковой отвод) на 1/10 максимального времени переключения крана системы
 			digitalWrite(PIN_VALVE_SYS_ClOSE, LOW);//active level - LOW
 			digitalWrite(PIN_VALVE_SYS_OPEN, HIGH);
 			//если задача поддержать минимальную темературу в системе, то шаги крана сделаем в два раза уже, чем при регулировании для поддержания температуры в помещении
 			if (TminSysPodachaLowerBound) {
 				delay((g_timeSwitchValveSYS) / 11);
-				Serial.println(String("1/11 шаг"));
+				///Serial.println(String("1/11 шаг"));
 			}
 			else {
 			delay((g_timeSwitchValveSYS) / 10);
-			Serial.println(String("1/10 шаг"));
+			///Serial.println(String("1/10 шаг"));
 			}
 
 			digitalWrite(PIN_VALVE_SYS_ClOSE, HIGH);
@@ -624,7 +623,7 @@ int temperatureControlSYS() { /*setSystemPumpMode*/
 		}
 		else {
 			if ((temperature[12] > (tRoomSetpoint /*+ 0.1*/)&&(TminSysPodachaUpperBound)) && (digitalRead(PIN_VALVE_SYS_SIGNAL_OPEN))) {
-				Serial.print(String("Уменьшим подачу на "));
+				///Serial.print(String("Уменьшим подачу на "));
 				// температура в контролируемом помещении выше заданной. Приоткрываем кран(боковой отвод) на 1/25 максимального времени переключения крана системы
 				digitalWrite(PIN_VALVE_SYS_ClOSE, HIGH);//active level - LOW
 				digitalWrite(PIN_VALVE_SYS_OPEN, LOW);
@@ -632,11 +631,11 @@ int temperatureControlSYS() { /*setSystemPumpMode*/
 				if (temperature[0] > (mTminSysPodacha + 3.0)) {
 
 					delay((g_timeSwitchValveSYS) / 10);
-					Serial.println(String("1/10 шаг (температура подачи выше минимально-допустимой на +3 градуса)"));
+					///Serial.println(String("1/10 шаг (температура подачи выше минимально-допустимой на +3 градуса)"));
 				}
 				else {
 					delay((g_timeSwitchValveSYS) / 11);
-					Serial.println(String("1/11 шаг"));
+					///Serial.println(String("1/11 шаг"));
 				}
 				digitalWrite(PIN_VALVE_SYS_ClOSE, HIGH);
 				digitalWrite(PIN_VALVE_SYS_OPEN, HIGH);

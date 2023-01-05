@@ -9,6 +9,7 @@
 //sei();   разрешает прерывания. например в функции ISR
 
 RTC_DS1307 rtc;
+//RTC_DS1302 rtc;
 
 int initSystemTime() {
 	LOG("\nstart (initSystemTime)\n");
@@ -36,6 +37,7 @@ int initSystemTime() {
 void ISR_UpdateSystemTime() {
 	sei();  //разрешает другие прерывания в этот момент
 	g_systemDateTime = rtc.now();
+	//Serial.println(String(rtc.now().hour())+":"+ String(rtc.now().minute()));
 
 	//digitalWrite(13, !(digitalRead(13)));
 }
