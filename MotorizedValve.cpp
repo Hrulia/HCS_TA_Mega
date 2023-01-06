@@ -165,6 +165,7 @@ int initValve() {
 
 	//тестируем работу крана регулировки темпратуры системы
 	LOG("\nCall testValveSYS\n");//PIN_VALVE_SYS_OPEN
+	
 	result = testValve(PIN_VALVE_SYS_OPEN, PIN_VALVE_SYS_ClOSE, PIN_VALVE_SYS_SIGNAL_OPEN, PIN_VALVE_SYS_SIGNAL_ClOSE, &g_timeSwitchValveSYS);
 
 	if (result) {
@@ -256,6 +257,15 @@ int testValve(uint8_t open, uint8_t close, uint8_t signalOpen, uint8_t signalClo
 	//сохраняем время выполнения операции закрытия
 	startTime = millis() - startTime; //т.к. startTime больше не понадобится, то сохраним в него рассчитанное время закрытия
 	Serial.print("full closing time = "); Serial.print(startTime); Serial.print("ms, errCod = "); Serial.print(errCod); Serial.print("\n");
+
+	//вернем кран в исходное положение(которое было до начала теста)
+	//открываем кран до первоначального положения
+	digitalWrite(open, LOW);
+	digitalWrite(close, HIGH);
+	delay(startTime - *ptimeSwitch);
+	//открываем кран
+	digitalWrite(open, HIGH);
+	digitalWrite(close, HIGH);
 
 	//запомним наибольшее время из этих операций
 	*ptimeSwitch = (startTime>*ptimeSwitch) ? startTime : *ptimeSwitch;
@@ -399,7 +409,7 @@ lblExit:
 //Регулировка и поддержание оптимальной температуры системы
 int temperatureControlSYS() { /*setSystemPumpMode*/
 	//yield()!!!!
-	const  bool LOG = false; //выводить логи работы процедуры
+	const  bool LOG = true; //выводить логи работы процедуры
 	if (LOG) { Serial.println(F("\nstart (temperatureControlSYS)\n")); }
 	int errCod = 0;
 	unsigned long startTime = millis();	

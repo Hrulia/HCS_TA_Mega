@@ -1,7 +1,7 @@
 #include "NetworkSharing.h"	
 
 
-#define DEBUG_NSH
+//#define DEBUG_NSH
 
 //син.кор.сер.
 // esp partner
@@ -252,17 +252,17 @@ void checkMegaAndESP() {
 		//для теста. потом удали.
 		Serial3.println(F("?reqestrssi"));
 
-		if (millis() - espTimer > 300000) {
-			//Попадаем сюда, если модуль esp более хх секунд не присылал информации о своем присутствии.
-			esp = ESP_OFF; 
-			espTimer = millis();
-			//делаем reset ESP
-			//DEBUGLN("Module MEGA reseting");
-			digitalWrite(PIN_RESET_ESP, LOW);
-			delay(200);
-			digitalWrite(PIN_RESET_ESP, HIGH);
+		////if (millis() - espTimer > 300000) {
+		////	//Попадаем сюда, если модуль esp более хх секунд не присылал информации о своем присутствии.
+		////	esp = ESP_OFF; 
+		////	espTimer = millis();
+		////	//делаем reset ESP
+		////	//DEBUGLN("Module MEGA reseting");
+		////	digitalWrite(PIN_RESET_ESP, LOW);
+		////	delay(200);
+		////	digitalWrite(PIN_RESET_ESP, HIGH);
 
-		}
+		////}
 }	// cheсkMegaAndESP() 
 
 
