@@ -94,7 +94,7 @@ int indicator_TM1637_Output_time()
 //обновление информации о температуре на индикаторах
 int indicator_TM1637_Output_temperature()
 {
-	const  bool LOG = false; //выводить логи работы процедуры
+	const  bool LOG = true; //выводить логи работы процедуры
 	if (LOG) { Serial.print("\nstart (indicator_TM1637_Output_temperature)\n"); }
 
 	int errCod = 0;

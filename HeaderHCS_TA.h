@@ -10,10 +10,10 @@
 #include "NetworkSharing.h"	//модуль обмена по сети через порт UART
 
 
-#define DEBUG 0
+#define DEBUG 1
 
 
-#if DEBUG==1 
+#if DEBUG==1
 #define LOG(message) (Serial.print((message))) //В режиме отладки выводим логи
 #define LOG2(message,view) (Serial.print((message),(view)))
 #elif  DEBUG==0

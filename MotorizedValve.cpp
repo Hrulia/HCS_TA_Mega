@@ -79,11 +79,11 @@ MAX6675_Thermocouple thermocouple(PIN_THERMOCOUPLE_CLK, PIN_THERMOCOUPLE_CS, PIN
 
 //Вариант для ребенка
 float dailySheduleOfTemperature[24] ={
-	0.935, //0-1 (21,5/23)
-	0.935, //1-2 (21,5/23)
-	0.935, //2-3 (21,5/23)
-	0.935, //3-4 (21,5/23)
-	0.969, //4-5 (22,3/23)
+	0.956, //0-1 (22/23)
+	0.948, //1-2 (21,8/23)
+	0.948, //2-3 (21,8/23)
+	0.948, //3-4 (21,8/23)
+	0.956, //4-5 (22/23)
 	0.978, //5-6 (22,5/23)
 	0.983, //6-7 (22,6/23)
 	0.995, //7-8 (22,9/23)
@@ -100,9 +100,9 @@ float dailySheduleOfTemperature[24] ={
 	1.000, //18-19 (23/23)
 	1.000, //19-20 (23/23)
 	0.987, //20-21 (22,7/23)
-	0.978, //21-22 (22,5/23)
-	0.935, //22-23 (22,4/23)
-	0.935 };//23-24 (21,5/23)
+	0.983, //21-22 (22,6/23)
+	0.978, //22-23 (22,5/23)
+	0.965 };//23-24 (22,2/23)
 
 //Рабочий вариант для родителей
 //float dailySheduleOfTemperature[24] = {
@@ -186,7 +186,7 @@ int testValve(uint8_t open, uint8_t close, uint8_t signalOpen, uint8_t signalClo
 	2 - ошибка теста закрытия крана
 	3 - ошибка обоих тестов
 	*/
-	LOG("Start (testValve)\n");
+	Serial.println(F("_Start testValve procedure"));
 
 	int errCod = 0;
 	Button oSignalOpen(signalOpen, 15); // класс button позволяет фильтровать дребезг контактов с сигнальных концевиков крана. время фильтрации 15мс*на период повторения loop. 
@@ -195,20 +195,19 @@ int testValve(uint8_t open, uint8_t close, uint8_t signalOpen, uint8_t signalClo
 	//сохраняем текущее время
 	unsigned long startTime = millis();
 	//открываем кран
-	digitalWrite(open, LOW);
+	Serial.println(F("_Start opening valve"));
 	digitalWrite(close, HIGH);
-	///LOG(digitalRead(open));	LOG(digitalRead(close));	LOG(digitalRead(signalOpen));	LOG(digitalRead(signalClose));
-	//ждем появления сигнала открытия низкого уровня
-	boolean a;
+	digitalWrite(open, LOW); Serial.println("_35-LOW");
 
-	///LOG("Flagpress"); LOG(oSignalOpen.flagPress); LOG("\n");
+	//ждем появления сигнала открытия низкого уровня
+	Serial.println(F("_waiting for the signal to fully open the valve"));
 	do {
+		//Serial.println(F("_in the Do. Waiting for the signal to fully open the valve"));
 		oSignalOpen.scanState();
 		if ((millis() - startTime) > MAX_TIME_TESTING_VALVE) {
 			errCod = 1;
 			break;
 		}
-		//a = oSignalOpen.flagPress; LOG(a);
 	} while (!oSignalOpen.flagPress);
 	/* первый вариант без класса button
 	while (digitalRead(signalOpen)!=LOW) {
@@ -219,20 +218,22 @@ int testValve(uint8_t open, uint8_t close, uint8_t signalOpen, uint8_t signalClo
 	}
 	*/
 	//снимем напряжение с крана
-	digitalWrite(open, HIGH);
-	digitalWrite(close, HIGH);
+	digitalWrite(open, HIGH); Serial.println("_35-HIGH");
+	digitalWrite(close, HIGH); 	
 	//сохраняем время выполнения операции открытия
 	*ptimeSwitch = millis() - startTime;	Serial.print("full opening time = "); Serial.print(*ptimeSwitch); Serial.print("ms, errCod = "); Serial.println(errCod);
 
 	//сохраняем текущее время
 	startTime = millis();
 	//закрываем кран
-	digitalWrite(close, LOW);
-	digitalWrite(open, HIGH);
+	Serial.println("_Start closing valve");
+	digitalWrite(open, HIGH); Serial.println("_35-HIGH");
+	digitalWrite(close, LOW); Serial.println("_231_36-LOW");
+
 	//ждем появления сигнала закрытия, низкого уровня с крана
-	//LOG("FlagpressClose"); LOG(oSignalOpen.flagPress); LOG("\n"); oSignalOpen.flagPress = false;
-	//LOG("FlagpressClose"); LOG(oSignalOpen.flagPress); LOG("\n");
+	Serial.println(F("_waiting for the signal to fully close the valve"));
 	do {
+		//Serial.println("_in the Do. Waiting for the signal to fully close the valve");
 		oSignalClose.scanState();
 		if ((millis() - startTime) > MAX_TIME_TESTING_VALVE) {
 			errCod = errCod + 2;
@@ -252,7 +253,7 @@ int testValve(uint8_t open, uint8_t close, uint8_t signalOpen, uint8_t signalClo
 	}
 	*/
 	//снимем напряжение с крана
-	digitalWrite(open, HIGH);
+	digitalWrite(open, HIGH); Serial.println("_35-HIGH");
 	digitalWrite(close, HIGH);
 	//сохраняем время выполнения операции закрытия
 	startTime = millis() - startTime; //т.к. startTime больше не понадобится, то сохраним в него рассчитанное время закрытия
@@ -260,18 +261,19 @@ int testValve(uint8_t open, uint8_t close, uint8_t signalOpen, uint8_t signalClo
 
 	//вернем кран в исходное положение(которое было до начала теста)
 	//открываем кран до первоначального положения
-	digitalWrite(open, LOW);
+	digitalWrite(open, LOW); Serial.println("_35-LOW");
 	digitalWrite(close, HIGH);
+	Serial.println("_Second delay");
 	delay(startTime - *ptimeSwitch);
-	//открываем кран
-	digitalWrite(open, HIGH);
+	//снимем напряжение с крана
+	digitalWrite(open, HIGH); Serial.println("_35-HIGH");
 	digitalWrite(close, HIGH);
 
 	//запомним наибольшее время из этих операций
 	*ptimeSwitch = (startTime>*ptimeSwitch) ? startTime : *ptimeSwitch;
 	///LOG("Itog"); LOG(*ptimeSwitch); LOG("\n");
 
-	LOG("stop (testValve)\n");
+	Serial.println("Stop testValve procedure");
 	return errCod;
 }
 
@@ -284,7 +286,7 @@ int temperatureControlTTK() {
 	extern float g_t_flueGases; //температура дымовых газов ТТК котла ()  
 	extern myCycle cycleTempControlTTK;
 
-	const  bool LOG = false; //выводить логи работы процедуры
+	const  bool LOG = true; //выводить логи работы процедуры
 	if (LOG) { Serial.print("\nstart (temperatureControlTTK)\n"); }
 
 
@@ -303,18 +305,18 @@ int temperatureControlTTK() {
 	switch (BoilerPumpMode) {
 	case SP_ON:
 		//запуск насоса ТТК
-		digitalWrite(PIN_PUMP_TTK, LOW);
+		digitalWrite(PIN_PUMP_TTK, LOW); Serial.println(F("Pump TTK start_29 LOW"));
 		break;
 	case SP_OFF:
-		if (!g_failure) { digitalWrite(PIN_PUMP_TTK, HIGH); } //выключаем насос ТТК
+		if (!g_failure) { digitalWrite(PIN_PUMP_TTK, HIGH); Serial.println(F("Pump TTK stop_29 HIGH"));} //выключаем насос ТТК
 	break;
 	case SP_AUTO:
 		if ((g_failure) || (g_t_flueGases > 350) ||(g_t_flueGases<150 && (temperature[3] > (temperature[11] + 1.5))) || (g_t_flueGases>=150 && temperature[3] >55) ) {
 			//запуск насоса ТТК
-			digitalWrite(PIN_PUMP_TTK, LOW); //active level - LOW
+			digitalWrite(PIN_PUMP_TTK, LOW); Serial.println(F("Pump TTK start_29 LOW")); //active level - LOW
 		}
 		else{//остановка насоса ТТК
-			if (!g_failure) { digitalWrite(PIN_PUMP_TTK, HIGH); } //active level - LOW
+			if (!g_failure) { digitalWrite(PIN_PUMP_TTK, HIGH); Serial.println(F("Pump TTK stop_29 HIGH"));} //active level - LOW
 		}	
 		break;
 	}
@@ -378,22 +380,22 @@ int temperatureControlTTK() {
 	}
 	else {//моя программа регулировки постоянными импульсами  
 		if (LOG) { Serial.println("Используется простая не PID регулировка крана TTK"); }
-		if (((int)temperature[4] > (tneedTTK + 2)) && (digitalRead(PIN_VALVE_TTK_SIGNAL_ClOSE))) {// обратка горячая призакрываем (боковой отвод) кран на 1/25 максимального времени переключения крана
-			digitalWrite(PIN_VALVE_TTK_ClOSE, LOW);//active level - LOW
-			digitalWrite(PIN_VALVE_TTK_OPEN, HIGH);
-			delay((g_timeSwitchValveTTK) / 10);
-			digitalWrite(PIN_VALVE_TTK_ClOSE, HIGH);
-			digitalWrite(PIN_VALVE_TTK_OPEN, HIGH);
-		}
-		else {
-			if (((int)temperature[4] < (tneedTTK - 2)) && (digitalRead(PIN_VALVE_TTK_SIGNAL_OPEN))) {// обратка холодная приоткрываем (боковой отвод) кран на 1/25 максимального времени переключения крана
-				digitalWrite(PIN_VALVE_TTK_ClOSE, HIGH);//active level - LOW
-				digitalWrite(PIN_VALVE_TTK_OPEN, LOW);
-				delay(g_timeSwitchValveTTK / 10);
-				digitalWrite(PIN_VALVE_TTK_ClOSE, HIGH);
-				digitalWrite(PIN_VALVE_TTK_OPEN, HIGH);
-			}
-		}
+		//if (((int)temperature[4] > (tneedTTK + 2)) && (digitalRead(PIN_VALVE_TTK_SIGNAL_ClOSE))) {// обратка горячая призакрываем (боковой отвод) кран на 1/25 максимального времени переключения крана
+		//	digitalWrite(PIN_VALVE_TTK_ClOSE, LOW);//active level - LOW
+		//	digitalWrite(PIN_VALVE_TTK_OPEN, HIGH);
+		//	delay((g_timeSwitchValveTTK) / 10);
+		//	digitalWrite(PIN_VALVE_TTK_ClOSE, HIGH);
+		//	digitalWrite(PIN_VALVE_TTK_OPEN, HIGH);
+		//}
+		//else {
+		//	if (((int)temperature[4] < (tneedTTK - 2)) && (digitalRead(PIN_VALVE_TTK_SIGNAL_OPEN))) {// обратка холодная приоткрываем (боковой отвод) кран на 1/25 максимального времени переключения крана
+		//		digitalWrite(PIN_VALVE_TTK_ClOSE, HIGH);//active level - LOW
+		//		digitalWrite(PIN_VALVE_TTK_OPEN, LOW);
+		//		delay(g_timeSwitchValveTTK / 10);
+		//		digitalWrite(PIN_VALVE_TTK_ClOSE, HIGH);
+		//		digitalWrite(PIN_VALVE_TTK_OPEN, HIGH);
+		//	}
+		//}
 	}
 	
 lblExit:
@@ -402,7 +404,7 @@ lblExit:
 	cycleTempControlTTK.clear();
 	cycleTempControlTTK.reStart();
 
-	if (LOG) { Serial.print("stop (temperatureControlTTK) "); Serial.print((millis() - startTime)); Serial.println(" mc"); }
+Serial.print("stop (temperatureControlTTK) "); Serial.print((millis() - startTime)); Serial.println(" mc"); 
 	return errCod;
 };
 
@@ -420,7 +422,7 @@ int temperatureControlSYS() { /*setSystemPumpMode*/
 		if (g_systemDateTime.hour() == 5 && g_systemDateTime.minute()<30) { //греемся ЭК c 5 до 5:30 часов утра
 			if (LOG) {Serial.print(F("Запуск электрокотла. Время ")); Serial.println(g_systemDateTime.hour());	}
 			//Останавливаем насос системы
-			digitalWrite(PIN_PUMP_SYS, HIGH); //active level - LOW
+			digitalWrite(PIN_PUMP_SYS, HIGH); Serial.println(F("Pump SYS stop 30 LOW"));//active level - LOW
 			//закрываем кран подачи теплоносителя из ТА в систему.
 			/*digitalWrite(PIN_VALVE_SYS_ClOSE, HIGH);
 			digitalWrite(PIN_VALVE_SYS_OPEN, LOW);//active level - LOW*/
@@ -446,7 +448,7 @@ int temperatureControlSYS() { /*setSystemPumpMode*/
 	switch (SystemPumpMode) {
 	case SP_ON:
 		//запуск насоса системы
-		digitalWrite(PIN_PUMP_SYS, LOW);
+		digitalWrite(PIN_PUMP_SYS, LOW); Serial.println(F("Pump SYS start 30 LOW"));
 		break;
 	case SP_OFF:
 		if (!g_failure) { digitalWrite(PIN_PUMP_SYS, HIGH); } //выключаем насос системы
@@ -457,7 +459,7 @@ int temperatureControlSYS() { /*setSystemPumpMode*/
 			//Температура верха ТА выше температуры в отслеживаемом помещении
 			//запуск насоса системы
 			if (LOG) { Serial.print(F("SYStem pump start")); }
-			digitalWrite(PIN_PUMP_SYS, LOW); //active level - LOW
+			digitalWrite(PIN_PUMP_SYS, LOW); Serial.println(F("Pump SYS start 30 LOW"));//active level - LOW
 		}
 		else {
 			//остановка насоса системы
@@ -593,11 +595,12 @@ int temperatureControlSYS() { /*setSystemPumpMode*/
 		// что бы в доме не появлялся холод от окон
 		//float mTminSysPodacha - минимальная температура подачи системы
 		// [13]-t14, температура на улице
-		if (temperature[13] < 0) { mTminSysPodacha = 34; } //вариант для зимы)	//33было жарко в доме
-		if (temperature[13] < -10) { mTminSysPodacha = 35; } //вариант для зимы)	//34 жарковато в доме. 35 в большой спальне было жарко ночью
-		if (temperature[13] < -20) { mTminSysPodacha = 36; } //вариант для зимы) //36 в большой спальне было жарко ночью
-		if (temperature[13] < -25) { mTminSysPodacha = 37; } //вариант для зимы)	//37 в большой спальне было жарко ночью
-		if (temperature[13] < -30) { mTminSysPodacha = 38; } //вариант для зимы)	
+		if (temperature[13] < 0) { mTminSysPodacha = 36; } //35, вариант для зимы)	//33было жарко в доме
+		if (temperature[13] < -10) { mTminSysPodacha = 37; } //36, вариант для зимы)	//34 жарковато в доме. 35 в большой спальне было жарко ночью
+		if (temperature[13] < -20) { mTminSysPodacha = 37; } //вариант для зимы) //-24 с окон сифонит. 36 не жарко, хочется теплее. температура в зале за час упала на градус.
+		if (temperature[13] < -25) { mTminSysPodacha = 38; } //вариант для зимы)	//37, 
+		if (temperature[13] < -30) { mTminSysPodacha = 39; } //вариант для зимы)	//38, 
+		if (temperature[13] < -35) { mTminSysPodacha = 40; }
 		if (temperature[13] > 0) { mTminSysPodacha = 29; }
 		if (temperature[13] > 5) { mTminSysPodacha = 27; }
 		if (temperature[13] > 10) { mTminSysPodacha = 23; }	
@@ -616,8 +619,8 @@ int temperatureControlSYS() { /*setSystemPumpMode*/
 		if (((temperature[12] < tRoomSetpoint - 0.1)|| TminSysPodachaLowerBound) && (digitalRead(PIN_VALVE_SYS_SIGNAL_ClOSE))) {
 			///Serial.print(String("Увеличим подачу на "));
 			// температура в контролируемом помещении ниже заданной. Призакрываем кран(боковой отвод) на 1/10 максимального времени переключения крана системы
-			digitalWrite(PIN_VALVE_SYS_ClOSE, LOW);//active level - LOW
-			digitalWrite(PIN_VALVE_SYS_OPEN, HIGH);
+			digitalWrite(PIN_VALVE_SYS_ClOSE, LOW); Serial.println(F("Valve SYS close 36 LOW"));//active level - LOW
+			digitalWrite(PIN_VALVE_SYS_OPEN, HIGH); Serial.println(F("Valve SYS open 35 HIGH"));
 			//если задача поддержать минимальную темературу в системе, то шаги крана сделаем в два раза уже, чем при регулировании для поддержания температуры в помещении
 			if (TminSysPodachaLowerBound) {
 				delay((g_timeSwitchValveSYS) / 11);
@@ -628,15 +631,15 @@ int temperatureControlSYS() { /*setSystemPumpMode*/
 			///Serial.println(String("1/10 шаг"));
 			}
 
-			digitalWrite(PIN_VALVE_SYS_ClOSE, HIGH);
-			digitalWrite(PIN_VALVE_SYS_OPEN, HIGH);
+			digitalWrite(PIN_VALVE_SYS_ClOSE, HIGH); Serial.println(F("Valve SYS close 36 HIGH"));
+			digitalWrite(PIN_VALVE_SYS_OPEN, HIGH); Serial.println(F("Valve SYS open 35 HIGH"));
 		}
 		else {
 			if ((temperature[12] > (tRoomSetpoint /*+ 0.1*/)&&(TminSysPodachaUpperBound)) && (digitalRead(PIN_VALVE_SYS_SIGNAL_OPEN))) {
 				///Serial.print(String("Уменьшим подачу на "));
 				// температура в контролируемом помещении выше заданной. Приоткрываем кран(боковой отвод) на 1/25 максимального времени переключения крана системы
-				digitalWrite(PIN_VALVE_SYS_ClOSE, HIGH);//active level - LOW
-				digitalWrite(PIN_VALVE_SYS_OPEN, LOW);
+				digitalWrite(PIN_VALVE_SYS_ClOSE, HIGH); Serial.println(F("Valve SYS close 36 HIGH"));//active level - LOW
+				digitalWrite(PIN_VALVE_SYS_OPEN, LOW); Serial.println(F("Valve SYS open 35 LOW"));
 
 				if (temperature[0] > (mTminSysPodacha + 3.0)) {
 
@@ -647,8 +650,8 @@ int temperatureControlSYS() { /*setSystemPumpMode*/
 					delay((g_timeSwitchValveSYS) / 11);
 					///Serial.println(String("1/11 шаг"));
 				}
-				digitalWrite(PIN_VALVE_SYS_ClOSE, HIGH);
-				digitalWrite(PIN_VALVE_SYS_OPEN, HIGH);
+				digitalWrite(PIN_VALVE_SYS_ClOSE, HIGH); Serial.println(F("Valve SYS close 36 HIGH"));
+				digitalWrite(PIN_VALVE_SYS_OPEN, HIGH); Serial.println(F("Valve SYS open 35 HIGH"));
 			}
 		}
 	} //end if выбора режима регулирования подачи из ТА в систему

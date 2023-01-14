@@ -9,6 +9,7 @@
 #define ESP_ON  1
 byte esp = ESP_OFF;
 
+extern float temperature[];
 extern int BoilerPumpMode;			//1 - on, 2 - off, 3 - auto
 extern int SystemPumpMode;			//1 - on, 2 - off, 3 - auto
 extern int SysTempControlMode;	//1 – мой алгоритм регулирования, 2 - PID регулятор
@@ -63,6 +64,7 @@ void checkSerial() {
 	} // while (Serial3.available() > 0)
 	
 } // checkSerial()
+
 //Разбор строки, поступившей в Serial3, поиск символа начала команды
 	void parseSerialStr() {
 		if (serialReq[0] == '?') {
