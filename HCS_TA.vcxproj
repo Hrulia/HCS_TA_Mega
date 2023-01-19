@@ -50,8 +50,7 @@
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
   </ImportGroup>
-  <ImportGroup Label="Shared">
-  </ImportGroup>
+  <ImportGroup Label="Shared" />
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
@@ -73,7 +72,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>$(ProjectDir)..\HCS_TA;C:\Users\Sergey\AppData\Local\arduino15\packages\arduino\hardware\avr\1.8.6\libraries\EEPROM\src;C:\Users\Sergey\AppData\Local\arduino15\packages\arduino\hardware\avr\1.8.6\libraries\Wire\src;C:\Users\Sergey\AppData\Local\arduino15\packages\arduino\hardware\avr\1.8.6\libraries\Wire\src\utility;C:\Program Files (x86)\Arduino\libraries;C:\Users\Sergey\AppData\Local\arduino15\packages\arduino\hardware\avr\1.8.6\libraries;$(ProjectDir)..\..\libraries;C:\Users\Sergey\AppData\Local\arduino15\packages\arduino\hardware\avr\1.8.6\cores\arduino;C:\Users\Sergey\AppData\Local\arduino15\packages\arduino\hardware\avr\1.8.6\variants\mega;C:\Users\Sergey\AppData\Local\arduino15\packages\arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino7\avr\include;C:\Users\Sergey\AppData\Local\arduino15\packages\arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino7\avr\include\avr;C:\Users\Sergey\AppData\Local\arduino15\packages\arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino7\lib\gcc\avr\4.9.2\include;C:\Users\Sergey\AppData\Local\arduino15\packages\arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino7\lib\gcc\avr\4.9.2\include;C:\Users\Sergey\AppData\Local\arduino15\packages\arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino7\lib\gcc\avr\4.9.3\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\HCS_TA;C:\Users\Sergey\AppData\Local\arduino15\packages\arduino\hardware\avr\1.8.6\libraries\EEPROM\src;$(ProjectDir)..\..\libraries\RTClib\src;$(ProjectDir)..\..\libraries\Adafruit_BusIO;C:\Users\Sergey\AppData\Local\arduino15\packages\arduino\hardware\avr\1.8.6\libraries\Wire\src;$(ProjectDir)..\..\libraries\OneWire;C:\Users\Sergey\AppData\Local\arduino15\packages\arduino\hardware\avr\1.8.6\libraries\SPI\src;C:\Users\Sergey\AppData\Local\arduino15\packages\arduino\hardware\avr\1.8.6\libraries\Wire\src\utility;C:\Program Files (x86)\Arduino\libraries;C:\Users\Sergey\AppData\Local\arduino15\packages\arduino\hardware\avr\1.8.6\libraries;$(ProjectDir)..\..\libraries;C:\Users\Sergey\AppData\Local\arduino15\packages\arduino\hardware\avr\1.8.6\cores\arduino;C:\Users\Sergey\AppData\Local\arduino15\packages\arduino\hardware\avr\1.8.6\variants\mega;C:\Users\Sergey\AppData\Local\arduino15\packages\arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino7\avr\include;C:\Users\Sergey\AppData\Local\arduino15\packages\arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino7\avr\include\avr;C:\Users\Sergey\AppData\Local\arduino15\packages\arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino7\lib\gcc\avr\4.9.2\include;C:\Users\Sergey\AppData\Local\arduino15\packages\arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino7\lib\gcc\avr\4.9.2\include;C:\Users\Sergey\AppData\Local\arduino15\packages\arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino7\lib\gcc\avr\4.9.3\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <ForcedIncludeFiles>$(ProjectDir)__vm\.HCS_TA.vsarduino.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
       <WholeProgramOptimization>false</WholeProgramOptimization>
       <PreprocessorDefinitions>__AVR_atmega2560__;__AVR_ATmega2560__;F_CPU=16000000L;ARDUINO=108019;ARDUINO_AVR_MEGA2560;ARDUINO_ARCH_AVR;__cplusplus=201103L;_VMICRO_INTELLISENSE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -114,21 +113,19 @@
     <None Include="NetworkSharing.ino">
       <FileType>CppCode</FileType>
     </None>
+    <None Include="SystemTime.ino">
+      <FileType>CppCode</FileType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Button.h" />
-    <ClInclude Include="Buttons.h" />
     <ClInclude Include="Indicator_TM1637.h" />
-    <ClInclude Include="libraries\OneWire\OneWire.h" />
-    <ClInclude Include="libraries\RTClib\RTClib.h" />
     <ClInclude Include="libraries\TM1637\TM1637Display.h" />
     <ClInclude Include="libraries\Wire\utility\twi.h" />
     <ClInclude Include="MotorizedValve.h" />
-    <ClInclude Include="NetworkSharing.h" />
     <ClInclude Include="Pins.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="SystemManager.h" />
-    <ClInclude Include="SystemTime.h" />
     <ClInclude Include="Temp_DS18B20.h" />
     <ClInclude Include="HeaderHCS_TA.h" />
     <ClInclude Include="myCycle.h" />
@@ -138,15 +135,11 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Button.cpp" />
-    <ClCompile Include="Buttons.cpp" />
     <ClCompile Include="Indicator_TM1637.cpp" />
     <ClCompile Include="libraries\MAX6675_Thermocouple\src\MAX6675_Thermocouple.cpp" />
-    <ClCompile Include="libraries\OneWire\OneWire.cpp" />
-    <ClCompile Include="libraries\RTClib\RTClib.cpp" />
     <ClCompile Include="libraries\TM1637\TM1637Display.cpp" />
     <ClCompile Include="MotorizedValve.cpp" />
     <ClCompile Include="SystemManager.cpp" />
-    <ClCompile Include="SystemTime.cpp" />
     <ClCompile Include="Temp_DS18B20.cpp" />
     <ClCompile Include="myCycle.cpp" />
     <ClCompile Include="TestComponents.cpp" />

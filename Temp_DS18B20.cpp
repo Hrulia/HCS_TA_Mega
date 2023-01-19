@@ -1,17 +1,13 @@
 ﻿
 #include "Temp_DS18B20.h"
 
-//#include "myCycle.h"
-//#include ".\libraries\OneWire\OneWire.h"
 
-//#define NUMBER_OF_DS18B20 16//Number of sensor connected
-
-enum { RESOLUSHION_9bit = 0x1F, RESOLUSHION_10bit = 0x3F,RESOLUSHION_11bit = 0x5F,RESOLUSHION_12bit = 0x7F};
-#define RESOLUSHION_DS18B20 RESOLUSHION_11bit //1F-9bit, 3F-10bit, 5F-11bit, 7F-12bit
-#define DELAY_READ_DS18B20 1000 // 9bit-93.75ms; 10-187.5ms; 11-375ms; 12-750ms //время ожидания завершения процесса преобразования температуры датчиками
+//#define NUMBER_OF_DS18B20 16										//Number of sensor connected  (define in the 'HeaderHCS_TA.h')
+#define RESOLUSHION_DS18B20 RESOLUSHION_11bit			//1F-9bit, 3F-10bit, 5F-11bit, 7F-12bit
+#define DELAY_READ_DS18B20 1000										// 9bit-93.75ms; 10-187.5ms; 11-375ms; 12-750ms //время ожидания завершения процесса преобразования температуры датчиками
 
 
-/*команды для ds18b20*/
+/**********************    команды для ds18b20     ******************************/
 //ROM commands
 #define SKIP_ROM 0xCC			//Пропуск ROM (перед групповой командой)
 //Functional commands
@@ -20,6 +16,8 @@ enum { RESOLUSHION_9bit = 0x1F, RESOLUSHION_10bit = 0x3F,RESOLUSHION_11bit = 0x5
 #define COPY_SCRATCHPAD 0x48	//Copy Scratchpad
 #define READ_SCRATCHPAD 0xBE	//Read Scratchpad [BEh])
 //
+
+enum { RESOLUSHION_9bit = 0x1F, RESOLUSHION_10bit = 0x3F,RESOLUSHION_11bit = 0x5F,RESOLUSHION_12bit = 0x7F};
 
 
 //Массив значений температур даттчиков

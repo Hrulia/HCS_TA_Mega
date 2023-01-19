@@ -1,5 +1,3 @@
-#include "NetworkSharing.h"	
-
 
 //#define DEBUG_NSH
 
@@ -20,9 +18,7 @@ extern int DoorAirMode;					//1 - open, 2 - close, 3 - auto
 int initRxTxForNetSharing(unsigned long speedUart)
 {
 	Serial3.begin(speedUart);
-	#ifdef DEBUG_NSH
-		Serial.println(F("Modul NetworkSharing started at Serial3"));
-	#endif
+	Serial.println(F("Modul NetworkSharing started at Serial3"));
 	return 0;
 }
 
@@ -241,10 +237,24 @@ void checkSerial() {
 				//Sending updated system parameters to ESP
 				Serial3.print(F("?sendSystemParameters=")); Serial3.println(String(BoilerPumpMode) + SystemPumpMode + SysTempControlMode + DoorAirMode + "0" + "0");
 			}
+
+			//******			
+			// ?setTime  // оманда синхронизации времени
+			else if (command == F("setTime")) {
+				//синхронизируем системное врем€ модул€ mega и врем€ на RTC модуле, если он имеетс€.
+				UpdateSystemTime(parameter.c_str());
+			}
+
+
+
+
 		}
 	}
 
-//проверка работоспособного состо€ни€ модул€ сетевых функций ESP8266
+
+
+
+//проверка работоспособного состо€ни€ модул€ ESP8266
 void checkMegaAndESP() {
 	//checkSerial();
 		//Serial.println(F("?mega=1"));

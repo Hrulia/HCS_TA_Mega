@@ -77,5 +77,6 @@ typedef void *__builtin_va_list;
 
 #include "HCS_TA.ino"
 #include "NetworkSharing.ino"
+#include "SystemTime.ino"
 #endif
 #endif

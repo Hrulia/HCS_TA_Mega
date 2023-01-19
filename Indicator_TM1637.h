@@ -14,6 +14,8 @@
 #include ".\libraries\TM1637\TM1637Display.h"
 ////#include "Indicator_TM1637.h"
 
+
+
 //инициализация индикаторов
 void init_TM1637();
 

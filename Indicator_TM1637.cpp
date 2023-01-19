@@ -2,6 +2,7 @@
 // 
 // 
 
+#include "HeaderHCS_TA.h"
 #include "Indicator_TM1637.h"
 #include ".\libraries\TM1637_\TM1637.h"
 
@@ -57,7 +58,9 @@ void init_TM1637(){
 	TM1637_10.setBrightness(1);
 	TM1637_11.setBrightness(2,true);
 
-	TM1637.showNumberDecEx(8888,0xF0); //что бы видеть, что индикаторы исправны
+	//что бы видеть, что индикаторы исправны
+	TM1637_Time.showNumberDecEx(8888, 0xF0);
+	TM1637.showNumberDecEx(8888,0xF0); 
 	TM1637_2.showNumberDecEx(8888, 0xF0);
 	TM1637_3.showNumberDecEx(8888, 0xF0);
 	TM1637_4.showNumberDecEx(8888, 0xF0);
@@ -94,7 +97,7 @@ int indicator_TM1637_Output_time()
 //обновление информации о температуре на индикаторах
 int indicator_TM1637_Output_temperature()
 {
-	const  bool LOG = true; //выводить логи работы процедуры
+	const  bool LOG = false; //выводить логи работы процедуры
 	if (LOG) { Serial.print("\nstart (indicator_TM1637_Output_temperature)\n"); }
 
 	int errCod = 0;

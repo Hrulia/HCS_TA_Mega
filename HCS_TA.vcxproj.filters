@@ -23,6 +23,7 @@
       <Filter>Resource Files</Filter>
     </None>
     <None Include="NetworkSharing.ino" />
+    <None Include="SystemTime.ino" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="__vm\.HCS_TA.vsarduino.h">
@@ -43,9 +44,6 @@
     <ClInclude Include="myCycle.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="libraries\OneWire\OneWire.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Indicator_TM1637.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -58,16 +56,7 @@
     <ClInclude Include="libraries\TM1637\TM1637Display.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="SystemTime.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="libraries\Wire\utility\twi.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="libraries\RTClib\RTClib.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Buttons.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Temp_DS18B20.h">
@@ -77,9 +66,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="resource.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="NetworkSharing.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -99,22 +85,10 @@
     <ClCompile Include="Temp_DS18B20.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="libraries\OneWire\OneWire.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Indicator_TM1637.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="MotorizedValve.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="SystemTime.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="libraries\RTClib\RTClib.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Buttons.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="libraries\MAX6675_Thermocouple\src\MAX6675_Thermocouple.cpp">
