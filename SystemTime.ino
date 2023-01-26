@@ -46,6 +46,6 @@ void ISR_UpdateSystemTime() {
 
 //Функция обновления системного времени
 void UpdateSystemTime(const char* NewTimeStr) {
-	rtc.adjust(DateTime("", NewTimeStr));
+	rtc.adjust(DateTime("", NewTimeStr)); //nullptr????
 	g_systemDateTime = DateTime("", NewTimeStr);
 }
