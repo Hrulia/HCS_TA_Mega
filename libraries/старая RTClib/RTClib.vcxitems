@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding ="utf-8" ?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" >
+  <PropertyGroup Label="Globals" >
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <ItemsProjectGuid>{fc6419f5-3da9-456c-bc04-9c45a0efaa50}</ItemsProjectGuid>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)src\RTClib.cpp" />
+<ClCompile Include="$(MSBuildThisFileDirectory)src\RTC_DS1307.cpp" />
+<ClCompile Include="$(MSBuildThisFileDirectory)src\RTC_DS3231.cpp" />
+<ClCompile Include="$(MSBuildThisFileDirectory)src\RTC_Micros.cpp" />
+<ClCompile Include="$(MSBuildThisFileDirectory)src\RTC_Millis.cpp" />
+<ClCompile Include="$(MSBuildThisFileDirectory)src\RTC_PCF8523.cpp" />
+<ClCompile Include="$(MSBuildThisFileDirectory)src\RTC_PCF8563.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)src\RTClib.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="$(MSBuildThisFileDirectory)keywords.txt" />
+<Text Include="$(MSBuildThisFileDirectory)library.properties" />
+<Text Include="$(MSBuildThisFileDirectory)license.txt" />
+<Text Include="$(MSBuildThisFileDirectory)vs-readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)code-of-conduct.md" />
+<None Include="$(MSBuildThisFileDirectory)README.md" />
+  </ItemGroup>
+</Project>

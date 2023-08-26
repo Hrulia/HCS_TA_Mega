@@ -1,17 +1,13 @@
 ﻿
 #include "Temp_DS18B20.h"
 
-//#include "myCycle.h"
-//#include ".\libraries\OneWire\OneWire.h"
 
-//#define NUMBER_OF_DS18B20 16//Number of sensor connected
-
-enum { RESOLUSHION_9bit = 0x1F, RESOLUSHION_10bit = 0x3F,RESOLUSHION_11bit = 0x5F,RESOLUSHION_12bit = 0x7F};
-#define RESOLUSHION_DS18B20 RESOLUSHION_11bit //1F-9bit, 3F-10bit, 5F-11bit, 7F-12bit
-#define DELAY_READ_DS18B20 1000 // 9bit-93.75ms; 10-187.5ms; 11-375ms; 12-750ms //время ожидания завершения процесса преобразования температуры датчиками
+//#define NUMBER_OF_DS18B20 16										//Number of sensor connected  (define in the 'HeaderHCS_TA.h')
+#define RESOLUSHION_DS18B20 RESOLUSHION_11bit			//1F-9bit, 3F-10bit, 5F-11bit, 7F-12bit
+#define DELAY_READ_DS18B20 1000										// 9bit-93.75ms; 10-187.5ms; 11-375ms; 12-750ms //время ожидания завершения процесса преобразования температуры датчиками
 
 
-/*команды для ds18b20*/
+/**********************    команды для ds18b20     ******************************/
 //ROM commands
 #define SKIP_ROM 0xCC			//Пропуск ROM (перед групповой командой)
 //Functional commands
@@ -20,6 +16,8 @@ enum { RESOLUSHION_9bit = 0x1F, RESOLUSHION_10bit = 0x3F,RESOLUSHION_11bit = 0x5
 #define COPY_SCRATCHPAD 0x48	//Copy Scratchpad
 #define READ_SCRATCHPAD 0xBE	//Read Scratchpad [BEh])
 //
+
+enum { RESOLUSHION_9bit = 0x1F, RESOLUSHION_10bit = 0x3F,RESOLUSHION_11bit = 0x5F,RESOLUSHION_12bit = 0x7F};
 
 
 //Массив значений температур даттчиков
@@ -43,8 +41,8 @@ const uint8_t  ds18b20_address[NUMBER_OF_DS18B20][8] = {
 	{ 0x28, 0xFF, 0xF6, 0xDD, 0x67, 0x18, 0x01, 0xF5 },  // 11-t12, низ ТА
 	{ 0x28, 0xFF, 0x04, 0x60, 0x68, 0x18, 0x01, 0x83 },  // 12-t13, температура в помещении
 	{ 0x28, 0xD9, 0xEA, 0x16, 0xA8, 0x01, 0x3C, 0x10 },  // 13-t14, температура на улице
-	{ 0x28, 0x18, 0x07, 0x40, 0x04, 0x00, 0x00, 0xCB },  // 14-t15, подача ЭК 
-	{ 0x28, 0x97, 0x55, 0xC0, 0x04, 0x00, 0x00, 0xCA },  // 15-t16, обратка ЭК
+	{ 0x28, 0xAA, 0x18, 0x40, 0x04, 0x00, 0x00, 0xB1 },  // 14-t15, подача ЭК 
+	{ 0x28, 0xAA, 0x18, 0x40, 0x04, 0x00, 0x00, 0xB1 },  // 15-t16, обратка ЭК 0x28, 0x97, 0x55, 0xC0, 0x04, 0x00, 0x00, 0xCA 
 }; 
 
 // датчики НН
@@ -228,7 +226,7 @@ lblStartReadTemper:
 															// default is 12 bit resolution, 750 ms conversion time
 
 					//Save temperature value in the temperature array
-					temperature[currentNumberOfDS18B20] =  (float)raw / 16.0; LOG("Temperature: "); LOG(temperature[currentNumberOfDS18B20]); LOG(" *C: \n");
+					temperature[currentNumberOfDS18B20] =  (float)raw / 16.0;// LOG("Temperature: "); LOG(temperature[currentNumberOfDS18B20]); LOG(" *C: \n");
 
 					/*//массив для тестирования
 					temperature[0] = 10;

@@ -2,6 +2,7 @@
 // 
 // 
 
+#include "HeaderHCS_TA.h"
 #include "Indicator_TM1637.h"
 #include ".\libraries\TM1637_\TM1637.h"
 
@@ -57,7 +58,9 @@ void init_TM1637(){
 	TM1637_10.setBrightness(1);
 	TM1637_11.setBrightness(2,true);
 
-	TM1637.showNumberDecEx(8888,0xF0); //что бы видеть, что индикаторы исправны
+	//что бы видеть, что индикаторы исправны
+	TM1637_Time.showNumberDecEx(8888, 0xF0);
+	TM1637.showNumberDecEx(8888,0xF0); 
 	TM1637_2.showNumberDecEx(8888, 0xF0);
 	TM1637_3.showNumberDecEx(8888, 0xF0);
 	TM1637_4.showNumberDecEx(8888, 0xF0);
@@ -121,8 +124,8 @@ int indicator_TM1637_Output_temperature()
 	TM1637_6.showNumberMsn(temperature[1]);
 	//TM1637_7.showNumberMsn(temperature[14]);
 
-	extern int g_t_flueGases;
-	TM1637_7.showNumberMsn(g_t_flueGases,0);//временно выведем дымовые газы на чужой индикатор
+	extern float g_t_flueGases;
+	TM1637_7.showNumberMsn(g_t_flueGases,1);//временно выведем дымовые газы на чужой индикатор
 
 	TM1637_8.showNumberMsn(temperature[15]);
 	TM1637_9.showNumberMsn(g_tRoomSetpoint,1);
