@@ -24,6 +24,7 @@
     </None>
     <None Include="NetworkSharing.ino" />
     <None Include="SystemTime.ino" />
+    <None Include="memoryFree.ino" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="__vm\.HCS_TA.vsarduino.h">
