@@ -108,9 +108,10 @@ void checkSerial() {
 				}
 			}
 
-//******
-// ?reqesttemp
+			//******
+			// ?reqesttemp
 			else if (command == F("reqesttemp")) {												// ?reqesttemp
+				if (temperature[0] == 0 && temperature[1] == 0 && temperature[3]) goto lblNotInitTemp; 
 				if (parameter == F("A")) {
 					/* для тестирования */
 //temperature[0] = 0.11;
@@ -163,8 +164,9 @@ void checkSerial() {
 #endif
 					}
 				}
+			lblNotInitTemp: {}  //массив значений температур не инициализирован, метка выхода из процедуры передачи параметров температуры
 			}
-
+	
 			//******
 			// ?esplog 
 						/*Этот case пора удалять, все служебные данные полученные через uart выводятся в [] скобках. */

@@ -17,7 +17,7 @@
 
 	//Получение температуры со всех DS18B20
 	//int getTemperaturDS18B20(OneWire&);//передача аргумента по ссылке
-	int getTemperaturDS18B20();
+	uint16_t getTemperaturDS18B20();
 
 
 #endif

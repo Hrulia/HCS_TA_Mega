@@ -19,7 +19,7 @@
 
 
 
-#define DEBUG 0
+#define DEBUG 1
 
 
 #if DEBUG==1

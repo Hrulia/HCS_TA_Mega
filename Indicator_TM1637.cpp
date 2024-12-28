@@ -127,7 +127,7 @@ int indicator_TM1637_Output_temperature()
 	extern float g_t_flueGases;
 	TM1637_7.showNumberMsn(g_t_flueGases,1);//временно выведем дымовые газы на чужой индикатор
 
-	TM1637_8.showNumberMsn(temperature[15]);
+	TM1637_8.showNumberMsn(temperature[15]);    // ----|---+|-*--
 	TM1637_9.showNumberMsn(g_tRoomSetpoint,1);
 	TM1637_10.showNumberMsn(temperature[12]);
 	TM1637_11.showNumberMsn(temperature[13]);
@@ -142,10 +142,10 @@ int indicator_TM1637_Output_temperature()
 		while (buttonReinitTemp.flagPress) {
 			//Serial.println("Knopka nazhata"); Serial.print(i);
 			digitalWrite(13, HIGH);
-				g_tRoomSetpoint+=0.5; //увеличиваем по половине градуса
-				if (g_tRoomSetpoint > 26) { g_tRoomSetpoint = 20.0;}
+				g_tRoomSetpoint+=0.1; //увеличиваем по половине градуса
+				if (g_tRoomSetpoint > 25) { g_tRoomSetpoint = 22.7;}
 				TM1637_9.showNumberMsn(g_tRoomSetpoint, 1);
-			delay(500);
+			delay(350);
 			buttonReinitTemp.scanState();
 			//////сохраним в ПЗУ. Загрузка состояния в процедуре setup
 			////EEPROM.write(0x00, (uint8_t)g_tRoomSetpoint); //

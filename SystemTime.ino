@@ -39,7 +39,8 @@ void ISR_UpdateSystemTime() {
 	sei();  //разрешает другие прерывания в этот момент
 	g_systemDateTime = rtc.now();
 
-	Serial.println(String(rtc.now().hour())+":"+ String(rtc.now().minute()));
+	//вывод в порт времени системы
+	//Serial.println(String(rtc.now().hour())+":"+ String(rtc.now().minute()));
 
 	//digitalWrite(13, !(digitalRead(13)));
 }
