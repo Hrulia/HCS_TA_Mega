@@ -9,6 +9,8 @@
 	#include "HeaderHCS_TA.h"
 
 
+	extern GlobalParametersStructure globalParameters;
+
 	//Предварительная инициализация и тестирование всех датчиков температуры
 	int initTemp();
 
@@ -17,7 +19,7 @@
 
 	//Получение температуры со всех DS18B20
 	//int getTemperaturDS18B20(OneWire&);//передача аргумента по ссылке
-	int getTemperaturDS18B20();
+	uint16_t getTemperaturDS18B20();
 
 
 #endif

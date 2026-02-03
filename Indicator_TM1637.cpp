@@ -2,10 +2,11 @@
 // 
 // 
 
-#include "HeaderHCS_TA.h"
+//#include "HeaderHCS_TA.h"
 #include "Indicator_TM1637.h"
 #include ".\libraries\TM1637_\TM1637.h"
 
+extern EEManager memory;
 
 //создаем объекты индикаторы
 /*TM1637Display *pTM1637_3;*/
@@ -23,7 +24,7 @@ TM1637Display TM1637_10(PIN_TM1637_Clk_COMMON, PIN_TM1637_DIO10); // темпе�
 TM1637Display TM1637_11(PIN_TM1637_Clk_COMMON, PIN_TM1637_DIO11); // температура на улице
   
 
-static byte indicator_Intensity = 4;//интенсивность свечения
+//static byte indicator_Intensity = 4;//интенсивность свечения
 //load data from EEPROM
 //uint8_t selectedKey = EEPROM.read(0x00); //0x11;
 //byte indicatorLED_KEY_Intensity = EEPROM.read(0x01); //4;//интенсивность свечения
@@ -46,14 +47,14 @@ void init_TM1637(){
 	TM1637_11.clear();
 
 	TM1637_Time.setBrightness(7);
-	TM1637.setBrightness(indicator_Intensity);
-	TM1637_2.setBrightness(indicator_Intensity);
-	TM1637_3.setBrightness(indicator_Intensity);
-	TM1637_4.setBrightness(indicator_Intensity);
-	TM1637_5.setBrightness(indicator_Intensity);
-	TM1637_6.setBrightness(indicator_Intensity);
-	TM1637_7.setBrightness(indicator_Intensity,true);
-	TM1637_8.setBrightness(indicator_Intensity, true);
+	TM1637.setBrightness(systemParameters.indicator_Intensity);
+	TM1637_2.setBrightness(systemParameters.indicator_Intensity);
+	TM1637_3.setBrightness(systemParameters.indicator_Intensity);
+	TM1637_4.setBrightness(systemParameters.indicator_Intensity);
+	TM1637_5.setBrightness(systemParameters.indicator_Intensity);
+	TM1637_6.setBrightness(systemParameters.indicator_Intensity);
+	TM1637_7.setBrightness(systemParameters.indicator_Intensity,true);
+	TM1637_8.setBrightness(systemParameters.indicator_Intensity, true);
 	TM1637_9.setBrightness(7);
 	TM1637_10.setBrightness(1);
 	TM1637_11.setBrightness(2,true);
@@ -84,7 +85,7 @@ int indicator_TM1637_Output_time()
 	//int time;
 	//time = (int)g_systemDateTime.hour() * 100 + (int)g_systemDateTime.minute();
 	//TM1637_Time.showNumberDecEx(time, (g_systemDateTime.second() % 2 ? 0x40 : 0x00));	
-	TM1637_Time.showNumberDecEx((int)(g_systemDateTime.hour() * 100 + g_systemDateTime.minute()), (g_systemDateTime.second() % 2 ? 0x40 : 0x00),true);//0x40 'эта маска включает двоеточие между знаками. 
+	TM1637_Time.showNumberDecEx((int)(globalParameters.g_systemDateTime.hour() * 100 + globalParameters.g_systemDateTime.minute()), (globalParameters.g_systemDateTime.second() % 2 ? 0x40 : 0x00),true);//0x40 'эта маска включает двоеточие между знаками. 
 
 	////Serial.print("Системное время "); Serial.println(g_systemDateTime.timestamp());
 	// перезапуск таймера вызова функции обновления значения системного времени.
@@ -116,7 +117,7 @@ int indicator_TM1637_Output_temperature()
 		Serial.print("ЭК обратка "); Serial.println(temperature[15]);
 	}
 
-	TM1637.showNumberMsn(temperature[3]);
+	TM1637.showNumberMsn(temperature[3]);				// +---|----|-*--
 	TM1637_2.showNumberMsn(temperature[10]);
 	TM1637_3.showNumberMsn(temperature[0]);
 	TM1637_4.showNumberMsn(temperature[4]);
@@ -124,41 +125,38 @@ int indicator_TM1637_Output_temperature()
 	TM1637_6.showNumberMsn(temperature[1]);
 	//TM1637_7.showNumberMsn(temperature[14]);
 
-	extern float g_t_flueGases;
-	TM1637_7.showNumberMsn(g_t_flueGases,1);//временно выведем дымовые газы на чужой индикатор
+	///extern float g_t_flueGases;
+	TM1637_7.showNumberMsn(globalParameters.g_t_flueGases,1);	// ---+|----|-*--			//временно выведем дымовые газы на чужой индикатор
 
-	TM1637_8.showNumberMsn(temperature[15]);
-	TM1637_9.showNumberMsn(g_tRoomSetpoint,1);
-	TM1637_10.showNumberMsn(temperature[12]);
-	TM1637_11.showNumberMsn(temperature[13]);
+	TM1637_8.showNumberMsn(temperature[2]);										// ----|---+|-*--			//Температура в большой спальне
+	TM1637_9.showNumberMsn(systemParameters.RoomSetPointTemperature,1);
+	TM1637_10.showNumberMsn(temperature[12]);									// ----|----|-*+-			//Температура в зале
+	TM1637_11.showNumberMsn(temperature[13]);									// ----|----|-*-+			//Температура на улице
 	
 
 		/*обработка кнопки*/
-		Button buttonReinitTemp(12, 1); // класс button позволяет фильтровать дребезг контактов. время фильтрации 15мс*на период повторения функции. 
+		Button buttonReinitTemp(PIN_BUTTON,1); // класс button позволяет фильтровать дребезг контактов. время фильтрации 15мс*на период повторения функции. 
 		buttonReinitTemp.scanState();
 		int i = 0;
 		buttonReinitTemp.scanState();
-		digitalWrite(13, buttonReinitTemp.flagPress);
+		digitalWrite(LED_BUILTIN, buttonReinitTemp.flagPress);
 		while (buttonReinitTemp.flagPress) {
 			//Serial.println("Knopka nazhata"); Serial.print(i);
 			digitalWrite(13, HIGH);
-				g_tRoomSetpoint+=0.5; //увеличиваем по половине градуса
-				if (g_tRoomSetpoint > 26) { g_tRoomSetpoint = 20.0;}
-				TM1637_9.showNumberMsn(g_tRoomSetpoint, 1);
-			delay(500);
+			systemParameters.RoomSetPointTemperature+=0.1; //увеличиваем по половине градуса
+				if (systemParameters.RoomSetPointTemperature > 25.6) { systemParameters.RoomSetPointTemperature = 22.7;}
+				TM1637_9.showNumberMsn(systemParameters.RoomSetPointTemperature, 1);
+			delay(300);
 			buttonReinitTemp.scanState();
-			//////сохраним в ПЗУ. Загрузка состояния в процедуре setup
-			////EEPROM.write(0x00, (uint8_t)g_tRoomSetpoint); //
-			//////Отправка информации о на сервер брокера MQTT
-			////Serial3.print(F("?sendGTargetTemp=")); Serial3.println(g_tRoomSetpoint, 1);
 		}
 		if (buttonReinitTemp.flagClick) {
 			//после завершения процедуры установки целевой температуры кнопкой, сохраним ее в EEPROM и отправим MQTT брокеру
-			Serial.println("____________________Кнопка сделала Клик");
+			Serial.println(F("____________________Кнопка сделала Клик"));
 			//сохраним в ПЗУ. Загрузка состояния в процедуре setup
-			EEPROM.write(0x00, (uint8_t)g_tRoomSetpoint);
-			//Отправка информации о на сервер брокера MQTT
-			Serial3.print(F("?sendGTargetTemp=")); Serial3.println(g_tRoomSetpoint, 1);
+			//Serial.println(F("Делаем memory.updateNow()"));
+			memory.updateNow();	//обновиться в ПЗУ 
+			//Отправка информации на esp о новой целевой температуре
+			Serial3.print(F("?sendGTargetTemp=")); Serial3.println(systemParameters.RoomSetPointTemperature, 1);
 		}
 
 	// перезапуск таймера вызова функции отображения температруры.

@@ -15,6 +15,8 @@
 ////#include "Indicator_TM1637.h"
 
 
+extern GlobalParametersStructure globalParameters;
+extern MegaParametersStruct systemParameters;
 
 //инициализация индикаторов
 void init_TM1637();

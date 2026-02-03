@@ -9,10 +9,12 @@
 //моторизированные краны
 ////#define MAX_TIME_TESTING_VALVE 5000 //10000мс, максимальное время ожидания операции полного переключения мотокрана. Новый кран отрабатывал за 3200мс. С поднятой ручной крутилкой за 4300мс.
 
-#define PIN_VALVE_TTK_OPEN 33 //пин управления открытием крана защиты обратки ТТК котла
-#define PIN_VALVE_TTK_ClOSE 34 //пин управления закрытием крана защиты обратки ТТК котла
-#define PIN_VALVE_TTK_SIGNAL_OPEN 31 //пин поступления сигнала полного открытия крана защиты обратки ТТК котла
-#define PIN_VALVE_TTK_SIGNAL_ClOSE 32 //пин поступления сигнала полного закрытия крана защиты обратки ТТК котла
+#if TTK_VALVE_EXISTS 
+	#define PIN_VALVE_TTK_OPEN 33 //пин управления открытием крана защиты обратки ТТК котла
+	#define PIN_VALVE_TTK_ClOSE 34 //пин управления закрытием крана защиты обратки ТТК котла
+	#define PIN_VALVE_TTK_SIGNAL_OPEN 31 //пин поступления сигнала полного открытия крана защиты обратки ТТК котла
+	#define PIN_VALVE_TTK_SIGNAL_ClOSE 32 //пин поступления сигнала полного закрытия крана защиты обратки ТТК котла
+#endif
 
 #define PIN_VALVE_SYS_OPEN 35 //пин управления открытием крана ругулировки системы
 #define PIN_VALVE_SYS_ClOSE 36 //пин управления закрытием крана регулировки системы
@@ -26,9 +28,9 @@
 #define PIN_DS18B20 2 //пин подключения датчииков температуры DS18B20 
 
 //Пины подключения термопары
-#define PIN_THERMOCOUPLE_CLK 7 //вывод CLK ( SCK ) модуля на чипе MAX6675
-#define PIN_THERMOCOUPLE_CS 6 //вывод CS  ( SS ) модуля на чипе MAX6675
-#define PIN_THERMOCOUPLE_DO 5 //вывод DO  ( SO, MISO ) модуля на чипе MAX6675
+#define PIN_THERMOCOUPLE_CLK 7	//вывод CLK ( SCK ) модуля на чипе MAX6675
+#define PIN_THERMOCOUPLE_CS 6		//вывод CS  ( SS ) модуля на чипе MAX6675
+#define PIN_THERMOCOUPLE_DO 5		//вывод DO  ( SO, MISO ) модуля на чипе MAX6675
 
 //реле насосов
 #define PIN_PUMP_TTK 29 //пин управления включением насоса ТТК
@@ -38,6 +40,9 @@
 
 //Пин подачи сигнала сброса ESP
 #define PIN_RESET_ESP 4
+
+// Пин кнопки 
+#define PIN_BUTTON 12
 
 
 //созжены на магонии
