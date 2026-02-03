@@ -1,10 +1,10 @@
 ﻿
-#include "Motorizedvalve.h"
+#include "ValvesAndPumpsController.h"
 
 /*Принадлежность датчиков температуры*/
 // [0- t1, подача cистемы
 // 1- t2, обратка системы
-// 2- t3, отвод трехходового крана ТТ
+// 2- t3, Температура в Большой спальне
 // 3- t4, подача ТТК
 // 4- t5, обратка ТТК
 // 5- t6, верх ТА подача от ТТК
@@ -14,43 +14,22 @@
 // 9- t10, низ ТА, обратка системы
 // 10-t11, верх ТА
 // 11-t12, низ ТА
-// 12-t13, температура в помещении
+// 12-t13, температура в Зале
 // 13-t14, температура на улице
 // 14-t15, подача ЭК 
 // 15-t16, обратка ЭК
 
 
-#define PID_TTK 0 //поддержание температуры ТТК по средствам ПИД регулятора
-#define PID_SYS 0 //поддержание температуры SYS по средствам ПИД регулятора
-
-//Перечисления для параметров работы системы
-enum sysParam { SP_ERR, SP_ON, SP_OFF, SP_AUTO, SP_OPEN, SP_CLOSE, SP_MYALG, SP_PID };
-//Параметры работы системы
-int BoilerPumpMode = 3;			//1 - on, 2 - off, 3 - auto
-int SystemPumpMode = 3;			//1 - on, 2 - off, 3 - auto
-int SysTempControlMode = 6;	//6 – мой алгоритм регулирования, 7 - PID регулятор
-int DoorAirMode=3;					//4 - open, 5 - close, 3 - auto
-
-const int tcrashTTK = 80;	//аварийная температура ТТК(90 *С)
-const int tdangerTTK = 70;	//предаварийная температура  ТТК (80 *С)
-const int tneedTTK = 40;	//требуемая температура обратки ТТК(60 * С)
-
-float mTminSysPodacha; //минимальная температура подачи системы (изменяется в зависимости от температуры наружного воздуха. Чем холоднее, тем холоднее воздух стекает с окон) 
-
-
-///int t_flueGas = 200; //температура дымовых газов ТТК котла ()  
-
-/////*uint8_t*/float g_tRoomSetpoint = 20; //заданное значение температуры помещения (к которому стремимся)
- bool g_onSchedule=true; //флаг, устанавливающий необходимость поддержания температуры по суточному графику
- //Целевое значение температуры помещения с учетом суточного расписания (именно к этому значению стремимся при регулировке)
- extern float g_RoomSetpointCurrent;
-
 MAX6675_Thermocouple thermocouple(PIN_THERMOCOUPLE_CLK, PIN_THERMOCOUPLE_CS, PIN_THERMOCOUPLE_DO); // Объект термопара (температура дымовых газов)
 
-/********************************/
-//Расписание температуры на сутки
-/********************************/
+//extern TTimerList TimerList; //Список счетчиков, срабатывающих по прерыванию от программного счетчика  counter0
+THandle hCounterStopActionForValve;   // Handle счетчика, прерывающего активное состояние сигналов управления кранами
+int m_openPinSYS = 0, m_closePinSYS = 0; //внутренние переменные для этого модуля .cpp. Используются в процедуре tmrStopActionForSysValve, Устанавливаются в процедуре valveAction(). По идее нужно бы делать отдельный класс и их внутренними.
 
+
+/********************************/
+// Start Расписание температуры на сутки
+/********************************/
 //float dailySheduleOfTemperature[24] = {
 //0.826, //0-1
 //0.826, //1-2
@@ -103,7 +82,6 @@ float dailySheduleOfTemperature[24] ={
 	0.995, //21-22 (22,9/23)
 	0.991, //22-23 (22,8/23)
 	0.983 };//23-24 (22,6/23)
-
 //Рабочий вариант для родителей
 //float dailySheduleOfTemperature[24] = {
 //	0.869, //0-1 (20/23)
@@ -131,13 +109,27 @@ float dailySheduleOfTemperature[24] ={
 //	0.956, //22-23 (22/23)
 //	0.934 };//23-24 (21.5/23)
 
-//вызов функции тестирования для крана котла и крана системы
-int initValve() {
-	LOG("\nStart (initvalve)");
-	int result = 0; //коды завершения вызываемых функций
+/********************************/
+// Финишь Расписание температуры на сутки
+/********************************/
 
-	//настройка пинов для моторизированных кранов (открыт - значит поток направлен в боковой отвод)
+//настраиваем порты и устанавливаем начальные положения сигналов
+void initPortsValvesAndPumps(){
+	DEBUG_PRINTLN_VPC("initPortsValvesAndPumps: start");
+	//выход сирены аварийного перегрева котла
+	pinMode(PIN_EMERGENCY_SIREN, OUTPUT); digitalWrite(PIN_EMERGENCY_SIREN, HIGH);
+
+	//настраиваем выходы управления насосами ТТК и системным
+	pinMode(PIN_PUMP_TTK, OUTPUT); 		pumpAction(PIN_PUMP_TTK, AC_OFF);
+	pinMode(PIN_PUMP_SYS, OUTPUT);		pumpAction(PIN_PUMP_SYS, AC_OFF);
+//Электрокотел, насос и выход управления вклюбчением котла
+	pinMode(PIN_PUMP_EK, OUTPUT);			pumpAction(PIN_PUMP_EK, AC_OFF);
+	pinMode(PIN_CONTROL_EK, OUTPUT);	EKAction(PIN_CONTROL_EK, AC_OFF);
+
+	//настройка пинов для моторизированных кранов (открыт - значит поток направлен прямо, боковой отвод закрыт)
 	//TTK
+#if TTK_VALVE_EXISTS 
+	// тут осталось старое управление. Новое смотри для крана системы
 	pinMode(PIN_VALVE_TTK_OPEN, OUTPUT);
 	digitalWrite(PIN_VALVE_TTK_OPEN, HIGH); //active level - LOW
 	pinMode(PIN_VALVE_TTK_ClOSE, OUTPUT);
@@ -145,48 +137,58 @@ int initValve() {
 
 	pinMode(PIN_VALVE_TTK_SIGNAL_OPEN, INPUT_PULLUP);
 	pinMode(PIN_VALVE_TTK_SIGNAL_ClOSE, INPUT_PULLUP);
+#endif
 	//SYS
 	pinMode(PIN_VALVE_SYS_OPEN, OUTPUT);
-	digitalWrite(PIN_VALVE_SYS_OPEN, HIGH); //active level - LOW
 	pinMode(PIN_VALVE_SYS_ClOSE, OUTPUT);
-	digitalWrite(PIN_VALVE_SYS_ClOSE, HIGH); //active level - LOW
-
 	pinMode(PIN_VALVE_SYS_SIGNAL_OPEN, INPUT_PULLUP);
 	pinMode(PIN_VALVE_SYS_SIGNAL_ClOSE, INPUT_PULLUP);
+	valveAction(PIN_VALVE_SYS_OPEN, PIN_VALVE_SYS_ClOSE, PIN_VALVE_SYS_SIGNAL_OPEN, PIN_VALVE_SYS_SIGNAL_ClOSE, AC_EMPTY);
+
+}
+
+//вызов функции тестирования для кранов котла и системы
+int testValves() {
+	DEBUG_PRINTLN_VPC(F("testValves(): Start test SYS valve"));//PIN_VALVE_SYS_OPEN
+	if (!TEST_VALVE_ON) {	//выход, если тестирование кранов отключено
+		globalParameters.g_timeSwitchValveSYS = MAX_TIME_TESTING_VALVE;
+		Serial.print(F("testValves(): Тест крана отменен. Значение параметра MAX_TIME_TESTING_VALVE=false. Время переключения крана установлено равным MAX_TIME_TESTING_VALVE и составляет: ")); Serial.println(MAX_TIME_TESTING_VALVE);
+		return 0;
+	}
+	int result = 0; //коды завершения вызываемых функций
 
 	//тестируем работу крана защиты обратки ТТК
-	//LOG("\nCall testValveTTK\n");
-	//result = testValve(PIN_VALVE_TTK_OPEN, PIN_VALVE_TTK_ClOSE, PIN_VALVE_TTK_SIGNAL_OPEN, PIN_VALVE_TTK_SIGNAL_ClOSE, &g_timeSwitchValveTTK);
-	//if (result) {
-	//	LOG("Error in... "); LOG(result); LOG("\n");
-	//}
-	//Serial.print("g_timeSwitchvalveTTK "); Serial.print(g_timeSwitchValveTTK); Serial.print(" ms\n");
-
-
-	//тестируем работу крана регулировки темпратуры системы
-	LOG("\nCall testValveSYS\n");//PIN_VALVE_SYS_OPEN
-	
-	result = testValve(PIN_VALVE_SYS_OPEN, PIN_VALVE_SYS_ClOSE, PIN_VALVE_SYS_SIGNAL_OPEN, PIN_VALVE_SYS_SIGNAL_ClOSE, &g_timeSwitchValveSYS);
-
+#if TTK_VALVE_EXISTS
+	//старая процедура. смотри для крана системы - SYS
+	DEBUG_PRINTLN_VPC("\nCall testValveTTK\n");
+	result = testValve(PIN_VALVE_TTK_OPEN, PIN_VALVE_TTK_ClOSE, PIN_VALVE_TTK_SIGNAL_OPEN, PIN_VALVE_TTK_SIGNAL_ClOSE, &g_timeSwitchValveTTK);
 	if (result) {
-		LOG("Error in... "); LOG(result); ; LOG("\n");  //обработка ошибки
+		DEBUG_PRINTLN_VPC("Error in... "); DEBUG_PRINTLN_VPC(result); LOG("\n");
 	}
-	Serial.print("g_timeSwitchvalveSYS "); Serial.print(g_timeSwitchValveSYS); Serial.print("ms\n");
-		
-	LOG("stop (initTemp)\n");
+	Serial.print("g_timeSwitchvalveTTK "); Serial.print(g_timeSwitchValveTTK); Serial.print(" ms\n");
+#endif
+
+	//тестируем работу крана регулировки темпратуры системы			
+	DEBUG_PRINTLN_VPC(F("testValves(): Start test SYS valve"));//PIN_VALVE_SYS_OPEN
+	result = testValve(PIN_VALVE_SYS_OPEN, PIN_VALVE_SYS_ClOSE, PIN_VALVE_SYS_SIGNAL_OPEN, PIN_VALVE_SYS_SIGNAL_ClOSE, &globalParameters.g_timeSwitchValveSYS);
+	if (result) {
+		DEBUG_PRINTLN_VPC("Error in... " + String(result)+"\n");  //обработка ошибки
+	}
+	Serial.print(String(F("Maximum time for full opening/closing of the system tap (g_timeSwitchValveSYS): ")) +String(globalParameters.g_timeSwitchValveSYS)+"ms\n");
+	DEBUG_PRINTLN_VPC("testValves: Stop test all valve");
 	return result;
 }
 
-//тестирование моторизированных кранов. определение времени переключения
+//Определение времени переключеникрана в закрыто и открытое положения
 int testValve(uint8_t open, uint8_t close, uint8_t signalOpen, uint8_t signalClose, unsigned long * ptimeSwitch)
 {
 	/*
 	return errors code:
-	1 - ошибка теста открытия крана
+	1 - ошибка теста открытия крана			
 	2 - ошибка теста закрытия крана
 	3 - ошибка обоих тестов
 	*/
-	Serial.println(F("\n_Start testValve procedure"));
+	DEBUG_PRINTLN_VPC(F("\ntestValve: start"));
 
 	int errCod = 0;
 	Button oSignalOpen(signalOpen, 15); // класс button позволяет фильтровать дребезг контактов с сигнальных концевиков крана. время фильтрации 15мс*на период повторения loop. 
@@ -195,12 +197,12 @@ int testValve(uint8_t open, uint8_t close, uint8_t signalOpen, uint8_t signalClo
 	//сохраняем текущее время
 	unsigned long startTime = millis();
 	//открываем кран
-	///Serial.println(F("_Start opening valve"));
-	digitalWrite(close, HIGH);
-	digitalWrite(open, LOW); //Serial.println("_35-LOW");
+	DEBUG_PRINTLN_VPC(F("_Start opening valve"));
+
+	valveAction(open, close, signalOpen, signalClose, AC_OPEN);  //открываем полностью - длительность нулевая в аргументах
 
 	//ждем появления сигнала открытия низкого уровня
-	//Serial.println(F("_waiting for the signal to fully open the valve"));
+	DEBUG_PRINTLN_VPC(F("_waiting for the signal to fully open the valve"));
 	do {
 		//Serial.println(F("_in the Do. Waiting for the signal to fully open the valve"));
 		oSignalOpen.scanState();
@@ -209,29 +211,25 @@ int testValve(uint8_t open, uint8_t close, uint8_t signalOpen, uint8_t signalClo
 			break;
 		}
 	} while (!oSignalOpen.flagPress);
-	/* первый вариант без класса button
-	while (digitalRead(signalOpen)!=LOW) {
-	if ((millis() - startTime) > MAX_TIME_TESTING_VALVE) {
-	errCod = 1;
-	break;
-	}
-	}
-	*/
+
 	//снимем напряжение с крана
-	digitalWrite(open, HIGH); //Serial.println("_35-HIGH");
-	digitalWrite(close, HIGH); 	
+	valveAction(open, close, signalOpen, signalClose, AC_EMPTY);
+	///digitalWrite(open, HIGH); //Serial.println("_35-HIGH");
+	///digitalWrite(close, HIGH); 
+
 	//сохраняем время выполнения операции открытия
 	*ptimeSwitch = millis() - startTime;	Serial.print("full opening time = "); Serial.print(*ptimeSwitch); Serial.print("ms, errCod = "); Serial.println(errCod);
 
 	//сохраняем текущее время
 	startTime = millis();
 	//закрываем кран
-	///Serial.println("_Start closing valve");
-	digitalWrite(open, HIGH); //Serial.println("_35-HIGH");
-	digitalWrite(close, LOW); //Serial.println("_231_36-LOW");
+	DEBUG_PRINTLN_VPC("_Start closing valve");
+	valveAction(open, close, signalOpen, signalClose, AC_CLOSE);
+	//digitalWrite(open, HIGH); //Serial.println("_35-HIGH");
+	//digitalWrite(close, LOW); //Serial.println("_231_36-LOW");
 
 	//ждем появления сигнала закрытия, низкого уровня с крана
-	///Serial.println(F("_waiting for the signal to fully close the valve"));
+	DEBUG_PRINTLN_VPC(F("_waiting for the signal to fully close the valve"));
 	do {
 		//Serial.println("_in the Do. Waiting for the signal to fully close the valve");
 		oSignalClose.scanState();
@@ -240,60 +238,55 @@ int testValve(uint8_t open, uint8_t close, uint8_t signalOpen, uint8_t signalClo
 			break;
 		}
 	} while (!oSignalClose.flagPress);
-	///LOG("oSignalClose.flagPress = "); LOG(oSignalClose.flagPress);
-	/* первый вариант без класса button
-	while (digitalRead(signalClose)) {
-	LOG(digitalRead(signalClose));
-
-	//delay(1);  //????непонятное поведение: чаще всего цикл вообще не выполняется(проскакивает). Повидимому проскакивает какая-то наводка на сигнальном проводе
-	if ((millis() - startTime) > MAX_TIME_TESTING_VALVE) {
-	errCod = errCod+2;
-	break;
-	}
-	}
-	*/
+	
 	//снимем напряжение с крана
-	digitalWrite(open, HIGH); //Serial.println("_35-HIGH");
-	digitalWrite(close, HIGH);
+	valveAction(open, close, signalOpen, signalClose, AC_EMPTY);
+	///digitalWrite(open, HIGH); //Serial.println("_35-HIGH");
+	///digitalWrite(close, HIGH);
 	//сохраняем время выполнения операции закрытия
 	startTime = millis() - startTime; //т.к. startTime больше не понадобится, то сохраним в него рассчитанное время закрытия
-	Serial.print("full closing time = "); Serial.print(startTime); Serial.print("ms, errCod = "); Serial.print(errCod); Serial.print("\n");
+	Serial.print(F("full closing time = ")); Serial.print(startTime); Serial.print("ms, errCod = "); Serial.print(errCod); Serial.print("\n");
 
 	//вернем кран в исходное положение(которое было до начала теста)
 	//открываем кран до первоначального положения
-	digitalWrite(open, LOW); //Serial.println("_35-LOW");
-	digitalWrite(close, HIGH);
-	Serial.println("_Second delay");
-	delay(startTime - *ptimeSwitch);
+
+	unsigned long delayToOriginalPosition=0;
+	if (startTime > *ptimeSwitch) {  // проверка. Иногда бывает, что время закрытия меньше времени открытия и тогда разница будет отрицательна, а, т.к. тип беззнаковый, то на выходе получим огромное число.
+		delayToOriginalPosition = startTime - *ptimeSwitch; 
+	} 
+	Serial.print(F("_Delay when rotating the valve to its original position: ")); Serial.println(startTime - *ptimeSwitch);
+	valveAction(open, close, signalOpen, signalClose, AC_OPEN, delayToOriginalPosition);
+
+	///digitalWrite(open, LOW); //Serial.println("_35-LOW");
+	///digitalWrite(close, HIGH);
+
 	//снимем напряжение с крана
-	digitalWrite(open, HIGH); //Serial.println("_35-HIGH");
-	digitalWrite(close, HIGH);
+	valveAction(open, close, signalOpen, signalClose, AC_EMPTY);
+	///digitalWrite(open, HIGH); //Serial.println("_35-HIGH");
+	///digitalWrite(close, HIGH);
 
 	//запомним наибольшее время из этих операций
 	*ptimeSwitch = (startTime>*ptimeSwitch) ? startTime : *ptimeSwitch;
-	///LOG("Itog"); LOG(*ptimeSwitch); LOG("\n");
 
-	Serial.println("Stop testValve procedure");
+	DEBUG_PRINTLN_VPC("testValve: stop");
 	return errCod;
 }
 
 //Регулировка и поддержание оптимальной температуры ТТК (защита от холодной обратки)
 int temperatureControlTTK() {
-	
+	//DEBUG_PRINTLN_VPC(F("\ntemperatureControlTTK: start"));
 	int errCod = 0;
 	unsigned long startTime = millis();	
-	extern float temperature[];		
-	extern float g_t_flueGases; //температура дымовых газов ТТК котла ()  
 	extern myCycle cycleTempControlTTK;
 
 	const  bool LOG = true; //выводить логи работы процедуры
-	if (LOG) { Serial.print("\nstart (temperatureControlTTK)\n"); }
+	//if (LOG) { Serial.print("\nstart (temperatureControlTTK)\n"); }
 
 
 
 	//читаем температуру термопары (температура дымовых газов ТТК)
-	g_t_flueGases = thermocouple.readCelsius();
-	if (LOG) { Serial.print("Дым - "); Serial.println(g_t_flueGases); }
+	globalParameters.g_t_flueGases = thermocouple.readCelsius();
+	///if (LOG) { Serial.print("Дым - "); Serial.println(globalParameters.g_t_flueGases); }
 	
 	//условие запуска насоса при топящемся котле: подача ттк > 55 или дым>350 
 	//условия запуска насоса при не топящемся котле: подача ТТК > (Низ ТА+1,5С)
@@ -302,48 +295,63 @@ int temperatureControlTTK() {
 	//if (LOG) { Serial.print("Подача ТТК "); Serial.print(temperature[3]); Serial.print(" Низ ТА "); Serial.println(temperature[11]); }
 	
 	//контроль запуска насоса ТТК
-	switch (BoilerPumpMode) {
+	switch (systemParameters.TTKPumpMode) {
 	case SP_ON:
 		//запуск насоса ТТК
 		digitalWrite(PIN_PUMP_TTK, LOW); //Serial.println(F("Pump TTK start_29 LOW"));
 		break;
 	case SP_OFF:
-		if (!g_failure) { digitalWrite(PIN_PUMP_TTK, HIGH); /*Serial.println(F("Pump TTK stop_29 HIGH"))*/;} //выключаем насос ТТК
+		if (!globalParameters.g_failure) { digitalWrite(PIN_PUMP_TTK, HIGH); /*Serial.println(F("Pump TTK stop_29 HIGH"))*/;} //выключаем насос ТТК
 	break;
 	case SP_AUTO:
-		if ((g_failure) || (g_t_flueGases > 350) ||(g_t_flueGases<150 && (temperature[3] > (temperature[11] + 1.5))) || (g_t_flueGases>=150 && temperature[3] >55) ) {
+		//Температура выхода из ТТК при активном горении топлива (g_t_flueGases>150)
+		int maxTempOutTTK = 0;
+		if (temperature[10] > 55.0) {		//Если теплоноситель в верху теплоаккумулятора горячее 55 градусов, то макс температуру на котле даем на два градуса выше 
+			maxTempOutTTK = temperature[10] + 2.0;
+		}
+		else {
+			maxTempOutTTK = 55.0;
+		}
+
+		if ((globalParameters.g_failure) || (globalParameters.g_t_flueGases > 350) ||(globalParameters.g_t_flueGases<150 && (temperature[3] > (temperature[11] + 1.5))) || (globalParameters.g_t_flueGases>=150 && temperature[3] > maxTempOutTTK) ) {
 			//запуск насоса ТТК
 			digitalWrite(PIN_PUMP_TTK, LOW); //Serial.println(F("Pump TTK start_29 LOW")); //active level - LOW
 		}
 		else{//остановка насоса ТТК
-			if (!g_failure) { digitalWrite(PIN_PUMP_TTK, HIGH); /*Serial.println(F("Pump TTK stop_29 HIGH"))*/;} //active level - LOW
+			if (!globalParameters.g_failure) 
+				{ digitalWrite(PIN_PUMP_TTK, HIGH); /*Serial.println(F("Pump TTK stop_29 HIGH"))*/;} //active level - LOW
 		}	
 		break;
 	}
 
-	if ((int)temperature[3] > tdangerTTK ) { //предаварийный перегрев котла
-		Serial.println("Предаварийный перегрев котла!!");
-		if ((int)temperature[3] > tcrashTTK) { //аварийный перегрев котла
+	//режимы перегрева котла
+	if ((int)temperature[3] > systemParameters.tDangerTTK ) { //предаварийный перегрев котла
+		Serial.println(F("Предаварийный перегрев котла!!"));
+		if ((int)temperature[3] > systemParameters.tCrashTTK) { //аварийный перегрев котла
 			 Serial.println("Аварийный перегрев котла!!");
 			//включаем зуммер сирены
 			//tone(PIN_EMERGENCY_SIREN, 1, 5000); //если динамик без генератора, то даем ему меандр, если со зумером, то просто даем на выход уровень для включения
 			digitalWrite(PIN_EMERGENCY_SIREN, LOW); //активный уровень LOW
 			//noTone(PIN_EMERGENCY_SIREN);
-			g_failure = true;
+			globalParameters.g_failure = true;
 		}
-		//полностью закрываем боковой отвод крана котла ТТК
+		//полностью открываем кран котла ТТК
+#if TTK_VALVE_EXISTS
 		digitalWrite(PIN_VALVE_TTK_ClOSE, LOW);
 		digitalWrite(PIN_VALVE_TTK_OPEN, HIGH);
+#endif
 		//запуск насосов ТТК и системы
-		digitalWrite(PIN_PUMP_TTK, LOW);
+		pumpAction(PIN_PUMP_TTK, AC_ON);
+		//digitalWrite(PIN_PUMP_TTK, LOW);
 		///digitalWrite(PIN_PUMP_SYS, LOW); //В теплоаккумуляторе всегда прохладная вода внизу и этого должно бы хватить для остужения перегретого котла.
 		////return errCod;
 		goto lblExit;
 	}
-	g_failure = false; /*noTone(PIN_EMERGENCY_SIREN);*/ digitalWrite(PIN_EMERGENCY_SIREN, HIGH); //Выключаем сирену.активный уровень LOW
-	
+	globalParameters.g_failure = false; /*noTone(PIN_EMERGENCY_SIREN);*/ digitalWrite(PIN_EMERGENCY_SIREN, HIGH); //Выключаем сирену.активный уровень LOW
+
+#if TTK_VALVE_EXISTS
 	/*t[4] -обратка ТТК, t[3] - подача ТТК*/ //if (LOG) { Serial.print("Обратка ТТК "); Serial.print(temperature[4]); Serial.print(" Подача ТТК "); Serial.println(temperature[3]);}
-	if (PID_TTK == 1) {//поддерживаем температуру обратки котла PID регулятором
+	if (systemParameters.TTKTempControlMode== SP_MIALG) {//поддерживаем температуру обратки котла PID регулятором
 		if (LOG) { Serial.println("Используется PID регулировка крана TTK"); }
 		int16_t regulatoryStep = 0; 
 		//P=1, I=7, D=50, DedZone = 1.5
@@ -356,8 +364,6 @@ int temperatureControlTTK() {
 			Serial.print("PIN_VALVE_TTK_SIGNAL_ClOSE ");
 			Serial.println(digitalRead(PIN_VALVE_TTK_SIGNAL_ClOSE));
 
-
-		
 		if (LOG) { Serial.print("regulatoryStep_ТТК  "); Serial.println(regulatoryStep); }
 		if (regulatoryStep < 0 && (digitalRead(PIN_VALVE_TTK_SIGNAL_ClOSE))) {
 			//температура в подаче котла выше заданной
@@ -397,24 +403,26 @@ int temperatureControlTTK() {
 		//	}
 		//}
 	}
-	
+#endif
+
 lblExit:
 	// перезапуск таймера вызова функции регулировки температуры.
 	//extern myCycle cycleTempControlTTK;
 	cycleTempControlTTK.clear();
 	cycleTempControlTTK.reStart();
 
-Serial.print("stop (temperatureControlTTK) "); Serial.print((millis() - startTime)); Serial.println(" mc"); 
+	//DEBUG_PRINTLN_VPC(F("temperatureControlTTK: stop"));; Serial.print((millis() - startTime)); Serial.println(" mc");
 	return errCod;
 };
 
 //Регулировка и поддержание оптимальной температуры системы
-int temperatureControlSYS() { /*setSystemPumpMode*/
+int temperatureControlSYS() {
+	DEBUG_PRINTLN_VPC(F("\ntemperatureControlSYS: start"));
 	//yield()!!!!
 	const  bool LOG = true; //выводить логи работы процедуры
 	if (LOG) { Serial.println(F("\nstart (temperatureControlSYS)\n")); }
 	int errCod = 0;
-	unsigned long startTime = millis();	
+	unsigned long startTime = millis();
 	extern float temperature[];
 
 	//Проверим время и если сейчас ночь и действует ночной тариф, то включим на небольшое время электрокотел.
@@ -442,28 +450,28 @@ int temperatureControlSYS() { /*setSystemPumpMode*/
 			////////	digitalWrite(PIN_VALVE_SYS_ClOSE, HIGH);
 			////////	digitalWrite(PIN_VALVE_SYS_OPEN, HIGH);
 			////////}
-	
+
 	//Управление насосом системы
 	//контроль режима запуска насоса системы
-	switch (SystemPumpMode) {
+	switch (systemParameters.SystemPumpMode) {
 	case SP_ON:
 		//запуск насоса системы
-		digitalWrite(PIN_PUMP_SYS, LOW); //Serial.println(F("Pump SYS start 30 LOW"));
+		pumpAction(PIN_PUMP_SYS, AC_ON); //Serial.println(F("Pump SYS start, 30 LOW"));
 		break;
 	case SP_OFF:
-		if (!g_failure) { digitalWrite(PIN_PUMP_SYS, HIGH); } //выключаем насос системы
+		if (!globalParameters.g_failure) { pumpAction(PIN_PUMP_SYS, AC_OFF); } //выключаем насос системы
 		break;
 	case SP_AUTO:
-			// 10-t11, верх ТА	// 12-t13, температура в помещении
-		if (g_failure || (temperature[10] > temperature[12])) {
+		// 10-t11, верх ТА	// 12-t13, температура в помещении
+		if (globalParameters.g_failure || (temperature[10] > temperature[12])) {
 			//Температура верха ТА выше температуры в отслеживаемом помещении
 			//запуск насоса системы
 			if (LOG) { Serial.print(F("SYStem pump start")); }
-			digitalWrite(PIN_PUMP_SYS, LOW); //Serial.println(F("Pump SYS start 30 LOW"));//active level - LOW
+			pumpAction(PIN_PUMP_SYS, AC_ON); //Serial.println(F("Pump SYS start 30 LOW"));
 		}
 		else {
 			//остановка насоса системы
-			digitalWrite(PIN_PUMP_SYS, HIGH); //active level - LOW
+			pumpAction(PIN_PUMP_SYS, AC_OFF);
 			if (LOG) { Serial.print(F("stop nasos SYS")); }
 			//return errCod;
 			goto lblExit;
@@ -472,9 +480,9 @@ int temperatureControlSYS() { /*setSystemPumpMode*/
 	}
 
 	//определяем целевую температуру для регулировки
-	/*int*/float tRoomSetpoint = g_tRoomSetpoint;
-	if (g_onSchedule) {
-		switch (g_systemDateTime.hour()) {
+	float tRoomSetpoint = systemParameters.RoomSetPointTemperature;
+	if (systemParameters.onSchedule) {
+		switch (globalParameters.g_systemDateTime.hour()) {
 		case 0:
 			tRoomSetpoint *= dailySheduleOfTemperature[0];
 			break;
@@ -549,7 +557,7 @@ int temperatureControlSYS() { /*setSystemPumpMode*/
 			break;
 		}
 	}
-	g_RoomSetpointCurrent = tRoomSetpoint;
+	globalParameters.RoomSetPointTempatureCurrent = tRoomSetpoint;
 	////Serial.print("Podacha TTK"); Serial.println(temperature[3]);
 	////Serial.print("Obratka TTK"); Serial.println(temperature[4]);
 	////Serial.print("Verh TA"); Serial.println(temperature[10]);
@@ -559,33 +567,29 @@ int temperatureControlSYS() { /*setSystemPumpMode*/
 	////Serial.print("Pomeschenie"); Serial.println(temperature[12]);
 	////Serial.print("\n");
 
-
-	if (LOG) {Serial.print(F("Начало процедуры регулирования. Celevaia temperatura ")); Serial.println(tRoomSetpoint);}
+	if (LOG) { Serial.print(F("Начало процедуры регулирования. Текущая целевая температура с учетом расписания tRoomSetpoint: ")); Serial.println(tRoomSetpoint); }
 
 	//t[12] - температура в помещении.			
-	if (PID_SYS == 1) {
+	if (systemParameters.SysTempControlMode == SP_PID) {
 		//!!!процедура PID регулирования не отлажена и не работает!!!
+		// /PID?T=41.0&C=60 kP=1.0&kI=4.0&kD=4.0
+		DEBUG_PRINTLN_VPC(F("\ntemperatureControlSYS: PID Регулятор включен"));
 		//поддерживаем температуру PID регулятором
 		int regulatoryStep = 0;
 		//P=1, I=8, D=200
-		regulatoryStep = PID_3WayValve(tRoomSetpoint, temperature[12], (60.0), (g_timeSwitchValveSYS / 1000.0), (0.5), (1.0), (8.0), (200.0));
-		if (regulatoryStep < 0 && (digitalRead(PIN_VALVE_SYS_SIGNAL_OPEN))) {
-			//температура в контролируемом помещении выше заданной
-			//Уменьшаем подачу тепла в систему, приоткрываем боковой отвод крана
-			digitalWrite(PIN_VALVE_SYS_ClOSE, HIGH);
-			digitalWrite(PIN_VALVE_SYS_OPEN, LOW);//active level - LOW
-			delay(-(regulatoryStep * 1000));
-			digitalWrite(PIN_VALVE_SYS_ClOSE, HIGH);
-			digitalWrite(PIN_VALVE_SYS_OPEN, HIGH);
+		//temperature[12]-температра в Зале
+		//temperature[2]-температра в большой спальне
+		//temperature[0]-температра в подаче системы
+		Serial.println("PID_парам: Т, С, tP, tI, tD: " + String(systemParameters.pid_set_value)+ systemParameters.pid_cycleS+ systemParameters.pid_kP+ systemParameters.pid_kI+ systemParameters.pid_kD);
+		regulatoryStep = PID_3WayValve(/*tRoomSetpoint*/systemParameters.pid_set_value, temperature[0], (systemParameters.pid_cycleS), (globalParameters.g_timeSwitchValveSYS / 1000.0), (0.2), (systemParameters.pid_kP), (systemParameters.pid_kI), (systemParameters.pid_kD));
+		Serial.println("PID_regulatoryStep: " + String(regulatoryStep));
+		if (regulatoryStep < 0 && (digitalRead(PIN_VALVE_SYS_SIGNAL_ClOSE))) {
+			//температура в контролируемом помещении выше заданной, призакрываем кран
+			valveAction(PIN_VALVE_SYS_OPEN, PIN_VALVE_SYS_ClOSE, PIN_VALVE_SYS_SIGNAL_OPEN, PIN_VALVE_SYS_SIGNAL_ClOSE, AC_CLOSE, -regulatoryStep*1000);
 		}
 		else if ((regulatoryStep > 0) && (digitalRead(PIN_VALVE_SYS_SIGNAL_ClOSE))) {
-			//температура в контролируемом помещении ниже заданной
-			//Даем тепло в систему, т.е. призакрываем боковой отвод крана
-			digitalWrite(PIN_VALVE_SYS_OPEN, HIGH);
-			digitalWrite(PIN_VALVE_SYS_ClOSE, LOW);//active level - LOW
-			delay((regulatoryStep * 1000));
-			digitalWrite(PIN_VALVE_SYS_ClOSE, HIGH);
-			digitalWrite(PIN_VALVE_SYS_OPEN, HIGH);
+			//температура в контролируемом помещении ниже заданной/ Даем тепло в систему, приоткрываем кран
+			valveAction(PIN_VALVE_SYS_OPEN, PIN_VALVE_SYS_ClOSE, PIN_VALVE_SYS_SIGNAL_OPEN, PIN_VALVE_SYS_SIGNAL_ClOSE, AC_OPEN, regulatoryStep * 1000);
 		}
 	}
 	else {
@@ -595,90 +599,86 @@ int temperatureControlSYS() { /*setSystemPumpMode*/
 		// что бы в доме не появлялся холод от окон
 		//float mTminSysPodacha - минимальная температура подачи системы
 		// [13]-t14, температура на улице
-		if (temperature[13] < 0) { mTminSysPodacha = 36; } //35, вариант для зимы)	//33было жарко в доме
-		if (temperature[13] < -10) { mTminSysPodacha = 37; } //36, вариант для зимы)	//34 жарковато в доме. 35 в большой спальне было жарко ночью
-		if (temperature[13] < -20) { mTminSysPodacha = 37; } //вариант для зимы) //-24 с окон сифонит. 36 не жарко, хочется теплее. температура в зале за час упала на градус.
-		if (temperature[13] < -25) { mTminSysPodacha = 38; } //вариант для зимы)	//37, 
-		if (temperature[13] < -30) { mTminSysPodacha = 39; } //вариант для зимы)	//38, 
-		if (temperature[13] < -35) { mTminSysPodacha = 40; }
-		if ((temperature[13] > 0) && ((temperature[12] < tRoomSetpoint + 1.5))) { mTminSysPodacha = 35; } //, если на улице холодно, но в помещении на 1,5 градуса выше заданной, то в батарее держим минимальную темпратуру пониже.
-		if ((temperature[13] > 0) && ((temperature[12] > tRoomSetpoint + 1.5))) { mTminSysPodacha = 34; }
-		if ((temperature[13] > 5) && ((temperature[12] < tRoomSetpoint + 1.5))) {mTminSysPodacha = 32; }
-		if ((temperature[13] > 5) && ((temperature[12] > tRoomSetpoint + 1.5))) { mTminSysPodacha = 29; }
-		if (temperature[13] > 10) { mTminSysPodacha = 26; }	
-		if (temperature[13] > 15) { mTminSysPodacha = 23; }
-		Serial.println(String("Минимальная температура подачи: ") + mTminSysPodacha);
+		if (temperature[13] < 0) { systemParameters.TminSysPodacha = 36.6; } //36,  35, вариант для зимы)	//33было жарко в доме
+		if (temperature[13] < -10) { systemParameters.TminSysPodacha = 37; } //37,  36, вариант для зимы)	//34 жарковато в доме. 35 в большой спальне было жарко ночью
+		if (temperature[13] < -20) { systemParameters.TminSysPodacha = 37; } //37,  вариант для зимы) //-24 с окон сифонит. 36 не жарко, хочется теплее. температура в зале за час упала на градус.
+		if (temperature[13] < -25) { systemParameters.TminSysPodacha = 38; } //38, вариант для зимы)	//37, 
+		if (temperature[13] < -30) { systemParameters.TminSysPodacha = 39; } //39, вариант для зимы)	//38, 
+		if (temperature[13] < -35) { systemParameters.TminSysPodacha = 40; }	//40,  
+		if ((temperature[13] > 0) && ((temperature[12] < tRoomSetpoint + 1.5))) { systemParameters.TminSysPodacha = 35; } //, если на улице холодно, но в помещении на 1,5 градуса выше заданной, то в батарее держим минимальную темпратуру пониже.
+		if ((temperature[13] > 0) && ((temperature[12] > tRoomSetpoint + 1.5))) { systemParameters.TminSysPodacha = 34; }
+		if ((temperature[13] > 5) && ((temperature[12] < tRoomSetpoint + 1.5))) { systemParameters.TminSysPodacha = 32; }
+		if ((temperature[13] > 5) && ((temperature[12] > tRoomSetpoint + 1.5))) { systemParameters.TminSysPodacha = 29; }
+		if (temperature[13] > 10) { systemParameters.TminSysPodacha = 26; }
+		if (temperature[13] > 15) { systemParameters.TminSysPodacha = 23; }
+		Serial.println(String("Минимальная температура подачи: ") + systemParameters.TminSysPodacha);
 
 		///Serial.println(String("T[0] ") + temperature[0]); Serial.println(String("mTminSysPodacha ") + mTminSysPodacha);
 
 		//Нижняя граница диапазона минимальной температуры подачи
-		bool TminSysPodachaLowerBound = (temperature[0] < (mTminSysPodacha - 0.5)); 
+		bool TminSysPodachaLowerBound = (temperature[0] < (systemParameters.TminSysPodacha - 0.2));
 		///Serial.println(String("TminSysPodachaLowerBound ") + TminSysPodachaLowerBound);
 
 		//Верхняя граница диапазона минимальной температуры подачи
-		bool TminSysPodachaUpperBound = (temperature[0] > (mTminSysPodacha + 1.0));
+		bool TminSysPodachaUpperBound = (temperature[0] > (systemParameters.TminSysPodacha + 1.0));
 		///Serial.println(String("TminSysPodachaUpperBound ") + TminSysPodachaUpperBound);
 
-		if (((temperature[12] < tRoomSetpoint - 0.1)|| TminSysPodachaLowerBound) && (digitalRead(PIN_VALVE_SYS_SIGNAL_ClOSE))) {
+		if (((temperature[12] < tRoomSetpoint - 0.1) || TminSysPodachaLowerBound) && (digitalRead(PIN_VALVE_SYS_SIGNAL_OPEN))) {
 			///Serial.print(String("Увеличим подачу на "));
-			// температура в контролируемом помещении ниже заданной. Призакрываем кран(боковой отвод) на 1/10 максимального времени переключения крана системы
-			digitalWrite(PIN_VALVE_SYS_ClOSE, LOW); //Serial.println(F("Valve SYS close 36 LOW"));//active level - LOW
-			digitalWrite(PIN_VALVE_SYS_OPEN, HIGH); //Serial.println(F("Valve SYS open 35 HIGH"));
-			//если задача поддержать минимальную темературу в системе, то шаги крана сделаем в два раза уже, чем при регулировании для поддержания температуры в помещении
+			// температура в контролируемом помещении ниже заданной. 
+			//приоткрываем трехходовой кран.Если задача поддержать минимальную темературу в системе, то шаги крана сделаем в два раза уже, чем при регулировании для поддержания температуры в помещении
+			long duration = 0;
 			if (TminSysPodachaLowerBound) {
-				delay((g_timeSwitchValveSYS) / 11);
+				duration = ((globalParameters.g_timeSwitchValveSYS) / 11);
 				///Serial.println(String("1/11 шаг"));
 			}
 			else {
-			delay((g_timeSwitchValveSYS) / 10);
-			///Serial.println(String("1/10 шаг"));
+				duration = ((globalParameters.g_timeSwitchValveSYS) / 10);
+				///Serial.println(String("1/10 шаг"));
 			}
-
-			digitalWrite(PIN_VALVE_SYS_ClOSE, HIGH); //Serial.println(F("Valve SYS close 36 HIGH"));
-			digitalWrite(PIN_VALVE_SYS_OPEN, HIGH); //Serial.println(F("Valve SYS open 35 HIGH"));
+			///Serial.print(String("Длительность открытия ")+String(globalParameters.g_timeSwitchValveSYS));
+			///Serial.print(String("Расчитанная длительность  ") + String(duration));
+			valveAction(PIN_VALVE_SYS_OPEN, PIN_VALVE_SYS_ClOSE, PIN_VALVE_SYS_SIGNAL_OPEN, PIN_VALVE_SYS_SIGNAL_ClOSE, AC_OPEN, duration);
 		}
 		else {
-			if ((temperature[12] > (tRoomSetpoint /*+ 0.1*/)&&(TminSysPodachaUpperBound)) && (digitalRead(PIN_VALVE_SYS_SIGNAL_OPEN))) {
+			if ((temperature[12] > (tRoomSetpoint /*+ 0.1*/) && (TminSysPodachaUpperBound)) && (digitalRead(PIN_VALVE_SYS_SIGNAL_ClOSE))) {
 				///Serial.print(String("Уменьшим подачу на "));
 				// температура в контролируемом помещении выше заданной. Приоткрываем кран(боковой отвод) на 1/25 максимального времени переключения крана системы
-				digitalWrite(PIN_VALVE_SYS_ClOSE, HIGH); //Serial.println(F("Valve SYS close 36 HIGH"));//active level - LOW
-				digitalWrite(PIN_VALVE_SYS_OPEN, LOW); //Serial.println(F("Valve SYS open 35 LOW"));
+				long duration = 0;
+				if (temperature[0] > (systemParameters.TminSysPodacha + 3.0)) {
 
-				if (temperature[0] > (mTminSysPodacha + 3.0)) {
-
-					delay((g_timeSwitchValveSYS) / 10);
+					duration = ((globalParameters.g_timeSwitchValveSYS) / 10);
 					///Serial.println(String("1/10 шаг (температура подачи выше минимально-допустимой на +3 градуса)"));
 				}
 				else {
-					delay((g_timeSwitchValveSYS) / 11);
+					duration = ((globalParameters.g_timeSwitchValveSYS) / 11);
 					///Serial.println(String("1/11 шаг"));
 				}
-				digitalWrite(PIN_VALVE_SYS_ClOSE, HIGH); //Serial.println(F("Valve SYS close 36 HIGH"));
-				digitalWrite(PIN_VALVE_SYS_OPEN, HIGH); //Serial.println(F("Valve SYS open 35 HIGH"));
+				valveAction(PIN_VALVE_SYS_OPEN, PIN_VALVE_SYS_ClOSE, PIN_VALVE_SYS_SIGNAL_OPEN, PIN_VALVE_SYS_SIGNAL_ClOSE, AC_CLOSE, duration);
 			}
 		}
-	} //end if выбора режима регулирования подачи из ТА в систему
-
+	}
 lblExit:
 	// перезапуск таймера вызова функции регулировки температуры в системе.
 	extern myCycle cycleTempControlSYS;
 	cycleTempControlSYS.clear();
 	cycleTempControlSYS.reStart();
-	if (LOG) {Serial.print(F("stop (temperatureControlSYS) ")); Serial.print(millis() - startTime); Serial.println(F("mc"));}
+	if (LOG) { Serial.print(F("stop (temperatureControlSYS) ")); Serial.print(millis() - startTime); Serial.println(F("mc")); }
 	return errCod;
 }
 
+
 //PID регулятор
-int16_t PID_3WayValve(float set_value, float present_value, float cycleS, float valveS, float dead_zone, float k_P = 1, float k_I = 4, float k_D = 4) {
+int16_t PID_3WayValve(float set_value, float present_value, float cycleS, float valveS, float dead_zone, float k_P = 1, float k_I = 4, float k_D = 4) {{
 	//PID regulator
-	//float set_value; //уставка, в измеряемых единицах (°С)
-	//float present_value; //текущее значение, в измеряемых единицах (°С)
-	//float cycleS; //время цикла регулятора, сек
-	//float valveS; //время полного переключения привода, сек
-	//float k_P; //коэффициент П, %/измеряемые единицы (%/°С)
-	//float k_I; //коэффициент И, сек
-	//float k_D;//коэффициент Д, сек
-	//float dead_zone;//зона нечувствительности, измеряемые единицы (°С)
+	float set_value; //уставка, в измеряемых единицах (°С)
+	float present_value; //текущее значение, в измеряемых единицах (°С)
+	float cycleS; //время цикла регулятора, сек
+	float valveS; //время полного переключения привода, сек
+	float k_P; //коэффициент П, %/измеряемые единицы (%/°С)
+	float k_I; //коэффициент И, сек
+	float k_D;//коэффициент Д, сек
+	float dead_zone;//зона нечувствительности, измеряемые единицы (°С)
 	
 		//формула ПИД:
 		//  ΔYn = Kp·([En]-[En-1]+Tc/Ti·[En-1]+Td/Tc·([En]-2[En-1]+[En-2])), где
@@ -699,7 +699,7 @@ int16_t PID_3WayValve(float set_value, float present_value, float cycleS, float 
 		// если <0, то закрываем
 
 	const  bool LOG = true; //выводить логи работы процедуры
-	if (LOG) { Serial.print("\nstart (PID_3WayValve) "); Serial.println(g_systemDateTime.timestamp(g_systemDateTime.TIMESTAMP_TIME)); }
+	if (LOG) { Serial.print("\nstart (PID_3WayValve) "); Serial.println(globalParameters.g_systemDateTime.timestamp(globalParameters.g_systemDateTime.TIMESTAMP_TIME)); }
 
 	float e_1; // Текущее рассогласование
 	static float e_2; // Рассогласование на - 1 шаге
@@ -796,6 +796,116 @@ int16_t PID_3WayValve(float set_value, float present_value, float cycleS, float 
 	//		return (int)(sum_d_t * 1000); //вернем время в миллисекундах
 	//	}
 	//	return (int)(d_t * 1000); //вернем время в миллисекундах
-	//}
+	}
+}
+
+// Элементарные функции управления насосами и кранами, электрокотлом и приводом поддувальной дверки
+void pumpAction(int controlPin, enumAction action){
+	//active level pin LOW
+	switch (action) {
+	case AC_ON:
+		digitalWrite(controlPin, LOW);
+		break;
+	case AC_OFF:
+		digitalWrite(controlPin, HIGH);
+		break;
+	}
+}
+
+void EKAction(int controlPin, enumAction action) {
+	pumpAction(controlPin, action);
+}
+
+//процедура запускаети начало определенного действия у крана, а вот завершение действия будет происходить уже через прерывание по таймеру.
+void valveAction(int openPin, int closePin, int signalOpen, int signalClose, enumAction action, long duration){
+	//Serial.println("\n\n Зашли в процедуру valveAction(). актион: "+String(action)+". Длительность: " +String(duration));
+	//зададим переменные, которые будут использоваться в процедуре tmrStopActionForSysValve, вызываемой по сработке внутреннего таймера timer0 (генерируется прерывание).
+	m_openPinSYS = openPin;
+	m_closePinSYS = closePin;
+	//active level pin LOW
+	switch (action) {
+	case AC_EMPTY: //напряжение на кран не подается
+		digitalWrite(openPin, HIGH);
+		digitalWrite(closePin, HIGH);
+		break;
+	case AC_OPEN:
+		digitalWrite(closePin, HIGH);
+		digitalWrite(openPin, LOW);
+		//Запускаем таймер по системному таймеру Timer0 на время duration (в секундах)
+		if (TimerList.isActive(hCounterStopActionForValve)) { // проверяем, если такой счетчик уже существует и он запущен, то обновим его период срабатывания в соответствии с новой командой.
+			//hCounterStopActionForValve = TimerList.Add(duration , tmrStopActionForSysValve);
+			TimerList.setNewInterval(hCounterStopActionForValve, duration );
+		}
+		else {
+			hCounterStopActionForValve = TimerList.Add(duration, tmrStopActionForSysValve);
+		}
+		break;
+	case AC_CLOSE:
+		digitalWrite(openPin, HIGH);
+		digitalWrite(closePin, LOW);
+		//Запускаем таймер по системному таймеру Timer0 на время duration (в секундах)
+		if (TimerList.isActive(hCounterStopActionForValve)) { // проверяем, если такой счетчик уже существует и он запущен, то обновим его период срабатывания в соответствии с новой командой.
+		hCounterStopActionForValve = TimerList.Add(duration, tmrStopActionForSysValve);
+		TimerList.setNewInterval(hCounterStopActionForValve, duration );
+		}
+		else {
+			hCounterStopActionForValve = TimerList.Add(duration, tmrStopActionForSysValve);
+		}
+		break;
+	}
+}
+
+void tmrStopActionForSysValve(void) {
+	///Serial.println("\n\n Зашли в процедуру tmrStopActionForSysValve()");
+	///Serial.println(m_openPinSYS);
+	///Serial.println(m_closePinSYS);
+
+	//при сработке таймера снимаем напряжение с крана и прекращаем действие
+	digitalWrite(m_openPinSYS, HIGH);
+	digitalWrite(m_closePinSYS, HIGH);
+	//останавливаем и удаляем таймер
+	TimerList.Delete(hCounterStopActionForValve);
+}
+
+//Процедура управления дверкой поддувала
+void doorAirControl() {
+	DEBUG_PRINTLN_VPC(F("\ndoorAirControl: start"));
+
+	unsigned long startTime = millis();
+	extern float temperature[];
+	
+	//Управление насосом системы
+	//
+	switch (systemParameters.SystemPumpMode) {
+	case SP_ON:
+		//запуск насоса системы
+		pumpAction(PIN_PUMP_SYS, AC_ON); //Serial.println(F("Pump SYS start, 30 LOW"));
+		break;
+	case SP_OFF:
+		if (!globalParameters.g_failure) { pumpAction(PIN_PUMP_SYS, AC_OFF); } //выключаем насос системы
+		break;
+	case SP_AUTO:
+		// 10-t11, верх ТА	// 12-t13, температура в помещении
+		if (globalParameters.g_failure || (temperature[10] > temperature[12])) {
+			//Температура верха ТА выше температуры в отслеживаемом помещении
+			//запуск насоса системы
+			if (LOG) { Serial.print(F("SYStem pump start")); }
+			pumpAction(PIN_PUMP_SYS, AC_ON); //Serial.println(F("Pump SYS start 30 LOW"));
+		}
+		else {
+			//остановка насоса системы
+			pumpAction(PIN_PUMP_SYS, AC_OFF);
+			if (LOG) { Serial.print(F("stop nasos SYS")); }
+			//return errCod;
+			goto lblExit;
+		}
+		break;
+	}
+
+	//определяем целевую температуру для регулировки
+	float tRoomSetpoint = systemParameters.RoomSetPointTemperature;
+	if (systemParameters.onSchedule) {
+
+
 
 }

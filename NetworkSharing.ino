@@ -1,5 +1,16 @@
 
 //#define DEBUG_NSH
+//включение отладки в модуле программы
+//#define DEBUG_ENABLE_NSh
+#ifdef DEBUG_ENABLE_NSh
+#define DEBUG_PRINT_NSh(x) (Serial.print(x))
+#define DEBUG_PRINTLN_NSh(x) (Serial.println(x))
+#define DEBUGR_PRINTR_NSh(x,r) (Serial.print(x,r))
+#else
+#define DEBUG_PRINT_NSh(x) 
+#define DEBUG_PRINTLN_NSh(x) 
+#define DEBUGR_PRINTR_NSh(x,r) 
+#endif // DEBUG_ENABLE_NSh
 
 //син.кор.сер.
 // esp partner
@@ -8,7 +19,7 @@
 byte esp = ESP_OFF;
 
 extern float temperature[];
-extern int BoilerPumpMode;			//1 - on, 2 - off, 3 - auto
+/////extern int systemParameters.TTKPumpMode;			//1 - on, 2 - off, 3 - auto
 extern int SystemPumpMode;			//1 - on, 2 - off, 3 - auto
 extern int SysTempControlMode;	//1 – мой алгоритм регулирования, 2 - PID регулятор
 extern int DoorAirMode;					//1 - open, 2 - close, 3 - auto
@@ -18,7 +29,7 @@ extern int DoorAirMode;					//1 - open, 2 - close, 3 - auto
 int initRxTxForNetSharing(unsigned long speedUart)
 {
 	Serial3.begin(speedUart);
-	Serial.println(F("Modul NetworkSharing started at Serial3"));
+	DEBUG_PRINTLN_NSh(F("Modul NetworkSharing started at Serial3"));
 	return 0;
 }
 
@@ -30,10 +41,7 @@ String serialReq = "";
 
 //проверяем поступили-ли данные в порт Serial3
 void checkSerial() {
-	#ifdef DEBUG_NSH 
-		//Serial.println(F("start NetworkSharing.checkSerial"));
-	#endif
-
+	//DEBUG_PRINTLN_NSh(F("start NetworkSharing.checkSerial"));
 	while (Serial3.available() > 0) {
 		//Serial.println(F("Serial availeble"));
 		if (sFlag) {
@@ -67,11 +75,9 @@ void checkSerial() {
 			parseSerialCmd();
 		}
 		else {
-			#ifdef DEBUG_NSH 
-				Serial.print("[");
-				Serial.print(serialReq);
-				Serial.println("]");
-			#endif
+			DEBUG_PRINT_NSh("[");
+			DEBUG_PRINT_NSh(serialReq);
+			DEBUG_PRINTLN_NSh("]");
 		}
 	}
 
@@ -88,13 +94,11 @@ void checkSerial() {
 			else {
 				command = serialReq.substring(pBegin);
 				parameter = "";
-			}
-#ifdef DEBUG_NSH 
-			Serial.print(F("com/param: "));
-			Serial.print(command);
-			Serial.print(F("/"));
-			Serial.println(parameter);
-#endif
+			} 
+			DEBUG_PRINT_NSh(F("com/param: "));
+			DEBUG_PRINT_NSh(command);
+			DEBUG_PRINT_NSh(F("/"));
+			DEBUG_PRINTLN_NSh(parameter);
 			//Разбор поступивших команд////
 //******
 // ?esp
@@ -102,37 +106,35 @@ void checkSerial() {
 				if (parameter == F("1")) {
 					esp = ESP_ON;
 					espTimer = millis();
-#ifdef DEBUG_NSH 
-					Serial.println(F("ESP - working!"));
-#endif
+					DEBUG_PRINTLN_NSh(F("ESP - working!"));
 				}
 			}
 
 			//******
 			// ?reqesttemp
 			else if (command == F("reqesttemp")) {												// ?reqesttemp
-				if (temperature[0] == 0 && temperature[1] == 0 && temperature[3]) goto lblNotInitTemp; 
-				if (parameter == F("A")) {
-					/* для тестирования */
-//temperature[0] = 0.11;
-//temperature[1] = 1.11;
-//temperature[2] = 2.11;
-//temperature[3] = 3.11;
-//temperature[4] = 4.11;
-//temperature[5] = 5.11;
-//temperature[6] = 6.11;
-//temperature[7] = 7.11;
-//temperature[8] = 8.11;
-//temperature[9] = 9.11;
-//temperature[10] = 10.11;
-//temperature[11] = 11.11;
-//temperature[12] = 12.11;
-//temperature[13] = 13.11;
-//temperature[14] = 14.11;
-//temperature[15] = 15.11;
-//g_t_flueGases = 597;
-//g_RoomSetpointCurrent=23.3;
+					///* для тестирования */
+					//temperature[0] = 0.11;
+					//temperature[1] = 1.11;
+					//temperature[2] = 2.22; // Температура в большой спальне
+					//temperature[3] = 3.11;
+					//temperature[4] = 4.11;
+					//temperature[5] = 5.11;
+					//temperature[6] = 6.11;
+					//temperature[7] = 7.11;
+					//temperature[8] = 8.11;
+					//temperature[9] = 9.11;
+					//temperature[10] = 10.11;
+					//temperature[11] = 11.11;
+					//temperature[12] = 12.11;	// Температура в зале
+					//temperature[13] = 13.11;
+					//temperature[14] = 14.11;
+					//temperature[15] = 15.11; //
+					//globalParameters.g_t_flueGases = 597;
+					//globalParameters.RoomSetPointTempatureCurrent =33.3;
 
+				if (temperature[0] == 0 && temperature[1] == 0 && temperature[3]) goto lblNotInitTemp; 
+				if (parameter == F("A")) {   // Все значения температуры разом
 					Serial3.print(F("?sendtemp0=")); Serial3.println(temperature[0]);	delay(10);
 					Serial3.print(F("?sendtemp1=")); Serial3.println(temperature[1]); delay(10);
 					Serial3.print(F("?sendtemp2=")); Serial3.println(temperature[2]); delay(10);
@@ -149,24 +151,25 @@ void checkSerial() {
 					Serial3.print(F("?sendtemp13=")); Serial3.println(temperature[13]); delay(10);
 					Serial3.print(F("?sendtemp14=")); Serial3.println(temperature[14]); delay(10);
 					Serial3.print(F("?sendtemp15=")); Serial3.println(temperature[15]); delay(10);
-					Serial3.print(F("?sendtemp16=")); Serial3.println(g_t_flueGases); delay(10);
-					Serial3.print(F("?sendtemp17=")); Serial3.println(g_RoomSetpointCurrent); delay(10);
-					//Serial3.print(temperature[0]); Serial3.print(";");
+					Serial3.print(F("?sendtemp16=")); Serial3.println(globalParameters.g_t_flueGases); delay(10);
+Serial3.print(F("?sendtemp17=")); Serial3.println(globalParameters.RoomSetPointTempatureCurrent); delay(10);
+//Serial3.print(temperature[0]); Serial3.print(";");
 				}
-				else {
+				else {	// Значения температуры отдельно по конкретному датчика от 1 до 17.
 					int iparam = parameter.toInt();
 					if (iparam < NUMBER_OF_DS18B20) {
-						Serial3.print(F("?sendtemp")); Serial3.print(iparam); Serial3.print(F("=")); Serial3.println(temperature[iparam], 2);
+						Serial3.print("?sendtemp" + String(iparam) + "="); Serial3.println(temperature[iparam], 2);
 					}
-					else {
-#ifdef DEBUG_NSH 
-						Serial.println(F("Wrong number of the requested temperature sensor!"));
-#endif
+					else if (iparam == NUMBER_OF_DS18B20) {
+						Serial3.print(F("?sendtemp16=")); Serial3.println(globalParameters.g_t_flueGases, 0);
+					}
+					else if (iparam == (NUMBER_OF_DS18B20 + 1)) {
+						Serial3.print(F("?sendtemp17=")); Serial3.println(globalParameters.RoomSetPointTempatureCurrent, 1);
 					}
 				}
 			lblNotInitTemp: {}  //массив значений температур не инициализирован, метка выхода из процедуры передачи параметров температуры
 			}
-	
+
 			//******
 			// ?esplog 
 						/*Этот case пора удалять, все служебные данные полученные через uart выводятся в [] скобках. */
@@ -181,24 +184,30 @@ void checkSerial() {
 				Serial.println("espRSSI: " + parameter + "dBm");
 			}
 
-//******			
-// ?SetGTargetTemp=newT //получение целевой температуры
+			//******			
+			// ?SetGTargetTemp=newT //получение целевой температуры от ESP
 			else if (command == F("SetGTargetTemp")) {
-				///Serial.println("Command ESP: ?SetGTargetTemp/param:" + parameter);
 				//переводим строковый параметр в тип float и присваиваем переменной g_tRoomSetpoint
-				g_tRoomSetpoint = parameter.toFloat();
-				///Serial.print("Now g_tRoomSetpoint="); Serial.println(g_tRoomSetpoint);
+				systemParameters.RoomSetPointTemperature = parameter.toFloat();
 				//обновим информацию на индикаторе TM1637
 				extern TM1637Display TM1637_9;
-				TM1637_9.showNumberMsn(g_tRoomSetpoint, 1);
+				TM1637_9.showNumberMsn(systemParameters.RoomSetPointTemperature, 1);
 				//сохраним в EEPROM. Загрузка состояния в процедуре setup
-				EEPROM.write(0x00, (uint8_t)g_tRoomSetpoint);
-				//Отправка информации о на сервер брокера MQTT
-				Serial3.print(F("?sendGTargetTemp=")); Serial3.println(g_tRoomSetpoint, 1);
+				///Serial.println(F("Делаем memory.updateNow() в модуле NetworkSharing"));
+				memory.updateNow();	//обновиться в ПЗУ 
+				//Отправка информации на esp о новой целевой температуре
+				Serial3.print(F("?sendGTargetTemp=")); Serial3.println(systemParameters.RoomSetPointTemperature, 1);
 			}
 
-//******			
-// ?getSystemParameters //Запрос от ESP системных параметров
+			//******			
+			// ?GetGTargetTemp //Запрос целевой температуры от ESP
+			else if (command == F("GetGTargetTemp")) {
+				//Отправка информации на esp о новой целевой температуре
+				Serial3.print(F("?sendGTargetTemp=")); Serial3.println(systemParameters.RoomSetPointTemperature, 1);
+			}
+
+			//******			
+			// ?getsystemParameters //Запрос от ESP системных параметров
 			else if (command == F("getSystemParameters")) {
 				///Serial.println("Request from ESP: ?getSystemParameters/param:" + parameter);
 				// X – работы насоса котла;
@@ -207,38 +216,54 @@ void checkSerial() {
 				// K – режим работы привода заслонки поддувала
 				//reserve
 				//reserve
-				Serial3.print(F("?sendSystemParameters=")); Serial3.println(String(BoilerPumpMode) + SystemPumpMode + SysTempControlMode + DoorAirMode + "0" + "0");
+				Serial3.print(F("?sendSystemParameters=")); Serial3.println(String(systemParameters.TTKPumpMode) + systemParameters.SystemPumpMode + systemParameters.SysTempControlMode + systemParameters.DoorAirMode + systemParameters.RoomSetPointTemperature + "0");
 			}
 
 			//******			
-			// ?setBoilerPumpMode //Команда установки режима работы насоса ТТК
-			else if (command == F("setBoilerPumpMode")) {
-				///Serial.println("Request from ESP: ?setBoilerPumpMode/param:" + parameter);
-				//[0] - BoilerPumpMode				//1 - on, 2 - off, 3 - auto
+			// ?setTTKPumpMode //Команда установки режима работы насоса ТТК
+			else if (command == F("setTTKPumpMode")) {
+				///Serial.println("Request from ESP: ?setTTKPumpMode/param:" + parameter);
+				//[0] - systemParameters.TTKPumpMode				//1 - on, 2 - off, 3 - auto
 				if (parameter.toInt() > 0 && parameter.toInt() < 4) {
-					BoilerPumpMode = parameter.toInt();
+					systemParameters.TTKPumpMode = parameter.toInt();
 				}
 				else {
-					///Serial.println(F("Error in command from ESP ?setBoilerPumpMode, param:") + parameter);
+					///Serial.println(F("Error in command from ESP ?setTTKPumpMode, param:") + parameter);
 				}
 				//Sending updated system parameters to ESP
-				Serial3.print(F("?sendSystemParameters=")); Serial3.println(String(BoilerPumpMode) + SystemPumpMode + SysTempControlMode + DoorAirMode + "0" + "0");
+				Serial3.print(F("?sendsystemParameters=")); Serial3.println(String(systemParameters.TTKPumpMode) + systemParameters.SystemPumpMode + systemParameters.SysTempControlMode + systemParameters.DoorAirMode + systemParameters.RoomSetPointTemperature + "0");
 			}
 
-	//******			
-	// ?setSystemPumpMode //Команда установки режима работы насоса системы
+			//******			
+			// ?setSystemPumpMode //Команда установки режима работы насоса системы
 			else if (command == F("setSystemPumpMode")) {
 				///Serial.println("Request from ESP: ?setSystemPumpMode/param:" + parameter);
 				//[1] - SystemPumpMode				//1 - on, 2 - off, 3 - auto
 				if (parameter.toInt() > 0 && parameter.toInt() < 4) {
-					SystemPumpMode = parameter.toInt();
+					systemParameters.SystemPumpMode = parameter.toInt();
 				}
 				else {
 					///Serial.println("Error in command from ESP ?setSystemPumpMode, param:" + parameter);
 				}
 				//Sending updated system parameters to ESP
-				Serial3.print(F("?sendSystemParameters=")); Serial3.println(String(BoilerPumpMode) + SystemPumpMode + SysTempControlMode + DoorAirMode + "0" + "0");
+				Serial3.print(F("?sendsystemParameters=")); Serial3.println(String(systemParameters.TTKPumpMode) + systemParameters.SystemPumpMode + systemParameters.SysTempControlMode + systemParameters.DoorAirMode + systemParameters.RoomSetPointTemperature + "0");
 			}
+
+			//******			
+			// ?setSysTempControlMode //Команда установки режима регилировки температуры системы (мой алгоритм, либо PID)
+			else if (command == F("setSysTempControlMode")) {
+				///Serial.println("Request from ESP: ?setSystemPumpMode/param:" + parameter);
+				//	SysTempControlMode:		SP_MIALG (6) – мой алгоритм регулирования, SP_PID (7) - PID регулятор
+				if (parameter.toInt() == 6 || parameter.toInt() == 7) {
+					systemParameters.SysTempControlMode = parameter.toInt();
+				}
+				else {
+					///Serial.println("Error in command from ESP ?SysTempControlMode, param:" + parameter);
+				}
+				//Sending updated system parameters to ESP
+				Serial3.print(F("?sendsystemParameters=")); Serial3.println(String(systemParameters.TTKPumpMode) + systemParameters.SystemPumpMode + systemParameters.SysTempControlMode + systemParameters.DoorAirMode + systemParameters.RoomSetPointTemperature + "0");
+			}
+
 
 			//******			
 			// ?setTime  //Команда синхронизации времени
@@ -246,13 +271,48 @@ void checkSerial() {
 				//синхронизируем системное время модуля mega и время на RTC модуле, если он имеется.
 				UpdateSystemTime(parameter.c_str());
 			}
+			//******			
+			// ?setTempPoint  //Команда временная увеличить, или уменьшить целевую температуру
+			else if (command == F("setTempPoint")) {
+				if (parameter == "+") {
+					systemParameters.RoomSetPointTemperature = systemParameters.RoomSetPointTemperature + 0.2;
+				}
+				if (parameter == "-") {
+					systemParameters.RoomSetPointTemperature = systemParameters.RoomSetPointTemperature - 0.2;
+				}
+				memory.updateNow();	//обновиться в ПЗУ 
+			}
 
+			//****** PID регулятор			
+			// ?setPID_T 
+			else if (command == F("setPID_T")) {
+				systemParameters.pid_set_value = parameter.toFloat();
+			}
+			// ?setPID_C 
+			else if (command == F("setPID_C")) {
+				systemParameters.pid_cycleS = parameter.toFloat();
+			}
+			// ?setPID_kP 
+			else if (command == F("setPID_kP")) {
+				systemParameters.pid_kP = parameter.toFloat();
+			}
+			// ?setPID_kI 
+			else if (command == F("setPID_kI")) {
+				systemParameters.pid_kI = parameter.toFloat();
+			}
+			// ?setPID_kD 
+			else if (command == F("setPID_kD")) {
+				systemParameters.pid_kD = parameter.toFloat();
+			}
 
-
-
+			// ?getPIDParam 
+			else if (command == F("getPIDParam")) {
+				//отправляем в ESP строку с параметрами PID регулятора
+				Serial3.print("?sendPIDParam=" + String(systemParameters.pid_set_value)+","+systemParameters.pid_cycleS + "," + systemParameters.pid_kP + "," + systemParameters.pid_kI + ","+systemParameters.pid_kD);
+			}
+		
 		}
 	}
-
 
 
 

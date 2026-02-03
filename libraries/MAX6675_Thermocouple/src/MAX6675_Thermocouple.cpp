@@ -9,7 +9,7 @@ MAX6675_Thermocouple::MAX6675_Thermocouple(
 	const int CS_pin,
 	const int SO_pin
 ) {
-	pinMode(this->SCK_pin = SCK_pin, OUTPUT); 
+	pinMode(this->SCK_pin = SCK_pin, OUTPUT);
 	pinMode(this->CS_pin = CS_pin, OUTPUT);
 	pinMode(this->SO_pin = SO_pin, INPUT);
 	digitalWrite(this->CS_pin, HIGH);

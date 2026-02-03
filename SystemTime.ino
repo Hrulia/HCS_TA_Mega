@@ -37,7 +37,7 @@ int initSystemTime() {
 //обновление переменной системного времени по прерыванию от RTC
 void ISR_UpdateSystemTime() {
 	sei();  //разрешает другие прерывания в этот момент
-	g_systemDateTime = rtc.now();
+	globalParameters.g_systemDateTime = rtc.now();
 
 	//вывод в порт времени системы
 	//Serial.println(String(rtc.now().hour())+":"+ String(rtc.now().minute()));
@@ -45,8 +45,8 @@ void ISR_UpdateSystemTime() {
 	//digitalWrite(13, !(digitalRead(13)));
 }
 
-//Функция обновления системного времени
+//Функция обновления системного времени от значения от какого-то внешнего источника
 void UpdateSystemTime(const char* NewTimeStr) {
 	rtc.adjust(DateTime("", NewTimeStr)); //nullptr????
-	g_systemDateTime = DateTime("", NewTimeStr);
+	globalParameters.g_systemDateTime = DateTime("", NewTimeStr);
 }

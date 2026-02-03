@@ -1,6 +1,7 @@
-﻿#pragma once
-#include <Arduino.h>
+#pragma once
 
+#include <Arduino.h>
+//#include <Consts.h>
 
 using bsize_t = uint8_t;   // size_t  размером 1 байт
 using THandle = int8_t;
@@ -26,6 +27,18 @@ static const int8_t INVALID_HANDLE = -1;
 											
 #endif
 
+#ifdef  __AVR_ATmega32__
+#define  MAXTIMERSCOUNT		10		// 	Максимальное число зарегистрированных таймеров для прочих Uno - 10
+#define	 TIMER0_ONE_MS		245
+									//  между прерываниями 16 Мгц процессор выполнит примерно 10000 команд
+#endif //  
+
+
+#ifdef __AVR_ATmega32U4__
+ #define  MAXTIMERSCOUNT		10		// 	Максимальное число зарегистрированных таймеров для Lяnardo - 10
+ #define	 TIMER0_ONE_MS		245
+#endif
+
 #ifdef __AVR_ATmega168__
 #define  MAXTIMERSCOUNT		8		// 	Максимальное число зарегистрированных таймеров для прочих Old Uno - 8
 #define	 TIMER0_ONE_MS		240
@@ -48,7 +61,7 @@ protected:
 	uint32_t	fWorkCount;	    // 4 bytes	Рабочий счетчик, уменьшается на 1 каждый Tick()
 	uint32_t	fInitCount;		// 4 bytes  Начальный счетчик, хранит значение от которого считать до 0
 	pvfCallback fCallback;		// 2 bytes  Адрес функции, которая вызовется, когда счётчик досчитает до 0
-								// size of this struct = 11 bytes;
+								// sizeof(TCounterDown) = 11 bytes;
 
 	// гарантированно очистить (заполнить нулями) все поля структуры
 	void		Clear(void) { memset(this, 0, sizeof(TCounterDown)); };
@@ -111,7 +124,7 @@ public:
 
 		if ((isActive()) && (!isEmpty()) && ((--fWorkCount) == 0)) {  // если счетчик досчитал до 0
 			fWorkCount = fInitCount; // перезагружаем рабочий счётчик начальным значением, чтобы считать заново
-//			sei();				// разрешаем прерывания
+			sei();				// разрешаем прерывания
 			fCallback();		// и вызываем нашу фунцию обратного вызова
 		}
 		
@@ -122,6 +135,7 @@ public:
 	// то же самое в виде функции, а не оператора
 	void Tick(void) { (*this)--; };  // просто вызываем оператор постдекремента
 
+	uint32_t getCount() const { return fWorkCount; };
 };
 
 
@@ -135,7 +149,6 @@ extern TTimerList TimerList;   // глобальная переменная на
 
 class TTimerList   {
 protected:
-	static constexpr bsize_t	fsize = MAXTIMERSCOUNT;		// Размер списка
 
 	bool		factive;	// Активность всего списка, если false - все таймеры остановлены
 	bsize_t		fcount;		// Количество добавленных таймеров
@@ -145,7 +158,7 @@ protected:
 	// отдает true если THandle счётчика правильный [0..fsize-1]
 	// и сам счетчик не удален 
 	bool isValid(THandle ahandle) {
-		return ((ahandle >= 0) && (ahandle < fsize)) && (Items[ahandle] != NULL);
+		return ((ahandle >= 0) && (ahandle < MAXTIMERSCOUNT)) && (Items[ahandle] != NULL);
 	}
 
 	// начальная инициализация аппаратного таймера
@@ -157,7 +170,7 @@ public:
 	// создает пустой список размера asize, для хранения счетчиков
 	// при создании забивает список NULL-ами
 	TTimerList() {
-		for (bsize_t i = 0; i < fsize; i++) 
+		for (bsize_t i = 0; i < MAXTIMERSCOUNT; i++) 
 			 Items[i] = NULL;				  // забиваем выделенную память нулями
 		factive = false;					  // пока ни один счетчик не добавлен, список неактивен	
 		fcount = 0;							  // и число счётчиков пока == 0
@@ -176,20 +189,22 @@ public:
 	// 
 	// возвращает Handle щёччика, или специальное значение INVALID_HANDLE, если 
 	// добавить не удалось
-	THandle Add(uint32_t ainterval, pvfCallback acallback) {
+	THandle Add(uint32_t ainterval, pvfCallback acallback, const bool AStopped = false) {
 		
-		if (fcount == fsize) return INVALID_HANDLE; // список заполнен до отказа, мест нет
+		if (fcount == MAXTIMERSCOUNT) return INVALID_HANDLE; // список заполнен до отказа, мест нет
 
 		PCounterDown counter = new TCounterDown(ainterval, acallback); // попытаемся хапнуть память под щёччик
 		
 		if (counter == NULL) return INVALID_HANDLE;  // не удалось, уходим с ошибкой
+
+		if (AStopped) counter->Stop();
 
 		if (fcount == 0) {		// если добавляемый счетчик - первый, 
 			Init();				// то сначала инициализируем аппаратный таймер
 			Start();			// и разрешаем запустить весь этот цыкал перебора
 		}
 
-		for (THandle i = 0; i < fsize; i++) {
+		for (THandle i = 0; i < MAXTIMERSCOUNT; i++) {
 			if (Items[i] == NULL) {   // ищем свободную "дырку" в массиве Items
 				Items[i] = counter;	  // если нашли - пхаем туда созданный щёччик	
 				fcount++;			  // кол-во счетчиков увеличиваем на 1	
@@ -201,13 +216,12 @@ public:
 
 	}
 
-	// то же, но счетчик создается в остановленном состоянии
-	// для запуска нужно потом вызвать TimerList.Start(hnd)
-	// 
-	THandle AddStopped(uint32_t ainterval, pvfCallback acallback) {
-		THandle h = Add(ainterval, acallback);
-		if (h != INVALID_HANDLE) Stop(h);
-		return h;
+	THandle AddSeconds(uint32_t aSeconds, pvfCallback aCallback, const bool AStopped = false) {
+		return Add(1000UL * aSeconds, aCallback, AStopped);
+	}
+
+	THandle AddMinutes(const uint16_t AMinutes, const pvfCallback ACallBack, const bool AStopped = false) {
+		return Add(1000UL * 60UL * AMinutes, ACallBack, AStopped);
 	}
 
 	// запустить цикл перебора счетчиков
@@ -274,11 +288,17 @@ public:
 	void Tick(void) {
 
 		if (isActive()) {
-			for (bsize_t i = 0; i < fsize; i++)
+			for (bsize_t i = 0; i < MAXTIMERSCOUNT; i++)
 				if (Items[i] != NULL) (*Items[i])--;
 		}
 
 	}
+
+	uint32_t getCount(THandle hnd) {
+		if (isValid(hnd)) return Items[hnd]->getCount();
+		return 0;
+	}
+
 };
 
 

@@ -9,6 +9,8 @@
 	#include "HeaderHCS_TA.h"
 
 
+	extern GlobalParametersStructure globalParameters;
+
 	//Предварительная инициализация и тестирование всех датчиков температуры
 	int initTemp();
 
